@@ -11,7 +11,7 @@ public class Cardrivecode : MonoBehaviour
     public float steerPower;
     public float speed;
     public Vector2 brrr;
-    
+    public bool handBrake;
 
     void OnDrive(InputValue value)
     {
@@ -34,18 +34,17 @@ public class Cardrivecode : MonoBehaviour
 
         foreach (var wheel in wheels)
         {
-            if (brrr.y == -1)
-            {
-                wheel.brakeTorque = 1000;
-            }
-
-
-
             wheel.motorTorque = brrr.y * motorPower;
-            
             speed = wheel.motorTorque;
-
-
+            
+            if(brrr.y < 0)
+            {
+                wheel.brakeTorque = 200;
+            }
+            else
+            {
+                wheel.brakeTorque = 0;
+            }
         }
 
 
