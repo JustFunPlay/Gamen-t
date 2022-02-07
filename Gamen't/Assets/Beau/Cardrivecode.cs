@@ -6,19 +6,23 @@ public class Cardrivecode : MonoBehaviour
 {
     public WheelCollider[] wheels;
     public GameObject[] wheelsmesh;
-    public float motorPower = 100;
-    public float steerPower = 100;
-
-
+    public float motorPower;
+    public float steerPower;
+    public float brakePower; 
+    
     private void FixedUpdate()
     {
-        
+
 
         foreach (var wheel in wheels)
         {
             wheel.motorTorque = Input.GetAxis("Vertical") * motorPower;
             
-      
+            if(Input.GetButtonDown("Jump")== true)
+            {
+                wheel.brakeTorque = brakePower;
+            }
+
         }
 
 
@@ -30,13 +34,12 @@ public class Cardrivecode : MonoBehaviour
             if (i < 2)
             {
                 wheels[i].steerAngle = Input.GetAxis("Horizontal") * steerPower;
-                
+
             }
 
 
 
         }
+
     }
-
-
 }
