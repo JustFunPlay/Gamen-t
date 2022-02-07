@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 public class PlayerInput : MonoBehaviour
 {
     public Rigidbody rb;
-    public float speed = 50;
+    public float speed = 20;
     public Vector2 moveValue;
 
     public void Start()
