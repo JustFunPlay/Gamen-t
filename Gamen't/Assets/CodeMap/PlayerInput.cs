@@ -5,12 +5,18 @@ using UnityEngine.InputSystem;
 
 public class PlayerInput : MonoBehaviour
 {
+    public PlayerInformation playerInfo;
+
+    public float playerIDnumber;
+
     public Rigidbody rb;
     public float speed = 20;
     public Vector2 moveValue;
 
     public void Start()
     {
+        playerIDnumber = playerInfo.totalPlayers;
+
         rb = GetComponent<Rigidbody>();
     }
     void OnMove(InputValue movementValue)

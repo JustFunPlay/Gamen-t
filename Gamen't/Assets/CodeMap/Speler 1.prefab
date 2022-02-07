@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1173670324905789574}
   - component: {fileID: 1173670324905789575}
-  - component: {fileID: 1173670324905789576}
   - component: {fileID: 1173670324905789573}
   - component: {fileID: 9017163415947540636}
   - component: {fileID: 8107090741298141366}
@@ -57,16 +56,16 @@ Camera:
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.5
+    x: 0
     y: 0
-    width: 0.5
-    height: 0.5
+    width: 1
+    height: 1
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
   orthographic: 0
   orthographic size: 5
-  m_Depth: -1
+  m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -81,14 +80,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!81 &1173670324905789576
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1173670324905789577}
-  m_Enabled: 1
 --- !u!114 &1173670324905789573
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -133,6 +124,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9832671c975d25c4386fb1f5e2c9d29c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerInfo: {fileID: 11400000, guid: 32ba84c6353187d4a94dfddb68e53bbc, type: 2}
+  playerIDnumber: 0
   rb: {fileID: 8107090741298141366}
   speed: 20
   moveValue: {x: 0, y: 0}
