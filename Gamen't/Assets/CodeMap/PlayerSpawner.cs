@@ -30,10 +30,10 @@ public class PlayerSpawner : MonoBehaviour
     }
     public void PlayerSpawn()
     {
-        
-        if (i <= 3)
+
+        if (i < playerInfo.maxPlayers)
         {
-            Instantiate(player, playerSpawning[0], Quaternion.identity);
+            Instantiate(player, playerSpawning[i], Quaternion.identity);
             i++;
             playerInfo.totalPlayers++;
         }
