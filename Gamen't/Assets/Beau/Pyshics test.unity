@@ -4864,13 +4864,5 @@ PrefabInstance:
       propertyPath: m_Name
       value: TestToyota_gt86
       objectReference: {fileID: 0}
-    - target: {fileID: 5571404860764708118, guid: 3dd3b899a36772546a06d5e0009363c6, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5571404860785927491, guid: 3dd3b899a36772546a06d5e0009363c6, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3dd3b899a36772546a06d5e0009363c6, type: 3}

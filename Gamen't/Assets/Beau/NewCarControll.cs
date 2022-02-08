@@ -23,10 +23,10 @@ public class NewCarControll : MonoBehaviour
     public float handBrake;
     private Rigidbody rb;
     public Transform massCenter;
-    public float decelerationforce;
+    public float brakeForce;
     public float speed;
     public float steer;
-    public bool stoppedCar;
+
 
     private void Start()
     {
@@ -74,16 +74,16 @@ public class NewCarControll : MonoBehaviour
             }
             if (brrr.y == -1)
             {
-                element.leftWheel.brakeTorque = decelerationforce;
-                element.rightWheel.brakeTorque = decelerationforce;
-                stoppedCar = true;
+                element.leftWheel.brakeTorque = brakeForce;
+                element.rightWheel.brakeTorque = brakeForce;
+
             }
-            //if(stoppedCar == true)
-            //{
-            //    element.leftWheel.brakeTorque = 0;
-            //    element.rightWheel.brakeTorque = 0;
-            //    stoppedCar = false;
-            //}
+            if (rb.velocity.z <= 0)
+            {
+                element.leftWheel.brakeTorque = 0;
+                element.rightWheel.brakeTorque = 0;
+
+            }
 
             DoTyres(element.leftWheel);
             DoTyres(element.rightWheel);
