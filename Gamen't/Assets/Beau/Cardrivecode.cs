@@ -12,6 +12,7 @@ public class Cardrivecode : MonoBehaviour
     public float speed;
     public Vector2 brrr;
     public bool handBrake;
+    public Rigidbody carBod;
 
     void OnDrive(InputValue value)
     {
@@ -20,6 +21,7 @@ public class Cardrivecode : MonoBehaviour
     void OnBrake(InputValue value)
     {
         brrr.y = -value.Get<float>();
+        
     }
 
     void OnMove(InputValue value)
@@ -34,17 +36,24 @@ public class Cardrivecode : MonoBehaviour
 
         foreach (var wheel in wheels)
         {
-            wheel.motorTorque = brrr.y * motorPower;
-            speed = wheel.motorTorque;
-            
-            if(brrr.y < 0)
+            if(brrr.y >= 0)
             {
-                wheel.brakeTorque = 200;
-            }
-            else
-            {
+                wheel.motorTorque = brrr.y * motorPower;
+                speed = wheel.motorTorque;
                 wheel.brakeTorque = 0;
             }
+
+
+            if (brrr.y <= 0)
+            {
+                wheel.brakeTorque = 500;
+            }
+
+            
+
+
+
+
         }
 
 
