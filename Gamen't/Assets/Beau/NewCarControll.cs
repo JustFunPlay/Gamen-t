@@ -26,6 +26,7 @@ public class NewCarControll : MonoBehaviour
     public float brakeForce;
     public float speed;
     public float steer;
+    public float restet;
 
 
     private void Start()
@@ -50,13 +51,29 @@ public class NewCarControll : MonoBehaviour
         brrr.x = value.Get<Vector2>().x;
     }
 
-    void OnHandbrake(InputValue value)
-    {
-        handBrake = value.Get<float>();
-    }
 
+
+    public void OnReset(InputValue value)
+    {
+        restet = value.Get<float>();
+
+
+
+
+
+    }
     private void FixedUpdate()
     {
+        if (restet == 1)
+        {
+            Debug.Log("Gimme git");
+            transform.rotation = new Quaternion();
+            restet = 0;
+        }
+
+
+
+
         speed = brrr.y * maxTorque;
         steer = brrr.x * maxSteerAngle;
 

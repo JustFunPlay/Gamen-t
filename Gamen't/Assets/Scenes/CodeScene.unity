@@ -186,7 +186,7 @@ MonoBehaviour:
       m_Interactions: 
       m_SingletonActionBindings: []
     m_Reference: {fileID: 0}
-  m_PlayerPrefab: {fileID: 1173670324905789577, guid: 477ce3661a78e4b43a6ef4c0f61364b5, type: 3}
+  m_PlayerPrefab: {fileID: 4582174514683055560, guid: 3dd3b899a36772546a06d5e0009363c6, type: 3}
   m_SplitScreen: 1
   m_MaintainAspectRatioInSplitScreen: 1
   m_FixedNumberOfSplitScreens: 4
@@ -209,7 +209,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerInfo: {fileID: 11400000, guid: 32ba84c6353187d4a94dfddb68e53bbc, type: 2}
-  player: {fileID: 1173670324905789577, guid: 477ce3661a78e4b43a6ef4c0f61364b5, type: 3}
+  player: {fileID: 4582174514683055560, guid: 3dd3b899a36772546a06d5e0009363c6, type: 3}
   playerSpawning:
   - {x: 5, y: 10, z: -5}
   - {x: 7, y: 10, z: -7}
@@ -293,7 +293,7 @@ MonoBehaviour:
       m_Interactions: 
       m_SingletonActionBindings: []
     m_Reference: {fileID: 0}
-  m_PlayerPrefab: {fileID: 1173670324905789577, guid: 477ce3661a78e4b43a6ef4c0f61364b5, type: 3}
+  m_PlayerPrefab: {fileID: 4582174514683055560, guid: 3dd3b899a36772546a06d5e0009363c6, type: 3}
   m_SplitScreen: 1
   m_MaintainAspectRatioInSplitScreen: 1
   m_FixedNumberOfSplitScreens: 1
@@ -316,7 +316,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerInfo: {fileID: 11400000, guid: 32ba84c6353187d4a94dfddb68e53bbc, type: 2}
-  player: {fileID: 1173670324905789577, guid: 477ce3661a78e4b43a6ef4c0f61364b5, type: 3}
+  player: {fileID: 4582174514683055560, guid: 3dd3b899a36772546a06d5e0009363c6, type: 3}
   playerSpawning:
   - {x: 5, y: 10, z: -5}
   - {x: 7, y: 10, z: -7}
@@ -769,7 +769,7 @@ MonoBehaviour:
       m_Interactions: 
       m_SingletonActionBindings: []
     m_Reference: {fileID: 0}
-  m_PlayerPrefab: {fileID: 1173670324905789577, guid: 477ce3661a78e4b43a6ef4c0f61364b5, type: 3}
+  m_PlayerPrefab: {fileID: 4582174514683055560, guid: 3dd3b899a36772546a06d5e0009363c6, type: 3}
   m_SplitScreen: 1
   m_MaintainAspectRatioInSplitScreen: 1
   m_FixedNumberOfSplitScreens: 3
@@ -792,7 +792,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerInfo: {fileID: 11400000, guid: 32ba84c6353187d4a94dfddb68e53bbc, type: 2}
-  player: {fileID: 1173670324905789577, guid: 477ce3661a78e4b43a6ef4c0f61364b5, type: 3}
+  player: {fileID: 4582174514683055560, guid: 3dd3b899a36772546a06d5e0009363c6, type: 3}
   playerSpawning:
   - {x: 5, y: 10, z: -5}
   - {x: 7, y: 10, z: -7}

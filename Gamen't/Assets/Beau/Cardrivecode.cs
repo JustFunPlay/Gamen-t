@@ -33,7 +33,16 @@ public class Cardrivecode : MonoBehaviour
     {
         handBrake = value.Get<float>();
     }
+    public void OnResetCarPressed(InputAction.CallbackContext context)
+    {
+        if (context.started)
+        {
+            Debug.Log("Gimme git");
 
+            transform.rotation = new Quaternion();
+        }
+
+    }
 
     private void FixedUpdate()
     {

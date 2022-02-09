@@ -340,7 +340,6 @@ GameObject:
   - component: {fileID: 5242948194989651552}
   - component: {fileID: 5509160800625580668}
   - component: {fileID: 2722880352630061599}
-  - component: {fileID: 2722880352630061598}
   m_Layer: 0
   m_Name: BaseCar
   m_TagString: Untagged
@@ -428,34 +427,105 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -4207213027030379819, guid: 5900f11f476586949bd7ecbd83631f3b, type: 3}
---- !u!114 &2722880352630061598
+--- !u!1 &3208854553219523976
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6008213951190934384}
+  - component: {fileID: 1876901751055223262}
+  - component: {fileID: 2124354182535109539}
+  - component: {fileID: 5848358948040753912}
+  m_Layer: 5
+  m_Name: Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &6008213951190934384
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3208854553219523976}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 3809191913613449074}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
+--- !u!223 &1876901751055223262
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3208854553219523976}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!114 &2124354182535109539
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2722880352630061596}
-  m_Enabled: 0
+  m_GameObject: {fileID: 3208854553219523976}
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 903164e68b444ab44b1e4d1f30120e6c, type: 3}
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wheels:
-  - {fileID: 5571404860772130130}
-  - {fileID: 5571404860782729368}
-  - {fileID: 5571404860510127257}
-  - {fileID: 5571404860726807036}
-  wheelsmesh:
-  - {fileID: 956151692644740115}
-  - {fileID: 182325940904686719}
-  - {fileID: 2438463255629236609}
-  - {fileID: 2526551995403240781}
-  motorPower: 0
-  steerPower: 30
-  speed: 0
-  brrr: {x: 0, y: 0}
-  brakePower: 500
-  handBrake: 0
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
+--- !u!114 &5848358948040753912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3208854553219523976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
 --- !u!1 &4582174514683055560
 GameObject:
   m_ObjectHideFlags: 0
@@ -492,6 +562,7 @@ Transform:
   - {fileID: 5571404860785927490}
   - {fileID: 8934399251528375791}
   - {fileID: 5571404860655353311}
+  - {fileID: 6008213951190934384}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -540,6 +611,7 @@ MonoBehaviour:
   brakeForce: 1000
   speed: 0
   steer: 0
+  restet: 0
 --- !u!114 &1528927131454968946
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -631,7 +703,7 @@ WheelCollider:
     damper: 700
     targetPosition: 0.5
   m_SuspensionDistance: 0.3
-  m_ForceAppPointDistance: 0.5
+  m_ForceAppPointDistance: 0
   m_Mass: 6
   m_WheelDampingRate: 0.25
   m_ForwardFriction:
@@ -727,7 +799,7 @@ WheelCollider:
     damper: 700
     targetPosition: 0.5
   m_SuspensionDistance: 0.3
-  m_ForceAppPointDistance: 0.5
+  m_ForceAppPointDistance: 0
   m_Mass: 6
   m_WheelDampingRate: 0.25
   m_ForwardFriction:
@@ -905,7 +977,7 @@ WheelCollider:
     damper: 700
     targetPosition: 0.5
   m_SuspensionDistance: 0.3
-  m_ForceAppPointDistance: 0.5
+  m_ForceAppPointDistance: 0
   m_Mass: 6
   m_WheelDampingRate: 0.25
   m_ForwardFriction:
@@ -967,7 +1039,7 @@ WheelCollider:
     damper: 700
     targetPosition: 0.5
   m_SuspensionDistance: 0.3
-  m_ForceAppPointDistance: 0.5
+  m_ForceAppPointDistance: 0
   m_Mass: 6
   m_WheelDampingRate: 0.25
   m_ForwardFriction:
