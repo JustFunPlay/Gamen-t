@@ -18,17 +18,21 @@ public class NewCarControll : MonoBehaviour
 {
     public List<WheelElements> wheelData;
     public float maxTorque;
-    public float maxSteerAngle = 30;
+    public float maxSteerAngle;
     public Vector2 brrr;
     public float handBrake;
     private Rigidbody rb;
     public Transform massCenter;
     public float brakeForce;
-    public float speed;
+    public float torque;
     public float steer;
     public float restet;
+    public float speedRead;
+    public bool isSpeed;
+    public float rPM;
 
-
+    public float maxSpeed;
+    public float speedLimiterRange;
     private void Start()
     {
 
@@ -70,11 +74,19 @@ public class NewCarControll : MonoBehaviour
             transform.rotation = new Quaternion();
             restet = 0;
         }
-
-
-
-
-        speed = brrr.y * maxTorque;
+        
+        speedRead = rb.velocity.magnitude * 3.6f;
+        if (speedRead > 200)
+        {
+            isSpeed = true;
+        }
+        float newTorgue = maxTorque;
+        if (speedRead > maxSpeed - speedLimiterRange)
+        {
+            newTorgue = maxTorque * (1 - ((speedRead - (maxSpeed - speedLimiterRange)) / (speedLimiterRange * 1.25f)));
+        }
+        
+        torque = brrr.y * newTorgue;
         steer = brrr.x * maxSteerAngle;
 
         foreach (WheelElements element in wheelData)
@@ -86,8 +98,14 @@ public class NewCarControll : MonoBehaviour
             }
             if (element.addWheelTorque == true)
             {
-                element.leftWheel.motorTorque = speed;
-                element.rightWheel.motorTorque = speed;
+                rPM = element.leftWheel.rpm;
+
+
+                element.leftWheel.motorTorque = torque;
+                element.rightWheel.motorTorque = torque;
+
+
+
             }
             if (brrr.y == -1)
             {

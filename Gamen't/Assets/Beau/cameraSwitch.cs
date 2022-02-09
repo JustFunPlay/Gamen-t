@@ -9,7 +9,7 @@ public class cameraSwitch : MonoBehaviour
     public float swit;
     public void OnSwitch()
     {
-        swit = 1;
+        swit += 1;
         
     }
 
@@ -19,12 +19,14 @@ public class cameraSwitch : MonoBehaviour
         {
             old.SetActive(false);
             neew.SetActive(true);
-            
+
         }
-        if (swit == 0)
+
+        if (swit == 2)
         {
             old.SetActive(true);
             neew.SetActive(false);
+            swit = 0;
         }
     }
 }

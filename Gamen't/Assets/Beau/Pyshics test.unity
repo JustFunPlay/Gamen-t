@@ -2122,7 +2122,7 @@ Transform:
   m_GameObject: {fileID: 843687879}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -1.07, z: 44.2}
-  m_LocalScale: {x: 10, y: 10, z: 50}
+  m_LocalScale: {x: 10, y: 10, z: 1000}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -4816,6 +4816,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3075927458016379977, guid: 3dd3b899a36772546a06d5e0009363c6, type: 3}
+      propertyPath: maxTorque
+      value: 600
+      objectReference: {fileID: 0}
+    - target: {fileID: 3075927458016379977, guid: 3dd3b899a36772546a06d5e0009363c6, type: 3}
+      propertyPath: brakeForce
+      value: 400
+      objectReference: {fileID: 0}
+    - target: {fileID: 3075927458016379977, guid: 3dd3b899a36772546a06d5e0009363c6, type: 3}
+      propertyPath: wheelData.Array.data[0].shouldSteer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3075927458016379977, guid: 3dd3b899a36772546a06d5e0009363c6, type: 3}
+      propertyPath: wheelData.Array.data[0].addWheelTorque
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3809191913613449074, guid: 3dd3b899a36772546a06d5e0009363c6, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -4834,7 +4850,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3809191913613449074, guid: 3dd3b899a36772546a06d5e0009363c6, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3809191913613449074, guid: 3dd3b899a36772546a06d5e0009363c6, type: 3}
       propertyPath: m_LocalRotation.x
@@ -4846,7 +4862,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3809191913613449074, guid: 3dd3b899a36772546a06d5e0009363c6, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3809191913613449074, guid: 3dd3b899a36772546a06d5e0009363c6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4858,7 +4874,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3809191913613449074, guid: 3dd3b899a36772546a06d5e0009363c6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 180
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4582174514683055560, guid: 3dd3b899a36772546a06d5e0009363c6, type: 3}
       propertyPath: m_Name
