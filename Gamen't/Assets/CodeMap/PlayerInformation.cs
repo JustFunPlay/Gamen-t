@@ -7,20 +7,10 @@ using UnityEngine.InputSystem;
 public class PlayerInformation : ScriptableObject
 {
     public int totalPlayers;
+    public int maxPlayers;
 
-    public GameObject playersGameObjects;
-    public Vector3 playerSpawn;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public GameObject[] playerTypesOfCars;
+    public GameObject[] canvasUI;
 
 
 }

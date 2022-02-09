@@ -12,6 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 356099d9a8b6cec40b12cf5acc168ef1, type: 3}
   m_Name: ScriptablePlayerInformation
   m_EditorClassIdentifier: 
-  totalPlayers: 53
-  playersGameObjects: {fileID: 1173670324905789577, guid: 477ce3661a78e4b43a6ef4c0f61364b5, type: 3}
-  playerSpawn: {x: 0, y: 0, z: 0}
+  totalPlayers: 0
+  maxPlayers: 4
+  playerTypesOfCars:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  canvasUI:
+  - {fileID: 1692491485114610641, guid: 80c4837067374a3479e9b1f91cc6d110, type: 3}
