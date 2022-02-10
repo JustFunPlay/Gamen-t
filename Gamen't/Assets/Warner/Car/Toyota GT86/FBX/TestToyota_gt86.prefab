@@ -666,7 +666,6 @@ GameObject:
   - component: {fileID: 4898341884612500236}
   - component: {fileID: 4898341884612500237}
   - component: {fileID: 4898341884612500242}
-  - component: {fileID: 4898341884612500239}
   m_Layer: 0
   m_Name: Car Toyota GT68
   m_TagString: Untagged
@@ -752,21 +751,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -1629134282159277781, guid: ec712f10c7a9f87469fdb6c2e021ef8d, type: 3}
---- !u!114 &4898341884612500239
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4898341884612500240}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a3a0c5a110430e47a8f7ddd15332ef5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mesh: {fileID: 0}
-  verts: []
-  oldMesh: {fileID: 0}
 --- !u!1 &4898341884818298353
 GameObject:
   m_ObjectHideFlags: 0
