@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1121671002396602573}
   - component: {fileID: 3097582725973684519}
   m_Layer: 0
-  m_Name: Car Toyota GT68
+  m_Name: Car Toyota GT86
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
