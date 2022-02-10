@@ -30,7 +30,7 @@ public class NewCarControll : MonoBehaviour
     public float speedRead;
     public bool isSpeed;
     public float rPM;
-
+    public bool itGoesBack;
     public float maxSpeed;
     public float speedLimiterRange;
     private void Start()
@@ -60,12 +60,9 @@ public class NewCarControll : MonoBehaviour
     public void OnReset(InputValue value)
     {
         restet = value.Get<float>();
-
-
-
-
-
     }
+
+
     private void FixedUpdate()
     {
         if (restet == 1)
@@ -74,7 +71,7 @@ public class NewCarControll : MonoBehaviour
             transform.rotation = new Quaternion();
             restet = 0;
         }
-        
+
         speedRead = rb.velocity.magnitude * 3.6f;
         if (speedRead > 200)
         {
@@ -85,7 +82,7 @@ public class NewCarControll : MonoBehaviour
         {
             newTorgue = maxTorque * (1 - ((speedRead - (maxSpeed - speedLimiterRange)) / (speedLimiterRange * 1.25f)));
         }
-        
+
         torque = brrr.y * newTorgue;
         steer = brrr.x * maxSteerAngle;
 
@@ -111,14 +108,18 @@ public class NewCarControll : MonoBehaviour
             {
                 element.leftWheel.brakeTorque = brakeForce;
                 element.rightWheel.brakeTorque = brakeForce;
-
+                
             }
             if (rb.velocity.z <= 0)
             {
                 element.leftWheel.brakeTorque = 0;
                 element.rightWheel.brakeTorque = 0;
-
+                if(brrr.y == -1)
+                {
+                    itGoesBack = true;
+                }
             }
+
 
             DoTyres(element.leftWheel);
             DoTyres(element.rightWheel);
