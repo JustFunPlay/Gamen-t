@@ -13,7 +13,6 @@ public class PlayerInput : MonoBehaviour
     public float speed = 20;
     public Vector2 moveValue;
     public Vector2 movementVector;
-    public float hp = 100;
 
     public void Start()
     {

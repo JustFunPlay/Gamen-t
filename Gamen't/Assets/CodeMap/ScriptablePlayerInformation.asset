@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 356099d9a8b6cec40b12cf5acc168ef1, type: 3}
   m_Name: ScriptablePlayerInformation
   m_EditorClassIdentifier: 
-  totalPlayers: 0
+  totalPlayers: 4
   maxPlayers: 4
   playerTypesOfCars:
   - {fileID: 0}

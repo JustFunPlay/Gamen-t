@@ -539,6 +539,7 @@ GameObject:
   - component: {fileID: 3075927458016379977}
   - component: {fileID: 1528927131454968946}
   - component: {fileID: 3116906586552156889}
+  - component: {fileID: -8207275248159072866}
   m_Layer: 0
   m_Name: TestToyota_gt86
   m_TagString: Untagged
@@ -657,6 +658,20 @@ MonoBehaviour:
   old: {fileID: 5571404860764708118}
   neew: {fileID: 5571404860785927491}
   swit: 0
+--- !u!114 &-8207275248159072866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4582174514683055560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a3a231d78443d04a8bb9e57ddbcfccb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerInfo: {fileID: 11400000, guid: 32ba84c6353187d4a94dfddb68e53bbc, type: 2}
+  playerIDnumber: 0
 --- !u!1 &5571404860510127255
 GameObject:
   m_ObjectHideFlags: 0
