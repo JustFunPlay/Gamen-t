@@ -33,6 +33,7 @@ public class NewCarControll : MonoBehaviour
     public bool itGoesBack;
     public float maxSpeed;
     public float speedLimiterRange;
+    public Material brakeLight;
     private void Start()
     {
 
@@ -104,21 +105,29 @@ public class NewCarControll : MonoBehaviour
 
 
             }
+
             if (brrr.y == -1)
             {
+                brakeLight.EnableKeyword("_EMISSION");
                 element.leftWheel.brakeTorque = brakeForce;
                 element.rightWheel.brakeTorque = brakeForce;
-                
             }
-            if (rb.velocity.z <= 0)
+            else
             {
+                brakeLight.DisableKeyword("_EMISSION");
                 element.leftWheel.brakeTorque = 0;
                 element.rightWheel.brakeTorque = 0;
-                if(brrr.y == -1)
-                {
-                    itGoesBack = true;
-                }
             }
+
+            //if (rb.velocity.z <= 0)
+            //{
+            //    element.leftWheel.brakeTorque = 0;
+            //    element.rightWheel.brakeTorque = 0;
+            //    if(brrr.y == -1)
+            //    {
+            //        itGoesBack = true;
+            //    }
+            //}
 
 
             DoTyres(element.leftWheel);

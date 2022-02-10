@@ -23,7 +23,7 @@
                 },
                 {
                     "name": "Drive",
-                    "type": "Button",
+                    "type": "PassThrough",
                     "id": "f8d2b3d4-a638-4e03-8e48-124d97802ee3",
                     "expectedControlType": "Button",
                     "processors": "",
@@ -39,7 +39,7 @@
                 },
                 {
                     "name": "Brake",
-                    "type": "Button",
+                    "type": "PassThrough",
                     "id": "0d083845-6c8a-4f28-b6e0-a6ae52d42d79",
                     "expectedControlType": "Button",
                     "processors": "",
@@ -182,7 +182,7 @@
                     "path": "<Gamepad>/leftTrigger",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Gamepad",
                     "action": "Brake",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -193,7 +193,7 @@
                     "path": "<Keyboard>/s",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Keyboard&Mouse",
                     "action": "Brake",
                     "isComposite": false,
                     "isPartOfComposite": false
