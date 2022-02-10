@@ -2536,9 +2536,9 @@ MeshCollider:
   m_GameObject: {fileID: 843687879}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &843687881
@@ -6293,14 +6293,5 @@ PrefabInstance:
       propertyPath: m_Name
       value: TestToyota_gt86
       objectReference: {fileID: 0}
-    - target: {fileID: 4898341884612500239, guid: 85faec200b5ffb84b86c0990bf2f27de, type: 3}
-      propertyPath: malleability
-      value: 10.85
-      objectReference: {fileID: 0}
-    - target: {fileID: 4898341884612500242, guid: 85faec200b5ffb84b86c0990bf2f27de, type: 3}
-      propertyPath: m_Convex
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 4898341884612500239, guid: 85faec200b5ffb84b86c0990bf2f27de, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85faec200b5ffb84b86c0990bf2f27de, type: 3}
