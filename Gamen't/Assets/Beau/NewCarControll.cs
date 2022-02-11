@@ -29,11 +29,12 @@ public class NewCarControll : MonoBehaviour
     public float restet;
     public float speedRead;
     public bool isSpeed;
-    public float rPM;
     public bool itGoesBack;
     public float maxSpeed;
     public float speedLimiterRange;
     public Material brakeLight;
+    public float brakeOn;
+
     private void Start()
     {
 
@@ -66,13 +67,15 @@ public class NewCarControll : MonoBehaviour
 
     private void FixedUpdate()
     {
+        //Reset de auto terug als die geflipt is
         if (restet == 1)
         {
             Debug.Log("Gimme git");
             transform.rotation = new Quaternion();
             restet = 0;
         }
-
+        
+        //MAX SNELHEID SYSTEEM DING
         speedRead = rb.velocity.magnitude * 3.6f;
         if (speedRead > 200)
         {
@@ -96,7 +99,7 @@ public class NewCarControll : MonoBehaviour
             }
             if (element.addWheelTorque == true)
             {
-                rPM = element.leftWheel.rpm;
+
 
 
                 element.leftWheel.motorTorque = torque;
@@ -108,12 +111,14 @@ public class NewCarControll : MonoBehaviour
 
             if (brrr.y == -1)
             {
+                brakeOn = element.leftWheel.brakeTorque;
                 brakeLight.EnableKeyword("_EMISSION");
                 element.leftWheel.brakeTorque = brakeForce;
                 element.rightWheel.brakeTorque = brakeForce;
             }
             else
             {
+                brakeOn = element.leftWheel.brakeTorque;
                 brakeLight.DisableKeyword("_EMISSION");
                 element.leftWheel.brakeTorque = 0;
                 element.rightWheel.brakeTorque = 0;
