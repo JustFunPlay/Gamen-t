@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 [System.Serializable]
 public class WheelElements
@@ -26,14 +27,17 @@ public class NewCarControll : MonoBehaviour
     public float brakeForce;
     public float torque;
     public float steer;
-    public float restet;
+    float restet;
     public float speedRead;
-    public bool isSpeed;
-    public bool itGoesBack;
+    public bool itStoped;
     public float maxSpeed;
+    public float orignalMaxSpeed;
+    public float maxSpeedBack;
     public float speedLimiterRange;
     public Material brakeLight;
     public float brakeOn;
+    
+
 
     private void Start()
     {
@@ -51,15 +55,11 @@ public class NewCarControll : MonoBehaviour
         brrr.y = -value.Get<float>();
 
     }
-
     void OnMove(InputValue value)
     {
         brrr.x = value.Get<Vector2>().x;
     }
-
-
-
-    public void OnReset(InputValue value)
+    void OnReset(InputValue value)
     {
         restet = value.Get<float>();
     }
@@ -67,6 +67,8 @@ public class NewCarControll : MonoBehaviour
 
     private void FixedUpdate()
     {
+
+
         //Reset de auto terug als die geflipt is
         if (restet == 1)
         {
@@ -74,24 +76,23 @@ public class NewCarControll : MonoBehaviour
             transform.rotation = new Quaternion();
             restet = 0;
         }
-        
+
         //MAX SNELHEID SYSTEEM DING
         speedRead = rb.velocity.magnitude * 3.6f;
-        if (speedRead > 200)
-        {
-            isSpeed = true;
-        }
+
         float newTorgue = maxTorque;
         if (speedRead > maxSpeed - speedLimiterRange)
         {
             newTorgue = maxTorque * (1 - ((speedRead - (maxSpeed - speedLimiterRange)) / (speedLimiterRange * 1.25f)));
         }
-
+        
         torque = brrr.y * newTorgue;
         steer = brrr.x * maxSteerAngle;
 
         foreach (WheelElements element in wheelData)
         {
+            brakeOn = element.leftWheel.brakeTorque;
+
             if (element.shouldSteer == true)
             {
                 element.leftWheel.steerAngle = steer;
@@ -99,64 +100,72 @@ public class NewCarControll : MonoBehaviour
             }
             if (element.addWheelTorque == true)
             {
-
-
-
                 element.leftWheel.motorTorque = torque;
                 element.rightWheel.motorTorque = torque;
-
-
-
             }
 
             if (brrr.y == -1)
             {
-                brakeOn = element.leftWheel.brakeTorque;
-                brakeLight.EnableKeyword("_EMISSION");
                 element.leftWheel.brakeTorque = brakeForce;
                 element.rightWheel.brakeTorque = brakeForce;
+                if (rb.velocity.z < 0)
+                {
+                    itStoped = true;
+                }
+            }
+
+
+            if (itStoped == true)
+            {
+                element.leftWheel.brakeTorque = 0;
+                element.rightWheel.brakeTorque = 0;
+                maxSpeed = maxSpeedBack;
+
+                if (brrr.y == 1)
+                {
+                    element.leftWheel.brakeTorque = brakeForce;
+                    element.rightWheel.brakeTorque = brakeForce;
+
+                    if (rb.velocity.z > 0)
+                    {
+                        element.leftWheel.brakeTorque = 0;
+                        element.rightWheel.brakeTorque = 0;
+                        if (brakeOn == 0)
+                        {
+                            itStoped = false;
+                        }
+                    }
+
+                }
             }
             else
             {
-                brakeOn = element.leftWheel.brakeTorque;
-                brakeLight.DisableKeyword("_EMISSION");
-                element.leftWheel.brakeTorque = 0;
-                element.rightWheel.brakeTorque = 0;
+                maxSpeed = orignalMaxSpeed;
             }
-
-            //if (rb.velocity.z <= 0)
-            //{
-            //    element.leftWheel.brakeTorque = 0;
-            //    element.rightWheel.brakeTorque = 0;
-            //    if(brrr.y == -1)
-            //    {
-            //        itGoesBack = true;
-            //    }
-            //}
 
 
             DoTyres(element.leftWheel);
             DoTyres(element.rightWheel);
         }
-    }
- 
-    void DoTyres(WheelCollider collider)
-    {
 
-        if (collider.transform.childCount == 0)
+        void DoTyres(WheelCollider collider)
         {
-            return;
+
+            if (collider.transform.childCount == 0)
+            {
+                return;
+            }
+
+            Transform tyre = collider.transform.GetChild(0);
+
+            Vector3 position;
+            Quaternion rotation;
+
+            collider.GetWorldPose(out position, out rotation);
+
+            tyre.transform.position = position;
+            tyre.transform.rotation = rotation;
         }
-        
-        Transform tyre = collider.transform.GetChild(0);
 
-        Vector3 position;
-        Quaternion rotation;
-
-        collider.GetWorldPose(out position, out rotation);
-
-        tyre.transform.position = position;
-        tyre.transform.rotation = rotation;
     }
-
 }

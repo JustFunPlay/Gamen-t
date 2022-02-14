@@ -580,17 +580,17 @@ MonoBehaviour:
   brrr: {x: 0, y: 0}
   handBrake: 0
   massCenter: {fileID: 4898341884048351685}
-  brakeForce: 400
+  brakeForce: 600
   torque: 0
   steer: 0
-  restet: 0
   speedRead: 0
-  isSpeed: 0
-  rPM: 0
-  itGoesBack: 0
+  itStoped: 0
   maxSpeed: 200
+  maxSpeedBack: 40
   speedLimiterRange: 20
   brakeLight: {fileID: 2100000, guid: 62b96ed8d08d82e4787a0f95839cd0e9, type: 2}
+  brakeOn: 0
+  orignalMaxSpeed: 200
 --- !u!114 &4898341884572870483
 MonoBehaviour:
   m_ObjectHideFlags: 0
