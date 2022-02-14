@@ -16,8 +16,6 @@ public class PlayerInput : MonoBehaviour
 
     public void Start()
     {
-        playerIDnumber = playerInfo.totalPlayers;
-
         rb = GetComponent<Rigidbody>();
     }
  

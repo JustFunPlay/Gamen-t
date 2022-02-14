@@ -8,12 +8,7 @@ public class PlayerSpawner : MonoBehaviour
 
     public PlayerInformation playerInfos;
 
-    public GameObject player;
-    public GameObject camera;
-
     public Vector3[] playerSpawning;
-    public int i;
-    // i == playerInfos.totalPlayers
 
     public List<GameObject> listOfPlayers;
     public List<GameObject> listOfCameras;
@@ -27,8 +22,7 @@ public class PlayerSpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        playerInfos.totalPlayers = 0;
-
+        PlayerSpawn();
     }
 
     // Update is called once per frame
@@ -38,30 +32,29 @@ public class PlayerSpawner : MonoBehaviour
     }
     public void PlayerSpawn()
     {
-
-
-        if (i < playerInfos.maxPlayers)
+        for (int i = 0; i < playerInfos.playerSelections.Count; i++)
         {
-            GameObject newplayer = Instantiate(player, playerSpawning[i], Quaternion.identity);
-            listOfPlayers.Add(newplayer);
+            if (i < 4)
+            {
+                GameObject newplayer = Instantiate(playerInfos.playerSelections[i].selectedCar, playerSpawning[i], Quaternion.identity);
+                listOfPlayers.Add(newplayer);
+                newplayer.GetComponent<PlayerID>().playerIdNumber = i;
 
-            GameObject newcamera = Instantiate(camera, playerSpawning[i], Quaternion.identity);
-            listOfCameras.Add(newcamera);
-
-
-            i++;
-            playerInfos.totalPlayers++;
-            UpdateCameras();
+                GameObject newcamera = newplayer.GetComponentInChildren<Camera>().gameObject;
+                listOfCameras.Add(newcamera);
+            }
         }
-        else
-        {
-            print("too many players");
-        }
+        UpdateCameras();
+
+        //else
+        //{
+        //    print("too many players");
+        //}
 
     }
     public void UpdateCameras()
     {
-        switch (playerInfos.totalPlayers) 
+        switch (playerInfos.playerSelections.Count) 
         {
             case 1:
                 listOfCameras[0].GetComponent<Camera>().rect = new Rect(0,0,1,1);
@@ -86,16 +79,16 @@ public class PlayerSpawner : MonoBehaviour
     }
     public void PlayerDespawn()
     {
-        if(i > 0)
-        {
-            i--;
-            playerInfos.totalPlayers--;
-        }
-        Destroy(listOfCameras[i]);
-        Destroy(listOfPlayers[i]);
-        listOfCameras.RemoveAt(i);
-        listOfPlayers.RemoveAt(i);
-        UpdateCameras();
+        //if(playerInfos.playerSelections.Count > 0)
+        //{
+        //    i--;
+        //    playerInfos.totalPlayers--;
+        //}
+        //Destroy(listOfCameras[i]);
+        //Destroy(listOfPlayers[i]);
+        //listOfCameras.RemoveAt(i);
+        //listOfPlayers.RemoveAt(i);
+        //UpdateCameras();
         
     }
 }

@@ -6,11 +6,14 @@ using UnityEngine.InputSystem;
 [CreateAssetMenu(fileName = "ScriptablePlayerInformation", menuName = "ScriptablePlayerInfo")]
 public class PlayerInformation : ScriptableObject
 {
-    public int totalPlayers;
-    public int maxPlayers;
+    public List<PlayerSelection> playerSelections;
+}
 
-    public GameObject[] playerTypesOfCars;
-    public GameObject[] canvasUI;
-
-
+[System.Serializable]
+public class PlayerSelection
+{
+    public string name;
+    public GameObject selectedCar;
+    public Material selectedCarSkin;
+    public Transform currentCheckpoint;
 }
