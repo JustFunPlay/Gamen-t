@@ -21,8 +21,7 @@ public class NewCarControll : MonoBehaviour
     public List<WheelElements> wheelData;
     public float maxTorque;
     public float maxSteerAngle;
-    public Vector2 brrr;
-    public float handBrake;
+    public Vector2 inputGasBrake;
     private Rigidbody rb;
     public Transform massCenter;
     public float brakeForce;
@@ -39,7 +38,7 @@ public class NewCarControll : MonoBehaviour
     public Material brakeLight;
     public float brakeOn;
     public TextMeshProUGUI speedMeterder;
-
+    public float Reverse;
 
     private void Start()
     {
@@ -50,25 +49,29 @@ public class NewCarControll : MonoBehaviour
     }
     void OnDrive(InputValue value)
     {
-        brrr.y = value.Get<float>();
+        inputGasBrake.y = value.Get<float>();
     }
     void OnBrake(InputValue value)
     {
-        brrr.y = -value.Get<float>();
+        inputGasBrake.y = -value.Get<float>();
 
     }
     void OnMove(InputValue value)
     {
-        brrr.x = value.Get<Vector2>().x;
+        inputGasBrake.x = value.Get<Vector2>().x;
     }
     void OnReset(InputValue value)
     {
         restet = value.Get<float>();
     }
-    void OnHandbrake(InputValue value)
+
+    void OnReverse(InputValue value) 
     {
-        handBrake = value.Get<float>();
+        Reverse = value.Get<float>();
     }
+
+
+
 
     private void FixedUpdate()
     {
@@ -77,7 +80,7 @@ public class NewCarControll : MonoBehaviour
         //Reset de auto terug als die geflipt is
         if (restet == 1)
         {
-            Debug.Log("Gimme git");
+
             transform.rotation = new Quaternion();
             restet = 0;
         }
@@ -91,83 +94,66 @@ public class NewCarControll : MonoBehaviour
             newTorgue = maxTorque * (1 - ((speedRead - (maxSpeed - speedLimiterRange)) / (speedLimiterRange * 1.25f)));
         }
         
-        torque = brrr.y * newTorgue;
-        steer = brrr.x * maxSteerAngle;
+        torque = inputGasBrake.y * newTorgue;
+        steer = inputGasBrake.x * maxSteerAngle;
 
         foreach (WheelElements element in wheelData)
         {
             brakeOn = element.leftWheel.brakeTorque;
 
 
+        
+
+
             if (element.shouldSteer == true)
             {
                 element.leftWheel.steerAngle = steer;
                 element.rightWheel.steerAngle = steer;
+                
             }
             if (element.addWheelTorque == true)
             {
                 element.leftWheel.motorTorque = torque;
                 element.rightWheel.motorTorque = torque;
+                
+                if (inputGasBrake.y == -1)
+                {
+
+                    element.leftWheel.brakeTorque = brakeForce;
+                    element.rightWheel.brakeTorque = brakeForce;
+                    if(rb.velocity.z < 0)
+                    {
+                        itStoped = true;
+                    }
+                }
+
             }
 
 
-
-            if (handBrake == 1)
-            {
-                element.leftWheel.brakeTorque = brakeForceHandbrake;
-                element.rightWheel.brakeTorque = brakeForceHandbrake;
-            }
-            else
+            if (itStoped == true)
             {
                 element.leftWheel.brakeTorque = 0;
                 element.rightWheel.brakeTorque = 0;
+                maxSpeed = maxSpeedBack;
+
+                if (inputGasBrake.y == 1)
+                {
+                    element.leftWheel.brakeTorque = brakeForce;
+                    element.rightWheel.brakeTorque = brakeForce;
+
+
+                }
+                if(rb.velocity.z > 0)
+                {
+                    element.leftWheel.brakeTorque = 0;
+                    element.rightWheel.brakeTorque = 0;
+                    maxSpeed = orignalMaxSpeed;
+                    
+                }
+
+
+
             }
-
-
-            //if (brrr.y == -1)
-            //{
-            //    element.leftWheel.brakeTorque = brakeForce;
-            //    element.rightWheel.brakeTorque = brakeForce;
-            //    //if (rb.velocity.z < 0)
-            //    //{
-            //    //    itStoped = true;
-            //    //}
-            //}
-            //else
-            //{
-            //    element.leftWheel.brakeTorque = 0;
-            //    element.rightWheel.brakeTorque = 0;
-            //}
-
-
-            //if (itStoped == true)
-            //{
-            //    element.leftWheel.brakeTorque = 0;
-            //    element.rightWheel.brakeTorque = 0;
-            //    maxSpeed = maxSpeedBack;
-
-            //    if (brrr.y == 1)
-            //    {
-            //        element.leftWheel.brakeTorque = brakeForce;
-            //        element.rightWheel.brakeTorque = brakeForce;
-
-            //        if (rb.velocity.z > 0)
-            //        {
-            //            element.leftWheel.brakeTorque = 0;
-            //            element.rightWheel.brakeTorque = 0;
-            //            if (brakeOn == 0)
-            //            {
-            //                itStoped = false;
-            //            }
-            //        }
-
-            //    }
-            //}
-            //else
-            //{
-            //    maxSpeed = orignalMaxSpeed;
-            //}
-
 
             DoTyres(element.leftWheel);
             DoTyres(element.rightWheel);
