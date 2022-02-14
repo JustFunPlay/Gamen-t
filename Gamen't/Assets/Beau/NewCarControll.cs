@@ -116,44 +116,50 @@ public class NewCarControll : MonoBehaviour
                 element.leftWheel.motorTorque = torque;
                 element.rightWheel.motorTorque = torque;
                 
+
                 if (inputGasBrake.y == -1)
                 {
 
                     element.leftWheel.brakeTorque = brakeForce;
                     element.rightWheel.brakeTorque = brakeForce;
-                    //if(rb.velocity.z < 0)
-                    //{
-                    //    itStoped = true;
-                    //}
+                    if (rb.velocity.z < 0)
+                    {
+                        itStoped = true;
+                    }
                 }
 
             }
 
+            if (inputGasBrake.y == 1)
+            {
+                if (itStoped == false)
+                {
+                    element.leftWheel.brakeTorque = 0;
+                    element.rightWheel.brakeTorque = 0;
+                }
 
-            //if (itStoped == true)
-            //{
-            //    element.leftWheel.brakeTorque = 0;
-            //    element.rightWheel.brakeTorque = 0;
-            //    maxSpeed = maxSpeedBack;
+            }
 
-            //    if (inputGasBrake.y == 1)
-            //    {
-            //        element.leftWheel.brakeTorque = brakeForce;
-            //        element.rightWheel.brakeTorque = brakeForce;
+            if (itStoped == true)
+            {
+                element.leftWheel.brakeTorque = 0;
+                element.rightWheel.brakeTorque = 0;
+                maxSpeed = maxSpeedBack;
+
+                if (inputGasBrake.y == 1)
+                {
+                    element.leftWheel.brakeTorque = brakeForce;
+                    element.rightWheel.brakeTorque = brakeForce;
 
 
-            //    }
-            //    if(rb.velocity.z > 0)
-            //    {
-            //        element.leftWheel.brakeTorque = 0;
-            //        element.rightWheel.brakeTorque = 0;
-            //        maxSpeed = orignalMaxSpeed;
+                }
+                if (rb.velocity.z > 0)
+                {
                     
-            //    }
-
-
-
-            //}
+                    maxSpeed = orignalMaxSpeed;
+                    itStoped = false;
+                }
+            }
 
             DoTyres(element.leftWheel);
             DoTyres(element.rightWheel);
