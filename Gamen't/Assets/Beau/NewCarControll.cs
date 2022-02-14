@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
+using TMPro;
 
 [System.Serializable]
 public class WheelElements
@@ -36,7 +37,7 @@ public class NewCarControll : MonoBehaviour
     public float speedLimiterRange;
     public Material brakeLight;
     public float brakeOn;
-    
+    public TextMeshProUGUI speedMeterder;
 
 
     private void Start()
@@ -67,7 +68,7 @@ public class NewCarControll : MonoBehaviour
 
     private void FixedUpdate()
     {
-
+        speedMeterder.text = speedRead.ToString("F0");
 
         //Reset de auto terug als die geflipt is
         if (restet == 1)
