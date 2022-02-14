@@ -121,39 +121,39 @@ public class NewCarControll : MonoBehaviour
 
                     element.leftWheel.brakeTorque = brakeForce;
                     element.rightWheel.brakeTorque = brakeForce;
-                    if(rb.velocity.z < 0)
-                    {
-                        itStoped = true;
-                    }
+                    //if(rb.velocity.z < 0)
+                    //{
+                    //    itStoped = true;
+                    //}
                 }
 
             }
 
 
-            if (itStoped == true)
-            {
-                element.leftWheel.brakeTorque = 0;
-                element.rightWheel.brakeTorque = 0;
-                maxSpeed = maxSpeedBack;
+            //if (itStoped == true)
+            //{
+            //    element.leftWheel.brakeTorque = 0;
+            //    element.rightWheel.brakeTorque = 0;
+            //    maxSpeed = maxSpeedBack;
 
-                if (inputGasBrake.y == 1)
-                {
-                    element.leftWheel.brakeTorque = brakeForce;
-                    element.rightWheel.brakeTorque = brakeForce;
+            //    if (inputGasBrake.y == 1)
+            //    {
+            //        element.leftWheel.brakeTorque = brakeForce;
+            //        element.rightWheel.brakeTorque = brakeForce;
 
 
-                }
-                if(rb.velocity.z > 0)
-                {
-                    element.leftWheel.brakeTorque = 0;
-                    element.rightWheel.brakeTorque = 0;
-                    maxSpeed = orignalMaxSpeed;
+            //    }
+            //    if(rb.velocity.z > 0)
+            //    {
+            //        element.leftWheel.brakeTorque = 0;
+            //        element.rightWheel.brakeTorque = 0;
+            //        maxSpeed = orignalMaxSpeed;
                     
-                }
+            //    }
 
 
 
-            }
+            //}
 
             DoTyres(element.leftWheel);
             DoTyres(element.rightWheel);

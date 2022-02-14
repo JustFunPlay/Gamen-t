@@ -2487,11 +2487,6 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 88c9ef4396a8bb049b373070d9930dcd, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5fed5ce7021de5d4489814b12d2f682b, type: 3}
---- !u!146 &465471160 stripped
-WheelCollider:
-  m_CorrespondingSourceObject: {fileID: 4898341885216001335, guid: 85faec200b5ffb84b86c0990bf2f27de, type: 3}
-  m_PrefabInstance: {fileID: 4898341883590042781}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &480088267
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7297,11 +7292,6 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 88c9ef4396a8bb049b373070d9930dcd, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5fed5ce7021de5d4489814b12d2f682b, type: 3}
---- !u!146 &1390738575 stripped
-WheelCollider:
-  m_CorrespondingSourceObject: {fileID: 4898341883713219670, guid: 85faec200b5ffb84b86c0990bf2f27de, type: 3}
-  m_PrefabInstance: {fileID: 4898341883590042781}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1393145911
 GameObject:
   m_ObjectHideFlags: 0
@@ -11620,22 +11610,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4898341883713219670, guid: 85faec200b5ffb84b86c0990bf2f27de, type: 3}
-      propertyPath: m_ForwardFriction.m_ExtremumSlip
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4898341883713219670, guid: 85faec200b5ffb84b86c0990bf2f27de, type: 3}
-      propertyPath: m_ForwardFriction.m_AsymptoteSlip
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4898341884092135261, guid: 85faec200b5ffb84b86c0990bf2f27de, type: 3}
-      propertyPath: m_ForwardFriction.m_ExtremumSlip
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4898341884092135261, guid: 85faec200b5ffb84b86c0990bf2f27de, type: 3}
-      propertyPath: m_ForwardFriction.m_AsymptoteSlip
-      value: 0.1
-      objectReference: {fileID: 0}
     - target: {fileID: 4898341884572870476, guid: 85faec200b5ffb84b86c0990bf2f27de, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -11683,46 +11657,6 @@ PrefabInstance:
     - target: {fileID: 4898341884572870481, guid: 85faec200b5ffb84b86c0990bf2f27de, type: 3}
       propertyPath: m_Name
       value: TestToyota_gt86
-      objectReference: {fileID: 0}
-    - target: {fileID: 4898341884572870482, guid: 85faec200b5ffb84b86c0990bf2f27de, type: 3}
-      propertyPath: maxSteerAngle
-      value: 35
-      objectReference: {fileID: 0}
-    - target: {fileID: 4898341884572870482, guid: 85faec200b5ffb84b86c0990bf2f27de, type: 3}
-      propertyPath: wheelData.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4898341884572870482, guid: 85faec200b5ffb84b86c0990bf2f27de, type: 3}
-      propertyPath: wheelData.Array.data[2].leftWheel
-      value: 
-      objectReference: {fileID: 1390738575}
-    - target: {fileID: 4898341884572870482, guid: 85faec200b5ffb84b86c0990bf2f27de, type: 3}
-      propertyPath: wheelData.Array.data[2].rightWheel
-      value: 
-      objectReference: {fileID: 465471160}
-    - target: {fileID: 4898341884572870482, guid: 85faec200b5ffb84b86c0990bf2f27de, type: 3}
-      propertyPath: wheelData.Array.data[0].addWheelTorque
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4898341884572870482, guid: 85faec200b5ffb84b86c0990bf2f27de, type: 3}
-      propertyPath: wheelData.Array.data[2].addWheelTorque
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4898341885216001335, guid: 85faec200b5ffb84b86c0990bf2f27de, type: 3}
-      propertyPath: m_ForwardFriction.m_ExtremumSlip
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4898341885216001335, guid: 85faec200b5ffb84b86c0990bf2f27de, type: 3}
-      propertyPath: m_ForwardFriction.m_AsymptoteSlip
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4898341885304198118, guid: 85faec200b5ffb84b86c0990bf2f27de, type: 3}
-      propertyPath: m_ForwardFriction.m_ExtremumSlip
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4898341885304198118, guid: 85faec200b5ffb84b86c0990bf2f27de, type: 3}
-      propertyPath: m_ForwardFriction.m_AsymptoteSlip
-      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85faec200b5ffb84b86c0990bf2f27de, type: 3}
