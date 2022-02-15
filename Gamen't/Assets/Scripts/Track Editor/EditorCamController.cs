@@ -23,7 +23,7 @@ public class EditorCamController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        transform.Rotate(0, turnVector.x * turnSpeed, 0);
+        transform.Rotate(0, -turnVector.x * turnSpeed, 0);
         transform.Translate(moveVector.x * moveSpeed, turnVector.y * heightSpeed, moveVector.y * moveSpeed);
     }
 }
