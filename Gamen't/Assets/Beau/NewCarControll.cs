@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -38,7 +37,7 @@ public class NewCarControll : MonoBehaviour
     public Material brakeLight;
     public float brakeOn;
     public Text speedMeterder;
-
+    public bool collided;
 
     private void Start()
     {
@@ -76,6 +75,9 @@ public class NewCarControll : MonoBehaviour
 
     private void FixedUpdate()
     {
+
+
+
         speedMeterder.text = speedRead.ToString("F0");
 
         //Reset de auto terug als die geflipt is
@@ -94,7 +96,7 @@ public class NewCarControll : MonoBehaviour
         {
             newTorgue = maxTorque * (1 - ((speedRead - (maxSpeed - speedLimiterRange)) / (speedLimiterRange * 1.25f)));
         }
-        
+
         torque = inputGasBrake.y * newTorgue;
         steer = inputGasBrake.x * maxSteerAngle;
 
@@ -107,13 +109,13 @@ public class NewCarControll : MonoBehaviour
             {
                 element.leftWheel.steerAngle = steer;
                 element.rightWheel.steerAngle = steer;
-                
+
             }
             if (element.addWheelTorque == true)
             {
                 element.leftWheel.motorTorque = torque;
                 element.rightWheel.motorTorque = torque;
-                
+
 
                 if (inputGasBrake.y == -1)
                 {
@@ -123,6 +125,7 @@ public class NewCarControll : MonoBehaviour
                     if (speedRead < 1)
                     {
                         itStoped = true;
+
                     }
                 }
 
@@ -133,6 +136,7 @@ public class NewCarControll : MonoBehaviour
             {
                 if (itStoped == false)
                 {
+
                     element.leftWheel.brakeTorque = 0;
                     element.rightWheel.brakeTorque = 0;
                 }
@@ -141,6 +145,7 @@ public class NewCarControll : MonoBehaviour
 
             if (itStoped == true)
             {
+
                 element.leftWheel.brakeTorque = 0;
                 element.rightWheel.brakeTorque = 0;
                 maxSpeed = maxSpeedBack;
@@ -149,19 +154,26 @@ public class NewCarControll : MonoBehaviour
                 {
                     element.leftWheel.brakeTorque = brakeForce;
                     element.rightWheel.brakeTorque = brakeForce;
-
+                    
+                    if (collided == false)
+                    {
+                        itStoped = false;
+                    }
 
                 }
-                if (rb.velocity.z > 0)
+                if (speedRead < 1)
                 {
-                    
+                    if (collided == false)
+                    {
+                        itStoped = false;
+                    }
                     maxSpeed = orignalMaxSpeed;
-                    //itStoped = false;
                 }
             }
 
             DoTyres(element.leftWheel);
             DoTyres(element.rightWheel);
+
         }
 
         void DoTyres(WheelCollider collider)
@@ -182,6 +194,20 @@ public class NewCarControll : MonoBehaviour
             tyre.transform.position = position;
             tyre.transform.rotation = rotation;
         }
+
+         
+    }
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Wall")
+        {
+            collided = true;
+        }
+    }
+    private void OnCollisionExit(Collision collision)
+    {
+
+        collided = false;
 
     }
 }

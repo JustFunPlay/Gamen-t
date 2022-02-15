@@ -135,7 +135,7 @@
                     "path": "<Gamepad>/leftTrigger",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Gamepad",
                     "action": "Drive",
                     "isComposite": false,
                     "isPartOfComposite": true
@@ -146,7 +146,40 @@
                     "path": "<Gamepad>/rightTrigger",
                     "interactions": "",
                     "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Drive",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "1D Axis",
+                    "id": "b2c947f6-b498-477e-9653-281e4d1c0132",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
                     "groups": "",
+                    "action": "Drive",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "166bcb26-538f-48be-96ae-4779d795caff",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "Drive",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "a7c0a250-402e-4dfa-adea-c490af4999ad",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
                     "action": "Drive",
                     "isComposite": false,
                     "isPartOfComposite": true

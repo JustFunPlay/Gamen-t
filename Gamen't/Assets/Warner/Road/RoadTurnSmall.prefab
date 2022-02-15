@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2581503715024028051}
   m_Layer: 0
   m_Name: RailingSmallTurnSmall
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -157,7 +157,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 88c9ef4396a8bb049b373070d9930dcd, type: 2}
-  - {fileID: 2100000, guid: 88c9ef4396a8bb049b373070d9930dcd, type: 2}
+  - {fileID: 2100000, guid: e469d252c3c7b1c49b57117b25487c92, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
