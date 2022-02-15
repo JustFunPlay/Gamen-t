@@ -23,7 +23,7 @@
                 },
                 {
                     "name": "Drive",
-                    "type": "PassThrough",
+                    "type": "Value",
                     "id": "f8d2b3d4-a638-4e03-8e48-124d97802ee3",
                     "expectedControlType": "Axis",
                     "processors": "",
@@ -119,26 +119,37 @@
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "",
-                    "id": "143bb1cd-cc10-4eca-a2f0-a3664166fe91",
-                    "path": "<Gamepad>/rightTrigger",
+                    "name": "1D Axis",
+                    "id": "0d65195b-c562-4af3-9d8e-91edbfbd72a9",
+                    "path": "1DAxis",
                     "interactions": "",
                     "processors": "",
-                    "groups": ";Gamepad",
+                    "groups": "",
                     "action": "Drive",
-                    "isComposite": false,
+                    "isComposite": true,
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "",
-                    "id": "3d4a8482-3c64-403a-aabf-9252a8d471d5",
-                    "path": "<Keyboard>/w",
+                    "name": "negative",
+                    "id": "e576caaa-1efb-491d-8cfa-273cbf2a2e84",
+                    "path": "<Gamepad>/leftTrigger",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Keyboard&Mouse",
+                    "groups": "",
                     "action": "Drive",
                     "isComposite": false,
-                    "isPartOfComposite": false
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "c41a2e94-9296-4392-9a44-eed4d1536e66",
+                    "path": "<Gamepad>/rightTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Drive",
+                    "isComposite": false,
+                    "isPartOfComposite": true
                 },
                 {
                     "name": "",

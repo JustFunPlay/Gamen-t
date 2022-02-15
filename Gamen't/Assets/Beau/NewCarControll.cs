@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
-using TMPro;
+
 
 [System.Serializable]
 public class WheelElements
@@ -37,7 +37,7 @@ public class NewCarControll : MonoBehaviour
     public float speedLimiterRange;
     public Material brakeLight;
     public float brakeOn;
-    public TextMeshProUGUI speedMeterder;
+    public Text speedMeterder;
 
 
     private void Start()
@@ -52,11 +52,11 @@ public class NewCarControll : MonoBehaviour
         inputGasBrake.y = value.Get<float>();
 
     }
-    void OnBrake(InputValue value)
-    {
-        inputGasBrake.y = -value.Get<float>();
+    //void OnBrake(InputValue value)
+    //{
+    //    inputGasBrake.y = -value.Get<float>();
 
-    }
+    //}
     void OnMove(InputValue value)
     {
         inputGasBrake.x = value.Get<Vector2>().x;
@@ -120,12 +120,12 @@ public class NewCarControll : MonoBehaviour
 
                     element.leftWheel.brakeTorque = brakeForce;
                     element.rightWheel.brakeTorque = brakeForce;
-
                     if (speedRead < 1)
                     {
                         itStoped = true;
                     }
                 }
+
 
             }
 
@@ -156,7 +156,7 @@ public class NewCarControll : MonoBehaviour
                 {
                     
                     maxSpeed = orignalMaxSpeed;
-                    itStoped = false;
+                    //itStoped = false;
                 }
             }
 
