@@ -25,9 +25,9 @@ public class NewCarControll : MonoBehaviour
     private Rigidbody rb;
     public Transform massCenter;
     public float brakeForce;
-    public float brakeForceHandbrake;
     public float torque;
-    public float steer;
+    public float steer;    
+    public float Reverse;
     float restet;
     public float speedRead;
     public bool itStoped;
@@ -38,7 +38,7 @@ public class NewCarControll : MonoBehaviour
     public Material brakeLight;
     public float brakeOn;
     public TextMeshProUGUI speedMeterder;
-    public float Reverse;
+
 
     private void Start()
     {
@@ -50,6 +50,7 @@ public class NewCarControll : MonoBehaviour
     void OnDrive(InputValue value)
     {
         inputGasBrake.y = value.Get<float>();
+
     }
     void OnBrake(InputValue value)
     {
@@ -99,11 +100,8 @@ public class NewCarControll : MonoBehaviour
 
         foreach (WheelElements element in wheelData)
         {
+
             brakeOn = element.leftWheel.brakeTorque;
-
-
-        
-
 
             if (element.shouldSteer == true)
             {
@@ -122,7 +120,8 @@ public class NewCarControll : MonoBehaviour
 
                     element.leftWheel.brakeTorque = brakeForce;
                     element.rightWheel.brakeTorque = brakeForce;
-                    if (rb.velocity.z < 0)
+
+                    if (speedRead < 1)
                     {
                         itStoped = true;
                     }
