@@ -5,9 +5,6 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/CodeScene.unity
-    guid: 356c50fcf75216948a36b66243bf2e10
   - enabled: 1
     path: Assets/Beau/Pyshics test.unity
     guid: 6c6a6101683acfe44beb14f0a5627a51
