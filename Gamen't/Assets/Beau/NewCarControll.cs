@@ -1,7 +1,8 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
+
 
 [System.Serializable]
 public class WheelElements
@@ -18,16 +19,25 @@ public class NewCarControll : MonoBehaviour
 {
     public List<WheelElements> wheelData;
     public float maxTorque;
-    public float maxSteerAngle = 30;
-    public Vector2 brrr;
-    public float handBrake;
+    public float maxSteerAngle;
+    public Vector2 inputGasBrake;
     private Rigidbody rb;
     public Transform massCenter;
     public float brakeForce;
-    public float speed;
-    public float steer;
-    public float restet;
-
+    public float torque;
+    public float steer;    
+    public float Reverse;
+    float restet;
+    public float speedRead;
+    public bool itStoped;
+    public float maxSpeed;
+    public float orignalMaxSpeed;
+    public float maxSpeedBack;
+    public float speedLimiterRange;
+    public Material brakeLight;
+    public float brakeOn;
+    public Text speedMeterder;
+    public bool collided;
 
     private void Start()
     {
@@ -38,92 +48,164 @@ public class NewCarControll : MonoBehaviour
     }
     void OnDrive(InputValue value)
     {
-        brrr.y = value.Get<float>();
-    }
-    void OnBrake(InputValue value)
-    {
-        brrr.y = -value.Get<float>();
+        inputGasBrake.y = value.Get<float>();
 
     }
+    //void OnBrake(InputValue value)
+    //{
+    //    inputGasBrake.y = -value.Get<float>();
 
+    //}
     void OnMove(InputValue value)
     {
-        brrr.x = value.Get<Vector2>().x;
+        inputGasBrake.x = value.Get<Vector2>().x;
     }
-
-
-
-    public void OnReset(InputValue value)
+    void OnReset(InputValue value)
     {
         restet = value.Get<float>();
-
-
-
-
-
     }
+
+    void OnReverse(InputValue value) 
+    {
+        Reverse = value.Get<float>();
+    }
+
+
+
+
     private void FixedUpdate()
     {
+
+
+
+        speedMeterder.text = speedRead.ToString("F0");
+
+        //Reset de auto terug als die geflipt is
         if (restet == 1)
         {
-            Debug.Log("Gimme git");
+
             transform.rotation = new Quaternion();
             restet = 0;
         }
 
+        //MAX SNELHEID SYSTEEM DING
+        speedRead = rb.velocity.magnitude * 3.6f;
 
+        float newTorgue = maxTorque;
+        if (speedRead > maxSpeed - speedLimiterRange)
+        {
+            newTorgue = maxTorque * (1 - ((speedRead - (maxSpeed - speedLimiterRange)) / (speedLimiterRange * 1.25f)));
+        }
 
-
-        speed = brrr.y * maxTorque;
-        steer = brrr.x * maxSteerAngle;
+        torque = inputGasBrake.y * newTorgue;
+        steer = inputGasBrake.x * maxSteerAngle;
 
         foreach (WheelElements element in wheelData)
         {
+
+            brakeOn = element.leftWheel.brakeTorque;
+
             if (element.shouldSteer == true)
             {
                 element.leftWheel.steerAngle = steer;
                 element.rightWheel.steerAngle = steer;
+
             }
             if (element.addWheelTorque == true)
             {
-                element.leftWheel.motorTorque = speed;
-                element.rightWheel.motorTorque = speed;
-            }
-            if (brrr.y == -1)
-            {
-                element.leftWheel.brakeTorque = brakeForce;
-                element.rightWheel.brakeTorque = brakeForce;
+                element.leftWheel.motorTorque = torque;
+                element.rightWheel.motorTorque = torque;
+
+
+                if (inputGasBrake.y == -1)
+                {
+
+                    element.leftWheel.brakeTorque = brakeForce;
+                    element.rightWheel.brakeTorque = brakeForce;
+                    if (speedRead < 1)
+                    {
+                        itStoped = true;
+
+                    }
+                }
+
 
             }
-            if (rb.velocity.z <= 0)
+
+            if (inputGasBrake.y == 1)
             {
+                if (itStoped == false)
+                {
+
+                    element.leftWheel.brakeTorque = 0;
+                    element.rightWheel.brakeTorque = 0;
+                }
+
+            }
+
+            if (itStoped == true)
+            {
+
                 element.leftWheel.brakeTorque = 0;
                 element.rightWheel.brakeTorque = 0;
+                maxSpeed = maxSpeedBack;
 
+                if (inputGasBrake.y == 1)
+                {
+                    element.leftWheel.brakeTorque = brakeForce;
+                    element.rightWheel.brakeTorque = brakeForce;
+                    
+
+
+                }
+                if (speedRead < 1)
+                {
+                    if (collided == false)
+                    {
+                        itStoped = false;
+                        maxSpeed = orignalMaxSpeed;
+                    }
+                    maxSpeed = orignalMaxSpeed;
+                }
             }
 
             DoTyres(element.leftWheel);
             DoTyres(element.rightWheel);
+
+        }
+
+        void DoTyres(WheelCollider collider)
+        {
+
+            if (collider.transform.childCount == 0)
+            {
+                return;
+            }
+
+            Transform tyre = collider.transform.GetChild(0);
+
+            Vector3 position;
+            Quaternion rotation;
+
+            collider.GetWorldPose(out position, out rotation);
+
+            tyre.transform.position = position;
+            tyre.transform.rotation = rotation;
+        }
+
+         
+    }
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Wall")
+        {
+            collided = true;
         }
     }
- 
-    void DoTyres(WheelCollider collider)
+    private void OnCollisionExit(Collision collision)
     {
 
-        if (collider.transform.childCount == 0)
-        {
-            return;
-        }
-        
-        Transform tyre = collider.transform.GetChild(0);
+        collided = false;
 
-        Vector3 position;
-        Quaternion rotation;
-
-        collider.GetWorldPose(out position, out rotation);
-
-        tyre.transform.position = position;
-        tyre.transform.rotation = rotation;
     }
-
 }
