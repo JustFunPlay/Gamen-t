@@ -14,14 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerSelections:
   - name: 
-    selectedCar: {fileID: 4582174514683055560, guid: 3dd3b899a36772546a06d5e0009363c6, type: 3}
+    selectedCar: {fileID: 4898341884572870481, guid: 85faec200b5ffb84b86c0990bf2f27de, type: 3}
     selectedCarSkin: {fileID: 0}
-  - name: 
-    selectedCar: {fileID: 4582174514683055560, guid: 3dd3b899a36772546a06d5e0009363c6, type: 3}
-    selectedCarSkin: {fileID: 0}
-  - name: 
-    selectedCar: {fileID: 4582174514683055560, guid: 3dd3b899a36772546a06d5e0009363c6, type: 3}
-    selectedCarSkin: {fileID: 0}
-  - name: 
-    selectedCar: {fileID: 4582174514683055560, guid: 3dd3b899a36772546a06d5e0009363c6, type: 3}
-    selectedCarSkin: {fileID: 0}
+    currentCheckpoint: {fileID: 0}

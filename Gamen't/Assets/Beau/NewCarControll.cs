@@ -154,19 +154,19 @@ public class NewCarControll : MonoBehaviour
                 {
                     element.leftWheel.brakeTorque = brakeForce;
                     element.rightWheel.brakeTorque = brakeForce;
-                    
 
-
-                }
-                if (speedRead < 1)
-                {
-                    if (collided == false)
+                    if (speedRead < 1)
                     {
-                        itStoped = false;
+                        if (collided == false)
+                        {
+                            itStoped = false;
+                            maxSpeed = orignalMaxSpeed;
+                        }
                         maxSpeed = orignalMaxSpeed;
                     }
-                    maxSpeed = orignalMaxSpeed;
+
                 }
+                
             }
 
             DoTyres(element.leftWheel);
