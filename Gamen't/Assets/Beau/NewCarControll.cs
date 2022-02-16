@@ -155,10 +155,7 @@ public class NewCarControll : MonoBehaviour
                     element.leftWheel.brakeTorque = brakeForce;
                     element.rightWheel.brakeTorque = brakeForce;
                     
-                    if (collided == false)
-                    {
-                        itStoped = false;
-                    }
+
 
                 }
                 if (speedRead < 1)
@@ -166,6 +163,7 @@ public class NewCarControll : MonoBehaviour
                     if (collided == false)
                     {
                         itStoped = false;
+                        maxSpeed = orignalMaxSpeed;
                     }
                     maxSpeed = orignalMaxSpeed;
                 }
