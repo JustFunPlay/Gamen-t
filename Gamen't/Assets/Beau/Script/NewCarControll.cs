@@ -25,8 +25,7 @@ public class NewCarControll : MonoBehaviour
     public Transform massCenter;
     public float brakeForce;
     public float torque;
-    public float steer;    
-    public float Reverse;
+    public float steer;
     float restet;
     public float speedRead;
     public bool itStoped;
@@ -38,6 +37,14 @@ public class NewCarControll : MonoBehaviour
     public float brakeOn;
     public Text speedMeterder;
     public bool collided;
+    public float MaxRPM;
+    public float currentRPM;
+    public float gear;
+
+
+
+
+
 
     private void Start()
     {
@@ -63,11 +70,6 @@ public class NewCarControll : MonoBehaviour
     void OnReset(InputValue value)
     {
         restet = value.Get<float>();
-    }
-
-    void OnReverse(InputValue value) 
-    {
-        Reverse = value.Get<float>();
     }
 
 

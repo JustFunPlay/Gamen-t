@@ -335,11 +335,11 @@ WheelCollider:
     m_AsymptoteValue: 0.5
     m_Stiffness: 1
   m_SidewaysFriction:
-    m_ExtremumSlip: 0.2
+    m_ExtremumSlip: 0.8
     m_ExtremumValue: 1
     m_AsymptoteSlip: 0.1
     m_AsymptoteValue: 0.75
-    m_Stiffness: 2
+    m_Stiffness: 1
   m_Enabled: 1
 --- !u!1 &4898341883901143621
 GameObject:
@@ -508,11 +508,11 @@ WheelCollider:
     m_AsymptoteValue: 0.5
     m_Stiffness: 1
   m_SidewaysFriction:
-    m_ExtremumSlip: 0.2
+    m_ExtremumSlip: 0.8
     m_ExtremumValue: 1
     m_AsymptoteSlip: 0.1
     m_AsymptoteValue: 0.75
-    m_Stiffness: 2
+    m_Stiffness: 1
   m_Enabled: 1
 --- !u!1 &4898341884158700631
 GameObject:
@@ -678,7 +678,7 @@ MonoBehaviour:
     addWheelTorque: 1
     shouldSteer: 0
   maxTorque: 700
-  maxSteerAngle: 30
+  maxSteerAngle: 60
   inputGasBrake: {x: 0, y: 0}
   massCenter: {fileID: 4898341884048351685}
   brakeForce: 600
@@ -1071,11 +1071,11 @@ WheelCollider:
     m_AsymptoteValue: 0.5
     m_Stiffness: 1
   m_SidewaysFriction:
-    m_ExtremumSlip: 0.2
+    m_ExtremumSlip: 0.8
     m_ExtremumValue: 1
     m_AsymptoteSlip: 0.1
     m_AsymptoteValue: 0.75
-    m_Stiffness: 2
+    m_Stiffness: 1
   m_Enabled: 1
 --- !u!1 &4898341885304198119
 GameObject:
@@ -1133,11 +1133,11 @@ WheelCollider:
     m_AsymptoteValue: 0.5
     m_Stiffness: 1
   m_SidewaysFriction:
-    m_ExtremumSlip: 0.2
+    m_ExtremumSlip: 0.8
     m_ExtremumValue: 1
     m_AsymptoteSlip: 0.1
     m_AsymptoteValue: 0.75
-    m_Stiffness: 2
+    m_Stiffness: 1
   m_Enabled: 1
 --- !u!1 &4898341885337334003
 GameObject:
