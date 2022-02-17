@@ -37,13 +37,13 @@ public class NewCarControll : MonoBehaviour
     public float brakeOn;
     public Text speedMeterder;
     public bool collided;
-    public float MaxRPM;
-    public float currentRPM;
-    public float gear;
-
-
-
-
+    //public float MaxRPM;
+    //public float currentRPM;
+    
+    //public float gear;
+    //public float[] gears;
+    //public float finalDriveRatio;
+    
 
 
     private void Start()

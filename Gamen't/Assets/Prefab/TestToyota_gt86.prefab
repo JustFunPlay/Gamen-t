@@ -580,7 +580,7 @@ MonoBehaviour:
     addWheelTorque: 1
     shouldSteer: 0
   maxTorque: 700
-  maxSteerAngle: 60
+  maxSteerAngle: 30
   inputGasBrake: {x: 0, y: 0}
   massCenter: {fileID: 4898341884048351685}
   brakeForce: 600
@@ -596,9 +596,6 @@ MonoBehaviour:
   brakeOn: 0
   speedMeterder: {fileID: 4289791599306359028}
   collided: 0
-  MaxRPM: 0
-  currentRPM: 0
-  gear: 0
 --- !u!114 &4898341884572870483
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1258,7 +1255,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -154.59668, y: 107.99643}
+  m_AnchoredPosition: {x: -206, y: 165}
   m_SizeDelta: {x: 309.193, y: 215.993}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2955681285992798167
