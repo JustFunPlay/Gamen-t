@@ -999,6 +999,54 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 88c9ef4396a8bb049b373070d9930dcd, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5fed5ce7021de5d4489814b12d2f682b, type: 3}
+--- !u!1 &275244394
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 275244396}
+  - component: {fileID: 275244395}
+  m_Layer: 0
+  m_Name: Global Volume
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &275244395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 275244394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isGlobal: 1
+  priority: 0
+  blendDistance: 0
+  weight: 1
+  sharedProfile: {fileID: 11400000, guid: 4d1d4371fbe3e9b47908bccbaa1b067e, type: 2}
+--- !u!4 &275244396
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 275244394}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.6282315, y: 0.15216705, z: -3.4043477}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &310885232 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7128080363455088309, guid: fe77ffa063a18014a89c724236bb81eb, type: 3}
@@ -4432,6 +4480,75 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe77ffa063a18014a89c724236bb81eb, type: 3}
+--- !u!1001 &1746286348
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3407690975618175877, guid: 85faec200b5ffb84b86c0990bf2f27de, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 107.99646
+      objectReference: {fileID: 0}
+    - target: {fileID: 4898341884572870476, guid: 85faec200b5ffb84b86c0990bf2f27de, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4898341884572870476, guid: 85faec200b5ffb84b86c0990bf2f27de, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.204033
+      objectReference: {fileID: 0}
+    - target: {fileID: 4898341884572870476, guid: 85faec200b5ffb84b86c0990bf2f27de, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.00000047683716
+      objectReference: {fileID: 0}
+    - target: {fileID: 4898341884572870476, guid: 85faec200b5ffb84b86c0990bf2f27de, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.0417595
+      objectReference: {fileID: 0}
+    - target: {fileID: 4898341884572870476, guid: 85faec200b5ffb84b86c0990bf2f27de, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4898341884572870476, guid: 85faec200b5ffb84b86c0990bf2f27de, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4898341884572870476, guid: 85faec200b5ffb84b86c0990bf2f27de, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4898341884572870476, guid: 85faec200b5ffb84b86c0990bf2f27de, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4898341884572870476, guid: 85faec200b5ffb84b86c0990bf2f27de, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4898341884572870476, guid: 85faec200b5ffb84b86c0990bf2f27de, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4898341884572870476, guid: 85faec200b5ffb84b86c0990bf2f27de, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4898341884572870481, guid: 85faec200b5ffb84b86c0990bf2f27de, type: 3}
+      propertyPath: m_Name
+      value: TestToyota_gt86
+      objectReference: {fileID: 0}
+    - target: {fileID: 6395097080136175730, guid: 85faec200b5ffb84b86c0990bf2f27de, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 35557fb3367e8114695f9e1acf01857d, type: 2}
+    - target: {fileID: 6395097080136175730, guid: 85faec200b5ffb84b86c0990bf2f27de, type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5076df5dec38e6e4e87ed59f7d885277, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 85faec200b5ffb84b86c0990bf2f27de, type: 3}
 --- !u!1001 &1756582825
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5553,63 +5670,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fd90833089b399948af85395e57ddee3, type: 3}
---- !u!1001 &3841355691619601269
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 8259786808129212110, guid: d807a48cb8293c34784c9e42570e03df, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8259786808129212110, guid: d807a48cb8293c34784c9e42570e03df, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -6.847025
-      objectReference: {fileID: 0}
-    - target: {fileID: 8259786808129212110, guid: d807a48cb8293c34784c9e42570e03df, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.00000023841858
-      objectReference: {fileID: 0}
-    - target: {fileID: 8259786808129212110, guid: d807a48cb8293c34784c9e42570e03df, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -4.1281877
-      objectReference: {fileID: 0}
-    - target: {fileID: 8259786808129212110, guid: d807a48cb8293c34784c9e42570e03df, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8259786808129212110, guid: d807a48cb8293c34784c9e42570e03df, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8259786808129212110, guid: d807a48cb8293c34784c9e42570e03df, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8259786808129212110, guid: d807a48cb8293c34784c9e42570e03df, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8259786808129212110, guid: d807a48cb8293c34784c9e42570e03df, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8259786808129212110, guid: d807a48cb8293c34784c9e42570e03df, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8259786808129212110, guid: d807a48cb8293c34784c9e42570e03df, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8785248514869269620, guid: d807a48cb8293c34784c9e42570e03df, type: 3}
-      propertyPath: m_Name
-      value: Car Toyota GT86
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: d807a48cb8293c34784c9e42570e03df, type: 3}
 --- !u!4 &5063954007534689839 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5379336344832561534, guid: 2bb7737759739e348a8f3d0e4e7cd0b7, type: 3}
