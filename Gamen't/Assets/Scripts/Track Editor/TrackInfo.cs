@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[CreateAssetMenu(fileName = "New Track Info", menuName = "ScriptableObjects/New Track Info")]
 public class TrackInfo : ScriptableObject
 {
     public string trackName;
