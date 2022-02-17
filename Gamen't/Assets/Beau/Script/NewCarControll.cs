@@ -48,7 +48,7 @@ public class NewCarControll : MonoBehaviour
 
     private void Start()
     {
-
+        brakeLight.DisableKeyword("_EMISSION");
         rb = GetComponent<Rigidbody>();
         rb.centerOfMass = massCenter.localPosition;
 
@@ -121,7 +121,7 @@ public class NewCarControll : MonoBehaviour
 
                 if (inputGasBrake.y == -1)
                 {
-
+                    brakeLight.EnableKeyword("_EMISSION");
                     element.leftWheel.brakeTorque = brakeForce;
                     element.rightWheel.brakeTorque = brakeForce;
                     if (speedRead < 1)
@@ -129,6 +129,10 @@ public class NewCarControll : MonoBehaviour
                         itStoped = true;
 
                     }
+                }
+                else
+                {
+                    brakeLight.DisableKeyword("_EMISSION");
                 }
 
 
