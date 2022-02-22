@@ -1,21 +1,38 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class HowManyPlayer : MonoBehaviour
 {
-    public PlayerInformation playerInfo;
 
+    public PlayerInformation fuckDINAND;
+
+
+    public void OnePlayers()
+    {
+        fuckDINAND.playerSelections.Add(new PlayerSelection());
+        SceneManager.LoadScene(1);
+    }
     public void TwoPlayers()
     {
-        playerInfo.playerSelections.Capacity=2;
+        fuckDINAND.playerSelections.Add(new PlayerSelection());
+        fuckDINAND.playerSelections.Add(new PlayerSelection());
+        SceneManager.LoadScene(1);
     }
     public void ThreePlayers()
     {
-        playerInfo.playerSelections.Capacity = 3;
+        fuckDINAND.playerSelections.Add(new PlayerSelection());
+        fuckDINAND.playerSelections.Add(new PlayerSelection());
+        fuckDINAND.playerSelections.Add(new PlayerSelection());
+        SceneManager.LoadScene(1);
     }
     public void FourPlayers()
     {
-        playerInfo.playerSelections.Capacity = 4;
+        fuckDINAND.playerSelections.Add(new PlayerSelection());
+        fuckDINAND.playerSelections.Add(new PlayerSelection());
+        fuckDINAND.playerSelections.Add(new PlayerSelection());
+        fuckDINAND.playerSelections.Add(new PlayerSelection());
+        SceneManager.LoadScene(1);
     }
 }
