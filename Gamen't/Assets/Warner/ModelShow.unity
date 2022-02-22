@@ -4539,14 +4539,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: TestToyota_gt86
       objectReference: {fileID: 0}
+    - target: {fileID: 4898341884572870482, guid: 85faec200b5ffb84b86c0990bf2f27de, type: 3}
+      propertyPath: brakeLight
+      value: 
+      objectReference: {fileID: 2100000, guid: 98dbb5fc6045d5249b467d4602f8a209, type: 2}
+    - target: {fileID: 6395097080136175730, guid: 85faec200b5ffb84b86c0990bf2f27de, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 907af39f83a6bc440b29bea0c9d905ff, type: 2}
     - target: {fileID: 6395097080136175730, guid: 85faec200b5ffb84b86c0990bf2f27de, type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: 35557fb3367e8114695f9e1acf01857d, type: 2}
+      objectReference: {fileID: 2100000, guid: cca709541e54c2d47a9fa7a08397c3c4, type: 2}
     - target: {fileID: 6395097080136175730, guid: 85faec200b5ffb84b86c0990bf2f27de, type: 3}
       propertyPath: m_Materials.Array.data[2]
       value: 
-      objectReference: {fileID: 2100000, guid: 5076df5dec38e6e4e87ed59f7d885277, type: 2}
+      objectReference: {fileID: 2100000, guid: 98dbb5fc6045d5249b467d4602f8a209, type: 2}
+    - target: {fileID: 6395097080136175730, guid: 85faec200b5ffb84b86c0990bf2f27de, type: 3}
+      propertyPath: m_Materials.Array.data[3]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4ff1e8648b13b904198c4b54989e2328, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85faec200b5ffb84b86c0990bf2f27de, type: 3}
 --- !u!1001 &1756582825
