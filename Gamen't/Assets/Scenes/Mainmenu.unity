@@ -1130,7 +1130,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1048226630
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2018,6 +2018,7 @@ GameObject:
   - component: {fileID: 1756844327}
   - component: {fileID: 1756844326}
   - component: {fileID: 1756844329}
+  - component: {fileID: 1756844330}
   m_Layer: 5
   m_Name: Quit Button
   m_TagString: Untagged
@@ -2088,7 +2089,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1756844327}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1756844330}
+        m_TargetAssemblyTypeName: quit, Assembly-CSharp
+        m_MethodName: QuitsGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1756844327
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2140,6 +2153,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   howManyPlayers: {fileID: 1314080559}
+--- !u!114 &1756844330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1756844324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38e0370d2fe555747bc5ebd60234c0c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2034042585
 GameObject:
   m_ObjectHideFlags: 0
@@ -2348,6 +2373,10 @@ PrefabInstance:
     - target: {fileID: 3458319226721410268, guid: be3970fbafa5d2e468ab4f87eea70c8a, type: 3}
       propertyPath: m_Name
       value: Carselection
+      objectReference: {fileID: 0}
+    - target: {fileID: 3458319226721410268, guid: be3970fbafa5d2e468ab4f87eea70c8a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be3970fbafa5d2e468ab4f87eea70c8a, type: 3}
