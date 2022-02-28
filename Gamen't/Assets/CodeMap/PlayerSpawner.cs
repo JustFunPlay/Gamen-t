@@ -22,7 +22,7 @@ public class PlayerSpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        PlayerSpawn();
+        
     }
 
     // Update is called once per frame
@@ -32,7 +32,7 @@ public class PlayerSpawner : MonoBehaviour
     }
     public void PlayerSpawn()
     {
-        for (int i = 0; i < playerInfos.playerSelections.Count; i++)
+        for (int i = 0; i <= playerInfos.playerSelections.Count; i++)
         {
             if (i < 4)
             {
@@ -46,12 +46,8 @@ public class PlayerSpawner : MonoBehaviour
         }
         UpdateCameras();
 
-        //else
-        //{
-        //    print("too many players");
-        //}
-
     }
+
     public void UpdateCameras()
     {
         switch (playerInfos.playerSelections.Count) 
@@ -77,6 +73,7 @@ public class PlayerSpawner : MonoBehaviour
         }
             
     }
+    // werkt nog niet helemaal
     public void PlayerDespawn()
     {
         if(playerInfos.playerSelections.Count > 0)

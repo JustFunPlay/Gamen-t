@@ -67,6 +67,7 @@ GameObject:
   - component: {fileID: 5337249409293488616}
   - component: {fileID: 8675070250973487660}
   - component: {fileID: 127080699764682680}
+  - component: {fileID: 2308832306021705430}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -150,6 +151,36 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2308832306021705430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5178212359431487370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: a6c551f85e4672c4ba735942e8bde649, type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Player
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 5747296580315682706}
 --- !u!1001 &6598656537425214291
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -210,5 +241,10 @@ PrefabInstance:
 --- !u!4 &4217955621916228098 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6996926284960121169, guid: 0ba016fcdafaf574fae64e51062771f0, type: 3}
+  m_PrefabInstance: {fileID: 6598656537425214291}
+  m_PrefabAsset: {fileID: 0}
+--- !u!20 &5747296580315682706 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 1464053483035520193, guid: 0ba016fcdafaf574fae64e51062771f0, type: 3}
   m_PrefabInstance: {fileID: 6598656537425214291}
   m_PrefabAsset: {fileID: 0}
