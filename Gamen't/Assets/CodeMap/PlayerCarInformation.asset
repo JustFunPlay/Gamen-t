@@ -12,16 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 356099d9a8b6cec40b12cf5acc168ef1, type: 3}
   m_Name: PlayerCarInformation
   m_EditorClassIdentifier: 
+  totalCheckpoints: []
   playerSelections:
   - name: 
-    selectedCar: {fileID: 4582174514683055560, guid: 3dd3b899a36772546a06d5e0009363c6, type: 3}
+    selectedCar: {fileID: 919132149155446097, guid: 5900f11f476586949bd7ecbd83631f3b, type: 3}
     selectedCarSkin: {fileID: 0}
+    currentCheckpoint: {fileID: 0}
   - name: 
-    selectedCar: {fileID: 4582174514683055560, guid: 3dd3b899a36772546a06d5e0009363c6, type: 3}
+    selectedCar: {fileID: 4898341884572870481, guid: 85faec200b5ffb84b86c0990bf2f27de, type: 3}
     selectedCarSkin: {fileID: 0}
+    currentCheckpoint: {fileID: 0}
   - name: 
-    selectedCar: {fileID: 4582174514683055560, guid: 3dd3b899a36772546a06d5e0009363c6, type: 3}
+    selectedCar: {fileID: 4898341884572870481, guid: 85faec200b5ffb84b86c0990bf2f27de, type: 3}
     selectedCarSkin: {fileID: 0}
+    currentCheckpoint: {fileID: 0}
   - name: 
-    selectedCar: {fileID: 4582174514683055560, guid: 3dd3b899a36772546a06d5e0009363c6, type: 3}
+    selectedCar: {fileID: 4898341884572870481, guid: 85faec200b5ffb84b86c0990bf2f27de, type: 3}
     selectedCarSkin: {fileID: 0}
+    currentCheckpoint: {fileID: 0}

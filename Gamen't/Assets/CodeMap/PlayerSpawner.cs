@@ -79,16 +79,15 @@ public class PlayerSpawner : MonoBehaviour
     }
     public void PlayerDespawn()
     {
-        //if(playerInfos.playerSelections.Count > 0)
-        //{
-        //    i--;
-        //    playerInfos.totalPlayers--;
-        //}
-        //Destroy(listOfCameras[i]);
-        //Destroy(listOfPlayers[i]);
-        //listOfCameras.RemoveAt(i);
-        //listOfPlayers.RemoveAt(i);
-        //UpdateCameras();
+        if(playerInfos.playerSelections.Count > 0)
+        {
+
+        }
+        Destroy(listOfCameras[playerInfos.playerSelections.Count]);
+        Destroy(listOfPlayers[playerInfos.playerSelections.Count]);
+        listOfCameras.RemoveAt(playerInfos.playerSelections.Count);
+        listOfPlayers.RemoveAt(playerInfos.playerSelections.Count);
+        UpdateCameras();
         
     }
 }
