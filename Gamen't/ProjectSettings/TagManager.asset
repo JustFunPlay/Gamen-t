@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Wall
   - Multi
+  - CheckPoint
+  - CheckPoint begin
+  - CheckPoint meanwhile
+  - CheckPoint end
   layers:
   - Default
   - TransparentFX

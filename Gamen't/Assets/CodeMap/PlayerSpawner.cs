@@ -22,7 +22,7 @@ public class PlayerSpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        playerInfos.totalcars = 0;
     }
 
     // Update is called once per frame
@@ -42,6 +42,8 @@ public class PlayerSpawner : MonoBehaviour
 
                 GameObject newcamera = newplayer.GetComponentInChildren<Camera>().gameObject;
                 listOfCameras.Add(newcamera);
+
+                playerInfos.totalcars++;
             }
         }
         UpdateCameras();
@@ -76,15 +78,18 @@ public class PlayerSpawner : MonoBehaviour
     // werkt nog niet helemaal
     public void PlayerDespawn()
     {
+        
         if(playerInfos.playerSelections.Count > 0)
         {
+            Destroy(listOfCameras[playerInfos.totalcars]);
+            Destroy(listOfPlayers[playerInfos.totalcars]);
+            listOfCameras.RemoveAt(playerInfos.totalcars);
+            listOfPlayers.RemoveAt(playerInfos.totalcars);
 
+            UpdateCameras();
+            playerInfos.totalcars--;
         }
-        Destroy(listOfCameras[playerInfos.playerSelections.Count]);
-        Destroy(listOfPlayers[playerInfos.playerSelections.Count]);
-        listOfCameras.RemoveAt(playerInfos.playerSelections.Count);
-        listOfPlayers.RemoveAt(playerInfos.playerSelections.Count);
-        UpdateCameras();
-        
+
+
     }
 }

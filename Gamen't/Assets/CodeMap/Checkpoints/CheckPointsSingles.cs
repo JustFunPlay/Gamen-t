@@ -5,12 +5,6 @@ using UnityEngine;
 public class CheckPointsSingles : MonoBehaviour
 {
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if(other.gameObject.tag == "Player")
-        {
 
-        }
-    }
 
 }
