@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1818899307929562902
+--- !u!1 &4604442246332445032
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,10 +8,42 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5470831523350488657}
-  - component: {fileID: 2365702144135974777}
-  - component: {fileID: 8687958372293835643}
-  - component: {fileID: 8270564305129332177}
+  - component: {fileID: 3795852236689648594}
+  m_Layer: 0
+  m_Name: RoadTurnMid
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3795852236689648594
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4604442246332445032}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 3884041111727332605}
+  - {fileID: 2622018469620462596}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7436755597553145274
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3884041111727332605}
+  - component: {fileID: 6835909015525864917}
+  - component: {fileID: 476108889635520983}
+  - component: {fileID: 200278435068008163}
   m_Layer: 0
   m_Name: RailingSmallTurnMid
   m_TagString: Untagged
@@ -19,35 +51,35 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5470831523350488657
+--- !u!4 &3884041111727332605
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1818899307929562902}
+  m_GameObject: {fileID: 7436755597553145274}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 5379336344832561534}
+  m_Father: {fileID: 3795852236689648594}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &2365702144135974777
+--- !u!33 &6835909015525864917
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1818899307929562902}
+  m_GameObject: {fileID: 7436755597553145274}
   m_Mesh: {fileID: -5263550262623960293, guid: 8b06f070c2781504b95a404303fb692b, type: 3}
---- !u!23 &8687958372293835643
+--- !u!23 &476108889635520983
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1818899307929562902}
+  m_GameObject: {fileID: 7436755597553145274}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -82,13 +114,13 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &8270564305129332177
+--- !u!64 &200278435068008163
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1818899307929562902}
+  m_GameObject: {fileID: 7436755597553145274}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
@@ -96,7 +128,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -5263550262623960293, guid: 8b06f070c2781504b95a404303fb692b, type: 3}
---- !u!1 &1897381722503964210
+--- !u!1 &8259111069517157666
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -104,46 +136,46 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 913004972759192321}
-  - component: {fileID: 6889280572395413524}
-  - component: {fileID: 235924322993280346}
-  - component: {fileID: 6409024696236415673}
+  - component: {fileID: 2622018469620462596}
+  - component: {fileID: 8630653367361805949}
+  - component: {fileID: 474241025637619843}
+  - component: {fileID: 3642897766081782906}
   m_Layer: 0
-  m_Name: SmallTurnMid
+  m_Name: RoadSmallTurnMid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &913004972759192321
+--- !u!4 &2622018469620462596
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1897381722503964210}
+  m_GameObject: {fileID: 8259111069517157666}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 5379336344832561534}
+  m_Father: {fileID: 3795852236689648594}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &6889280572395413524
+--- !u!33 &8630653367361805949
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1897381722503964210}
-  m_Mesh: {fileID: 2735356149504290591, guid: 8b06f070c2781504b95a404303fb692b, type: 3}
---- !u!23 &235924322993280346
+  m_GameObject: {fileID: 8259111069517157666}
+  m_Mesh: {fileID: 884410267875525271, guid: 8b06f070c2781504b95a404303fb692b, type: 3}
+--- !u!23 &474241025637619843
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1897381722503964210}
+  m_GameObject: {fileID: 8259111069517157666}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -178,49 +210,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &6409024696236415673
+--- !u!64 &3642897766081782906
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1897381722503964210}
+  m_GameObject: {fileID: 8259111069517157666}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 2735356149504290591, guid: 8b06f070c2781504b95a404303fb692b, type: 3}
---- !u!1 &4750432613408672708
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5379336344832561534}
-  m_Layer: 0
-  m_Name: RoadTurnMid
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &5379336344832561534
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4750432613408672708}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 33.40702, y: 0.47, z: 35.246384}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 5470831523350488657}
-  - {fileID: 913004972759192321}
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Mesh: {fileID: 884410267875525271, guid: 8b06f070c2781504b95a404303fb692b, type: 3}
