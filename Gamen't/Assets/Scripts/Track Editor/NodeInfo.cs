@@ -6,5 +6,5 @@ public class NodeInfo : MonoBehaviour
 {
     public int gridNodeValue;
     public Vector3 gridLocation;
-
+    public GameObject trackPiece;
 }

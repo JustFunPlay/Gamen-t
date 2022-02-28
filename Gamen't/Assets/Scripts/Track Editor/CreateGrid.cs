@@ -8,7 +8,7 @@ public class CreateGrid : MonoBehaviour
     public GameObject gridNode;
     public List<Level> levels = new List<Level>();
     
-    void Start()
+    void Awake()
     {
         int i = 0;
         for (int y = 0; y < gridsize.y; y++)
@@ -23,6 +23,7 @@ public class CreateGrid : MonoBehaviour
                     levels[y].level.Add(newNode.transform);
                     newNode.GetComponent<NodeInfo>().gridNodeValue = i;
                     newNode.GetComponent<NodeInfo>().gridLocation = new Vector3(x, y, z);
+                    newNode.name = i.ToString();
                 }
             }
         }

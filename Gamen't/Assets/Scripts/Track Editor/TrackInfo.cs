@@ -17,6 +17,7 @@ public class TrackPiece
     public Vector3 position;
     public Quaternion rotation;
     public GameObject trackPiece;
+    public int gridlocation;
 }
 [System.Serializable]
 public class Leaderboard

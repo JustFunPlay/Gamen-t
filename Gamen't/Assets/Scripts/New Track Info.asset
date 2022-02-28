@@ -13,10 +13,7 @@ MonoBehaviour:
   m_Name: New Track Info
   m_EditorClassIdentifier: 
   trackName: 
-  trackPieces:
-  - position: {x: 3, y: 3, z: 3}
-    rotation: {x: 0, y: 0, z: 0, w: 0}
-    trackPiece: {fileID: 4410402899750998667, guid: bf0a225a9ff184f2789f3036faaa9150, type: 3}
+  trackPieces: []
   leaderboards:
   - racerName: 
     timeInSec: 0
