@@ -592,7 +592,7 @@ MonoBehaviour:
   orignalMaxSpeed: 200
   maxSpeedBack: 40
   speedLimiterRange: 20
-  brakeLight: {fileID: 0}
+  brakeLight: {fileID: 2100000, guid: 6fbf6e1464d17f746a47ef656a8247bc, type: 2}
   brakeOn: 0
   speedMeterder: {fileID: 4289791599306359028}
   collided: 0
