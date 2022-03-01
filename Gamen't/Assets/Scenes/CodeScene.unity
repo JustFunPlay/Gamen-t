@@ -444,8 +444,8 @@ GameObject:
   - component: {fileID: 1045331158}
   - component: {fileID: 1045331157}
   m_Layer: 0
-  m_Name: Checkpoint
-  m_TagString: CheckPoint
+  m_Name: Checkpoint Middle
+  m_TagString: CheckPoint meanwhile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -935,8 +935,8 @@ GameObject:
   - component: {fileID: 1492674715}
   - component: {fileID: 1492674714}
   m_Layer: 0
-  m_Name: Checkpoint
-  m_TagString: CheckPoint
+  m_Name: Checkpoint End
+  m_TagString: CheckPoint end
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1043,8 +1043,8 @@ GameObject:
   - component: {fileID: 1603500860}
   - component: {fileID: 1603500859}
   m_Layer: 0
-  m_Name: Checkpoint
-  m_TagString: CheckPoint
+  m_Name: Checkpoint Begin
+  m_TagString: CheckPoint begin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
