@@ -37,13 +37,8 @@ public class NewCarControll : MonoBehaviour
     public float brakeOn;
     public Text speedMeterder;
     public bool collided;
-    //public float MaxRPM;
-    //public float currentRPM;
-    
-    //public float gear;
-    //public float[] gears;
-    //public float finalDriveRatio;
-    
+    public float handBrake;
+    public bool handBrakeOn;
 
 
     private void Start()
@@ -71,7 +66,10 @@ public class NewCarControll : MonoBehaviour
     {
         restet = value.Get<float>();
     }
-
+    void OnHandbrake(Input value)
+    {
+        handBrakeOn = true;
+    }
 
 
 
