@@ -23,6 +23,7 @@ public class PlayerSpawner : MonoBehaviour
     void Start()
     {
         playerInfos.totalcars = 0;
+        PlayerSpawn();
     }
 
     // Update is called once per frame
@@ -32,13 +33,14 @@ public class PlayerSpawner : MonoBehaviour
     }
     public void PlayerSpawn()
     {
-        for (int i = 0; i <= playerInfos.playerSelections.Count; i++)
+        for (int i = 0; i < playerInfos.playerSelections.Count; i++)
         {
             if (i < 4)
             {
                 GameObject newplayer = Instantiate(playerInfos.playerSelections[i].selectedCar, playerSpawning[i], Quaternion.identity);
                 listOfPlayers.Add(newplayer);
                 newplayer.GetComponent<PlayerID>().playerIdNumber = i;
+                newplayer.GetComponent<PlayerID>().playerName = playerInfos.playerSelections[i].name;
 
                 GameObject newcamera = newplayer.GetComponentInChildren<Camera>().gameObject;
                 listOfCameras.Add(newcamera);
