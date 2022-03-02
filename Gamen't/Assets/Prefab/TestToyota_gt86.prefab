@@ -592,7 +592,7 @@ MonoBehaviour:
   orignalMaxSpeed: 200
   maxSpeedBack: 40
   speedLimiterRange: 20
-  brakeLight: {fileID: 2100000, guid: 98dbb5fc6045d5249b467d4602f8a209, type: 2}
+  brakeLight: {fileID: 0}
   brakeOn: 0
   speedMeterder: {fileID: 4289791599306359028}
   collided: 0
@@ -622,7 +622,7 @@ MonoBehaviour:
       m_Calls: []
   m_ActionEvents: []
   m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
+  m_DefaultControlScheme: Gamepad
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 4898341884591060554}
@@ -653,11 +653,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a3a231d78443d04a8bb9e57ddbcfccb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerInfo: {fileID: 11400000, guid: 32ba84c6353187d4a94dfddb68e53bbc, type: 2}
   playerIdNumber: 0
-  totalTimesThroughFinish: 0
-  canStart: 0
-  canFinish: 0
 --- !u!1 &4898341884591060553
 GameObject:
   m_ObjectHideFlags: 0
@@ -1160,7 +1156,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -206, y: 107.99646}
+  m_AnchoredPosition: {x: -206, y: 165}
   m_SizeDelta: {x: 309.193, y: 215.993}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2955681285992798167
@@ -1231,7 +1227,7 @@ GameObject:
   - component: {fileID: 8289240706704199275}
   - component: {fileID: 2060925996825165886}
   - component: {fileID: 8912055784806339964}
-  - component: {fileID: 5181112161844838877}
+  - component: {fileID: 255410940340287732}
   m_Layer: 0
   m_Name: Car Toyota GT68
   m_TagString: Untagged
@@ -1305,7 +1301,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &5181112161844838877
+--- !u!64 &255410940340287732
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
