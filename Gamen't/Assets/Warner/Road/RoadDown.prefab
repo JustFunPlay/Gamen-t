@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1817107940549100590}
   - component: {fileID: 2901726402236444959}
   - component: {fileID: 2289152535413259618}
+  - component: {fileID: 6774612546807115169}
   m_Layer: 0
   m_Name: RoadRecht.003
   m_TagString: Untagged
@@ -81,6 +82,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &6774612546807115169
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 183292482350581022}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1321362557032859413, guid: 496dad32fedc12c4dbc62b3902950807, type: 3}
 --- !u!1 &5299517355680503963
 GameObject:
   m_ObjectHideFlags: 0
@@ -124,6 +139,7 @@ GameObject:
   - component: {fileID: 537953189317885615}
   - component: {fileID: 6555997568242866468}
   - component: {fileID: 4184686890403154158}
+  - component: {fileID: 970048583006457091}
   m_Layer: 0
   m_Name: RailingAppart.003
   m_TagString: Untagged
@@ -194,3 +210,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &970048583006457091
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8257840502418772716}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 7713472708248161739, guid: 496dad32fedc12c4dbc62b3902950807, type: 3}
