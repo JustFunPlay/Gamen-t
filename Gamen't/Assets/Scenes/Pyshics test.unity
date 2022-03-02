@@ -10886,9 +10886,5 @@ PrefabInstance:
       propertyPath: m_Name
       value: TestToyota_gt86
       objectReference: {fileID: 0}
-    - target: {fileID: 4898341884572870482, guid: 85faec200b5ffb84b86c0990bf2f27de, type: 3}
-      propertyPath: brakeLight
-      value: 
-      objectReference: {fileID: 2100000, guid: 98dbb5fc6045d5249b467d4602f8a209, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85faec200b5ffb84b86c0990bf2f27de, type: 3}
