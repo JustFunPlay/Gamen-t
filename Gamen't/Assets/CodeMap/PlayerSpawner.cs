@@ -22,6 +22,7 @@ public class PlayerSpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        playerInfos.totalcars = 0;
         PlayerSpawn();
     }
 
@@ -39,19 +40,18 @@ public class PlayerSpawner : MonoBehaviour
                 GameObject newplayer = Instantiate(playerInfos.playerSelections[i].selectedCar, playerSpawning[i], Quaternion.identity);
                 listOfPlayers.Add(newplayer);
                 newplayer.GetComponent<PlayerID>().playerIdNumber = i;
+                newplayer.GetComponent<PlayerID>().playerName = playerInfos.playerSelections[i].name;
 
                 GameObject newcamera = newplayer.GetComponentInChildren<Camera>().gameObject;
                 listOfCameras.Add(newcamera);
+
+                playerInfos.totalcars++;
             }
         }
         UpdateCameras();
 
-        //else
-        //{
-        //    print("too many players");
-        //}
-
     }
+
     public void UpdateCameras()
     {
         switch (playerInfos.playerSelections.Count) 
@@ -77,18 +77,21 @@ public class PlayerSpawner : MonoBehaviour
         }
             
     }
+    // werkt nog niet helemaal
     public void PlayerDespawn()
     {
-        //if(playerInfos.playerSelections.Count > 0)
-        //{
-        //    i--;
-        //    playerInfos.totalPlayers--;
-        //}
-        //Destroy(listOfCameras[i]);
-        //Destroy(listOfPlayers[i]);
-        //listOfCameras.RemoveAt(i);
-        //listOfPlayers.RemoveAt(i);
-        //UpdateCameras();
         
+        if(playerInfos.playerSelections.Count > 0)
+        {
+            Destroy(listOfCameras[playerInfos.totalcars]);
+            Destroy(listOfPlayers[playerInfos.totalcars]);
+            listOfCameras.RemoveAt(playerInfos.totalcars);
+            listOfPlayers.RemoveAt(playerInfos.totalcars);
+
+            UpdateCameras();
+            playerInfos.totalcars--;
+        }
+
+
     }
 }

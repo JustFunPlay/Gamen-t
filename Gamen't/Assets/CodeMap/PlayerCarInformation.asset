@@ -12,12 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 356099d9a8b6cec40b12cf5acc168ef1, type: 3}
   m_Name: PlayerCarInformation
   m_EditorClassIdentifier: 
+  totalcars: 1
+  maxLaps: 3
+  totalCheckpoints: []
   playerSelections:
-  - name: blah
-    selectedCar: {fileID: 4898341884572870481, guid: 85faec200b5ffb84b86c0990bf2f27de, type: 3}
-    selectedCarSkin: {fileID: 0}
-    currentCheckpoint: {fileID: 0}
-  - name: halb
+  - name: 0
     selectedCar: {fileID: 4898341884572870481, guid: 85faec200b5ffb84b86c0990bf2f27de, type: 3}
     selectedCarSkin: {fileID: 0}
     currentCheckpoint: {fileID: 0}
