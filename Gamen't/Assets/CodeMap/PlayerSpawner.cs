@@ -74,24 +74,27 @@ public class PlayerSpawner : MonoBehaviour
                 listOfCameras[2].GetComponent<Camera>().rect = new Rect(0, 0, 0.5f, 0.5f);
                 listOfCameras[3].GetComponent<Camera>().rect = new Rect(0.5f, 0, 0.5f, 0.5f);
                 break;
+            default:
+                print("fuck");
+                break;
         }
             
     }
     // werkt nog niet helemaal
-    public void PlayerDespawn()
-    {
-        
-        if(playerInfos.playerSelections.Count > 0)
-        {
-            Destroy(listOfCameras[playerInfos.totalcars]);
-            Destroy(listOfPlayers[playerInfos.totalcars]);
-            listOfCameras.RemoveAt(playerInfos.totalcars);
-            listOfPlayers.RemoveAt(playerInfos.totalcars);
+    //public void PlayerDespawn()
+    //{
 
-            UpdateCameras();
-            playerInfos.totalcars--;
-        }
+    //    if (playerInfos.playerSelections.Count > 0)
+    //    {
+    //        Destroy(listOfCameras[playerInfos.totalcars - 1]);
+    //        Destroy(listOfPlayers[playerInfos.totalcars - 1]);
+    //        listOfCameras.RemoveAt(playerInfos.totalcars - 1);
+    //        listOfPlayers.RemoveAt(playerInfos.totalcars - 1);
+
+    //        UpdateCameras();
+    //        playerInfos.totalcars--;
+    //    }
 
 
-    }
+    //}
 }
