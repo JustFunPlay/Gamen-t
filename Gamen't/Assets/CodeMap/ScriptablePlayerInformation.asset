@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 356099d9a8b6cec40b12cf5acc168ef1, type: 3}
-  m_Name: PlayerCarInformation
+  m_Name: ScriptablePlayerInformation
   m_EditorClassIdentifier: 
-  totalcars: 3
-  maxLaps: 3
+  totalcars: 2
+  maxLaps: 0
   totalCheckpoints: []
   playerSelections:
   - name: 
-    selectedCar: {fileID: 4898341884572870481, guid: 85faec200b5ffb84b86c0990bf2f27de, type: 3}
+    selectedCar: {fileID: 3458319226721410268, guid: be3970fbafa5d2e468ab4f87eea70c8a, type: 3}
     selectedCarSkin: {fileID: 0}
     currentCheckpoint: {fileID: 0}
   - name: 
-    selectedCar: {fileID: 4898341884572870481, guid: 85faec200b5ffb84b86c0990bf2f27de, type: 3}
+    selectedCar: {fileID: 3458319226721410268, guid: be3970fbafa5d2e468ab4f87eea70c8a, type: 3}
     selectedCarSkin: {fileID: 0}
     currentCheckpoint: {fileID: 0}

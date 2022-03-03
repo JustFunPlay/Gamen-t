@@ -6,33 +6,29 @@ using UnityEngine.SceneManagement;
 public class HowManyPlayer : MonoBehaviour
 {
 
-    public PlayerInformation fuckDINAND;
+    public PlayerInformation carSelectCanvas;
+    public PlayerInformation playerCars;
+    public PlayerSelection canvasSelection;
+    public PlayerSelection carSelection;
+
+    private void Start()
+    {
+        carSelectCanvas.playerSelections.Clear();
+        playerCars.playerSelections.Clear();
+        playerCars.playerSelections.Add(carSelection);
+        carSelectCanvas.playerSelections.Add(canvasSelection);
+    }
 
 
-    public void OnePlayers()
+
+
+    public void LoadPlayers(int numOfPlayers)
     {
-        fuckDINAND.playerSelections.Add(new PlayerSelection());
-        SceneManager.LoadScene(1);
-    }
-    public void TwoPlayers()
-    {
-        fuckDINAND.playerSelections.Add(new PlayerSelection());
-        fuckDINAND.playerSelections.Add(new PlayerSelection());
-        SceneManager.LoadScene(1);
-    }
-    public void ThreePlayers()
-    {
-        fuckDINAND.playerSelections.Add(new PlayerSelection());
-        fuckDINAND.playerSelections.Add(new PlayerSelection());
-        fuckDINAND.playerSelections.Add(new PlayerSelection());
-        SceneManager.LoadScene(1);
-    }
-    public void FourPlayers()
-    {
-        fuckDINAND.playerSelections.Add(new PlayerSelection());
-        fuckDINAND.playerSelections.Add(new PlayerSelection());
-        fuckDINAND.playerSelections.Add(new PlayerSelection());
-        fuckDINAND.playerSelections.Add(new PlayerSelection());
-        SceneManager.LoadScene(1);
+        for (int i = 1; i < numOfPlayers; i++)
+        {
+            playerCars.playerSelections.Add(carSelection);
+            carSelectCanvas.playerSelections.Add(canvasSelection);
+        }
+        SceneManager.LoadScene(2);
     }
 }

@@ -656,7 +656,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a3a231d78443d04a8bb9e57ddbcfccb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerInfo: {fileID: 11400000, guid: 32ba84c6353187d4a94dfddb68e53bbc, type: 2}
+  playerName: 
   playerIdNumber: 0
+  totalTimesThroughFinish: 1
+  canStart: 0
+  canFinish: 0
 --- !u!1 &4898341884591060553
 GameObject:
   m_ObjectHideFlags: 0
