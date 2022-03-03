@@ -37,21 +37,17 @@ public class NewCarControll : MonoBehaviour
     public float brakeOn;
     public Text speedMeterder;
     public bool collided;
-    //public float MaxRPM;
-    //public float currentRPM;
-    
-    //public float gear;
-    //public float[] gears;
-    //public float finalDriveRatio;
-    
-
+    public float handBrake;
+    public bool handBrakeOn;
+    public bool go;
+    bool b;
 
     private void Start()
     {
         brakeLight.DisableKeyword("_EMISSION");
         rb = GetComponent<Rigidbody>();
         rb.centerOfMass = massCenter.localPosition;
-
+        
     }
     void OnDrive(InputValue value)
     {
@@ -71,17 +67,30 @@ public class NewCarControll : MonoBehaviour
     {
         restet = value.Get<float>();
     }
-
+    void OnHandbrake()
+    {
+        if (b)
+        {
+            handBrakeOn = false;
+            b = false;
+        }
+        else
+        {
+            handBrakeOn = true;
+            b = true;
+        }
+    }
 
 
 
     private void FixedUpdate()
     {
-
-
-
+        //MAX SNELHEID SYSTEEM DING
+        speedRead = rb.velocity.magnitude * 3.6f;
         speedMeterder.text = speedRead.ToString("F0");
-
+        
+        if (go == true)
+        {
         //Reset de auto terug als die geflipt is
         if (restet == 1)
         {
@@ -90,8 +99,7 @@ public class NewCarControll : MonoBehaviour
             restet = 0;
         }
 
-        //MAX SNELHEID SYSTEEM DING
-        speedRead = rb.velocity.magnitude * 3.6f;
+
 
         float newTorgue = maxTorque;
         if (speedRead > maxSpeed - speedLimiterRange)
@@ -149,33 +157,56 @@ public class NewCarControll : MonoBehaviour
 
             }
 
-            if (itStoped == true)
-            {
-
-                element.leftWheel.brakeTorque = 0;
-                element.rightWheel.brakeTorque = 0;
-                maxSpeed = maxSpeedBack;
-
-                if (inputGasBrake.y == 1)
+                if (itStoped == true)
                 {
-                    element.leftWheel.brakeTorque = brakeForce;
-                    element.rightWheel.brakeTorque = brakeForce;
 
-                    if (speedRead < 1)
+                    element.leftWheel.brakeTorque = 0;
+                    element.rightWheel.brakeTorque = 0;
+                    maxSpeed = maxSpeedBack;
+
+                    if (inputGasBrake.y == 1)
                     {
-                        if (collided == false)
+                        element.leftWheel.brakeTorque = brakeForce;
+                        element.rightWheel.brakeTorque = brakeForce;
+
+                        if (speedRead < 1)
                         {
-                            itStoped = false;
+                            if (collided == false)
+                            {
+                                itStoped = false;
+                                maxSpeed = orignalMaxSpeed;
+                            }
                             maxSpeed = orignalMaxSpeed;
                         }
-                        maxSpeed = orignalMaxSpeed;
                     }
-
                 }
-                
-            }
+                    if (handBrakeOn == true)
+                    {
+                        wheelData[1].rightWheel.brakeTorque = handBrake;
+                        wheelData[1].leftWheel.brakeTorque = handBrake;
+                        WheelFrictionCurve henk = wheelData[1].leftWheel.sidewaysFriction;
+                        WheelFrictionCurve henk1 = wheelData[1].rightWheel.sidewaysFriction;
+                        henk.extremumSlip = 0.6f ;
+                        henk1.extremumSlip = 0.6f ;
+                        wheelData[1].leftWheel.sidewaysFriction = henk;
+                        wheelData[1].rightWheel.sidewaysFriction = henk1;
 
-            DoTyres(element.leftWheel);
+                    }
+                    else
+                    {
+                        WheelFrictionCurve oghenk = wheelData[1].leftWheel.sidewaysFriction;
+                        WheelFrictionCurve oghenk1 = wheelData[1].rightWheel.sidewaysFriction;
+                        oghenk.extremumSlip = 0.2f;
+                        oghenk1.extremumSlip = 0.2f;
+                        wheelData[1].leftWheel.sidewaysFriction = oghenk;
+                        wheelData[1].rightWheel.sidewaysFriction = oghenk1;
+                }
+
+                    
+
+
+
+                    DoTyres(element.leftWheel);
             DoTyres(element.rightWheel);
 
         }
@@ -198,6 +229,12 @@ public class NewCarControll : MonoBehaviour
             tyre.transform.position = position;
             tyre.transform.rotation = rotation;
         }
+    }
+
+
+        
+
+
 
          
     }

@@ -54,7 +54,7 @@
                     "interactions": ""
                 },
                 {
-                    "name": "Reverse",
+                    "name": "Handbrake",
                     "type": "PassThrough",
                     "id": "3f515ab4-317f-453e-b73b-27ca989d8d60",
                     "expectedControlType": "Button",
@@ -224,7 +224,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard&Mouse",
-                    "action": "Reverse",
+                    "action": "Handbrake",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -235,7 +235,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Gamepad",
-                    "action": "Reverse",
+                    "action": "Handbrake",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
