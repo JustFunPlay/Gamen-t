@@ -1322,7 +1322,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2787012462849789920}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3699499447632943558}
+        m_TargetAssemblyTypeName: TrackPieceSelect, Assembly-CSharp
+        m_MethodName: SelectTrackPiece
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &3699499447632943558
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1335,7 +1347,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c861dd3d7acfa1f49810081356248965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trackPiece: {fileID: 0}
+  trackPiece: {fileID: 5299517355680503963, guid: e3a8a970801f56b4e9ab62bc8ef55194, type: 3}
   pieceManager: {fileID: 0}
 --- !u!1 &2787012462853169534
 GameObject:
@@ -1809,7 +1821,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2787012462894312751}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7669380455828161282}
+        m_TargetAssemblyTypeName: TrackPieceSelect, Assembly-CSharp
+        m_MethodName: SelectTrackPiece
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &7669380455828161282
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1822,7 +1846,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c861dd3d7acfa1f49810081356248965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trackPiece: {fileID: 0}
+  trackPiece: {fileID: 6937163375105411035, guid: 3f516edd925b9a5498e34ce3a840df21, type: 3}
   pieceManager: {fileID: 0}
 --- !u!1 &2787012462899133923
 GameObject:
@@ -2766,7 +2790,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2787012463174138378}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5650376971989576845}
+        m_TargetAssemblyTypeName: TrackPieceSelect, Assembly-CSharp
+        m_MethodName: SelectTrackPiece
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &5650376971989576845
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2779,7 +2815,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c861dd3d7acfa1f49810081356248965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trackPiece: {fileID: 0}
+  trackPiece: {fileID: 6937163375105411035, guid: 445e22f1025d6b34ab7a646a94612010, type: 3}
   pieceManager: {fileID: 0}
 --- !u!1 &2787012463277070217
 GameObject:
@@ -3344,7 +3380,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2787012463532470666}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8540003510428943959}
+        m_TargetAssemblyTypeName: TrackPieceSelect, Assembly-CSharp
+        m_MethodName: SelectTrackPiece
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &8540003510428943959
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3357,7 +3405,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c861dd3d7acfa1f49810081356248965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trackPiece: {fileID: 0}
+  trackPiece: {fileID: 4590597907870076279, guid: 8bde6bbc5e444d448a5c343b251d359f, type: 3}
   pieceManager: {fileID: 0}
 --- !u!1 &2787012463573811559
 GameObject:
@@ -5028,7 +5076,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2787012464330509691}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3579885370227336674}
+        m_TargetAssemblyTypeName: TrackPieceSelect, Assembly-CSharp
+        m_MethodName: SelectTrackPiece
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &3579885370227336674
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5041,7 +5101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c861dd3d7acfa1f49810081356248965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trackPiece: {fileID: 0}
+  trackPiece: {fileID: 1540954917101270265, guid: 75095f53a79da5e4e8b33cf157ebf8ef, type: 3}
   pieceManager: {fileID: 0}
 --- !u!1 &2787012464379301687
 GameObject:
