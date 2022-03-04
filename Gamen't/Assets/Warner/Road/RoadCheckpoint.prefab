@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 473345370075981453}
   - component: {fileID: 3972682351948603688}
   - component: {fileID: 5313624410276782426}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RailingFinnhislineBoard.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 1713628781084183037}
   - component: {fileID: 1033894273262731677}
   - component: {fileID: 3507272592626651938}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RailingCheckpoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -189,7 +189,7 @@ GameObject:
   - component: {fileID: 3247159753797693717}
   - component: {fileID: 1300179459408708035}
   - component: {fileID: 8956524553596582617}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RoadCheckpoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -282,7 +282,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7537477382118676240}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RoadCheckpoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
