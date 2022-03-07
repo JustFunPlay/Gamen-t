@@ -10,7 +10,7 @@ public class PlayerID : MonoBehaviour
     public string playerName;
     public int playerIdNumber;
 
-    public int totalTimesThroughFinish = 1;
+    public int labCount;
     public bool canStart;
     public bool canFinish;
 
@@ -37,15 +37,19 @@ public class PlayerID : MonoBehaviour
             canStart = true;
             if(canFinish == true)
             {
-                totalTimesThroughFinish++;
+                labCount++;
                 canFinish = false;
-                if (totalTimesThroughFinish == playerInfo.maxLaps)
+                if (labCount == playerInfo.maxLaps)
                 {
                     print(playerName + " Has Finished");
                     PlayerFinished();
                     
                 }
 
+            }
+            if (labCount == 0)
+            {
+                labCount = 1;
             }
         }
     }
@@ -54,17 +58,17 @@ public class PlayerID : MonoBehaviour
 
     }
 
-    public void CheckPos(float[] times)
+    public void CheckPos(List<PosCP> positions)
     {
-        int numb = 4;
-        for (int i = 0; i < times.Length; i++)
+        int position = positions.Count;
+        for (int i = 0; i < positions.Count; i++)
         {
-            if (times[i] < raceTime && i > 0)
+            if (positions[i].lap < labCount)
             {
-                numb--;
+                position--;
             }
         }
-        positionText.text = numb.ToString();
+        positionText.text = position.ToString();
     }
 
     private void Update()

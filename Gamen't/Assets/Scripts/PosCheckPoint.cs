@@ -4,21 +4,32 @@ using UnityEngine;
 
 public class PosCheckPoint : MonoBehaviour
 {
-    public float[] times = new float[4];
-    private void Start()
-    {
-        for (int i = 0; i < times.Length; i++)
-        {
-            times[i] = -1;
-        }
-    }
+    public List<PosCP> positions = new List<PosCP>();
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.GetComponentInParent<PlayerID>())
         {
-            times[other.GetComponentInParent<PlayerID>().playerIdNumber] = other.GetComponentInParent<PlayerID>().raceTime;
-            other.GetComponentInParent<PlayerID>().CheckPos(times);
+            PlayerID  player = other.GetComponentInParent<PlayerID>();
+            PosCP playerinf = new PosCP();
+            playerinf.id = player.playerIdNumber;
+            playerinf.lap = player.labCount;
+            for (int i = 0; i < positions.Count; i++)
+            {
+                if (positions[i].id == player.playerIdNumber)
+                {
+                    positions.RemoveAt(i);
+                }
+            }
+            positions.Add(playerinf);
+            player.CheckPos(positions);
         }
     }
+}
+
+[System.Serializable]
+public class PosCP
+{
+    public int id;
+    public int lap;
 }

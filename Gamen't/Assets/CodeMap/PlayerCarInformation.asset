@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 356099d9a8b6cec40b12cf5acc168ef1, type: 3}
   m_Name: PlayerCarInformation
   m_EditorClassIdentifier: 
-  totalcars: 3
+  totalcars: 2
   maxLaps: 3
   totalCheckpoints: []
   playerSelections:
