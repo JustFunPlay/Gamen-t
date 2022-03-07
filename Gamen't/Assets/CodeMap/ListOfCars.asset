@@ -13,12 +13,57 @@ MonoBehaviour:
   m_Name: ListOfCars
   m_EditorClassIdentifier: 
   Cars:
-  - carSelectable: {fileID: 4582174514683055560, guid: 3dd3b899a36772546a06d5e0009363c6, type: 3}
+  - carSelectable: {fileID: 4898341884572870481, guid: 85faec200b5ffb84b86c0990bf2f27de, type: 3}
     carNamePlates: Blue Car
     skins:
-    - skinMaterial: {fileID: 0}
+    - skinMaterial0: {fileID: 2100000, guid: 907af39f83a6bc440b29bea0c9d905ff, type: 2}
+      skinMaterial1: {fileID: 2100000, guid: cca709541e54c2d47a9fa7a08397c3c4, type: 2}
+      skinMaterial2: {fileID: 2100000, guid: 98dbb5fc6045d5249b467d4602f8a209, type: 2}
+      skinMaterial3: {fileID: 2100000, guid: 4ff1e8648b13b904198c4b54989e2328, type: 2}
+      skinsNamePlates: Shark
+    - skinMaterial0: {fileID: 2100000, guid: e8e120bf87f40044198babee90301bc7, type: 2}
+      skinMaterial1: {fileID: 2100000, guid: 8d9bcc98461dcc3459c4413858dea4e7, type: 2}
+      skinMaterial2: {fileID: 2100000, guid: 6fbf6e1464d17f746a47ef656a8247bc, type: 2}
+      skinMaterial3: {fileID: 2100000, guid: 85822d122fd06ee41812dea05e341c6f, type: 2}
+      skinsNamePlates: Poeurple
+    - skinMaterial0: {fileID: 2100000, guid: ea68398c19b185c43816faeb5fe73776, type: 2}
+      skinMaterial1: {fileID: 2100000, guid: ea68398c19b185c43816faeb5fe73776, type: 2}
+      skinMaterial2: {fileID: 2100000, guid: ea68398c19b185c43816faeb5fe73776, type: 2}
+      skinMaterial3: {fileID: 2100000, guid: ea68398c19b185c43816faeb5fe73776, type: 2}
       skinsNamePlates: 
-    - skinMaterial: {fileID: 0}
+  - carSelectable: {fileID: 3928215478786271756, guid: 39db8d4576cf2534a80408edc3aa7af6, type: 3}
+    carNamePlates: Blue Car
+    skins:
+    - skinMaterial0: {fileID: -876546973899608171, guid: a079c72c3c98fee43a3730959978da76, type: 3}
+      skinMaterial1: {fileID: 0}
+      skinMaterial2: {fileID: 2100000, guid: 6fbf6e1464d17f746a47ef656a8247bc, type: 2}
+      skinMaterial3: {fileID: 0}
       skinsNamePlates: 
-    - skinMaterial: {fileID: 0}
+    - skinMaterial0: {fileID: 2100000, guid: ea68398c19b185c43816faeb5fe73776, type: 2}
+      skinMaterial1: {fileID: 0}
+      skinMaterial2: {fileID: 2100000, guid: 6fbf6e1464d17f746a47ef656a8247bc, type: 2}
+      skinMaterial3: {fileID: 0}
+      skinsNamePlates: 
+    - skinMaterial0: {fileID: -6478536213147159724, guid: a079c72c3c98fee43a3730959978da76, type: 3}
+      skinMaterial1: {fileID: 0}
+      skinMaterial2: {fileID: 2100000, guid: 6fbf6e1464d17f746a47ef656a8247bc, type: 2}
+      skinMaterial3: {fileID: 0}
+      skinsNamePlates: 
+    - skinMaterial0: {fileID: 2100000, guid: 26c0c2b8a3f289a42a03066bfd62e3fe, type: 2}
+      skinMaterial1: {fileID: 0}
+      skinMaterial2: {fileID: 2100000, guid: 6fbf6e1464d17f746a47ef656a8247bc, type: 2}
+      skinMaterial3: {fileID: 0}
+      skinsNamePlates: 
+  - carSelectable: {fileID: 7613291187736009743, guid: fe77ffa063a18014a89c724236bb81eb, type: 3}
+    carNamePlates: Blue Car
+    skins:
+    - skinMaterial0: {fileID: 0}
+      skinMaterial1: {fileID: 0}
+      skinMaterial2: {fileID: 0}
+      skinMaterial3: {fileID: 0}
+      skinsNamePlates: 
+    - skinMaterial0: {fileID: 0}
+      skinMaterial1: {fileID: 0}
+      skinMaterial2: {fileID: 0}
+      skinMaterial3: {fileID: 0}
       skinsNamePlates: 

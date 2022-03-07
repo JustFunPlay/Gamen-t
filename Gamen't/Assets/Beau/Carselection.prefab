@@ -412,9 +412,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: CarNextBut, Assembly-CSharp
-        m_MethodName: nextCar
+      - m_Target: {fileID: 6762820912792298168}
+        m_TargetAssemblyTypeName: CarSelectation, Assembly-CSharp
+        m_MethodName: OnRightClickSkinButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -893,9 +893,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: CarNextBut, Assembly-CSharp
-        m_MethodName: nextCar
+      - m_Target: {fileID: 6762820912792298168}
+        m_TargetAssemblyTypeName: CarSelectation, Assembly-CSharp
+        m_MethodName: OnRightClickCarButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1157,7 +1157,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3458319228237891893}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6762820912792298168}
+        m_TargetAssemblyTypeName: CarSelectation, Assembly-CSharp
+        m_MethodName: OnLeftClickCarButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &3458319228237891883
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1595,7 +1607,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3458319228517285908}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6762820912792298168}
+        m_TargetAssemblyTypeName: CarSelectation, Assembly-CSharp
+        m_MethodName: OnLeftClickSkinButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &3458319228517285898
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1623,6 +1647,7 @@ GameObject:
   - component: {fileID: 3458319228533823427}
   - component: {fileID: 3458319228533823436}
   - component: {fileID: 3458319228533823437}
+  - component: {fileID: 6762820912792298168}
   m_Layer: 5
   m_Name: Car selection canvas
   m_TagString: Untagged
@@ -1719,6 +1744,25 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &6762820912792298168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3458319228533823438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c80bfeec3c3ce146b5622fb76983a5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  carInventory: {fileID: 11400000, guid: 49773a87ec8552249a3d379a24e1108c, type: 2}
+  carNumber: 0
+  skinNumber: 0
+  carPos: {fileID: 129542796935065750}
+  carTesting: {fileID: 0}
+  inCarTesting: {fileID: 0}
+  materialTest1: {fileID: 2100000, guid: f4e195ac1e204eff960149d1cb34e18c, type: 2}
 --- !u!1 &3458319228585396540
 GameObject:
   m_ObjectHideFlags: 0

@@ -18,6 +18,9 @@ public class PlayerSelection
 {
     public string name;
     public GameObject selectedCar;
-    public Material selectedCarSkin;
+    public Material selectedCarSkin0;
+    public Material selectedCarSkin1;
+    public Material selectedCarSkin2;
+    public Material selectedCarSkin3;
     public Transform currentCheckpoint;
 }

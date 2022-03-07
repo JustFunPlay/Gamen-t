@@ -22,6 +22,9 @@ public class CarSelection
 [System.Serializable]
 public class SkinSelection
 {
-    public Material skinMaterial;
+    public Material skinMaterial0;
+    public Material skinMaterial1;
+    public Material skinMaterial2;
+    public Material skinMaterial3;
     public string skinsNamePlates;
 }

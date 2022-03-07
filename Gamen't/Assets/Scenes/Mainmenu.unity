@@ -360,7 +360,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1048226633}
-  m_RootOrder: 5
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
@@ -782,7 +782,7 @@ RectTransform:
   - {fileID: 618562137}
   - {fileID: 1314080560}
   m_Father: {fileID: 1048226633}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
@@ -989,12 +989,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1048226634}
         m_TargetAssemblyTypeName: HowManyPlayer, Assembly-CSharp
-        m_MethodName: TwoPlayers
-        m_Mode: 1
+        m_MethodName: LoadPlayers
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1250,12 +1250,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1048226634}
         m_TargetAssemblyTypeName: HowManyPlayer, Assembly-CSharp
-        m_MethodName: FourPlayers
-        m_Mode: 1
+        m_MethodName: LoadPlayers
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 4
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1856,11 +1856,11 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 2109391136}
+  - {fileID: 14983596}
   - {fileID: 1230356888}
   - {fileID: 348733869}
   - {fileID: 1668254936}
   - {fileID: 1756844325}
-  - {fileID: 14983596}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1881,8 +1881,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 435a6883b25f9d5459be1ea7f26a764b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerInformation: {fileID: 0}
-  carSelectionCanvas: {fileID: 0}
+  carSelectCanvas: {fileID: 11400000, guid: 08ca02135f6e76a4c8b77ce410933641, type: 2}
+  playerCars: {fileID: 11400000, guid: 32ba84c6353187d4a94dfddb68e53bbc, type: 2}
+  canvasSelection:
+    name: 
+    selectedCar: {fileID: 3458319226721410268, guid: be3970fbafa5d2e468ab4f87eea70c8a, type: 3}
+    selectedCarSkin: {fileID: 0}
+    currentCheckpoint: {fileID: 0}
+  carSelection:
+    name: 
+    selectedCar: {fileID: 4898341884572870481, guid: 85faec200b5ffb84b86c0990bf2f27de, type: 3}
+    selectedCarSkin: {fileID: 0}
+    currentCheckpoint: {fileID: 0}
 --- !u!1 &1120542686
 GameObject:
   m_ObjectHideFlags: 0
@@ -2005,12 +2015,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1048226634}
         m_TargetAssemblyTypeName: HowManyPlayer, Assembly-CSharp
-        m_MethodName: ThreePlayers
-        m_Mode: 1
+        m_MethodName: LoadPlayers
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -2099,7 +2109,7 @@ RectTransform:
   m_Children:
   - {fileID: 1737052540}
   m_Father: {fileID: 1048226633}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
@@ -2149,7 +2159,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1230356890}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1048226634}
+        m_TargetAssemblyTypeName: HowManyPlayer, Assembly-CSharp
+        m_MethodName: LoadPlayers
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1230356890
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3205,7 +3227,7 @@ RectTransform:
   m_Children:
   - {fileID: 1427090837}
   m_Father: {fileID: 1048226633}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
@@ -3620,7 +3642,7 @@ RectTransform:
   m_Children:
   - {fileID: 2034042586}
   m_Father: {fileID: 1048226633}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
