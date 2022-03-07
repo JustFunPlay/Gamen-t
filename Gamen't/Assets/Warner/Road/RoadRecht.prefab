@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5006100569429348488}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RoadRecht
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 3137758622335708736}
   - component: {fileID: 4014458062588128955}
   - component: {fileID: 5428382278605467824}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RailingRecht
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -140,7 +140,7 @@ GameObject:
   - component: {fileID: 6627550369734322724}
   - component: {fileID: 6799514838325407125}
   - component: {fileID: 1680531067139019265}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RoadRecht
   m_TagString: Untagged
   m_Icon: {fileID: 0}
