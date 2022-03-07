@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6431048726433480309}
   - component: {fileID: 8845198924408465478}
   - component: {fileID: 5881385573610064562}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RoadSmallTurnBig
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -105,7 +105,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6106123096838237247}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RoadTurnBig
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -140,7 +140,7 @@ GameObject:
   - component: {fileID: 8637639374701047850}
   - component: {fileID: 6992820961309683933}
   - component: {fileID: 5772728674370901182}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RailingSmallTurnBig
   m_TagString: Untagged
   m_Icon: {fileID: 0}
