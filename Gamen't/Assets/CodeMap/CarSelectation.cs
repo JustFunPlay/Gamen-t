@@ -98,7 +98,7 @@ public class CarSelectation : MonoBehaviour
         inCarTesting.GetComponent<MeshRenderer>().materials = material;
 
 
-        //inCarTesting.GetComponent<MeshRenderer>().materials[1] = carInventory.Cars[carNumber].skins[skinNumber].skinMaterial0;
+        //inCarTesting.GetComponent<MeshRenderer>().materials[0] = carInventory.Cars[carNumber].skins[skinNumber].skinMaterial0;
         //inCarTesting.GetComponent<MeshRenderer>().materials[1] = carInventory.Cars[carNumber].skins[skinNumber].skinMaterial1;
         //inCarTesting.GetComponent<MeshRenderer>().materials[2] = carInventory.Cars[carNumber].skins[skinNumber].skinMaterial2;
         //inCarTesting.GetComponent<MeshRenderer>().materials[3] = carInventory.Cars[carNumber].skins[skinNumber].skinMaterial3;
