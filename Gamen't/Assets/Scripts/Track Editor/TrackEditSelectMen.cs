@@ -59,11 +59,11 @@ public class TrackEditSelectMen : MonoBehaviour
     }
     public void EnterRace()
     {
-        //SceneManager.LoadScene(0);
+        SceneManager.LoadScene(2);
     }
     public void EnterEditor()
     {
-        //SceneManager.LoadScene(1);
+        SceneManager.LoadScene(4);
     }
     public void UpdateTrackList()
     {

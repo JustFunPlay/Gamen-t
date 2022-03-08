@@ -11,7 +11,8 @@
                     "id": "23384a12-3be0-4607-bf6d-08b41d6a323a",
                     "expectedControlType": "Vector2",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": true
                 },
                 {
                     "name": "TurnCam",
@@ -19,7 +20,8 @@
                     "id": "032c13db-9e4a-4841-a016-13c6dba6ffc4",
                     "expectedControlType": "Vector2",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": true
                 },
                 {
                     "name": "PlaceTrack",
@@ -27,7 +29,8 @@
                     "id": "c066d76b-bd9d-4755-8626-cfcd13b58208",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "RemoveTrack",
@@ -35,7 +38,8 @@
                     "id": "3ee1b246-9d08-426a-ba28-cb611cd65b1b",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "RotateTrackRight",
@@ -43,7 +47,8 @@
                     "id": "b5127261-ca3b-4d66-bd93-8c6e51ccd4dd",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "RotateTrackLeft",
@@ -51,7 +56,17 @@
                     "id": "b94e6efe-3667-4249-a08c-03b885f83da2",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Fuck",
+                    "type": "Button",
+                    "id": "aa1eae43-6a61-44c1-9006-c99c489b62cb",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -360,6 +375,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "RotateTrackLeft",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "33aa9adf-e702-488c-a549-64e477653807",
+                    "path": "<Keyboard>/p",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Fuck",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

@@ -29,6 +29,6 @@ public class HowManyPlayer : MonoBehaviour
             playerCars.playerSelections.Add(carSelection);
             carSelectCanvas.playerSelections.Add(canvasSelection);
         }
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(1);
     }
 }
