@@ -7,16 +7,17 @@ using UnityEngine.Rendering;
 
 public class CarSelectation : MonoBehaviour
 {
-    //public SkinSelection skinsInventory;
     public CarSelect carInventory;
     public int carNumber;
     public int skinNumber;
     public Transform carPos;
 
     public GameObject carTesting;
-    public GameObject inCarTesting;
+    public GameObject goingInCar;
 
-    public Material materialTest1;
+    public GameObject replaceSkinText; 
+
+    public PlayerInformation playerInformation;
 
     private void Start()
     {
@@ -53,11 +54,12 @@ public class CarSelectation : MonoBehaviour
         {
             Destroy(carPos.GetChild(0).gameObject);
         }
-      carTesting = Instantiate(carInventory.Cars[carNumber].carSelectable, carPos.position, carPos.rotation, carPos);
-
-        //carTesting = carInventory.Cars[carNumber].carSelectable;
+        carTesting = Instantiate(carInventory.Cars[carNumber].carSelectable, carPos.position, carPos.rotation, carPos);
+        skinNumber = 0;
+        OnSkinSpawn();
+        
     }
-    // below this werkt het nog niet helemaal
+    
     public void OnRightClickSkinButton()
     {
         if(skinNumber < carInventory.Cars[carNumber].skins.Length -1)
@@ -84,26 +86,26 @@ public class CarSelectation : MonoBehaviour
     }
     void OnSkinSpawn()
     {
-        
-        inCarTesting = carTesting.transform.GetChild(4).gameObject;
+        replaceSkinText.GetComponent<Text>().text = carInventory.Cars[carNumber].skins[skinNumber].skinsNamePlates;
+
+        goingInCar = carTesting.transform.GetChild(4).gameObject;
+
+        goingInCar.GetComponent<MeshRenderer>().materials = carInventory.Cars[carNumber].skins[skinNumber].materials;
 
 
-        Material[] material = inCarTesting.GetComponent<MeshRenderer>().materials;
-
-        material[0] = carInventory.Cars[carNumber].skins[skinNumber].skinMaterial0;
-        material[1] = carInventory.Cars[carNumber].skins[skinNumber].skinMaterial1;
-        material[2] = carInventory.Cars[carNumber].skins[skinNumber].skinMaterial2;
-        material[3] = carInventory.Cars[carNumber].skins[skinNumber].skinMaterial3;
-
-        inCarTesting.GetComponent<MeshRenderer>().materials = material;
+        //goingInCar.GetComponent<MeshRenderer>().materials[0] = carInventory.Cars[carNumber].skins[skinNumber].skinMaterial0;
+        //goingInCar.GetComponent<MeshRenderer>().materials[1] = carInventory.Cars[carNumber].skins[skinNumber].skinMaterial1;
+        //goingInCar.GetComponent<MeshRenderer>().materials[2] = carInventory.Cars[carNumber].skins[skinNumber].skinMaterial2;
+        //goingInCar.GetComponent<MeshRenderer>().materials[3] = carInventory.Cars[carNumber].skins[skinNumber].skinMaterial3;
 
 
-        //inCarTesting.GetComponent<MeshRenderer>().materials[0] = carInventory.Cars[carNumber].skins[skinNumber].skinMaterial0;
-        //inCarTesting.GetComponent<MeshRenderer>().materials[1] = carInventory.Cars[carNumber].skins[skinNumber].skinMaterial1;
-        //inCarTesting.GetComponent<MeshRenderer>().materials[2] = carInventory.Cars[carNumber].skins[skinNumber].skinMaterial2;
-        //inCarTesting.GetComponent<MeshRenderer>().materials[3] = carInventory.Cars[carNumber].skins[skinNumber].skinMaterial3;
+        Selection();
+    }
 
-
-
+    void Selection()
+    {
+        int id = GetComponentInParent<PlayerID>().playerIdNumber;
+        playerInformation.playerSelections[id].selectedCar = carInventory.Cars[carNumber].carSelectable;
+        playerInformation.playerSelections[id].materials = carInventory.Cars[carNumber].skins[skinNumber].materials;
     }
 }

@@ -358,6 +358,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7388697285284072360, guid: 21ff218f4f6dea64dbe50a627230b7be, type: 3}
+      propertyPath: playerSpawning.Array.data[1].x
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 7388697285284072360, guid: 21ff218f4f6dea64dbe50a627230b7be, type: 3}
+      propertyPath: playerSpawning.Array.data[2].y
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 7388697285284072360, guid: 21ff218f4f6dea64dbe50a627230b7be, type: 3}
+      propertyPath: playerSpawning.Array.data[3].x
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 7388697285284072360, guid: 21ff218f4f6dea64dbe50a627230b7be, type: 3}
+      propertyPath: playerSpawning.Array.data[3].y
+      value: 500
+      objectReference: {fileID: 0}
     - target: {fileID: 7388697285284072361, guid: 21ff218f4f6dea64dbe50a627230b7be, type: 3}
       propertyPath: m_MaxPlayerCount
       value: -1
