@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 406939243289428546}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.8310003, y: 0.035, z: -1.064}
+  m_LocalPosition: {x: -0.8310003, y: 0.102, z: -1.064}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 837768399879609971}
@@ -198,7 +198,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2034499283569934503}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.8289995, y: 0.034999996, z: -1.064}
+  m_LocalPosition: {x: 0.8289995, y: 0.102, z: -1.064}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5575016906088654377}
@@ -750,12 +750,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wheelData:
-  - leftWheel: {fileID: 0}
-    rightWheel: {fileID: 0}
+  - leftWheel: {fileID: 5321229523296201929}
+    rightWheel: {fileID: 4631435618245590289}
     addWheelTorque: 1
     shouldSteer: 1
-  - leftWheel: {fileID: 0}
-    rightWheel: {fileID: 0}
+  - leftWheel: {fileID: 8929940309213062280}
+    rightWheel: {fileID: 2040532553715268254}
     addWheelTorque: 1
     shouldSteer: 0
   maxTorque: 700
@@ -997,7 +997,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5491933960510695087}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.8779993, y: 0.034999996, z: 1.7154266}
+  m_LocalPosition: {x: 0.8779993, y: 0.102, z: 1.7154266}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 9018497456150834982}
@@ -1059,7 +1059,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6292904125851336210}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.8789997, y: 0.034999996, z: 1.7154266}
+  m_LocalPosition: {x: -0.8789997, y: 0.102, z: 1.7154266}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4848288033987623555}
