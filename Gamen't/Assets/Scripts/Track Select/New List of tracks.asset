@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74c7f7b6f6bad50419d18f79105b3689, type: 3}
+  m_Name: New List of tracks
+  m_EditorClassIdentifier: 
+  defaultTracks:
+  - {fileID: 11400000, guid: 3690ac7b9b7130243aa7f152c7c1197f, type: 2}
+  - {fileID: 11400000, guid: 0af4f8760aab8224ca936332a500a76d, type: 2}
+  - {fileID: 11400000, guid: 760ec06a5df4f5b47b8cdbff067a672a, type: 2}
+  trackInfos: []
