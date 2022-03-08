@@ -46,8 +46,8 @@ MonoBehaviour:
   playerInfos: {fileID: 11400000, guid: 08ca02135f6e76a4c8b77ce410933641, type: 2}
   playerSpawning:
   - {x: 0, y: 0, z: -100}
-  - {x: 50, y: 0, z: -100}
-  - {x: 0, y: 50, z: -100}
-  - {x: 50, y: 50, z: -100}
+  - {x: 500, y: 0, z: -100}
+  - {x: 0, y: 500, z: -100}
+  - {x: 500, y: 500, z: -100}
   listOfPlayers: []
   listOfCameras: []
