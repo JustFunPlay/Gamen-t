@@ -1197,7 +1197,7 @@ GameObject:
   - component: {fileID: 3458319228398258677}
   - component: {fileID: 3458319228398258678}
   - component: {fileID: 3458319228398258679}
-  - component: {fileID: 2871892142392648088}
+  - component: {fileID: 8511574177957449024}
   m_Layer: 0
   m_Name: Ground
   m_TagString: Untagged
@@ -1283,7 +1283,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &2871892142392648088
+--- !u!114 &8511574177957449024
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2033,7 +2033,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8530407115998390198}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.27100006, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3458319228398258676}

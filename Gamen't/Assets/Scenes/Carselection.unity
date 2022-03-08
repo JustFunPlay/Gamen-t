@@ -123,41 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &102293505 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3458319226721410268, guid: be3970fbafa5d2e468ab4f87eea70c8a, type: 3}
-  m_PrefabInstance: {fileID: 1132931015}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &102293507
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 102293505}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: a6c551f85e4672c4ba735942e8bde649, type: 3}
-  m_NotificationBehavior: 0
-  m_UIInputModule: {fileID: 0}
-  m_DeviceLostEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_DeviceRegainedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ControlsChangedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ActionEvents: []
-  m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
-  m_DefaultActionMap: Player
-  m_SplitScreenIndex: -1
-  m_Camera: {fileID: 0}
 --- !u!1001 &1132931015
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -216,46 +181,6 @@ PrefabInstance:
     - target: {fileID: 3458319226721410268, guid: be3970fbafa5d2e468ab4f87eea70c8a, type: 3}
       propertyPath: m_IsActive
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3458319226879981562, guid: be3970fbafa5d2e468ab4f87eea70c8a, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 147
-      objectReference: {fileID: 0}
-    - target: {fileID: 3458319226902563255, guid: be3970fbafa5d2e468ab4f87eea70c8a, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -137.40002
-      objectReference: {fileID: 0}
-    - target: {fileID: 3458319227587416041, guid: be3970fbafa5d2e468ab4f87eea70c8a, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -137.40002
-      objectReference: {fileID: 0}
-    - target: {fileID: 3458319228211948869, guid: be3970fbafa5d2e468ab4f87eea70c8a, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3458319228533823426, guid: be3970fbafa5d2e468ab4f87eea70c8a, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3458319228533823426, guid: be3970fbafa5d2e468ab4f87eea70c8a, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3458319228533823426, guid: be3970fbafa5d2e468ab4f87eea70c8a, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3458319228533823427, guid: be3970fbafa5d2e468ab4f87eea70c8a, type: 3}
-      propertyPath: m_RenderMode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3458319228533823436, guid: be3970fbafa5d2e468ab4f87eea70c8a, type: 3}
-      propertyPath: m_PresetInfoIsWorld
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8180727680792364109, guid: be3970fbafa5d2e468ab4f87eea70c8a, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 293
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be3970fbafa5d2e468ab4f87eea70c8a, type: 3}

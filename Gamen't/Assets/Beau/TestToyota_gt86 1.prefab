@@ -633,7 +633,6 @@ GameObject:
   - component: {fileID: 6757023166240943122}
   - component: {fileID: 4247420040939927888}
   - component: {fileID: 4593226706943979558}
-  - component: {fileID: 4773398924135780565}
   m_Layer: 0
   m_Name: Car Toyota GT68
   m_TagString: Untagged
@@ -682,8 +681,8 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 26eb1c80601191d4c9fa3fa16710c842, type: 2}
-  - {fileID: 2100000, guid: 0be1bfb7dc4d28f479b2f4f7b4413482, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -719,21 +718,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -1629134282159277781, guid: ec712f10c7a9f87469fdb6c2e021ef8d, type: 3}
---- !u!114 &4773398924135780565
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4250901464991168191}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a3a0c5a110430e47a8f7ddd15332ef5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mesh: {fileID: 0}
-  verts: []
-  oldMesh: {fileID: 0}
 --- !u!1 &4479117821488176792
 GameObject:
   m_ObjectHideFlags: 0
@@ -1059,20 +1043,24 @@ MonoBehaviour:
     shouldSteer: 0
   maxTorque: 500
   maxSteerAngle: 30
-  brrr: {x: 0, y: 0}
-  handBrake: 0
+  inputGasBrake: {x: 0, y: 0}
   massCenter: {fileID: 7735918381112825002}
   brakeForce: 400
   torque: 0
   steer: 0
-  restet: 0
   speedRead: 0
-  isSpeed: 0
-  rPM: 0
-  itGoesBack: 0
+  itStoped: 0
   maxSpeed: 200
+  orignalMaxSpeed: 0
+  maxSpeedBack: 0
   speedLimiterRange: 20
-  brakeLight: {fileID: 2100000, guid: 0be1bfb7dc4d28f479b2f4f7b4413482, type: 2}
+  brakeLight: {fileID: 0}
+  brakeOn: 0
+  speedMeterder: {fileID: 0}
+  collided: 0
+  handBrake: 0
+  handBrakeOn: 0
+  go: 0
 --- !u!114 &6271634286550416181
 MonoBehaviour:
   m_ObjectHideFlags: 0
