@@ -171,7 +171,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4451812109148188854}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2034499283569934503
 GameObject:
@@ -347,7 +347,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4451812109148188854}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: -97.061, z: 0}
 --- !u!20 &8703973166004601194
 Camera:
@@ -399,7 +399,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3564362374634872614}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!114 &6304867491272888256
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -645,11 +645,11 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 5942439332913699544}
   - {fileID: 8048507189093636106}
   - {fileID: 5105798295212533109}
   - {fileID: 3044677486323765261}
   - {fileID: 7624287967412438681}
+  - {fileID: 5942439332913699544}
   - {fileID: 824744907075089422}
   - {fileID: 6380598230372829527}
   - {fileID: 3146841402953488148}
@@ -689,9 +689,11 @@ MonoBehaviour:
   playerInfo: {fileID: 11400000, guid: 32ba84c6353187d4a94dfddb68e53bbc, type: 2}
   playerName: 
   playerIdNumber: 0
-  totalTimesThroughFinish: 1
+  labCount: 0
   canStart: 0
   canFinish: 0
+  raceTime: 0
+  positionText: {fileID: 0}
 --- !u!114 &8092843111520228583
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -777,7 +779,7 @@ MonoBehaviour:
   collided: 0
   handBrake: 1700
   handBrakeOn: 0
-  go: 1
+  go: 0
 --- !u!1 &4171816218811249358
 GameObject:
   m_ObjectHideFlags: 0
@@ -809,7 +811,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4451812109148188854}
-  m_RootOrder: 0
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &5728352925619542702
 MeshFilter:
@@ -1205,7 +1207,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4451812109148188854}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &9064879393166837944
 GameObject:
@@ -1238,7 +1240,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4451812109148188854}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 24.729, y: 0.808, z: 0}
 --- !u!20 &5805931968287727871
 Camera:
@@ -1290,7 +1292,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9064879393166837944}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!114 &600397036023306241
 MonoBehaviour:
   m_ObjectHideFlags: 0
