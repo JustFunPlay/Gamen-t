@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerID : MonoBehaviour
 {
@@ -9,9 +10,15 @@ public class PlayerID : MonoBehaviour
     public string playerName;
     public int playerIdNumber;
 
-    public int totalTimesThroughFinish = 1;
+    public int labCount;
     public bool canStart;
     public bool canFinish;
+
+
+    public float raceTime;
+    public Text positionText;
+
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "CheckPoint begin")
@@ -30,9 +37,9 @@ public class PlayerID : MonoBehaviour
             canStart = true;
             if(canFinish == true)
             {
-                totalTimesThroughFinish++;
+                labCount++;
                 canFinish = false;
-                if (totalTimesThroughFinish == playerInfo.maxLaps)
+                if (labCount == playerInfo.maxLaps)
                 {
                     print(playerName + " Has Finished");
                     PlayerFinished();
@@ -40,11 +47,33 @@ public class PlayerID : MonoBehaviour
                 }
 
             }
+            if (labCount == 0)
+            {
+                labCount = 1;
+            }
         }
     }
     public void PlayerFinished()
     {
 
+    }
+
+    public void CheckPos(List<PosCP> positions)
+    {
+        int position = positions.Count;
+        for (int i = 0; i < positions.Count; i++)
+        {
+            if (positions[i].lap < labCount)
+            {
+                position--;
+            }
+        }
+        positionText.text = position.ToString();
+    }
+
+    private void Update()
+    {
+        raceTime += Time.deltaTime;
     }
 
 }
