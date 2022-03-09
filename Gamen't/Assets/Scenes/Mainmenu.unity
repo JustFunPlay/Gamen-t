@@ -1130,7 +1130,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1048226630
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1233,19 +1233,21 @@ MonoBehaviour:
   playerCars: {fileID: 11400000, guid: 32ba84c6353187d4a94dfddb68e53bbc, type: 2}
   canvasSelection:
     name: 
-    selectedCar: {fileID: 0}
-    selectedCarSkin0: {fileID: 0}
-    selectedCarSkin1: {fileID: 0}
-    selectedCarSkin2: {fileID: 0}
-    selectedCarSkin3: {fileID: 0}
+    selectedCar: {fileID: 3458319226721410268, guid: be3970fbafa5d2e468ab4f87eea70c8a, type: 3}
+    materials:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
     currentCheckpoint: {fileID: 0}
   carSelection:
     name: 
-    selectedCar: {fileID: 0}
-    selectedCarSkin0: {fileID: 0}
-    selectedCarSkin1: {fileID: 0}
-    selectedCarSkin2: {fileID: 0}
-    selectedCarSkin3: {fileID: 0}
+    selectedCar: {fileID: 8785248514869269620, guid: d807a48cb8293c34784c9e42570e03df, type: 3}
+    materials:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
     currentCheckpoint: {fileID: 0}
 --- !u!1 &1134994233
 GameObject:
@@ -2443,6 +2445,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Leaderboard
       objectReference: {fileID: 0}
+    - target: {fileID: 1595758286245556735, guid: e12c37537f28477499015da12aa49d6c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e12c37537f28477499015da12aa49d6c, type: 3}
 --- !u!1001 &3458319228322979643
@@ -2515,6 +2521,10 @@ PrefabInstance:
     - target: {fileID: 3458319227587416041, guid: be3970fbafa5d2e468ab4f87eea70c8a, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -137.40002
+      objectReference: {fileID: 0}
+    - target: {fileID: 3458319228517285910, guid: be3970fbafa5d2e468ab4f87eea70c8a, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -248.50002
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be3970fbafa5d2e468ab4f87eea70c8a, type: 3}

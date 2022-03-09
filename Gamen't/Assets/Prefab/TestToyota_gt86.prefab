@@ -1351,7 +1351,7 @@ MonoBehaviour:
   collided: 0
   handBrake: 1700
   handBrakeOn: 0
-  go: 1
+  go: 0
 --- !u!114 &4898341884572870483
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1500,7 +1500,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4898341884591060553}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!114 &4898341884591060552
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1616,7 +1616,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4898341884818298353}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!114 &4898341884818298352
 MonoBehaviour:
   m_ObjectHideFlags: 0
