@@ -6,7 +6,6 @@ using UnityEngine.InputSystem;
 [CreateAssetMenu(fileName = "ScriptablePlayerInformation", menuName = "ScriptablePlayerInfo")]
 public class PlayerInformation : ScriptableObject
 {
-    public int totalcars;
     public int maxLaps;
 
     public List<CheckPointsSingles> totalCheckpoints;

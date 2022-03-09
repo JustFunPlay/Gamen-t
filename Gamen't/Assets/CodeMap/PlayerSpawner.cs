@@ -22,7 +22,6 @@ public class PlayerSpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        playerInfos.totalcars = 0;
         PlayerSpawn();
     }
 
@@ -45,7 +44,7 @@ public class PlayerSpawner : MonoBehaviour
                 GameObject newcamera = newplayer.GetComponentInChildren<Camera>().gameObject;
                 listOfCameras.Add(newcamera);
 
-                playerInfos.totalcars++;
+                
             }
         }
         UpdateCameras();

@@ -12,22 +12,22 @@ public class MaxPlayersUI : MonoBehaviour
 
     private void Start()
     {
-        if (playerInfo.totalcars == 1)
+        if (playerInfo.playerSelections.Count == 1)
         {
             listOfEvents[0].SetActive(true);
         }
-        if (playerInfo.totalcars == 2)
+        if (playerInfo.playerSelections.Count == 2)
         {
             listOfEvents[0].SetActive(true);
             listOfEvents[1].SetActive(true);
         }
-        if (playerInfo.totalcars == 3)
+        if (playerInfo.playerSelections.Count == 3)
         {
             listOfEvents[0].SetActive(true);
             listOfEvents[1].SetActive(true);
             listOfEvents[2].SetActive(true);
         }
-        if (playerInfo.totalcars == 4)
+        if (playerInfo.playerSelections.Count == 4)
         {
             listOfEvents[0].SetActive(true);
             listOfEvents[1].SetActive(true);
@@ -40,33 +40,24 @@ public class MaxPlayersUI : MonoBehaviour
     
     public void OnePlayerMode()
     {
-        playerInfo.totalcars = 1;
-        listOfEvents[0].SetActive(true);
 
+        
     }
     public void TwoPlayerMode()
     {
-        playerInfo.totalcars = 2;
-        listOfEvents[0].SetActive(true);
-        listOfEvents[1].SetActive(true);
+        
 
     }
 
     public void ThreePlayerMode()
     {
-        playerInfo.totalcars = 3;
-        listOfEvents[0].SetActive(true);
-        listOfEvents[1].SetActive(true);
-        listOfEvents[2].SetActive(true);
+
+
     }
 
     public void FourPlayerMode()
     {
-        playerInfo.totalcars = 4;
-        listOfEvents[0].SetActive(true);
-        listOfEvents[1].SetActive(true);
-        listOfEvents[2].SetActive(true);
-        listOfEvents[3].SetActive(true);
+
 
     }
 
