@@ -41,10 +41,11 @@ public class NewCarControll : MonoBehaviour
     public bool handBrakeOn;
     public bool go;
     bool b;
-
+    public PlayerInformation playerInformation;
     private void Start()
     {
-        brakeLight.DisableKeyword("_EMISSION");
+        
+        //brakeLight = playerInformation.playerSelections[GetComponent<CarSelectation>().carNumber].materials[2];
         rb = GetComponent<Rigidbody>();
         rb.centerOfMass = massCenter.localPosition;
         
@@ -129,7 +130,7 @@ public class NewCarControll : MonoBehaviour
 
                 if (inputGasBrake.y == -1)
                 {
-                    brakeLight.EnableKeyword("_EMISSION");
+                    //brakeLight.EnableKeyword("_EMISSION");
                     element.leftWheel.brakeTorque = brakeForce;
                     element.rightWheel.brakeTorque = brakeForce;
                     if (speedRead < 1)
@@ -140,7 +141,7 @@ public class NewCarControll : MonoBehaviour
                 }
                 else
                 {
-                    brakeLight.DisableKeyword("_EMISSION");
+                    //brakeLight.DisableKeyword("_EMISSION");
                 }
 
 

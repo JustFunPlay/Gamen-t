@@ -43,11 +43,12 @@ public class UISpawner : MonoBehaviour
                 GameObject newplayer = Instantiate(playerInfos.playerSelections[i].selectedCar, transforms[i].position, Quaternion.identity, transforms[i]);
                 listOfPlayers.Add(newplayer);
                 eventSystems[i].firstSelectedGameObject = newplayer.GetComponentInChildren<Button>().gameObject;
+                eventSystems[i].gameObject.SetActive(true);
+                newplayer.GetComponent<PlayerID>().playerIdNumber = i;
+                newplayer.GetComponentInChildren<CarSelectation>().id = i;
 
                 GameObject newcamera = newplayer.GetComponentInChildren<Camera>().gameObject;
                 listOfCameras.Add(newcamera);
-
-                ;
             }
         }
         UpdateCameras();

@@ -19,10 +19,14 @@ public class CarSelectation : MonoBehaviour
 
     public PlayerInformation playerInformation;
 
+    public int id;
+
     private void Start()
     {
         OnCarSpawn();
         OnSkinSpawn();
+
+        carInventory.Cars[carNumber].skins[skinNumber].materials[2].DisableKeyword("_EMISSION");
     }
     public void OnRightClickCarButton()
     {
@@ -104,8 +108,12 @@ public class CarSelectation : MonoBehaviour
 
     void Selection()
     {
-        int id = GetComponentInParent<PlayerID>().playerIdNumber;
+        //int id = GetComponentInParent<PlayerID>().playerIdNumber;
         playerInformation.playerSelections[id].selectedCar = carInventory.Cars[carNumber].carSelectable;
         playerInformation.playerSelections[id].materials = carInventory.Cars[carNumber].skins[skinNumber].materials;
+        
+        //playerInformation.materialsPlayerOne = carInventory.Cars[carNumber].skins[skinNumber].materials;
+       // playerInformation.materialsPlayerTwo = carInventory.Cars[carNumber].skins[skinNumber].materials;
+        print("How many fucks to give: " + id.ToString());
     }
 }

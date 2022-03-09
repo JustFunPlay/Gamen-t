@@ -1079,13 +1079,14 @@ MonoBehaviour:
   orignalMaxSpeed: 200
   maxSpeedBack: 40
   speedLimiterRange: 20
-  brakeLight: {fileID: 2100000, guid: 98dbb5fc6045d5249b467d4602f8a209, type: 2}
+  brakeLight: {fileID: 0}
   brakeOn: 0
   speedMeterder: {fileID: 4289791599306359028}
   collided: 0
   handBrake: 1700
   handBrakeOn: 0
-  go: 0
+  go: 1
+  playerInformation: {fileID: 11400000, guid: 32ba84c6353187d4a94dfddb68e53bbc, type: 2}
 --- !u!114 &4898341884572870483
 MonoBehaviour:
   m_ObjectHideFlags: 0

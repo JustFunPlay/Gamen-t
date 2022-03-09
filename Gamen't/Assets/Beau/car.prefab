@@ -780,6 +780,7 @@ MonoBehaviour:
   handBrake: 1700
   handBrakeOn: 0
   go: 0
+  playerInformation: {fileID: 11400000, guid: 32ba84c6353187d4a94dfddb68e53bbc, type: 2}
 --- !u!1 &4171816218811249358
 GameObject:
   m_ObjectHideFlags: 0
