@@ -110,7 +110,10 @@ public class CarSelectation : MonoBehaviour
     {
         //int id = GetComponentInParent<PlayerID>().playerIdNumber;
         playerInformation.playerSelections[id].selectedCar = carInventory.Cars[carNumber].carSelectable;
-        playerInformation.playerSelections[id].materials = carInventory.Cars[carNumber].skins[skinNumber].materials;
+        for (int i = 0; i < carInventory.Cars[carNumber].skins[skinNumber].materials.Length; i++)
+        {
+            playerInformation.playerSelections[id].materials[i] = new Material(carInventory.Cars[carNumber].skins[skinNumber].materials[i]);
+        }
         
         //playerInformation.materialsPlayerOne = carInventory.Cars[carNumber].skins[skinNumber].materials;
        // playerInformation.materialsPlayerTwo = carInventory.Cars[carNumber].skins[skinNumber].materials;

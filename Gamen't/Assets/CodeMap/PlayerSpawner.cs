@@ -40,6 +40,7 @@ public class PlayerSpawner : MonoBehaviour
                 listOfPlayers.Add(newplayer);
                 newplayer.GetComponent<PlayerID>().playerIdNumber = i;
                 newplayer.GetComponent<PlayerID>().playerName = playerInfos.playerSelections[i].name;
+                newplayer.transform.GetChild(4).GetComponent<MeshRenderer>().materials = playerInfos.playerSelections[i].materials;
 
                 GameObject newcamera = newplayer.GetComponentInChildren<Camera>().gameObject;
                 listOfCameras.Add(newcamera);
