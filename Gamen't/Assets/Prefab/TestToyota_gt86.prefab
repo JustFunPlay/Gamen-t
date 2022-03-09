@@ -210,7 +210,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &3523898582480487975
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1086,6 +1086,7 @@ MonoBehaviour:
   handBrake: 1700
   handBrakeOn: 0
   go: 1
+  hasFinished: 0
   playerInformation: {fileID: 11400000, guid: 32ba84c6353187d4a94dfddb68e53bbc, type: 2}
 --- !u!114 &4898341884572870483
 MonoBehaviour:
@@ -1152,6 +1153,9 @@ MonoBehaviour:
   canFinish: 0
   raceTime: 0
   positionText: {fileID: 2642618450049522261}
+  finishScreen: {fileID: 1536357600520402573}
+  endPositionText: {fileID: 700308807400143709}
+  endPosition: 0
 --- !u!1 &4898341884591060553
 GameObject:
   m_ObjectHideFlags: 0

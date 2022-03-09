@@ -41,6 +41,8 @@ public class NewCarControll : MonoBehaviour
     public bool handBrakeOn;
     public bool go;
     bool b;
+
+    public bool hasFinished;
     public PlayerInformation playerInformation;
     private void Start()
     {
@@ -201,7 +203,7 @@ public class NewCarControll : MonoBehaviour
                         oghenk1.extremumSlip = 0.2f;
                         wheelData[1].leftWheel.sidewaysFriction = oghenk;
                         wheelData[1].rightWheel.sidewaysFriction = oghenk1;
-                }
+                    }
 
                     
 
