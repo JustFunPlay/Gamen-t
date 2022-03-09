@@ -18,6 +18,11 @@ public class PlayerID : MonoBehaviour
     public float raceTime;
     public Text positionText;
 
+    public GameObject finishScreen;
+    public Text endPositionText;
+    public int endPosition;
+    
+
 
     private void OnTriggerEnter(Collider other)
     {
@@ -55,6 +60,10 @@ public class PlayerID : MonoBehaviour
     }
     public void PlayerFinished()
     {
+        GetComponent<NewCarControll>().go = false;
+        GetComponent<NewCarControll>().hasFinished = true;
+        finishScreen.SetActive(true);
+        endPositionText.text = endPosition.ToString();
 
     }
 
@@ -69,6 +78,7 @@ public class PlayerID : MonoBehaviour
             }
         }
         positionText.text = position.ToString();
+        endPosition = position;
     }
 
     private void Update()

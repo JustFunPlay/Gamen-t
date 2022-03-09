@@ -18,20 +18,20 @@ MonoBehaviour:
     skins:
     - materials:
       - {fileID: 2100000, guid: 907af39f83a6bc440b29bea0c9d905ff, type: 2}
-      - {fileID: 2100000, guid: 98dbb5fc6045d5249b467d4602f8a209, type: 2}
       - {fileID: 2100000, guid: cca709541e54c2d47a9fa7a08397c3c4, type: 2}
+      - {fileID: 2100000, guid: 98dbb5fc6045d5249b467d4602f8a209, type: 2}
       - {fileID: 2100000, guid: 4ff1e8648b13b904198c4b54989e2328, type: 2}
       skinsNamePlates: Shark Car
     - materials:
       - {fileID: 2100000, guid: e8e120bf87f40044198babee90301bc7, type: 2}
-      - {fileID: 2100000, guid: 6fbf6e1464d17f746a47ef656a8247bc, type: 2}
       - {fileID: 2100000, guid: 8d9bcc98461dcc3459c4413858dea4e7, type: 2}
+      - {fileID: 2100000, guid: 6fbf6e1464d17f746a47ef656a8247bc, type: 2}
       - {fileID: 2100000, guid: 85822d122fd06ee41812dea05e341c6f, type: 2}
       skinsNamePlates: Purple Car
     - materials:
       - {fileID: 2100000, guid: 5bbf034ee8ac4e349a230266a1d3badf, type: 2}
-      - {fileID: 2100000, guid: caef475274a1c2841bf68f1d6799631f, type: 2}
       - {fileID: 2100000, guid: 0251e1c9ef83c1144bd1826096c32e71, type: 2}
+      - {fileID: 2100000, guid: caef475274a1c2841bf68f1d6799631f, type: 2}
       - {fileID: 2100000, guid: d9a17827dd2fd6d4f832617d72707ee2, type: 2}
       skinsNamePlates: Yellow Car
   - carSelectable: {fileID: 3928215478786271756, guid: 39db8d4576cf2534a80408edc3aa7af6, type: 3}

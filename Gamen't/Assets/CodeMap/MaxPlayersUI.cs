@@ -1,46 +1,53 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class MaxPlayersUI : MonoBehaviour
 {
     public PlayerInformation playerInfo;
 
-    public GameObject[] listOfPlayerModes;
-    public GameObject[] listOfUIModes;
-    
 
+    public GameObject[] listOfPlayerModes;
+    public GameObject[] listOfEvents;
+
+    private void Start()
+    {
+        
+    }
+    public void ToScene()
+    {
+        SceneManager.LoadScene(4);
+    }
+
+    
     public void OnePlayerMode()
     {
-        //playerInfo.maxPlayers = 1;
-        listOfPlayerModes[0].SetActive(true);
+
         
     }
     public void TwoPlayerMode()
     {
-        //playerInfo.maxPlayers = 2;
-        listOfPlayerModes[0].SetActive(true);
+        
 
     }
 
     public void ThreePlayerMode()
     {
-        //playerInfo.maxPlayers = 3;
-        listOfPlayerModes[0].SetActive(true);
+
+
     }
 
     public void FourPlayerMode()
     {
-        //playerInfo.maxPlayers = 4;
-        listOfPlayerModes[0].SetActive(true);
+
 
     }
 
     public void DespawnUI()
     {
-        listOfUIModes[0].SetActive(false);
-        listOfUIModes[1].SetActive(false);
-        listOfUIModes[2].SetActive(false);
-        listOfUIModes[3].SetActive(false);
+        listOfEvents[0].SetActive(false);
+        listOfEvents[1].SetActive(false);
+        listOfEvents[2].SetActive(false);
+        listOfEvents[3].SetActive(false);
     }
 }

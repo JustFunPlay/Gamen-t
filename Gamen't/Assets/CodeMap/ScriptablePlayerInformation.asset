@@ -18,9 +18,17 @@ MonoBehaviour:
   playerSelections:
   - name: 
     selectedCar: {fileID: 3458319226721410268, guid: be3970fbafa5d2e468ab4f87eea70c8a, type: 3}
-    materials: []
+    materials:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
     currentCheckpoint: {fileID: 0}
   - name: 
     selectedCar: {fileID: 3458319226721410268, guid: be3970fbafa5d2e468ab4f87eea70c8a, type: 3}
-    materials: []
+    materials:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
     currentCheckpoint: {fileID: 0}

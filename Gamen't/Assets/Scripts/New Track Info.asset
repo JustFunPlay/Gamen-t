@@ -14,10 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   trackName: 
   trackPieces:
-  - position: {x: 0, y: 0, z: 0}
-    rotation: {x: 0, y: 0.7071068, z: 0, w: -0.7071068}
-    trackPiece: {fileID: 4479241163028207846, guid: fec5be3805c371a47821457d19c8b91e, type: 3}
-    gridlocation: 1276
   - position: {x: 0, y: 0, z: 40}
     rotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
     trackPiece: {fileID: 5634827069025667634, guid: 5fed5ce7021de5d4489814b12d2f682b, type: 3}
@@ -50,3 +46,5 @@ MonoBehaviour:
   - racerName: 
     timeInSec: 0
   numberOfLaps: 0
+  description: 
+  trackType: 0
