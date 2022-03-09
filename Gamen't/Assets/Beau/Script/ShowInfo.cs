@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using System;
 
-public class Trackinfo : MonoBehaviour, ISelectHandler, IDeselectHandler
+public class ShowInfo : MonoBehaviour, ISelectHandler, IDeselectHandler
 {
     public GameObject howManyPlayers;
     public void OnSelect(BaseEventData eventData)

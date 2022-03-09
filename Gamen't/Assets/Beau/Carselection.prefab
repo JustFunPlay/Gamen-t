@@ -1980,7 +1980,7 @@ GameObject:
   - component: {fileID: 7323403407609237105}
   - component: {fileID: 6336597075593611176}
   - component: {fileID: 5000803166789564839}
-  - component: {fileID: 6109443215128864272}
+  - component: {fileID: 394643931813466530}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -2090,9 +2090,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6109443215128864272}
-        m_TargetAssemblyTypeName: MaxPlayersUI, Assembly-CSharp
-        m_MethodName: ToScene
+      - m_Target: {fileID: 394643931813466530}
+        m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
+        m_MethodName: LoadScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2102,7 +2102,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &6109443215128864272
+--- !u!114 &394643931813466530
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2111,9 +2111,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8890831740452433072}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 950b8a7cb06c2db41a3053f8f2fd0808, type: 3}
+  m_Script: {fileID: 11500000, guid: 31523e11ad97b6343a46282901ca3cb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerInfo: {fileID: 11400000, guid: 32ba84c6353187d4a94dfddb68e53bbc, type: 2}
-  listOfPlayerModes: []
-  listOfEvents: []
+  sceneToLoad: 3

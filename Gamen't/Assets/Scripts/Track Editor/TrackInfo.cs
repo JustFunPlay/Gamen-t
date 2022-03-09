@@ -9,6 +9,8 @@ public class TrackInfo : ScriptableObject
     public List<TrackPiece> trackPieces;
     public Leaderboard[] leaderboards = new Leaderboard[5];
     public int numberOfLaps;
+    public string description;
+    public TrackType trackType;
 }
 
 [System.Serializable]
@@ -24,4 +26,10 @@ public class Leaderboard
 {
     public string racerName;
     public float timeInSec;
+}
+[System.Serializable]
+public enum TrackType
+{
+    Circuit,
+    Linear
 }
