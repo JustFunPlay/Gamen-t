@@ -210,7 +210,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3523898582480487975
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1085,7 +1085,7 @@ MonoBehaviour:
   collided: 0
   handBrake: 1700
   handBrakeOn: 0
-  go: 1
+  go: 0
   hasFinished: 0
   playerInformation: {fileID: 11400000, guid: 32ba84c6353187d4a94dfddb68e53bbc, type: 2}
 --- !u!114 &4898341884572870483
