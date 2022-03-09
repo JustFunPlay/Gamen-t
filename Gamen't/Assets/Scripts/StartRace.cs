@@ -20,10 +20,10 @@ public class StartRace : MonoBehaviour
         int hasFinished = 0;
         for (int i = 0; i < playerCars.Count; i++)
         {
-            //if (playerCars[i].hasFinished)
-            //{
-            //    hasFinished++;
-            //}
+            if (playerCars[i].hasFinished)
+            {
+                hasFinished++;
+            }
         }
         if (hasFinished == playerCars.Count)
         {
