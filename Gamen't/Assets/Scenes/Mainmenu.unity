@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028402, g: 0.22571428, b: 0.306924, a: 1}
+  m_IndirectSpecularColor: {r: 0.1802839, g: 0.2257141, b: 0.3069244, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1234,12 +1234,18 @@ MonoBehaviour:
   canvasSelection:
     name: 
     selectedCar: {fileID: 0}
-    selectedCarSkin: {fileID: 0}
+    selectedCarSkin0: {fileID: 0}
+    selectedCarSkin1: {fileID: 0}
+    selectedCarSkin2: {fileID: 0}
+    selectedCarSkin3: {fileID: 0}
     currentCheckpoint: {fileID: 0}
   carSelection:
     name: 
     selectedCar: {fileID: 0}
-    selectedCarSkin: {fileID: 0}
+    selectedCarSkin0: {fileID: 0}
+    selectedCarSkin1: {fileID: 0}
+    selectedCarSkin2: {fileID: 0}
+    selectedCarSkin3: {fileID: 0}
     currentCheckpoint: {fileID: 0}
 --- !u!1 &1134994233
 GameObject:
