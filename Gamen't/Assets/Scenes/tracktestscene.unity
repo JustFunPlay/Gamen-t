@@ -541,6 +541,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Auto PlayerSpawner
       objectReference: {fileID: 0}
+    - target: {fileID: 1497952777395087937, guid: 0fdc570e40b8bcd44934cafedd2d753e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1497952777395087938, guid: 0fdc570e40b8bcd44934cafedd2d753e, type: 3}
       propertyPath: m_Enabled
       value: 0

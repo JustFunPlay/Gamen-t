@@ -8,7 +8,7 @@ public class PlayerSpawner : MonoBehaviour
 
     public PlayerInformation playerInfos;
 
-    public Vector3[] playerSpawning;
+    public Transform[] playerSpawning;
 
     public List<GameObject> listOfPlayers;
     public List<GameObject> listOfCameras;
@@ -22,7 +22,6 @@ public class PlayerSpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        playerInfos.totalcars = 0;
         PlayerSpawn();
     }
 
@@ -37,15 +36,16 @@ public class PlayerSpawner : MonoBehaviour
         {
             if (i < 4)
             {
-                GameObject newplayer = Instantiate(playerInfos.playerSelections[i].selectedCar, playerSpawning[i], Quaternion.identity);
+                GameObject newplayer = Instantiate(playerInfos.playerSelections[i].selectedCar, playerSpawning[i].position, playerSpawning[i].rotation);
                 listOfPlayers.Add(newplayer);
                 newplayer.GetComponent<PlayerID>().playerIdNumber = i;
                 newplayer.GetComponent<PlayerID>().playerName = playerInfos.playerSelections[i].name;
+                newplayer.transform.GetChild(4).GetComponent<MeshRenderer>().materials = playerInfos.playerSelections[i].materials;
 
                 GameObject newcamera = newplayer.GetComponentInChildren<Camera>().gameObject;
                 listOfCameras.Add(newcamera);
 
-                playerInfos.totalcars++;
+                
             }
         }
         UpdateCameras();
