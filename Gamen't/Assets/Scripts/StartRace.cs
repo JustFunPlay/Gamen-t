@@ -53,6 +53,7 @@ public class StartRace : MonoBehaviour
         for (int i = 0; i < playerCars.Count; i++)
         {
             playerCars[i].go = true;
+            playerCars[i].handBrakeOn = false;
         }
         yield return new WaitForSeconds(1);
         countDownText.text = null;

@@ -43,8 +43,13 @@ public class PlayerSpawner : MonoBehaviour
                 newplayer.GetComponent<PlayerID>().playerIdNumber = i;
                 newplayer.GetComponent<PlayerID>().playerName = playerInfos.playerSelections[i].name;
                 newplayer.GetComponent<PlayerID>().maxLaps = trackLoader.track.numberOfLaps;
-                newplayer.transform.GetChild(4).GetComponent<MeshRenderer>().materials = playerInfos.playerSelections[i].materials;
+                List<Material> newMats = new List<Material>();
+                for (int a = 0; a < playerInfos.playerSelections[i].materials.Length; a++)
+                {
 
+                    newMats.Add(new Material(playerInfos.playerSelections[i].materials[a]));
+                }
+                newplayer.transform.GetChild(4).GetComponent<MeshRenderer>().materials = newMats.ToArray();
                 GameObject newcamera = newplayer.GetComponentInChildren<Camera>().gameObject;
                 listOfCameras.Add(newcamera);
 
