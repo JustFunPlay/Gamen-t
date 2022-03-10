@@ -49,7 +49,7 @@ public class PlayerID : MonoBehaviour
             {
                 labCount++;
                 canFinish = false;
-                if (labCount == maxLaps)
+                if (labCount > maxLaps)
                 {
                     print(playerName + " Has Finished");
                     if (GetComponent<NewCarControll>().go == true)
@@ -92,7 +92,7 @@ public class PlayerID : MonoBehaviour
 
     private void Update()
     {
-        if(GetComponent<NewCarControll>().go == true)
+        if(GetComponent<NewCarControll>() && GetComponent<NewCarControll>().go == true)
         {
             raceTime += Time.deltaTime;
         }

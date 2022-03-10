@@ -21,6 +21,8 @@ public class CarSelectation : MonoBehaviour
 
     public int id;
 
+    public Text playerName;
+
     private void Start()
     {
         OnCarSpawn();
@@ -108,6 +110,7 @@ public class CarSelectation : MonoBehaviour
 
     void Selection()
     {
+        playerInformation.playerSelections[id].name = playerName.text;
         //int id = GetComponentInParent<PlayerID>().playerIdNumber;
         playerInformation.playerSelections[id].selectedCar = carInventory.Cars[carNumber].carSelectable;
         for (int i = 0; i < carInventory.Cars[carNumber].skins[skinNumber].materials.Length; i++)
@@ -115,8 +118,6 @@ public class CarSelectation : MonoBehaviour
             playerInformation.playerSelections[id].materials[i] = new Material(carInventory.Cars[carNumber].skins[skinNumber].materials[i]);
         }
         
-        //playerInformation.materialsPlayerOne = carInventory.Cars[carNumber].skins[skinNumber].materials;
-       // playerInformation.materialsPlayerTwo = carInventory.Cars[carNumber].skins[skinNumber].materials;
         print("How many fucks to give: " + id.ToString());
     }
 }

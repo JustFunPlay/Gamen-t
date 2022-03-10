@@ -366,6 +366,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MoveRepeatDelay: 0.5
   m_MoveRepeatRate: 0.1
+  m_XRTrackingOrigin: {fileID: 0}
   m_ActionsAsset: {fileID: -944628639613478452, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
   m_PointAction: {fileID: 1054132383583890850, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
   m_MoveAction: {fileID: 3710738434707379630, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
@@ -1130,7 +1131,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1048226630
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1239,7 +1240,6 @@ MonoBehaviour:
     - {fileID: 0}
     - {fileID: 0}
     - {fileID: 0}
-    currentCheckpoint: {fileID: 0}
   carSelection:
     name: 
     selectedCar: {fileID: 8785248514869269620, guid: d807a48cb8293c34784c9e42570e03df, type: 3}
@@ -1248,7 +1248,6 @@ MonoBehaviour:
     - {fileID: 0}
     - {fileID: 0}
     - {fileID: 0}
-    currentCheckpoint: {fileID: 0}
 --- !u!1 &1134994233
 GameObject:
   m_ObjectHideFlags: 0
@@ -2447,7 +2446,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1595758286245556735, guid: e12c37537f28477499015da12aa49d6c, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e12c37537f28477499015da12aa49d6c, type: 3}
