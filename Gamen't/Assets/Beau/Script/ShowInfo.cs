@@ -7,14 +7,20 @@ using System;
 
 public class ShowInfo : MonoBehaviour, ISelectHandler, IDeselectHandler
 {
-    public GameObject howManyPlayers;
+
+    public GameObject infosTrack;
+    public TrackEditSelectMen tets;
+
     public void OnSelect(BaseEventData eventData)
     {
-        howManyPlayers.SetActive(true);
+
+        infosTrack.SetActive(true);
+        tets.LoadBaseTrack();
     }
     public void OnDeselect(BaseEventData eventData)
     {
-        print("aaaaaah");
-        howManyPlayers.SetActive(false);
+
+        infosTrack.SetActive(false);
     }
+
 }
