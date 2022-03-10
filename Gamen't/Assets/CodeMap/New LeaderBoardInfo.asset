@@ -12,4 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b6fbdad2b8a09742b7488e02c7e2c29, type: 3}
   m_Name: New LeaderBoardInfo
   m_EditorClassIdentifier: 
-  leaderboard: []
+  leaderboard:
+  - racerName: 
+    timeInSec: 55.796143
+  - racerName: 
+    timeInSec: 56.101784
+  - racerName: 
+    timeInSec: 59.041172
