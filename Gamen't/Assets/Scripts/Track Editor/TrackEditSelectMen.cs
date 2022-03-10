@@ -4,12 +4,12 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
-public class TrackEditSelectMen : MonoBehaviour, ISelectHandler, IDeselectHandler
+public class TrackEditSelectMen : MonoBehaviour
 {
     public TrackToLoad trackToLoad;
     public TrackInfo trackInfo;
     public ListOfAllTracks allTracks;
-    public int ah;
+
 
     public Text description;
     public Text trackType;
@@ -34,11 +34,11 @@ public class TrackEditSelectMen : MonoBehaviour, ISelectHandler, IDeselectHandle
         //SceneManager.LoadScene(1);
     }
 
-    public void LoadBaseTrack()
+    public void LoadBaseTrack(int track)
     {
-        
 
-        trackToLoad.track = allTracks.defaultTracks[ah];
+
+        trackToLoad.track = allTracks.defaultTracks[track];
         editBtn.SetActive(false);
         description.text = trackToLoad.track.description;
         if (trackToLoad.track.trackType == TrackType.Circuit)
@@ -82,27 +82,14 @@ public class TrackEditSelectMen : MonoBehaviour, ISelectHandler, IDeselectHandle
                 GameObject newButton = Instantiate(buttonPrefab, transforms[i].position, transforms[i].rotation, transforms[i]);
                 newButton.GetComponentInChildren<Text>().text = allTracks.trackInfos[i].trackName;
                 newButton.GetComponent<TrackSelectButton>().index = i;
+                newButton.GetComponent<TrackSelectButton>().infosTrack =  infoTrack;
             }
         }
     }
-    public void OnSelect(BaseEventData eventData)
-    {
-
-        infoTrack.SetActive(true);
-        if (infoTrack == true)
-        {
-            LoadBaseTrack();
-        }
-
-    }
-
-
-
-
-
-    public void OnDeselect(BaseEventData eventData)
-    {
-
-        infoTrack.SetActive(false);
-    }
 }
+
+
+
+
+
+
