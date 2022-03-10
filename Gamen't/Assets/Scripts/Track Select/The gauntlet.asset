@@ -25,6 +25,6 @@ MonoBehaviour:
     timeInSec: 0
   - racerName: 
     timeInSec: 0
-  numberOfLaps: 0
+  numberOfLaps: 3
   description: YOU are a little bitch
   trackType: 0

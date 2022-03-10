@@ -54,6 +54,11 @@ MonoBehaviour:
   canFinish: 0
   raceTime: 0
   positionText: {fileID: 0}
+  finishScreen: {fileID: 0}
+  endPositionText: {fileID: 0}
+  endPosition: 0
+  maxLaps: 0
+  leaderboardInfo: {fileID: 0}
 --- !u!1 &3458319226879981563
 GameObject:
   m_ObjectHideFlags: 0
@@ -1648,6 +1653,8 @@ MonoBehaviour:
   goingInCar: {fileID: 0}
   replaceSkinText: {fileID: 3458319226879981563}
   playerInformation: {fileID: 11400000, guid: 32ba84c6353187d4a94dfddb68e53bbc, type: 2}
+  id: 0
+  playerName: {fileID: 3458319227630754538}
 --- !u!1 &3458319228786987238
 GameObject:
   m_ObjectHideFlags: 0

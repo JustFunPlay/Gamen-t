@@ -6,13 +6,9 @@ using UnityEngine.InputSystem;
 [CreateAssetMenu(fileName = "ScriptablePlayerInformation", menuName = "ScriptablePlayerInfo")]
 public class PlayerInformation : ScriptableObject
 {
-    public int maxLaps;
 
     public List<CheckPointsSingles> totalCheckpoints;
     public List<PlayerSelection> playerSelections;
-
-    public Material[] materialsPlayerOne = new Material[4];
-    public Material[] materialsPlayerTwo = new Material[4];
 }
 
 [System.Serializable]

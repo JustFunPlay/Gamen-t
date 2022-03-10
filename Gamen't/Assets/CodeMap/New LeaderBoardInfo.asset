@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61f64e1fea960fb4384251e5cdad44bd, type: 3}
-  m_Name: Track To Load
+  m_Script: {fileID: 11500000, guid: 4b6fbdad2b8a09742b7488e02c7e2c29, type: 3}
+  m_Name: New LeaderBoardInfo
   m_EditorClassIdentifier: 
-  track: {fileID: 11400000, guid: fc877de9e2202d742b84b0a2c3d33c69, type: 2}
+  leaderboard: []

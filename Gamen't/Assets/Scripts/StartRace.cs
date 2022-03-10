@@ -8,6 +8,7 @@ public class StartRace : MonoBehaviour
 {
     public List<NewCarControll> playerCars;
     public Text countDownText;
+    bool raceHasStarted;
 
     void Start()
     {
@@ -17,17 +18,20 @@ public class StartRace : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        int hasFinished = 0;
-        for (int i = 0; i < playerCars.Count; i++)
+        if (raceHasStarted)
         {
-            //if (playerCars[i].hasFinished)
-            //{
-            //    hasFinished++;
-            //}
-        }
-        if (hasFinished == playerCars.Count)
-        {
-            StartCoroutine(EndOfRace());
+            int hasFinished = 0;
+            for (int i = 0; i < playerCars.Count; i++)
+            {
+                if (playerCars[i].hasFinished == true)
+                {
+                    hasFinished++;
+                }
+            }
+            if (hasFinished == playerCars.Count)
+            {
+                StartCoroutine(EndOfRace());
+            }
         }
     }
 
@@ -49,9 +53,11 @@ public class StartRace : MonoBehaviour
         for (int i = 0; i < playerCars.Count; i++)
         {
             playerCars[i].go = true;
+            playerCars[i].handBrakeOn = false;
         }
         yield return new WaitForSeconds(1);
         countDownText.text = null;
+        raceHasStarted = true;
     }
     IEnumerator EndOfRace()
     {
