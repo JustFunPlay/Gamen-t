@@ -1727,7 +1727,7 @@ MonoBehaviour:
   handBrake: 1700
   handBrakeOn: 0
   speedbalk: {fileID: 2334528692145339434}
-  go: 1
+  go: 0
   hasFinished: 0
   playerInformation: {fileID: 11400000, guid: 32ba84c6353187d4a94dfddb68e53bbc, type: 2}
   checkPoint: {fileID: 0}

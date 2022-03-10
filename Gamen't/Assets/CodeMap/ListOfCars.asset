@@ -61,3 +61,9 @@ MonoBehaviour:
     - materials:
       - {fileID: -1742948519810473914, guid: 5900f11f476586949bd7ecbd83631f3b, type: 3}
       skinsNamePlates: Blue
+  - carSelectable: {fileID: 6679959579189323678, guid: 838e52922408ba14c92418de5f955e73, type: 3}
+    carNamePlates: Old School Car
+    skins:
+    - materials:
+      - {fileID: 2100000, guid: 0853d893074da5a468db1071c1b223de, type: 2}
+      skinsNamePlates: 'Train default '

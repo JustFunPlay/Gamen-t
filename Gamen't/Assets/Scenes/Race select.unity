@@ -1099,69 +1099,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 663877068}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9798d1838b1b476449b14738d25a82e4, type: 3}
+  m_Script: {fileID: 11500000, guid: 75a06d6d131912544b6bb0b44ba20a8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trackToLoad: {fileID: 11400000, guid: 18e9f5ab584b66a4b968b0f09d46887c, type: 2}
-  trackInfo: {fileID: 11400000, guid: bbcf045201b011743985ed32d0237188, type: 2}
-  allTracks: {fileID: 11400000, guid: f98010ec6c1813845b179aadb72fddcf, type: 2}
-  ah: 0
-  description: {fileID: 7004370}
-  trackType: {fileID: 1513011424}
-  editBtn: {fileID: 1310226122}
-  infoTrack: {fileID: 228848050}
-  transforms:
-  - {fileID: 1467237160}
-  - {fileID: 1495501200}
-  - {fileID: 27967885}
-  - {fileID: 1658657627}
-  - {fileID: 858397321}
-  - {fileID: 1734897763}
-  - {fileID: 1529079917}
-  - {fileID: 1914453233}
-  - {fileID: 1859514079}
-  - {fileID: 1028082916}
-  - {fileID: 1745924790}
-  - {fileID: 1750677985}
-  - {fileID: 726584903}
-  - {fileID: 1704274265}
-  - {fileID: 635741325}
-  - {fileID: 2056271236}
-  - {fileID: 594666042}
-  - {fileID: 1681744758}
-  - {fileID: 1837831790}
-  - {fileID: 1501579643}
-  - {fileID: 635947775}
-  - {fileID: 467497538}
-  - {fileID: 143708466}
-  - {fileID: 1842678008}
-  - {fileID: 53677984}
-  - {fileID: 1868284380}
-  - {fileID: 105845843}
-  - {fileID: 1820860860}
-  - {fileID: 1208142682}
-  - {fileID: 1760322428}
-  - {fileID: 1134544660}
-  - {fileID: 1210952986}
-  - {fileID: 1089022135}
-  - {fileID: 2127097981}
-  - {fileID: 1915632028}
-  - {fileID: 2090628664}
-  - {fileID: 689487298}
-  - {fileID: 1706753519}
-  - {fileID: 116475835}
-  - {fileID: 195703358}
-  - {fileID: 1419614056}
-  - {fileID: 361594392}
-  - {fileID: 1879162935}
-  - {fileID: 1809316949}
-  - {fileID: 172088763}
-  - {fileID: 381504600}
-  - {fileID: 621336}
-  - {fileID: 1358760915}
-  - {fileID: 2144584118}
-  - {fileID: 1815703298}
-  buttonPrefab: {fileID: 3387256380337226049, guid: 9c1117a5cdf436a4d9979643a97af774, type: 3}
+  infosTrack: {fileID: 228848050}
+  trackEditSelection: {fileID: 1124218403}
+  baseTrack: 0
 --- !u!1 &689487297
 GameObject:
   m_ObjectHideFlags: 0
@@ -2099,7 +2042,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1124218398}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9798d1838b1b476449b14738d25a82e4, type: 3}
   m_Name: 
@@ -2107,7 +2050,6 @@ MonoBehaviour:
   trackToLoad: {fileID: 11400000, guid: 18e9f5ab584b66a4b968b0f09d46887c, type: 2}
   trackInfo: {fileID: 11400000, guid: bbcf045201b011743985ed32d0237188, type: 2}
   allTracks: {fileID: 11400000, guid: f98010ec6c1813845b179aadb72fddcf, type: 2}
-  ah: 0
   description: {fileID: 7004370}
   trackType: {fileID: 1513011424}
   editBtn: {fileID: 1310226122}
@@ -2517,69 +2459,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1208326320}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9798d1838b1b476449b14738d25a82e4, type: 3}
+  m_Script: {fileID: 11500000, guid: 75a06d6d131912544b6bb0b44ba20a8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trackToLoad: {fileID: 11400000, guid: 18e9f5ab584b66a4b968b0f09d46887c, type: 2}
-  trackInfo: {fileID: 11400000, guid: bbcf045201b011743985ed32d0237188, type: 2}
-  allTracks: {fileID: 11400000, guid: f98010ec6c1813845b179aadb72fddcf, type: 2}
-  ah: 1
-  description: {fileID: 7004370}
-  trackType: {fileID: 1513011424}
-  editBtn: {fileID: 1310226122}
-  infoTrack: {fileID: 228848050}
-  transforms:
-  - {fileID: 1467237160}
-  - {fileID: 1495501200}
-  - {fileID: 27967885}
-  - {fileID: 1658657627}
-  - {fileID: 858397321}
-  - {fileID: 1734897763}
-  - {fileID: 1529079917}
-  - {fileID: 1914453233}
-  - {fileID: 1859514079}
-  - {fileID: 1028082916}
-  - {fileID: 1745924790}
-  - {fileID: 1750677985}
-  - {fileID: 726584903}
-  - {fileID: 1704274265}
-  - {fileID: 635741325}
-  - {fileID: 2056271236}
-  - {fileID: 594666042}
-  - {fileID: 1681744758}
-  - {fileID: 1837831790}
-  - {fileID: 1501579643}
-  - {fileID: 635947775}
-  - {fileID: 467497538}
-  - {fileID: 143708466}
-  - {fileID: 1842678008}
-  - {fileID: 53677984}
-  - {fileID: 1868284380}
-  - {fileID: 105845843}
-  - {fileID: 1820860860}
-  - {fileID: 1208142682}
-  - {fileID: 1760322428}
-  - {fileID: 1134544660}
-  - {fileID: 1210952986}
-  - {fileID: 1089022135}
-  - {fileID: 2127097981}
-  - {fileID: 1915632028}
-  - {fileID: 2090628664}
-  - {fileID: 689487298}
-  - {fileID: 1706753519}
-  - {fileID: 116475835}
-  - {fileID: 195703358}
-  - {fileID: 1419614056}
-  - {fileID: 361594392}
-  - {fileID: 1879162935}
-  - {fileID: 1809316949}
-  - {fileID: 172088763}
-  - {fileID: 381504600}
-  - {fileID: 621336}
-  - {fileID: 1358760915}
-  - {fileID: 2144584118}
-  - {fileID: 1815703298}
-  buttonPrefab: {fileID: 3387256380337226049, guid: 9c1117a5cdf436a4d9979643a97af774, type: 3}
+  infosTrack: {fileID: 228848050}
+  trackEditSelection: {fileID: 1124218403}
+  baseTrack: 1
 --- !u!1 &1210952985
 GameObject:
   m_ObjectHideFlags: 0
@@ -3589,69 +3474,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1815951768}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9798d1838b1b476449b14738d25a82e4, type: 3}
+  m_Script: {fileID: 11500000, guid: 75a06d6d131912544b6bb0b44ba20a8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trackToLoad: {fileID: 11400000, guid: 18e9f5ab584b66a4b968b0f09d46887c, type: 2}
-  trackInfo: {fileID: 11400000, guid: bbcf045201b011743985ed32d0237188, type: 2}
-  allTracks: {fileID: 11400000, guid: f98010ec6c1813845b179aadb72fddcf, type: 2}
-  ah: 2
-  description: {fileID: 7004370}
-  trackType: {fileID: 1513011424}
-  editBtn: {fileID: 1310226122}
-  infoTrack: {fileID: 228848050}
-  transforms:
-  - {fileID: 1467237160}
-  - {fileID: 1495501200}
-  - {fileID: 27967885}
-  - {fileID: 1658657627}
-  - {fileID: 858397321}
-  - {fileID: 1734897763}
-  - {fileID: 1529079917}
-  - {fileID: 1914453233}
-  - {fileID: 1859514079}
-  - {fileID: 1028082916}
-  - {fileID: 1745924790}
-  - {fileID: 1750677985}
-  - {fileID: 726584903}
-  - {fileID: 1704274265}
-  - {fileID: 635741325}
-  - {fileID: 2056271236}
-  - {fileID: 594666042}
-  - {fileID: 1681744758}
-  - {fileID: 1837831790}
-  - {fileID: 1501579643}
-  - {fileID: 635947775}
-  - {fileID: 467497538}
-  - {fileID: 143708466}
-  - {fileID: 1842678008}
-  - {fileID: 53677984}
-  - {fileID: 1868284380}
-  - {fileID: 105845843}
-  - {fileID: 1820860860}
-  - {fileID: 1208142682}
-  - {fileID: 1760322428}
-  - {fileID: 1134544660}
-  - {fileID: 1210952986}
-  - {fileID: 1089022135}
-  - {fileID: 2127097981}
-  - {fileID: 1915632028}
-  - {fileID: 2090628664}
-  - {fileID: 689487298}
-  - {fileID: 1706753519}
-  - {fileID: 116475835}
-  - {fileID: 195703358}
-  - {fileID: 1419614056}
-  - {fileID: 361594392}
-  - {fileID: 1879162935}
-  - {fileID: 1809316949}
-  - {fileID: 172088763}
-  - {fileID: 381504600}
-  - {fileID: 621336}
-  - {fileID: 1358760915}
-  - {fileID: 2144584118}
-  - {fileID: 1815703298}
-  buttonPrefab: {fileID: 3387256380337226049, guid: 9c1117a5cdf436a4d9979643a97af774, type: 3}
+  infosTrack: {fileID: 228848050}
+  trackEditSelection: {fileID: 1124218403}
+  baseTrack: 2
 --- !u!1 &1820860859
 GameObject:
   m_ObjectHideFlags: 0
