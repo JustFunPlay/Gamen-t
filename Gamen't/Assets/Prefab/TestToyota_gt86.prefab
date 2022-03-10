@@ -1730,6 +1730,7 @@ MonoBehaviour:
   go: 1
   hasFinished: 0
   playerInformation: {fileID: 11400000, guid: 32ba84c6353187d4a94dfddb68e53bbc, type: 2}
+  checkPoint: {fileID: 0}
 --- !u!114 &4898341884572870483
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1800,6 +1801,8 @@ MonoBehaviour:
   endPosition: 0
   maxLaps: 0
   leaderboardInfo: {fileID: 11400000, guid: 9bf2dce938d329f458b58eb8c3c8d197, type: 2}
+  lapText: {fileID: 2628847239237845959}
+  timeText: {fileID: 2197095836162738904}
 --- !u!1 &4898341884591060553
 GameObject:
   m_ObjectHideFlags: 0
