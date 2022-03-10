@@ -12,28 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23b140e9cd1330f4799a57bc49ad094b, type: 3}
   m_Name: New Track Info
   m_EditorClassIdentifier: 
-  trackName: 
-  trackPieces:
-  - position: {x: 0, y: 0, z: 40}
-    rotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-    trackPiece: {fileID: 5634827069025667634, guid: 5fed5ce7021de5d4489814b12d2f682b, type: 3}
-    gridlocation: 1278
-  - position: {x: 0, y: 0, z: 20}
-    rotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-    trackPiece: {fileID: 5634827069025667634, guid: 5fed5ce7021de5d4489814b12d2f682b, type: 3}
-    gridlocation: 1277
-  - position: {x: 40, y: 0, z: 20}
-    rotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-    trackPiece: {fileID: 5634827069025667634, guid: 5fed5ce7021de5d4489814b12d2f682b, type: 3}
-    gridlocation: 1377
-  - position: {x: 0, y: 0, z: 80}
-    rotation: {x: 0, y: 0, z: 0, w: 1}
-    trackPiece: {fileID: 6914888233837508229, guid: 071d7abbb6e030b43a94bcfd1aa45731, type: 3}
-    gridlocation: 1280
-  - position: {x: 20, y: 0, z: 0}
-    rotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-    trackPiece: {fileID: 4479241163028207846, guid: fec5be3805c371a47821457d19c8b91e, type: 3}
-    gridlocation: 1326
+  trackName: New Track
+  trackPieces: []
   leaderboards:
   - racerName: 
     timeInSec: 0
