@@ -15,7 +15,7 @@ public class HowManyPlayer : MonoBehaviour
     {
         carSelectCanvas.playerSelections.Clear();
         playerCars.playerSelections.Clear();
-        playerCars.playerSelections.Add(carSelection);
+        playerCars.playerSelections.Add(new PlayerSelection(carSelection));
         carSelectCanvas.playerSelections.Add(canvasSelection);
     }
 
@@ -26,9 +26,9 @@ public class HowManyPlayer : MonoBehaviour
     {
         for (int i = 1; i < numOfPlayers; i++)
         {
-            playerCars.playerSelections.Add(carSelection);
+            playerCars.playerSelections.Add(new PlayerSelection(carSelection));
             carSelectCanvas.playerSelections.Add(canvasSelection);
         }
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(1);
     }
 }

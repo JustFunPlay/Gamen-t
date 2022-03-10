@@ -22,6 +22,6 @@ public class CarSelection
 [System.Serializable]
 public class SkinSelection
 {
-    public Material skinMaterial;
+    public Material[] materials = new Material[4];
     public string skinsNamePlates;
 }

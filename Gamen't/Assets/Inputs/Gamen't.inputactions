@@ -332,6 +332,14 @@
                     "interactions": ""
                 },
                 {
+                    "name": "LeftClick",
+                    "type": "PassThrough",
+                    "id": "f5daf333-cdc0-492a-91ce-8d239d8aa0e1",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
                     "name": "TrackedDevicePosition",
                     "type": "PassThrough",
                     "id": "a98aa065-cee6-4b1a-b5cf-4b7a7dc10980",
@@ -626,11 +634,33 @@
                 },
                 {
                     "name": "",
+                    "id": "48180c72-83fb-4d09-b288-2f58a9ae79c3",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Submit",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "82627dcc-3b13-4ba9-841d-e4b746d6553e",
                     "path": "*/{Cancel}",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
+                    "action": "Cancel",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "460bf783-7898-4516-9bfd-f22cf1e65732",
+                    "path": "<Gamepad>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
                     "action": "Cancel",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -764,6 +794,17 @@
                     "processors": "",
                     "groups": "XR",
                     "action": "TrackedDeviceOrientation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0c2295bd-eb52-4a71-b778-1406a5f653d4",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "LeftClick",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

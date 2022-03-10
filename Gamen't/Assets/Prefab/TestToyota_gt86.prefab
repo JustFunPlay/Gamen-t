@@ -1079,13 +1079,15 @@ MonoBehaviour:
   orignalMaxSpeed: 200
   maxSpeedBack: 40
   speedLimiterRange: 20
-  brakeLight: {fileID: 2100000, guid: 98dbb5fc6045d5249b467d4602f8a209, type: 2}
+  brakeLight: {fileID: 0}
   brakeOn: 0
   speedMeterder: {fileID: 4289791599306359028}
   collided: 0
   handBrake: 1700
   handBrakeOn: 0
-  go: 1
+  go: 0
+  hasFinished: 0
+  playerInformation: {fileID: 11400000, guid: 32ba84c6353187d4a94dfddb68e53bbc, type: 2}
 --- !u!114 &4898341884572870483
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1151,6 +1153,9 @@ MonoBehaviour:
   canFinish: 0
   raceTime: 0
   positionText: {fileID: 2642618450049522261}
+  finishScreen: {fileID: 1536357600520402573}
+  endPositionText: {fileID: 700308807400143709}
+  endPosition: 0
 --- !u!1 &4898341884591060553
 GameObject:
   m_ObjectHideFlags: 0
@@ -1234,7 +1239,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4898341884591060553}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!114 &4898341884591060552
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1350,7 +1355,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4898341884818298353}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!114 &4898341884818298352
 MonoBehaviour:
   m_ObjectHideFlags: 0

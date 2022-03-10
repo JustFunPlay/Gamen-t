@@ -2,17 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
-public class PlayerSpawner : MonoBehaviour
+public class UISpawner : MonoBehaviour
 {
 
     public PlayerInformation playerInfos;
 
-    public Transform[] playerSpawning;
-
     public List<GameObject> listOfPlayers;
     public List<GameObject> listOfCameras;
 
+    public EventSystem[] eventSystems;
+    public Transform[] transforms;
+    
 
     public InputActionProperty joinAction { get; set; }
     public bool joiningEnabled { get; }
@@ -36,16 +39,16 @@ public class PlayerSpawner : MonoBehaviour
         {
             if (i < 4)
             {
-                GameObject newplayer = Instantiate(playerInfos.playerSelections[i].selectedCar, playerSpawning[i].position, playerSpawning[i].rotation);
+                
+                GameObject newplayer = Instantiate(playerInfos.playerSelections[i].selectedCar, transforms[i].position, Quaternion.identity, transforms[i]);
                 listOfPlayers.Add(newplayer);
+                eventSystems[i].firstSelectedGameObject = newplayer.GetComponentInChildren<Button>().gameObject;
+                eventSystems[i].gameObject.SetActive(true);
                 newplayer.GetComponent<PlayerID>().playerIdNumber = i;
-                newplayer.GetComponent<PlayerID>().playerName = playerInfos.playerSelections[i].name;
-                newplayer.transform.GetChild(4).GetComponent<MeshRenderer>().materials = playerInfos.playerSelections[i].materials;
+                newplayer.GetComponentInChildren<CarSelectation>().id = i;
 
                 GameObject newcamera = newplayer.GetComponentInChildren<Camera>().gameObject;
                 listOfCameras.Add(newcamera);
-
-                
             }
         }
         UpdateCameras();
