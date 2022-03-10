@@ -1156,6 +1156,7 @@ MonoBehaviour:
   finishScreen: {fileID: 1536357600520402573}
   endPositionText: {fileID: 700308807400143709}
   endPosition: 0
+  maxLaps: 1
 --- !u!1 &4898341884591060553
 GameObject:
   m_ObjectHideFlags: 0

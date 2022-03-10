@@ -21,6 +21,9 @@ public class PlayerID : MonoBehaviour
     public GameObject finishScreen;
     public Text endPositionText;
     public int endPosition;
+
+    public int maxLaps;
+
     
 
 
@@ -44,7 +47,7 @@ public class PlayerID : MonoBehaviour
             {
                 labCount++;
                 canFinish = false;
-                if (labCount == playerInfo.maxLaps)
+                if (labCount == maxLaps)
                 {
                     print(playerName + " Has Finished");
                     PlayerFinished();

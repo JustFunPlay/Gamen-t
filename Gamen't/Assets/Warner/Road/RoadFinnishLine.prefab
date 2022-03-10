@@ -1672,6 +1672,7 @@ MonoBehaviour:
   - {fileID: 1640550816075997009}
   listOfPlayers: []
   listOfCameras: []
+  trackLoader: {fileID: 11400000, guid: 18e9f5ab584b66a4b968b0f09d46887c, type: 2}
 --- !u!1 &4554794342597320771
 GameObject:
   m_ObjectHideFlags: 0

@@ -13,6 +13,8 @@ public class PlayerSpawner : MonoBehaviour
     public List<GameObject> listOfPlayers;
     public List<GameObject> listOfCameras;
 
+    public TrackToLoad trackLoader;
+
 
     public InputActionProperty joinAction { get; set; }
     public bool joiningEnabled { get; }
@@ -40,6 +42,7 @@ public class PlayerSpawner : MonoBehaviour
                 listOfPlayers.Add(newplayer);
                 newplayer.GetComponent<PlayerID>().playerIdNumber = i;
                 newplayer.GetComponent<PlayerID>().playerName = playerInfos.playerSelections[i].name;
+                newplayer.GetComponent<PlayerID>().maxLaps = trackLoader.track.numberOfLaps;
                 newplayer.transform.GetChild(4).GetComponent<MeshRenderer>().materials = playerInfos.playerSelections[i].materials;
 
                 GameObject newcamera = newplayer.GetComponentInChildren<Camera>().gameObject;
