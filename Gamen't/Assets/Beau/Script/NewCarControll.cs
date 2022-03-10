@@ -39,6 +39,7 @@ public class NewCarControll : MonoBehaviour
     public bool collided;
     public float handBrake;
     public bool handBrakeOn;
+    public Slider speedbalk;
     public bool go;
     bool b;
 
@@ -91,7 +92,7 @@ public class NewCarControll : MonoBehaviour
         //MAX SNELHEID SYSTEEM DING
         speedRead = rb.velocity.magnitude * 3.6f;
         speedMeterder.text = speedRead.ToString("F0");
-        
+        speedbalk.value = speedRead;
         if (go == true)
         {
         //Reset de auto terug als die geflipt is
@@ -166,7 +167,7 @@ public class NewCarControll : MonoBehaviour
                     element.leftWheel.brakeTorque = 0;
                     element.rightWheel.brakeTorque = 0;
                     maxSpeed = maxSpeedBack;
-
+                    speedbalk.maxValue = maxSpeedBack;
                     if (inputGasBrake.y == 1)
                     {
                         element.leftWheel.brakeTorque = brakeForce;
@@ -180,6 +181,7 @@ public class NewCarControll : MonoBehaviour
                                 maxSpeed = orignalMaxSpeed;
                             }
                             maxSpeed = orignalMaxSpeed;
+                            speedbalk.maxValue = orignalMaxSpeed;
                         }
                     }
                 }
