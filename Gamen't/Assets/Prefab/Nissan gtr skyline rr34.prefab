@@ -130,7 +130,7 @@ MeshCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1329097471728243385}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 83f6b84926130514fb221664c8d27ae4, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
@@ -878,6 +878,8 @@ MonoBehaviour:
   handBrake: 1700
   handBrakeOn: 0
   go: 1
+  hasFinished: 0
+  playerInformation: {fileID: 0}
 --- !u!114 &3420295682217771621
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -943,6 +945,9 @@ MonoBehaviour:
   canFinish: 0
   raceTime: 0
   positionText: {fileID: 5197510531042180963}
+  finishScreen: {fileID: 0}
+  endPositionText: {fileID: 0}
+  endPosition: 0
 --- !u!1 &3420295682642463073
 GameObject:
   m_ObjectHideFlags: 0
@@ -1578,7 +1583,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: -206, y: 901}
-  m_SizeDelta: {x: 309.193, y: 215.993}
+  m_SizeDelta: {x: 309.193, y: 215.99304}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6186327415387681704
 CanvasRenderer:
