@@ -61,9 +61,12 @@ MonoBehaviour:
     - materials:
       - {fileID: -1742948519810473914, guid: 5900f11f476586949bd7ecbd83631f3b, type: 3}
       skinsNamePlates: Blue
-  - carSelectable: {fileID: 6679959579189323678, guid: 838e52922408ba14c92418de5f955e73, type: 3}
+  - carSelectable: {fileID: 3420295682217771623, guid: 01a201d731278c9449d519b5b3397ec0, type: 3}
     carNamePlates: Old School Car
     skins:
     - materials:
-      - {fileID: 2100000, guid: 0853d893074da5a468db1071c1b223de, type: 2}
-      skinsNamePlates: 'Train default '
+      - {fileID: 2100000, guid: 295aefffa76c10e47ac6c98e8fabc46e, type: 2}
+      - {fileID: 2100000, guid: de3aae04dbf426f488a9e4f01e445020, type: 2}
+      - {fileID: 2100000, guid: 1bbb3835cedba3e40a968df3cf8912da, type: 2}
+      - {fileID: 2100000, guid: f6535e1fd9b7d804c85cb551e4eb4f14, type: 2}
+      skinsNamePlates: AAAAAAAAAAAAH
