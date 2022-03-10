@@ -24,6 +24,8 @@ public class PlayerID : MonoBehaviour
 
     public int maxLaps;
 
+    public ScriptableLeaderboardInfo leaderboardInfo;
+
     
 
 
@@ -50,7 +52,10 @@ public class PlayerID : MonoBehaviour
                 if (labCount == maxLaps)
                 {
                     print(playerName + " Has Finished");
-                    PlayerFinished();
+                    if (GetComponent<NewCarControll>().go == true)
+                    {
+                        PlayerFinished();
+                    }
                     
                 }
 
@@ -67,6 +72,7 @@ public class PlayerID : MonoBehaviour
         GetComponent<NewCarControll>().hasFinished = true;
         finishScreen.SetActive(true);
         endPositionText.text = endPosition.ToString();
+        leaderboardInfo.leaderboard.Add(new Leaderboard(playerName, raceTime));
 
     }
 
@@ -86,7 +92,11 @@ public class PlayerID : MonoBehaviour
 
     private void Update()
     {
-        raceTime += Time.deltaTime;
+        if(GetComponent<NewCarControll>().go == true)
+        {
+            raceTime += Time.deltaTime;
+        }
+        
     }
 
 }

@@ -26,6 +26,13 @@ public class Leaderboard
 {
     public string racerName;
     public float timeInSec;
+    
+    public Leaderboard(string racerName_, float timeInSec_)
+    {
+        this.racerName = racerName_;
+        this.timeInSec = timeInSec_;
+        
+    }
 }
 [System.Serializable]
 public enum TrackType
