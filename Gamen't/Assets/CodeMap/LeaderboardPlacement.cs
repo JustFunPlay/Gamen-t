@@ -25,9 +25,35 @@ public class LeaderboardPlacement : MonoBehaviour
         {
             leaderboardCharacters[i].SetActive(true);
             playerName[i].text = playerLeaderBoardInformation.leaderboard[i].racerName;
-            lapTime[i].text = playerLeaderBoardInformation.leaderboard[i].timeInSec.ToString();
+            if (playerLeaderBoardInformation.leaderboard[i].timeInSec < 10)
+            {
+                lapTime[i].text = "0:0" + playerLeaderBoardInformation.leaderboard[i].timeInSec.ToString("F2");
+            }
+            else if (playerLeaderBoardInformation.leaderboard[i].timeInSec < 60)
+            {
+                lapTime[i].text = "0:" + playerLeaderBoardInformation.leaderboard[i].timeInSec.ToString("F2");
+            }
+            else
+            {
+                int m = 0;
+                float s = playerLeaderBoardInformation.leaderboard[i].timeInSec;
+                while (s > 60)
+                {
+                    s -= 60;
+                    m++;
+                }
+                if(s < 10)
+                {
+                    lapTime[i].text = m.ToString() + ":0" + s.ToString("F2");
+                }
+                else
+                {
+                    lapTime[i].text = m.ToString() + ":" + s.ToString("F2");
+                }
 
+            }
         }
+
     }
     public void OnResetLeaderboard(int scene)
     {

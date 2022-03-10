@@ -45,6 +45,8 @@ public class NewCarControll : MonoBehaviour
 
     public bool hasFinished;
     public PlayerInformation playerInformation;
+
+    public Transform checkPoint;
     private void Start()
     {
         
@@ -98,8 +100,9 @@ public class NewCarControll : MonoBehaviour
         //Reset de auto terug als die geflipt is
         if (restet == 1)
         {
-
-            transform.rotation = new Quaternion();
+            transform.position = checkPoint.position;
+            transform.rotation = checkPoint.rotation;
+            
             restet = 0;
         }
 

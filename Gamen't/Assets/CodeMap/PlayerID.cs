@@ -26,6 +26,9 @@ public class PlayerID : MonoBehaviour
 
     public ScriptableLeaderboardInfo leaderboardInfo;
 
+    public Text lapText;
+    public Text timeText;
+
     
 
 
@@ -48,6 +51,7 @@ public class PlayerID : MonoBehaviour
             if(canFinish == true)
             {
                 labCount++;
+                lapText.text = labCount.ToString();
                 canFinish = false;
                 if (labCount > maxLaps)
                 {
@@ -95,8 +99,37 @@ public class PlayerID : MonoBehaviour
         if(GetComponent<NewCarControll>() && GetComponent<NewCarControll>().go == true)
         {
             raceTime += Time.deltaTime;
+
+            
         }
-        
+        if (raceTime < 10)
+        {
+            timeText.text = "0:0" + raceTime.ToString("F2");
+        }
+        else if (raceTime < 60)
+        {
+            timeText.text = "0:" + raceTime.ToString("F2");
+        }
+        else
+        {
+            int m = 0;
+            float s = raceTime;
+            while (s > 60)
+            {
+                s -= 60;
+                m++;
+            }
+            if (s < 10)
+            {
+                timeText.text = m.ToString() + ":0" + s.ToString("F2");
+            }
+            else
+            {
+                timeText.text = m.ToString() + ":" + s.ToString("F2");
+            }
+
+        }
+
     }
 
 }
