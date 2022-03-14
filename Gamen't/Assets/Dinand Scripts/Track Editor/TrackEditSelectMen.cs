@@ -82,7 +82,7 @@ public class TrackEditSelectMen : MonoBehaviour
                 GameObject newButton = Instantiate(buttonPrefab, transforms[i].position, transforms[i].rotation, transforms[i]);
                 newButton.GetComponentInChildren<Text>().text = allTracks.trackInfos[i].trackName;
                 newButton.GetComponent<TrackSelectButton>().index = i;
-                newButton.GetComponent<TrackSelectButton>().infosTrack =  infoTrack;
+                newButton.GetComponent<ShowInfo>().infosTrack =  infoTrack;
             }
         }
     }
