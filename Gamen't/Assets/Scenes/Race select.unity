@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0.99999905, b: 0.99999905, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -727,7 +727,7 @@ RectTransform:
   m_Children:
   - {fileID: 1414592658}
   m_Father: {fileID: 1124218402}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
@@ -1051,7 +1051,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 663877071}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 663877073}
+        m_TargetAssemblyTypeName: ShowInfo, Assembly-CSharp
+        m_MethodName: PressedButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &663877071
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1103,8 +1115,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   infosTrack: {fileID: 228848050}
-  trackEditSelection: {fileID: 1124218403}
+  trackEditSelection: {fileID: 0}
   baseTrack: 0
+  raceselectEventSystem: {fileID: 0}
+  buttonRace: {fileID: 1990234102}
 --- !u!1 &689487297
 GameObject:
   m_ObjectHideFlags: 0
@@ -1222,19 +1236,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 719644681}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1124218403}
-        m_TargetAssemblyTypeName: TrackEditSelectMen, Assembly-CSharp
-        m_MethodName: NewTrack
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &719644681
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1541,11 +1543,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 825240088}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -960, y: -540, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_Father: {fileID: 1124218402}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &858397320
 GameObject:
@@ -2024,11 +2026,12 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
+  - {fileID: 825240091}
   - {fileID: 1314659527}
   - {fileID: 1504616716}
   - {fileID: 478477435}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2411,7 +2414,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1208326323}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 663877073}
+        m_TargetAssemblyTypeName: ShowInfo, Assembly-CSharp
+        m_MethodName: PressedButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1208326323
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2463,8 +2478,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   infosTrack: {fileID: 228848050}
-  trackEditSelection: {fileID: 1124218403}
+  trackEditSelection: {fileID: 0}
   baseTrack: 1
+  raceselectEventSystem: {fileID: 0}
+  buttonRace: {fileID: 1990234102}
 --- !u!1 &1210952985
 GameObject:
   m_ObjectHideFlags: 0
@@ -2535,7 +2552,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1124218402}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -2793,7 +2810,7 @@ RectTransform:
   - {fileID: 621292963}
   - {fileID: 1027116701}
   m_Father: {fileID: 1124218402}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
@@ -3426,7 +3443,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1815951771}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 663877073}
+        m_TargetAssemblyTypeName: ShowInfo, Assembly-CSharp
+        m_MethodName: PressedButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1815951771
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3478,8 +3507,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   infosTrack: {fileID: 228848050}
-  trackEditSelection: {fileID: 1124218403}
+  trackEditSelection: {fileID: 0}
   baseTrack: 2
+  raceselectEventSystem: {fileID: 0}
+  buttonRace: {fileID: 1990234102}
 --- !u!1 &1820860859
 GameObject:
   m_ObjectHideFlags: 0
@@ -3760,6 +3791,11 @@ RectTransform:
   m_AnchoredPosition: {x: 409.45996, y: -947.4541}
   m_SizeDelta: {x: 400, y: 249.96}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1990234102 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1165748992, guid: 8d5e6a99c2c5b964497015fc148c5939, type: 3}
+  m_PrefabInstance: {fileID: 8658488062879904458}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2056271235
 GameObject:
   m_ObjectHideFlags: 0
@@ -3990,10 +4026,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1124218403}
-    - target: {fileID: 1310226122, guid: 8d5e6a99c2c5b964497015fc148c5939, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1310226123, guid: 8d5e6a99c2c5b964497015fc148c5939, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 

@@ -11,7 +11,7 @@ public class SetObjectsToDirty : MonoBehaviour
     {
         for (int i = 0; i < scriptableObjects.Length; i++)
         {
-            EditorUtility.SetDirty(scriptableObjects[i]);
+            //EditorUtility.SetDirty(scriptableObjects[i]);
         }
     }
 }

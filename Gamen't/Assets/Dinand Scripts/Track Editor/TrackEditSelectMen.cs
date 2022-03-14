@@ -30,8 +30,9 @@ public class TrackEditSelectMen : MonoBehaviour
     public void NewTrack()
     {
         //trackToLoad.track = new TrackInfo(ScriptableObject.CreateInstance<TrackInfo>());
-        trackToLoad.track = (TrackInfo)Instantiate(trackInfo);
-        //SceneManager.LoadScene(1);
+        allTracks.trackInfos.Add((TrackInfo)Instantiate(trackInfo));
+        trackToLoad.track = allTracks.trackInfos[allTracks.trackInfos.Count - 1];
+        SceneManager.LoadScene(4);
     }
 
     public void LoadBaseTrack(int track)
@@ -82,7 +83,7 @@ public class TrackEditSelectMen : MonoBehaviour
                 GameObject newButton = Instantiate(buttonPrefab, transforms[i].position, transforms[i].rotation, transforms[i]);
                 newButton.GetComponentInChildren<Text>().text = allTracks.trackInfos[i].trackName;
                 newButton.GetComponent<TrackSelectButton>().index = i;
-                newButton.GetComponent<TrackSelectButton>().infosTrack =  infoTrack;
+                newButton.GetComponent<ShowInfo>().infosTrack =  infoTrack;
             }
         }
     }
