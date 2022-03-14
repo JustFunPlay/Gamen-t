@@ -42,7 +42,7 @@ public class NewCarControll : MonoBehaviour
     public Slider speedbalk;
     public bool go;
     bool b;
-
+    public GameObject hudCanvas;
     public bool hasFinished;
     public PlayerInformation playerInformation;
 
@@ -60,11 +60,7 @@ public class NewCarControll : MonoBehaviour
         inputGasBrake.y = value.Get<float>();
 
     }
-    //void OnBrake(InputValue value)
-    //{
-    //    inputGasBrake.y = -value.Get<float>();
 
-    //}
     void OnMove(InputValue value)
     {
         inputGasBrake.x = value.Get<Vector2>().x;
@@ -145,10 +141,10 @@ public class NewCarControll : MonoBehaviour
 
                     }
                 }
-                else
-                {
-                    //brakeLight.DisableKeyword("_EMISSION");
-                }
+                //else
+                //{
+                //    brakeLight.DisableKeyword("_EMISSION");
+                //}
 
 
             }
@@ -258,5 +254,11 @@ public class NewCarControll : MonoBehaviour
 
         collided = false;
 
+    }
+
+    public void CarBRR()
+    {
+        go = true;
+        hudCanvas.SetActive(true);
     }
 }
