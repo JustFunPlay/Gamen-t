@@ -35,11 +35,11 @@ MonoBehaviour:
       - {fileID: 2100000, guid: d9a17827dd2fd6d4f832617d72707ee2, type: 2}
       skinsNamePlates: Yellow Car
   - carSelectable: {fileID: 3420295682217771623, guid: 01a201d731278c9449d519b5b3397ec0, type: 3}
-    carNamePlates: Old School Car
+    carNamePlates: Nissan GTR R34
     skins:
     - materials:
       - {fileID: 2100000, guid: 295aefffa76c10e47ac6c98e8fabc46e, type: 2}
       - {fileID: 2100000, guid: de3aae04dbf426f488a9e4f01e445020, type: 2}
       - {fileID: 2100000, guid: 1bbb3835cedba3e40a968df3cf8912da, type: 2}
       - {fileID: 2100000, guid: f6535e1fd9b7d804c85cb551e4eb4f14, type: 2}
-      skinsNamePlates: AAAAAAAAAAAAH
+      skinsNamePlates: Porple
