@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
-public class SetObjectsToDirty : MonoBehaviour
+public class ALLSCRIPTABLEOBJECTS: MonoBehaviour
 {
     public ScriptableObject[] scriptableObjects;
 
