@@ -205,6 +205,6 @@ MonoBehaviour:
     timeInSec: 0
   - racerName: 
     timeInSec: 0
-  numberOfLaps: 1
-  description: this is a test
-  trackType: 1
+  numberOfLaps: 2
+  description: this is a test track
+  trackType: 0

@@ -30,8 +30,9 @@ public class TrackEditSelectMen : MonoBehaviour
     public void NewTrack()
     {
         //trackToLoad.track = new TrackInfo(ScriptableObject.CreateInstance<TrackInfo>());
-        trackToLoad.track = (TrackInfo)Instantiate(trackInfo);
-        //SceneManager.LoadScene(1);
+        allTracks.trackInfos.Add((TrackInfo)Instantiate(trackInfo));
+        trackToLoad.track = allTracks.trackInfos[allTracks.trackInfos.Count - 1];
+        SceneManager.LoadScene(4);
     }
 
     public void LoadBaseTrack(int track)
