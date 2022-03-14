@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0.99999905, b: 0.99999905, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -301,41 +301,44 @@ PrefabInstance:
       propertyPath: m_Name
       value: Leaderboard
       objectReference: {fileID: 0}
-    - target: {fileID: 3273548863613139035, guid: e12c37537f28477499015da12aa49d6c, type: 3}
-      propertyPath: playerInformation
-      value: 
-      objectReference: {fileID: 11400000, guid: 9bf2dce938d329f458b58eb8c3c8d197, type: 2}
     - target: {fileID: 3798035796774754042, guid: e12c37537f28477499015da12aa49d6c, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      propertyPath: m_Colors.m_SelectedColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3798035796774754042, guid: e12c37537f28477499015da12aa49d6c, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.g
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3798035796774754042, guid: e12c37537f28477499015da12aa49d6c, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
-      value: 
-      objectReference: {fileID: 906272480}
-    - target: {fileID: 3798035796774754042, guid: e12c37537f28477499015da12aa49d6c, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
-      value: 2
+      propertyPath: m_Colors.m_SelectedColor.r
+      value: 0.072496176
       objectReference: {fileID: 0}
-    - target: {fileID: 3798035796774754042, guid: e12c37537f28477499015da12aa49d6c, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: 
+    - target: {fileID: 4654572964364445897, guid: e12c37537f28477499015da12aa49d6c, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.b
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3798035796774754042, guid: e12c37537f28477499015da12aa49d6c, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: LeaderboardPlacement, Assembly-CSharp
+    - target: {fileID: 4654572964364445897, guid: e12c37537f28477499015da12aa49d6c, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.g
+      value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 3798035796774754042, guid: e12c37537f28477499015da12aa49d6c, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: 
+    - target: {fileID: 4654572964364445897, guid: e12c37537f28477499015da12aa49d6c, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.r
+      value: 0.072496176
+      objectReference: {fileID: 0}
+    - target: {fileID: 6304386634002075259, guid: e12c37537f28477499015da12aa49d6c, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6304386634002075259, guid: e12c37537f28477499015da12aa49d6c, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6304386634002075259, guid: e12c37537f28477499015da12aa49d6c, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.r
+      value: 0.072496176
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e12c37537f28477499015da12aa49d6c, type: 3}
---- !u!1 &906272480 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1595758286245556735, guid: e12c37537f28477499015da12aa49d6c, type: 3}
-  m_PrefabInstance: {fileID: 884678463}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1911347480
 GameObject:
   m_ObjectHideFlags: 0
