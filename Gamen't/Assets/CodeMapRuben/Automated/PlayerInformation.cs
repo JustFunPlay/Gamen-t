@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
-
+using UnityEngine.UI;
 [CreateAssetMenu(fileName = "ScriptablePlayerInformation", menuName = "ScriptablePlayerInfo")]
 public class PlayerInformation : ScriptableObject
 {
@@ -14,11 +14,11 @@ public class PlayerInformation : ScriptableObject
 [System.Serializable]
 public class PlayerSelection
 {
-    public string name;
+    public Text name;
     public GameObject selectedCar;
     public Material[] materials = new Material[4];
 
-    public PlayerSelection(string name_, GameObject selectedCar_, Material[] materials_)
+    public PlayerSelection(Text name_, GameObject selectedCar_, Material[] materials_)
     {
         this.name = name_;
         this.selectedCar = selectedCar_;
