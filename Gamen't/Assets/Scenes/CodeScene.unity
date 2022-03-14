@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0.99999905, b: 0.99999905, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -185,6 +185,7 @@ MonoBehaviour:
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
+      m_Flags: 0
     m_Reference: {fileID: 0}
   m_PlayerPrefab: {fileID: 4582174514683055560, guid: 3dd3b899a36772546a06d5e0009363c6, type: 3}
   m_SplitScreen: 1
@@ -210,12 +211,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerInfos: {fileID: 0}
   playerSpawning:
-  - {x: 5, y: 10, z: -5}
-  - {x: 7, y: 10, z: -7}
-  - {x: 9, y: 10, z: -9}
-  - {x: 11, y: 10, z: -11}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   listOfPlayers: []
   listOfCameras: []
+  trackLoader: {fileID: 0}
 --- !u!4 &314056338
 Transform:
   m_ObjectHideFlags: 0
@@ -230,6 +232,63 @@ Transform:
   m_Father: {fileID: 2113782432}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &323629408
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7923819130181872452, guid: 4536d277e00c9db48b3533e5afb27d14, type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 7923819130181872452, guid: 4536d277e00c9db48b3533e5afb27d14, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1183.5208
+      objectReference: {fileID: 0}
+    - target: {fileID: 7923819130181872452, guid: 4536d277e00c9db48b3533e5afb27d14, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 556.24896
+      objectReference: {fileID: 0}
+    - target: {fileID: 7923819130181872452, guid: 4536d277e00c9db48b3533e5afb27d14, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -64.094536
+      objectReference: {fileID: 0}
+    - target: {fileID: 7923819130181872452, guid: 4536d277e00c9db48b3533e5afb27d14, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7923819130181872452, guid: 4536d277e00c9db48b3533e5afb27d14, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7923819130181872452, guid: 4536d277e00c9db48b3533e5afb27d14, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7923819130181872452, guid: 4536d277e00c9db48b3533e5afb27d14, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7923819130181872452, guid: 4536d277e00c9db48b3533e5afb27d14, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7923819130181872452, guid: 4536d277e00c9db48b3533e5afb27d14, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7923819130181872452, guid: 4536d277e00c9db48b3533e5afb27d14, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7923819130181872454, guid: 4536d277e00c9db48b3533e5afb27d14, type: 3}
+      propertyPath: m_Name
+      value: ALL SCRIPTABLEOBJECTS
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4536d277e00c9db48b3533e5afb27d14, type: 3}
 --- !u!1 &354126186
 GameObject:
   m_ObjectHideFlags: 0
@@ -292,6 +351,7 @@ MonoBehaviour:
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
+      m_Flags: 0
     m_Reference: {fileID: 0}
   m_PlayerPrefab: {fileID: 4582174514683055560, guid: 3dd3b899a36772546a06d5e0009363c6, type: 3}
   m_SplitScreen: 1
@@ -317,12 +377,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerInfos: {fileID: 0}
   playerSpawning:
-  - {x: 5, y: 10, z: -5}
-  - {x: 7, y: 10, z: -7}
-  - {x: 9, y: 10, z: -9}
-  - {x: 11, y: 10, z: -11}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   listOfPlayers: []
   listOfCameras: []
+  trackLoader: {fileID: 0}
 --- !u!4 &354126189
 Transform:
   m_ObjectHideFlags: 0
@@ -570,12 +631,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerInfos: {fileID: 0}
   playerSpawning:
-  - {x: 5, y: 10, z: -5}
-  - {x: 7, y: 10, z: -7}
-  - {x: 9, y: 10, z: -9}
-  - {x: 11, y: 10, z: -11}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   listOfPlayers: []
   listOfCameras: []
+  trackLoader: {fileID: 0}
 --- !u!4 &1127430963
 Transform:
   m_ObjectHideFlags: 0
@@ -634,6 +696,7 @@ MonoBehaviour:
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
+      m_Flags: 0
     m_Reference: {fileID: 0}
   m_PlayerPrefab: {fileID: 4582174514683055560, guid: 3dd3b899a36772546a06d5e0009363c6, type: 3}
   m_SplitScreen: 1
@@ -707,6 +770,7 @@ MonoBehaviour:
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
+      m_Flags: 0
     m_Reference: {fileID: 0}
   m_PlayerPrefab: {fileID: 4898341884572870481, guid: 85faec200b5ffb84b86c0990bf2f27de, type: 3}
   m_SplitScreen: 1
@@ -732,12 +796,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerInfos: {fileID: 11400000, guid: 32ba84c6353187d4a94dfddb68e53bbc, type: 2}
   playerSpawning:
-  - {x: 5, y: 10, z: -5}
-  - {x: 7, y: 10, z: -7}
-  - {x: 9, y: 10, z: -9}
-  - {x: 11, y: 10, z: -11}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   listOfPlayers: []
   listOfCameras: []
+  trackLoader: {fileID: 0}
 --- !u!4 &1195782164
 Transform:
   m_ObjectHideFlags: 0
@@ -879,6 +944,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MoveRepeatDelay: 0.5
   m_MoveRepeatRate: 0.1
+  m_XRTrackingOrigin: {fileID: 0}
   m_ActionsAsset: {fileID: -944628639613478452, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
   m_PointAction: {fileID: 1054132383583890850, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
   m_MoveAction: {fileID: 3710738434707379630, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
@@ -1339,6 +1405,7 @@ MonoBehaviour:
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
+      m_Flags: 0
     m_Reference: {fileID: 0}
   m_PlayerPrefab: {fileID: 4582174514683055560, guid: 3dd3b899a36772546a06d5e0009363c6, type: 3}
   m_SplitScreen: 1
@@ -1364,12 +1431,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerInfos: {fileID: 0}
   playerSpawning:
-  - {x: 5, y: 10, z: -5}
-  - {x: 7, y: 10, z: -7}
-  - {x: 9, y: 10, z: -9}
-  - {x: 11, y: 10, z: -11}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   listOfPlayers: []
   listOfCameras: []
+  trackLoader: {fileID: 0}
 --- !u!4 &1828743906
 Transform:
   m_ObjectHideFlags: 0
