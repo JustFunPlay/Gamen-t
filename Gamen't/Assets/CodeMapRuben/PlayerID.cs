@@ -67,6 +67,7 @@ public class PlayerID : MonoBehaviour
             if (labCount == 0)
             {
                 labCount = 1;
+                lapText.text = labCount.ToString();
             }
         }
     }
@@ -100,35 +101,36 @@ public class PlayerID : MonoBehaviour
         {
             raceTime += Time.deltaTime;
 
-            
-        }
-        if (raceTime < 10)
-        {
-            timeText.text = "0:0" + raceTime.ToString("F2");
-        }
-        else if (raceTime < 60)
-        {
-            timeText.text = "0:" + raceTime.ToString("F2");
-        }
-        else
-        {
-            int m = 0;
-            float s = raceTime;
-            while (s > 60)
+            if (raceTime < 10)
             {
-                s -= 60;
-                m++;
+                timeText.text = "0:0" + raceTime.ToString("F2");
             }
-            if (s < 10)
+            else if (raceTime < 60)
             {
-                timeText.text = m.ToString() + ":0" + s.ToString("F2");
+                timeText.text = "0:" + raceTime.ToString("F2");
             }
             else
             {
-                timeText.text = m.ToString() + ":" + s.ToString("F2");
+                int m = 0;
+                float s = raceTime;
+                while (s > 60)
+                {
+                    s -= 60;
+                    m++;
+                }
+                if (s < 10)
+                {
+                    timeText.text = m.ToString() + ":0" + s.ToString("F2");
+                }
+                else
+                {
+                    timeText.text = m.ToString() + ":" + s.ToString("F2");
+                }
+
             }
 
         }
+
 
     }
 
