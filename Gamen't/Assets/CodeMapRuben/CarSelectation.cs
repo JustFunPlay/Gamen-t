@@ -110,7 +110,7 @@ public class CarSelectation : MonoBehaviour
 
     void Selection()
     {
-        playerInformation.playerSelections[id].name = playerName.text;
+        playerInformation.playerSelections[id].name = playerName;
         //int id = GetComponentInParent<PlayerID>().playerIdNumber;
         playerInformation.playerSelections[id].selectedCar = carInventory.Cars[carNumber].carSelectable;
         playerInformation.playerSelections[id].materials = carInventory.Cars[carNumber].skins[skinNumber].materials;

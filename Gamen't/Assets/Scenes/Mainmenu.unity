@@ -1361,7 +1361,7 @@ MonoBehaviour:
   carSelectCanvas: {fileID: 11400000, guid: 08ca02135f6e76a4c8b77ce410933641, type: 2}
   playerCars: {fileID: 11400000, guid: 32ba84c6353187d4a94dfddb68e53bbc, type: 2}
   canvasSelection:
-    name: 
+    name: {fileID: 0}
     selectedCar: {fileID: 3458319226721410268, guid: be3970fbafa5d2e468ab4f87eea70c8a, type: 3}
     materials:
     - {fileID: 0}
@@ -1369,7 +1369,7 @@ MonoBehaviour:
     - {fileID: 0}
     - {fileID: 0}
   carSelection:
-    name: 
+    name: {fileID: 0}
     selectedCar: {fileID: 8785248514869269620, guid: d807a48cb8293c34784c9e42570e03df, type: 3}
     materials:
     - {fileID: 0}

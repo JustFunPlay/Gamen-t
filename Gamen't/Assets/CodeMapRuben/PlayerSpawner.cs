@@ -41,7 +41,7 @@ public class PlayerSpawner : MonoBehaviour
                 GameObject newplayer = Instantiate(playerInfos.playerSelections[i].selectedCar, playerSpawning[i].position, playerSpawning[i].rotation);
                 listOfPlayers.Add(newplayer);
                 newplayer.GetComponent<PlayerID>().playerIdNumber = i;
-                newplayer.GetComponent<PlayerID>().playerName = playerInfos.playerSelections[i].name;
+                newplayer.GetComponent<PlayerID>().playerName = playerInfos.playerSelections[i].name.text;
                 newplayer.GetComponent<PlayerID>().maxLaps = trackLoader.track.numberOfLaps;
                 List<Material> newMats = new List<Material>();
                 for (int a = 0; a < playerInfos.playerSelections[i].materials.Length; a++)
