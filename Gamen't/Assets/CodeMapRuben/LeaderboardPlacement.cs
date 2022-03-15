@@ -16,11 +16,6 @@ public class LeaderboardPlacement : MonoBehaviour
 
     void Start()
     {
-
-
-    }
-    void Update()
-    {
         for (int i = 0; i < playerLeaderBoardInformation.leaderboard.Count; i++)
         {
             leaderboardCharacters[i].SetActive(true);
@@ -42,7 +37,7 @@ public class LeaderboardPlacement : MonoBehaviour
                     s -= 60;
                     m++;
                 }
-                if(s < 10)
+                if (s < 10)
                 {
                     lapTime[i].text = m.ToString() + ":0" + s.ToString("F2");
                 }
@@ -53,6 +48,11 @@ public class LeaderboardPlacement : MonoBehaviour
 
             }
         }
+        playerLeaderBoardInformation.leaderboard.Clear();
+    }
+    void Update()
+    {
+        
 
     }
     public void OnResetLeaderboard(int scene)
