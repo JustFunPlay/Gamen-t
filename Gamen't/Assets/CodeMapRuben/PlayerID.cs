@@ -77,7 +77,6 @@ public class PlayerID : MonoBehaviour
         GetComponent<NewCarControll>().hasFinished = true;
         finishScreen.SetActive(true);
         endPositionText.text = endPosition.ToString();
-        leaderboardInfo.leaderboard.Clear();
         leaderboardInfo.leaderboard.Add(new Leaderboard(playerName, raceTime));
 
     }
