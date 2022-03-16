@@ -29,7 +29,7 @@ public class TimmyTheCheatEngine : MonoBehaviour {
             players = FindPlayers();
             return;
         } else {
-            InvokeRepeating("ChangeCarSize", 15f, 2f);
+            //InvokeRepeating("ChangeCarSize", 15f, 2f);
             cheatsActive = true;
         }
     }
