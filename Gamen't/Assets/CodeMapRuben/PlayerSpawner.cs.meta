@@ -5,6 +5,7 @@ MonoImporter:
   serializedVersion: 2
   defaultReferences:
   - playerInfos: {fileID: 11400000, guid: 32ba84c6353187d4a94dfddb68e53bbc, type: 2}
+  - trackLoader: {fileID: 11400000, guid: 18e9f5ab584b66a4b968b0f09d46887c, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
