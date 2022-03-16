@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 891f194493921514bb6fb3125f6b064b, type: 3}
+  m_Name: ListOfCars
+  m_EditorClassIdentifier: 
+  Cars:
+  - carSelectable: {fileID: 5054810255372854759, guid: aad2591a48d145d42aba8b7f36b565d3, type: 3}
+    carNamePlates: Normal Car
+    skins:
+    - materials:
+      - {fileID: 2100000, guid: 907af39f83a6bc440b29bea0c9d905ff, type: 2}
+      - {fileID: 2100000, guid: cca709541e54c2d47a9fa7a08397c3c4, type: 2}
+      - {fileID: 2100000, guid: 98dbb5fc6045d5249b467d4602f8a209, type: 2}
+      - {fileID: 2100000, guid: 4ff1e8648b13b904198c4b54989e2328, type: 2}
+      skinsNamePlates: Shark Car
+    - materials:
+      - {fileID: 2100000, guid: e8e120bf87f40044198babee90301bc7, type: 2}
+      - {fileID: 2100000, guid: 8d9bcc98461dcc3459c4413858dea4e7, type: 2}
+      - {fileID: 2100000, guid: 6fbf6e1464d17f746a47ef656a8247bc, type: 2}
+      - {fileID: 2100000, guid: 85822d122fd06ee41812dea05e341c6f, type: 2}
+      skinsNamePlates: Purple Car
+    - materials:
+      - {fileID: 2100000, guid: 5bbf034ee8ac4e349a230266a1d3badf, type: 2}
+      - {fileID: 2100000, guid: 0251e1c9ef83c1144bd1826096c32e71, type: 2}
+      - {fileID: 2100000, guid: caef475274a1c2841bf68f1d6799631f, type: 2}
+      - {fileID: 2100000, guid: d9a17827dd2fd6d4f832617d72707ee2, type: 2}
+      skinsNamePlates: Yellow Car
+  - carSelectable: {fileID: 3347320449242237477, guid: 2df898bfdbc1d3c41b24c47b6b437a0c, type: 3}
+    carNamePlates: Nissan GTR R34
+    skins:
+    - materials:
+      - {fileID: 2100000, guid: 295aefffa76c10e47ac6c98e8fabc46e, type: 2}
+      - {fileID: 2100000, guid: de3aae04dbf426f488a9e4f01e445020, type: 2}
+      - {fileID: 2100000, guid: 1bbb3835cedba3e40a968df3cf8912da, type: 2}
+      - {fileID: 2100000, guid: f6535e1fd9b7d804c85cb551e4eb4f14, type: 2}
+      skinsNamePlates: Porple

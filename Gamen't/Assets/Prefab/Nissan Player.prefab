@@ -1,0 +1,183 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3347320449242237477
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9214223235598741024}
+  m_Layer: 0
+  m_Name: Nissan Player
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9214223235598741024
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3347320449242237477}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4833476312769736861}
+  - {fileID: 7573581738572814650}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &342819453897609343
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9214223235598741024}
+    m_Modifications:
+    - target: {fileID: 7915978000182380869, guid: bccd9d0819217854fa43d8644c1a9637, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7915978000182380869, guid: bccd9d0819217854fa43d8644c1a9637, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7915978000182380869, guid: bccd9d0819217854fa43d8644c1a9637, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7915978000182380869, guid: bccd9d0819217854fa43d8644c1a9637, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7915978000182380869, guid: bccd9d0819217854fa43d8644c1a9637, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7915978000182380869, guid: bccd9d0819217854fa43d8644c1a9637, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7915978000182380869, guid: bccd9d0819217854fa43d8644c1a9637, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7915978000182380869, guid: bccd9d0819217854fa43d8644c1a9637, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7915978000182380869, guid: bccd9d0819217854fa43d8644c1a9637, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7915978000182380869, guid: bccd9d0819217854fa43d8644c1a9637, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7915978000182380869, guid: bccd9d0819217854fa43d8644c1a9637, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7915978000182380920, guid: bccd9d0819217854fa43d8644c1a9637, type: 3}
+      propertyPath: m_Target
+      value: 
+      objectReference: {fileID: 4833476312769736861}
+    - target: {fileID: 7915978000182380921, guid: bccd9d0819217854fa43d8644c1a9637, type: 3}
+      propertyPath: m_Name
+      value: CarCameraRig
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bccd9d0819217854fa43d8644c1a9637, type: 3}
+--- !u!4 &7573581738572814650 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7915978000182380869, guid: bccd9d0819217854fa43d8644c1a9637, type: 3}
+  m_PrefabInstance: {fileID: 342819453897609343}
+  m_PrefabAsset: {fileID: 0}
+--- !u!20 &7573581737221386282 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 7915977999397052501, guid: bccd9d0819217854fa43d8644c1a9637, type: 3}
+  m_PrefabInstance: {fileID: 342819453897609343}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7810545593482425063
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9214223235598741024}
+    m_Modifications:
+    - target: {fileID: 3420295682201817983, guid: 01a201d731278c9449d519b5b3397ec0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3420295682217771622, guid: 01a201d731278c9449d519b5b3397ec0, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3420295682217771623, guid: 01a201d731278c9449d519b5b3397ec0, type: 3}
+      propertyPath: m_Name
+      value: Nissan gtr skyline rr34
+      objectReference: {fileID: 0}
+    - target: {fileID: 3420295682217771642, guid: 01a201d731278c9449d519b5b3397ec0, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3420295682217771642, guid: 01a201d731278c9449d519b5b3397ec0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3420295682217771642, guid: 01a201d731278c9449d519b5b3397ec0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3420295682217771642, guid: 01a201d731278c9449d519b5b3397ec0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3420295682217771642, guid: 01a201d731278c9449d519b5b3397ec0, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3420295682217771642, guid: 01a201d731278c9449d519b5b3397ec0, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3420295682217771642, guid: 01a201d731278c9449d519b5b3397ec0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3420295682217771642, guid: 01a201d731278c9449d519b5b3397ec0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3420295682217771642, guid: 01a201d731278c9449d519b5b3397ec0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3420295682217771642, guid: 01a201d731278c9449d519b5b3397ec0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3420295682217771642, guid: 01a201d731278c9449d519b5b3397ec0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5617726322250911515, guid: 01a201d731278c9449d519b5b3397ec0, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 7573581737221386282}
+    - target: {fileID: 5890139430402786539, guid: 01a201d731278c9449d519b5b3397ec0, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 01a201d731278c9449d519b5b3397ec0, type: 3}
+--- !u!4 &4833476312769736861 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3420295682217771642, guid: 01a201d731278c9449d519b5b3397ec0, type: 3}
+  m_PrefabInstance: {fileID: 7810545593482425063}
+  m_PrefabAsset: {fileID: 0}
