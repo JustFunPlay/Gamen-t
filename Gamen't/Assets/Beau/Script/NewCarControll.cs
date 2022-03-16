@@ -45,7 +45,7 @@ public class NewCarControll : MonoBehaviour
     public GameObject hudCanvas;
     public bool hasFinished;
     public PlayerInformation playerInformation;
-
+    
     public Transform checkPoint;
     private void Start()
     {
