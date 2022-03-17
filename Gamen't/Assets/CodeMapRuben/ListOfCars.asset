@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: ListOfCars
   m_EditorClassIdentifier: 
   Cars:
-  - carSelectable: {fileID: 4898341884572870481, guid: 85faec200b5ffb84b86c0990bf2f27de, type: 3}
+  - carSelectable: {fileID: 5054810255372854759, guid: aad2591a48d145d42aba8b7f36b565d3, type: 3}
     carNamePlates: Normal Car
     skins:
     - materials:
@@ -34,7 +34,7 @@ MonoBehaviour:
       - {fileID: 2100000, guid: caef475274a1c2841bf68f1d6799631f, type: 2}
       - {fileID: 2100000, guid: d9a17827dd2fd6d4f832617d72707ee2, type: 2}
       skinsNamePlates: Yellow Car
-  - carSelectable: {fileID: 3420295682217771623, guid: 01a201d731278c9449d519b5b3397ec0, type: 3}
+  - carSelectable: {fileID: 3347320449242237477, guid: 2df898bfdbc1d3c41b24c47b6b437a0c, type: 3}
     carNamePlates: Nissan GTR R34
     skins:
     - materials:
