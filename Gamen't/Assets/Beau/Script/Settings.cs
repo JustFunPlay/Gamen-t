@@ -12,6 +12,10 @@ public class Settings : MonoBehaviour
 
     Resolution[] resolutions;
 
+    public GameObject settings;
+    
+    public GameObject mainmenu;
+
     public void Start()
     {
         resolutions = Screen.resolutions;
@@ -57,5 +61,15 @@ public class Settings : MonoBehaviour
         Screen.fullScreen = isFullscreen;
     }
 
+    public void BackSettingButon()
+    {
+        settings.SetActive(false);
+        mainmenu.SetActive(true);
+    }
+    public void SettingsButton()
+    {
+        mainmenu.SetActive(false);
+        settings.SetActive(true);
+    }
 
 }
