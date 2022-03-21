@@ -9,8 +9,6 @@ public class VotingSystem : MonoBehaviour
     public PlayerInformation votingCounter;
 
     public Button voteButton;
-    public Button voteBackButton;
-    public Button voteReadyButton;
 
     // Vote number 0 = Voting Back
     // Vote number 1 = Voting Ready
