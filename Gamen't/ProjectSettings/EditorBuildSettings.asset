@@ -11,19 +11,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Mainmenu.unity
     guid: 56234e7830a0eb44f8474ba5f51180e8
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Race select.unity
     guid: 10681beee68b87742872befa9c1f4542
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Carselection.unity
     guid: bb60e4b77723be041b8511a1e16bba23
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/tracktestscene.unity
     guid: 05931283f7a98664980c1f48301cd1da
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Track Editor.unity
     guid: d0614e7b440a1734fbd3918f9de3c0cf
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/LeaderBoardScene.unity
     guid: 05771ba953c39734e95fade936527c53
   m_configObjects:
