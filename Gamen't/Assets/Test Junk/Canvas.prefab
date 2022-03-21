@@ -747,7 +747,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c861dd3d7acfa1f49810081356248965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trackPiece: {fileID: 7192722575976943018, guid: fd90833089b399948af85395e57ddee3, type: 3}
+  trackPiece: {fileID: 4479241163028207846, guid: 6ef93bc2ae3898244a4a9a205be92bed, type: 3}
   pieceManager: {fileID: 0}
 --- !u!1 &2787012462714258000
 GameObject:
@@ -985,7 +985,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Checkpoint
+  m_Text: Finish
 --- !u!1 &2787012462764821671
 GameObject:
   m_ObjectHideFlags: 0
@@ -1200,7 +1200,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Small Road
+  m_Text: Checkpoint
 --- !u!1 &2787012462849789933
 GameObject:
   m_ObjectHideFlags: 0
@@ -2130,7 +2130,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c861dd3d7acfa1f49810081356248965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trackPiece: {fileID: 5634827069025667634, guid: 5fed5ce7021de5d4489814b12d2f682b, type: 3}
+  trackPiece: {fileID: 7192722575976943018, guid: fd90833089b399948af85395e57ddee3, type: 3}
   pieceManager: {fileID: 0}
 --- !u!1 &2787012462922017034
 GameObject:
@@ -4445,7 +4445,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Large road
+  m_Text: T.B.A
 --- !u!1 &2787012464161322529
 GameObject:
   m_ObjectHideFlags: 0
@@ -4703,7 +4703,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2787012464197332402}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2530488375724767024}
+        m_TargetAssemblyTypeName: TrackPieceSelect, Assembly-CSharp
+        m_MethodName: SelectTrackPiece
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2530488375724767024
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4716,7 +4728,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c861dd3d7acfa1f49810081356248965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trackPiece: {fileID: 0}
+  trackPiece: {fileID: 5634827069025667634, guid: 5fed5ce7021de5d4489814b12d2f682b, type: 3}
   pieceManager: {fileID: 0}
 --- !u!1 &2787012464245904348
 GameObject:
@@ -4796,7 +4808,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Medium road
+  m_Text: Road
 --- !u!1 &2787012464250919271
 GameObject:
   m_ObjectHideFlags: 0

@@ -327,8 +327,8 @@ MonoBehaviour:
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 3458319227667656314}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
+    m_SelectOnLeft: {fileID: 3458319228237891894}
+    m_SelectOnRight: {fileID: 3458319227667656314}
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
@@ -358,12 +358,24 @@ MonoBehaviour:
   m_AsteriskChar: 42
   m_KeyboardType: 0
   m_LineType: 0
-  m_HideMobileInput: 0
+  m_HideMobileInput: 1
   m_CharacterValidation: 0
   m_CharacterLimit: 8
   m_OnEndEdit:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3458319227667656314}
+        m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
+        m_MethodName: Select
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -374,7 +386,7 @@ MonoBehaviour:
   m_CaretBlinkRate: 0.85
   m_CaretWidth: 1
   m_ReadOnly: 0
-  m_ShouldActivateOnSelect: 1
+  m_ShouldActivateOnSelect: 0
 --- !u!1 &3458319226988383182
 GameObject:
   m_ObjectHideFlags: 0
@@ -389,7 +401,7 @@ GameObject:
   - component: {fileID: 3458319226988383180}
   - component: {fileID: 3458319226988383169}
   m_Layer: 5
-  m_Name: Button (2)
+  m_Name: Button (Skin Right Arrow)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -870,7 +882,7 @@ GameObject:
   - component: {fileID: 3458319227667656314}
   - component: {fileID: 3458319227667656319}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Button (Car Right Arrow)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1019,7 +1031,7 @@ GameObject:
   - component: {fileID: 3458319228237891894}
   - component: {fileID: 3458319228237891883}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: Button (Car Left Arrow)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1468,7 +1480,7 @@ GameObject:
   - component: {fileID: 3458319228517285909}
   - component: {fileID: 3458319228517285898}
   m_Layer: 5
-  m_Name: Button (3)
+  m_Name: Button (Skin Left Arrow)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1549,7 +1561,7 @@ MonoBehaviour:
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 3458319228237891894}
     m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 5000803166789564839}
+    m_SelectOnLeft: {fileID: 973400438643248181}
     m_SelectOnRight: {fileID: 3458319226988383180}
   m_Transition: 1
   m_Colors:
@@ -1992,7 +2004,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Klaar
+  m_Text: Ready
 --- !u!114 &636456795372178081
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2115,9 +2127,9 @@ GameObject:
   - component: {fileID: 3038956073283618632}
   - component: {fileID: 2914550044251343764}
   - component: {fileID: 973400438643248181}
-  - component: {fileID: 1565646051036912641}
+  - component: {fileID: 4917062335080928807}
   m_Layer: 5
-  m_Name: Button (4)
+  m_Name: Button Back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2200,7 +2212,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 2
+  m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -2225,9 +2237,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1565646051036912641}
-        m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
-        m_MethodName: LoadScene
+      - m_Target: {fileID: 4917062335080928807}
+        m_TargetAssemblyTypeName: VotingSystem, Assembly-CSharp
+        m_MethodName: OnPressedBack
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2237,7 +2249,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &1565646051036912641
+      - m_Target: {fileID: 3458319228237891894}
+        m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
+        m_MethodName: Select
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &4917062335080928807
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2246,10 +2270,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 8049690522243535987}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31523e11ad97b6343a46282901ca3cb0, type: 3}
+  m_Script: {fileID: 11500000, guid: 4d6ae1b845cadae4cb7f1b15171e7a90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: 1
+  votingCounter: {fileID: 11400000, guid: 32ba84c6353187d4a94dfddb68e53bbc, type: 2}
+  voteButton: {fileID: 973400438643248181}
+  voteBackButton: {fileID: 973400438643248181}
+  voteReadyButton: {fileID: 5000803166789564839}
 --- !u!1 &8530407115998390198
 GameObject:
   m_ObjectHideFlags: 0
@@ -2408,9 +2435,9 @@ GameObject:
   - component: {fileID: 7323403407609237105}
   - component: {fileID: 6336597075593611176}
   - component: {fileID: 5000803166789564839}
-  - component: {fileID: 394643931813466530}
+  - component: {fileID: 896872764446774536}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Button Ready
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2518,9 +2545,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 394643931813466530}
-        m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
-        m_MethodName: LoadScene
+      - m_Target: {fileID: 896872764446774536}
+        m_TargetAssemblyTypeName: VotingSystem, Assembly-CSharp
+        m_MethodName: OnPressedReady
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2530,7 +2557,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &394643931813466530
+      - m_Target: {fileID: 973400438643248181}
+        m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
+        m_MethodName: Select
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &896872764446774536
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2539,7 +2578,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 8890831740452433072}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31523e11ad97b6343a46282901ca3cb0, type: 3}
+  m_Script: {fileID: 11500000, guid: 4d6ae1b845cadae4cb7f1b15171e7a90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: 3
+  votingCounter: {fileID: 11400000, guid: 32ba84c6353187d4a94dfddb68e53bbc, type: 2}
+  voteButton: {fileID: 5000803166789564839}
+  voteBackButton: {fileID: 0}
+  voteReadyButton: {fileID: 0}

@@ -6,6 +6,7 @@ using UnityEngine.UI;
 [CreateAssetMenu(fileName = "ScriptablePlayerInformation", menuName = "ScriptablePlayerInfo")]
 public class PlayerInformation : ScriptableObject
 {
+    public int[] voteNumber;
 
     public List<CheckPointsSingles> totalCheckpoints;
     public List<PlayerSelection> playerSelections;
