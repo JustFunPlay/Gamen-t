@@ -1052,6 +1052,7 @@ GameObject:
   - component: {fileID: 7055956310385635333}
   - component: {fileID: 573936800159294832}
   - component: {fileID: 3813236182479036413}
+  - component: {fileID: 1421368819567698465}
   m_Layer: 0
   m_Name: RailingFinnhislineBoard
   m_TagString: Untagged
@@ -1101,10 +1102,8 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: adea5283aa8a5954fb20039ea63e2715, type: 2}
-  - {fileID: 2100000, guid: 4f9614df0b89b0144b288461aba2e342, type: 2}
-  - {fileID: 2100000, guid: 9789e9d23ec05674e9f489e5385b83ec, type: 2}
-  - {fileID: 2100000, guid: 467107c6f783b004f8926e9208153725, type: 2}
-  - {fileID: 2100000, guid: 69942e3ef01205a4aa60b264575d03d3, type: 2}
+  - {fileID: 2100000, guid: 09994a38f68d61c4fb3677beba8f9ab7, type: 2}
+  - {fileID: 2100000, guid: a14dd9f7870f25d49a6c3fe9c5911830, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1126,6 +1125,25 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!95 &1421368819567698465
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3327392058843855203}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 746a07c0247b37f489e82b4dac8fdaa6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3754389624861909400
 GameObject:
   m_ObjectHideFlags: 0
