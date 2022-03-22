@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028402, g: 0.22571428, b: 0.306924, a: 1}
+  m_IndirectSpecularColor: {r: 0.1802839, g: 0.2257141, b: 0.3069244, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1269,7 +1269,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1048226630
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3183,6 +3183,22 @@ PrefabInstance:
     - target: {fileID: 4807877182242601296, guid: dd05a6eef01cdff419970e605dcc61dc, type: 3}
       propertyPath: m_Name
       value: Settings menu
+      objectReference: {fileID: 0}
+    - target: {fileID: 6424599211629117119, guid: dd05a6eef01cdff419970e605dcc61dc, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6424599211629117119, guid: dd05a6eef01cdff419970e605dcc61dc, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8001965338203638967, guid: dd05a6eef01cdff419970e605dcc61dc, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8001965338203638967, guid: dd05a6eef01cdff419970e605dcc61dc, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd05a6eef01cdff419970e605dcc61dc, type: 3}
