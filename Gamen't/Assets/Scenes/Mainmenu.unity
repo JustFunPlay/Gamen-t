@@ -3031,6 +3031,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4380739215208226234, guid: fe440f1bca6d37c448fed003e96e8f1d, type: 3}
+      propertyPath: mainmenu
+      value: 
+      objectReference: {fileID: 1048226629}
     - target: {fileID: 5087383887074328347, guid: fe440f1bca6d37c448fed003e96e8f1d, type: 3}
       propertyPath: m_Name
       value: ESC
@@ -3132,6 +3136,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 83763131316380499, guid: dd05a6eef01cdff419970e605dcc61dc, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 523372543348513409, guid: dd05a6eef01cdff419970e605dcc61dc, type: 3}
       propertyPath: mainmenu
       value: 
@@ -3186,7 +3194,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4807877182242601296, guid: dd05a6eef01cdff419970e605dcc61dc, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6424599211629117119, guid: dd05a6eef01cdff419970e605dcc61dc, type: 3}
       propertyPath: m_AnchorMax.x
