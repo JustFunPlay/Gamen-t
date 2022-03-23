@@ -47,6 +47,9 @@ public class NewCarControll : MonoBehaviour
     public PlayerInformation playerInformation;
     
     public Transform checkPoint;
+
+    public GameObject canvasESC;
+
     private void Start()
     {
         
@@ -68,6 +71,19 @@ public class NewCarControll : MonoBehaviour
     void OnReset(InputValue value)
     {
         restet = value.Get<float>();
+    }
+    void OnESCmenuPressed(InputAction.CallbackContext context)
+    {
+        
+        //canvasESC.SetActive(true);
+    }
+    void OnESCmenu(InputValue value)
+    {
+        float esc = value.Get<float>();
+        if(esc == 1)
+        {
+            canvasESC.SetActive(true);
+        }
     }
     void OnHandbrake()
     {

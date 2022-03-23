@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class Cardrivecode : MonoBehaviour
 {
@@ -43,6 +44,8 @@ public class Cardrivecode : MonoBehaviour
         }
 
     }
+
+    
 
     private void FixedUpdate()
     {
