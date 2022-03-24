@@ -1181,7 +1181,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 663877073}
         m_TargetAssemblyTypeName: ShowInfo, Assembly-CSharp
-        m_MethodName: PressedButton
+        m_MethodName: OnSelect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2632,9 +2632,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 663877073}
+      - m_Target: {fileID: 1208326325}
         m_TargetAssemblyTypeName: ShowInfo, Assembly-CSharp
-        m_MethodName: PressedButton
+        m_MethodName: OnSelect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3718,9 +3718,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 663877073}
+      - m_Target: {fileID: 1815951773}
         m_TargetAssemblyTypeName: ShowInfo, Assembly-CSharp
-        m_MethodName: PressedButton
+        m_MethodName: OnSelect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4547,6 +4547,10 @@ PrefabInstance:
     - target: {fileID: 8658488063614929499, guid: 8d5e6a99c2c5b964497015fc148c5939, type: 3}
       propertyPath: m_Name
       value: Info trackie
+      objectReference: {fileID: 0}
+    - target: {fileID: 8658488063614929499, guid: 8d5e6a99c2c5b964497015fc148c5939, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8d5e6a99c2c5b964497015fc148c5939, type: 3}
