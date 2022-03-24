@@ -169,7 +169,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -718,6 +718,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8658488063614929496}
     m_Modifications:
+    - target: {fileID: 8641347556042587668, guid: 8e5b45771363a9b448a3df62f1a7a823, type: 3}
+      propertyPath: m_Navigation.m_Mode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8641347556042587670, guid: 8e5b45771363a9b448a3df62f1a7a823, type: 3}
       propertyPath: m_Name
       value: Button (1)

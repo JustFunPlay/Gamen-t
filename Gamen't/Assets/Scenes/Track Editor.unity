@@ -492,6 +492,18 @@ PrefabInstance:
       propertyPath: pieceManager
       value: 
       objectReference: {fileID: 1856778944}
+    - target: {fileID: 2112129987693998084, guid: 4445e425172462342a2dd377d080b42f, type: 3}
+      propertyPath: m_Color.b
+      value: 0.19607843
+      objectReference: {fileID: 0}
+    - target: {fileID: 2112129987693998084, guid: 4445e425172462342a2dd377d080b42f, type: 3}
+      propertyPath: m_Color.g
+      value: 0.19607843
+      objectReference: {fileID: 0}
+    - target: {fileID: 2112129987693998084, guid: 4445e425172462342a2dd377d080b42f, type: 3}
+      propertyPath: m_Color.r
+      value: 0.19607843
+      objectReference: {fileID: 0}
     - target: {fileID: 2497526433932055411, guid: 4445e425172462342a2dd377d080b42f, type: 3}
       propertyPath: pieceManager
       value: 
@@ -648,6 +660,18 @@ PrefabInstance:
       propertyPath: pieceManager
       value: 
       objectReference: {fileID: 1856778944}
+    - target: {fileID: 8244664047334966975, guid: 4445e425172462342a2dd377d080b42f, type: 3}
+      propertyPath: m_Color.b
+      value: 0.19607843
+      objectReference: {fileID: 0}
+    - target: {fileID: 8244664047334966975, guid: 4445e425172462342a2dd377d080b42f, type: 3}
+      propertyPath: m_Color.g
+      value: 0.19607843
+      objectReference: {fileID: 0}
+    - target: {fileID: 8244664047334966975, guid: 4445e425172462342a2dd377d080b42f, type: 3}
+      propertyPath: m_Color.r
+      value: 0.19607843
+      objectReference: {fileID: 0}
     - target: {fileID: 8540003510428943959, guid: 4445e425172462342a2dd377d080b42f, type: 3}
       propertyPath: pieceManager
       value: 
@@ -656,7 +680,9 @@ PrefabInstance:
       propertyPath: pieceManager
       value: 
       objectReference: {fileID: 1856778944}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8519686037620746190, guid: 4445e425172462342a2dd377d080b42f, type: 3}
+    - {fileID: 1116681545978659063, guid: 4445e425172462342a2dd377d080b42f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4445e425172462342a2dd377d080b42f, type: 3}
 --- !u!1 &572446314
 GameObject:
