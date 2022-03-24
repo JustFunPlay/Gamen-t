@@ -18,7 +18,7 @@ public class ShowInfo : MonoBehaviour, ISelectHandler
 
     public void OnSelect(BaseEventData eventData)
     {
-        raceselectEventSystem = EventSystem.current;
+
         trackEditSelection = GetComponentInParent<TrackEditSelectMen>();        
         infosTrack.SetActive(true);
         trackEditSelection.LoadBaseTrack(baseTrack);
