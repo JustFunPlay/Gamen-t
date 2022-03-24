@@ -40,7 +40,7 @@ public class TrackEditSelectMen : MonoBehaviour
 
 
         trackToLoad.track = allTracks.defaultTracks[track];
-        editBtn.SetActive(false);
+        //editBtn.SetActive(false);
         description.text = trackToLoad.track.description;
         if (trackToLoad.track.trackType == TrackType.Circuit)
         {
@@ -55,7 +55,7 @@ public class TrackEditSelectMen : MonoBehaviour
     public void LoadCustomTrack(int track)
     {
         trackToLoad.track = allTracks.trackInfos[track];
-        editBtn.SetActive(true);
+        //editBtn.SetActive(true);
         description.text = trackToLoad.track.description;
         if (trackToLoad.track.trackType == TrackType.Circuit)
         {
