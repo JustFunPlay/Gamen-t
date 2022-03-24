@@ -513,7 +513,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4876556819902295284}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!114 &5486292827128190296
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1241,7 +1241,7 @@ MonoBehaviour:
   orignalMaxSpeed: 200
   maxSpeedBack: 40
   speedLimiterRange: 20
-  brakeLight: {fileID: 2100000, guid: 98dbb5fc6045d5249b467d4602f8a209, type: 2}
+  brakeLight: {fileID: 0}
   brakeOn: 0
   speedMeterder: {fileID: 4230201418534387880}
   collided: 0

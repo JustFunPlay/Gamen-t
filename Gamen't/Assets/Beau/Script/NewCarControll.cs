@@ -33,7 +33,6 @@ public class NewCarControll : MonoBehaviour
     public float orignalMaxSpeed;
     public float maxSpeedBack;
     public float speedLimiterRange;
-    public Material brakeLight;
     public float brakeOn;
     public Text speedMeterder;
     public bool collided;
@@ -45,15 +44,15 @@ public class NewCarControll : MonoBehaviour
     public GameObject hudCanvas;
     public bool hasFinished;
     public PlayerInformation playerInformation;
-    
     public Transform checkPoint;
+    public Material[] mat;
     private void Start()
     {
-        
-        //brakeLight = playerInformation.playerSelections[GetComponent<CarSelectation>().carNumber].materials[2];
+        mat = playerInformation.playerSelections[GetComponent<PlayerID>().playerIdNumber].materials;
+
         rb = GetComponent<Rigidbody>();
         rb.centerOfMass = massCenter.localPosition;
-        
+
     }
     void OnDrive(InputValue value)
     {
@@ -82,7 +81,7 @@ public class NewCarControll : MonoBehaviour
             b = true;
         }
     }
-
+   
 
 
     private void FixedUpdate()
@@ -93,6 +92,7 @@ public class NewCarControll : MonoBehaviour
         speedbalk.value = speedRead;
         if (go == true)
         {
+           
         //Reset de auto terug als die geflipt is
         if (restet == 1)
         {
@@ -132,7 +132,9 @@ public class NewCarControll : MonoBehaviour
 
                 if (inputGasBrake.y == -1)
                 {
-                    //brakeLight.EnableKeyword("_EMISSION");
+                    
+                    mat[2].EnableKeyword("_EMISSION");
+                    GetComponentInChildren<MeshRenderer>().materials = mat;
                     element.leftWheel.brakeTorque = brakeForce;
                     element.rightWheel.brakeTorque = brakeForce;
                     if (speedRead < 1)
@@ -141,16 +143,17 @@ public class NewCarControll : MonoBehaviour
 
                     }
                 }
-                //else
-                //{
-                //    brakeLight.DisableKeyword("_EMISSION");
-                //}
+                else
+                {
+                    mat[2].DisableKeyword("_EMISSION");
+                }
 
 
-            }
+                }
 
             if (inputGasBrake.y == 1)
             {
+                
                 if (itStoped == false)
                 {
 
@@ -258,6 +261,7 @@ public class NewCarControll : MonoBehaviour
 
     public void CarBRR()
     {
+
         go = true;
         hudCanvas.SetActive(true);
     }
