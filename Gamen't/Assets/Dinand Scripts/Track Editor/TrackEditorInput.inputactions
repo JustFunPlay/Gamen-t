@@ -67,6 +67,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "FlipTrack",
+                    "type": "Button",
+                    "id": "0d5f328c-c74f-4aa5-9e76-cced3a1dcdb8",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -386,6 +395,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Fuck",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b0e1cf4d-cfab-44cf-9450-9378a93002d4",
+                    "path": "<Keyboard>/f",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "FlipTrack",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

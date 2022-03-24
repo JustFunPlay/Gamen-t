@@ -21,6 +21,7 @@ public class TrackPieceManager : EditorCamController
             newTrackPiece.trackPiece = selectedTrackPiece;
             newTrackPiece.rotation = currentNode.trackPiece.transform.rotation;
             newTrackPiece.position = currentNode.trackPiece.transform.position;
+            newTrackPiece.xScale = 1;
             toLoad.track.trackPieces.Add(newTrackPiece);
         }
     }
@@ -62,6 +63,22 @@ public class TrackPieceManager : EditorCamController
                 if (toLoad.track.trackPieces[i].gridlocation == currentNode.gridNodeValue)
                 {
                     toLoad.track.trackPieces[i].rotation = currentNode.trackPiece.transform.rotation;
+                }
+            }
+        }
+    }
+    void OnFlipTrack()
+    {
+        print("ye");
+        if (currentNode.trackPiece)
+        {
+            print("flip that shit");
+            currentNode.trackPiece.transform.localScale = new Vector3(currentNode.trackPiece.transform.localScale.x * -1, currentNode.trackPiece.transform.localScale.y, currentNode.trackPiece.transform.localScale.z);
+            for (int i = 0; i < toLoad.track.trackPieces.Count; i++)
+            {
+                if (toLoad.track.trackPieces[i].gridlocation == currentNode.gridNodeValue)
+                {
+                    toLoad.track.trackPieces[i].xScale = currentNode.trackPiece.transform.localScale.x;
                 }
             }
         }
