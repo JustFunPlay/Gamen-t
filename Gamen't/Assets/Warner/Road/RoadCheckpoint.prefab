@@ -542,6 +542,7 @@ GameObject:
   - component: {fileID: 851623675696423375}
   - component: {fileID: 4822767383629585132}
   - component: {fileID: 9076716573188319802}
+  - component: {fileID: 4621620628544690355}
   m_Layer: 0
   m_Name: RoadCheckpoint
   m_TagString: Untagged
@@ -612,6 +613,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &4621620628544690355
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2942401715144068021}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 8749577800329912924, guid: 2f73094f814e74e409c1bdaf5dc3f677, type: 3}
 --- !u!1 &3727839065353293153
 GameObject:
   m_ObjectHideFlags: 0
@@ -1154,6 +1169,7 @@ GameObject:
   - component: {fileID: 6026713939325766086}
   - component: {fileID: 8662071048297128452}
   - component: {fileID: 7036015323454663268}
+  - component: {fileID: 5231669182083631898}
   m_Layer: 0
   m_Name: RailingCheckpoint
   m_TagString: Untagged
@@ -1224,6 +1240,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &5231669182083631898
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6458676477563860706}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2625536357793100002, guid: 2f73094f814e74e409c1bdaf5dc3f677, type: 3}
 --- !u!1 &6732506759223529739
 GameObject:
   m_ObjectHideFlags: 0
