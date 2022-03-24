@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 23b140e9cd1330f4799a57bc49ad094b, type: 3}
-  m_Name: The gauntlet
+  m_Name: Premade 3
   m_EditorClassIdentifier: 
   trackName: The gauntlet
   trackPieces: []
