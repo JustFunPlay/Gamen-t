@@ -19,6 +19,7 @@ public class TrackPiece
     public Vector3 position;
     public Quaternion rotation;
     public GameObject trackPiece;
+    public float xScale;
     public int gridlocation;
 }
 [System.Serializable]

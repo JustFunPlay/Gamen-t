@@ -18,6 +18,7 @@ public class TrackLoader : MonoBehaviour
                     if (trackToLoad.track.trackPieces[i].gridlocation == node.gridNodeValue)
                     {
                         node.trackPiece = Instantiate(trackToLoad.track.trackPieces[i].trackPiece, trackToLoad.track.trackPieces[i].position, trackToLoad.track.trackPieces[i].rotation);
+                        node.trackPiece.transform.localScale = new Vector3(trackToLoad.track.trackPieces[i].xScale, 1, 1f);
                     }
                 }
             }
@@ -26,7 +27,8 @@ public class TrackLoader : MonoBehaviour
         {
             for (int i = 0; i < trackToLoad.track.trackPieces.Count; i++)
             {
-                 Instantiate(trackToLoad.track.trackPieces[i].trackPiece, trackToLoad.track.trackPieces[i].position, trackToLoad.track.trackPieces[i].rotation);
+                GameObject blah = Instantiate(trackToLoad.track.trackPieces[i].trackPiece, trackToLoad.track.trackPieces[i].position, trackToLoad.track.trackPieces[i].rotation);
+                blah.transform.localScale = new Vector3(trackToLoad.track.trackPieces[i].xScale, 1, 1);
             }
         }
     }
