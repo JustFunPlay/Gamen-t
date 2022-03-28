@@ -10,7 +10,7 @@ public class DestroyForest : MonoBehaviour
     }
     IEnumerator Henk()
     {
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(0.001f);
         GetComponent<Collider>().enabled = false;
     }
     private void OnCollisionEnter(Collision collision)
