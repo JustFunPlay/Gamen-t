@@ -169,7 +169,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -290,7 +290,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -490,7 +490,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -611,7 +611,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -987,14 +987,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5087383887074328351}
     m_Modifications:
-    - target: {fileID: 83763131316380499, guid: dd05a6eef01cdff419970e605dcc61dc, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 523372543348513409, guid: dd05a6eef01cdff419970e605dcc61dc, type: 3}
       propertyPath: mainmenu
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 5087383887074328347}
     - target: {fileID: 4453534127941794366, guid: dd05a6eef01cdff419970e605dcc61dc, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -1042,26 +1038,6 @@ PrefabInstance:
     - target: {fileID: 4807877182242601296, guid: dd05a6eef01cdff419970e605dcc61dc, type: 3}
       propertyPath: m_Name
       value: Settings menu (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4807877182242601296, guid: dd05a6eef01cdff419970e605dcc61dc, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6424599211629117119, guid: dd05a6eef01cdff419970e605dcc61dc, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6424599211629117119, guid: dd05a6eef01cdff419970e605dcc61dc, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8001965338203638967, guid: dd05a6eef01cdff419970e605dcc61dc, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8001965338203638967, guid: dd05a6eef01cdff419970e605dcc61dc, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd05a6eef01cdff419970e605dcc61dc, type: 3}

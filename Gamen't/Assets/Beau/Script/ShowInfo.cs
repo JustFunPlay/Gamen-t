@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using System;
 
-public class ShowInfo : MonoBehaviour, ISelectHandler
+public class ShowInfo : MonoBehaviour
 {
 
     public GameObject infosTrack;
@@ -16,12 +16,12 @@ public class ShowInfo : MonoBehaviour, ISelectHandler
 
 
 
-    public void OnSelect(BaseEventData eventData)
+    public void OnSelect()
     {
+        
+        GetComponentInParent<TrackEditSelectMen>().LoadBaseTrack(baseTrack);
 
-        trackEditSelection = GetComponentInParent<TrackEditSelectMen>();        
-        infosTrack.SetActive(true);
-        trackEditSelection.LoadBaseTrack(baseTrack);
+        
 
 
     }

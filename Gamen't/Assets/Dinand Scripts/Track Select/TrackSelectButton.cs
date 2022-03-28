@@ -4,13 +4,13 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class TrackSelectButton : MonoBehaviour, ISelectHandler
+public class TrackSelectButton : MonoBehaviour
 {
     public int index;
 
-    public void OnSelect(BaseEventData eventData)
-    {
 
+    public void OnSelect()
+    {
 
         GetComponentInParent<TrackEditSelectMen>().LoadCustomTrack(index);
     }
