@@ -16,7 +16,7 @@ MonoBehaviour:
   trackPieces:
   - position: {x: 0, y: 0, z: 0}
     rotation: {x: 0, y: 0.7071068, z: 0, w: -0.7071068}
-    trackPiece: {fileID: 4479241163028207846, guid: fec5be3805c371a47821457d19c8b91e, type: 3}
+    trackPiece: {fileID: 4479241163028207846, guid: 94153850104b4144d8fccbc9e7b1bfc6, type: 3}
     xScale: 1
     gridlocation: 1276
   - position: {x: 0, y: 0, z: 20}
