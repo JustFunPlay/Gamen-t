@@ -29,9 +29,32 @@ public class PlayerID : MonoBehaviour
     public Text lapText;
     public Text timeText;
 
-    
+    public Text checkpointTimeText;
+    public Animator checkpointAnimation;
+
+    public List<int> checkpointTotal;
+    public float resettedTimer;
+    public float newCheckPointTime;
+    public float oldCheckPointTime;
 
 
+
+
+
+    public void CheckPointCounter()
+    {
+        for (int i = 0; i < playerInfo.totalcheckpoints; i++)
+        {
+            int yes = 0;
+            
+            checkpointTotal.Add(yes);
+        }
+    }
+    IEnumerator ie()
+    {
+       yield return new WaitForSeconds(1);
+        CheckPointCounter();
+    }
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "CheckPoint begin")
@@ -71,6 +94,33 @@ public class PlayerID : MonoBehaviour
             }
         }
     }
+    [System.Serializable]
+    public class ThisCheckPoint
+    {
+        float timeNumber;
+
+        public ThisCheckPoint(float timeNumber_)
+        {
+            this.timeNumber = timeNumber_;
+        }
+        public ThisCheckPoint(ThisCheckPoint thisCheckPoint)
+        {
+            this.timeNumber = thisCheckPoint.timeNumber;
+
+        }
+    }
+    public void OnCheckpoint()
+    {
+        resettedTimer = raceTime;
+        newCheckPointTime = resettedTimer;
+        resettedTimer = 0;
+
+
+
+        checkpointTimeText.text = timeText.text;
+        checkpointAnimation.SetTrigger("ShowAnimation");
+
+    }
     public void PlayerFinished()
     {
         GetComponent<NewCarControll>().go = false;
@@ -100,6 +150,7 @@ public class PlayerID : MonoBehaviour
         if(GetComponent<NewCarControll>() && GetComponent<NewCarControll>().go == true)
         {
             raceTime += Time.deltaTime;
+
 
             if (raceTime < 10)
             {
