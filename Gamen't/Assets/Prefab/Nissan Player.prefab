@@ -16,7 +16,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &65745183135705521
 Transform:
   m_ObjectHideFlags: 0
@@ -1017,7 +1017,6 @@ MonoBehaviour:
   orignalMaxSpeed: 200
   maxSpeedBack: 40
   speedLimiterRange: 20
-  brakeLight: {fileID: 0}
   brakeOn: 0
   speedMeterder: {fileID: 6072290611581139027}
   collided: 0
@@ -1028,8 +1027,8 @@ MonoBehaviour:
   hudCanvas: {fileID: 7764324501792659547}
   hasFinished: 0
   playerInformation: {fileID: 11400000, guid: 32ba84c6353187d4a94dfddb68e53bbc, type: 2}
-  carSelectation: {fileID: 0}
   checkPoint: {fileID: 0}
+  mat: []
 --- !u!114 &4833476312769736834
 MonoBehaviour:
   m_ObjectHideFlags: 0
