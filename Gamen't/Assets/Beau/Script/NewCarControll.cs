@@ -46,6 +46,8 @@ public class NewCarControll : MonoBehaviour
     public PlayerInformation playerInformation;
     public Transform checkPoint;
     public Material[] mat;
+    public GameObject leftremspoor;
+    public GameObject rightremspoor;
     private void Start()
     {
         mat = playerInformation.playerSelections[GetComponent<PlayerID>().playerIdNumber].materials;
@@ -197,7 +199,8 @@ public class NewCarControll : MonoBehaviour
                         henk1.extremumSlip = 0.6f ;
                         wheelData[1].leftWheel.sidewaysFriction = henk;
                         wheelData[1].rightWheel.sidewaysFriction = henk1;
-
+                        leftremspoor.SetActive(true);
+                        rightremspoor.SetActive(true);
                     }
                     else
                     {
@@ -207,7 +210,9 @@ public class NewCarControll : MonoBehaviour
                         oghenk1.extremumSlip = 0.2f;
                         wheelData[1].leftWheel.sidewaysFriction = oghenk;
                         wheelData[1].rightWheel.sidewaysFriction = oghenk1;
-                    }
+                        leftremspoor.SetActive(false);
+                        rightremspoor.SetActive(false);
+                }
 
                     
 
