@@ -5,7 +5,24 @@ using UnityEngine;
 public class Checkpoint : MonoBehaviour
 {
     public int cp = -1;
-    
+
+    public bool isCircuit;
+    public bool isLinear;
+
+    public void Start()
+    {
+        isCircuit = false;
+        isLinear = false;
+        //checkt of hij linear is of circuit is
+        if (GameObject.Find("RoadStartFinish(Clone)") == true)
+        {
+            isCircuit = true;
+        }
+        else
+        {
+            isLinear = true;
+        }
+    }
     private void OnTriggerEnter(Collider other)
     {
         if (other.GetComponentInParent<NewCarControll>())
@@ -23,9 +40,15 @@ public class Checkpoint : MonoBehaviour
         if (cp == playerID.checkPointTime.Count)
         {
             playerID.checkPointTime.Add(playerID.resetTimer);
-            //playerID.checkpointTimeText.text = playerID.resetTimer.ToString("F2");
+
+            if(isLinear == true)
+            {
+                playerID.checkpointTimeText.text = playerID.resetTimer.ToString("F2");
+                playerID.checkpointAnimation.SetTrigger("ShowAnimation");
+            }
+
             playerID.resetTimer = 0;
-            //playerID.checkpointAnimation.SetTrigger("ShowAnimation");
+            
         }
         else
         {
