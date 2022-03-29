@@ -325,6 +325,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trackToLoad: {fileID: 11400000, guid: 18e9f5ab584b66a4b968b0f09d46887c, type: 2}
+  pieceHolder: {fileID: 11400000, guid: 62d866ad7041afa45aa5ad87dbab5bf0, type: 2}
   isEditorScene: 0
 --- !u!4 &897169761
 Transform:

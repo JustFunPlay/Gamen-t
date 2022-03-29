@@ -78,7 +78,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Sloped road
+  m_Text: Banked Start
 --- !u!1 &502496501917720474
 GameObject:
   m_ObjectHideFlags: 0
@@ -236,7 +236,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: banked straight
+  m_Text: Banked straight
 --- !u!1 &1207318703435811359
 GameObject:
   m_ObjectHideFlags: 0
@@ -964,7 +964,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c861dd3d7acfa1f49810081356248965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trackPiece: {fileID: 6914888233837508229, guid: 071d7abbb6e030b43a94bcfd1aa45731, type: 3}
+  trackPieceIndex: 6
   pieceManager: {fileID: 0}
 --- !u!1 &2787012462636366491
 GameObject:
@@ -1112,7 +1112,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c861dd3d7acfa1f49810081356248965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trackPiece: {fileID: 4604442246332445032, guid: 2bb7737759739e348a8f3d0e4e7cd0b7, type: 3}
+  trackPieceIndex: 5
   pieceManager: {fileID: 0}
 --- !u!1 &2787012462666319696
 GameObject:
@@ -1260,7 +1260,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c861dd3d7acfa1f49810081356248965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trackPiece: {fileID: 4479241163028207846, guid: 6ef93bc2ae3898244a4a9a205be92bed, type: 3}
+  trackPieceIndex: 1
   pieceManager: {fileID: 0}
 --- !u!1 &2787012462757889522
 GameObject:
@@ -1645,7 +1645,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c861dd3d7acfa1f49810081356248965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trackPiece: {fileID: 5299517355680503963, guid: e3a8a970801f56b4e9ab62bc8ef55194, type: 3}
+  trackPieceIndex: 9
   pieceManager: {fileID: 0}
 --- !u!1 &2787012462894312744
 GameObject:
@@ -1793,7 +1793,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c861dd3d7acfa1f49810081356248965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trackPiece: {fileID: 6937163375105411035, guid: 3f516edd925b9a5498e34ce3a840df21, type: 3}
+  trackPieceIndex: 7
   pieceManager: {fileID: 0}
 --- !u!1 &2787012462915245308
 GameObject:
@@ -1941,7 +1941,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c861dd3d7acfa1f49810081356248965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trackPiece: {fileID: 7192722575976943018, guid: fd90833089b399948af85395e57ddee3, type: 3}
+  trackPieceIndex: 2
   pieceManager: {fileID: 0}
 --- !u!1 &2787012462922017034
 GameObject:
@@ -2354,7 +2354,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c861dd3d7acfa1f49810081356248965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trackPiece: {fileID: 4479241163028207846, guid: fec5be3805c371a47821457d19c8b91e, type: 3}
+  trackPieceIndex: 0
   pieceManager: {fileID: 0}
 --- !u!1 &2787012463532470679
 GameObject:
@@ -2502,7 +2502,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c861dd3d7acfa1f49810081356248965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trackPiece: {fileID: 4590597907870076279, guid: 8bde6bbc5e444d448a5c343b251d359f, type: 3}
+  trackPieceIndex: 8
   pieceManager: {fileID: 0}
 --- !u!1 &2787012463623798421
 GameObject:
@@ -2933,7 +2933,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c861dd3d7acfa1f49810081356248965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trackPiece: {fileID: 5634827069025667634, guid: 5fed5ce7021de5d4489814b12d2f682b, type: 3}
+  trackPieceIndex: 3
   pieceManager: {fileID: 0}
 --- !u!1 &2787012464245904348
 GameObject:
@@ -3239,7 +3239,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c861dd3d7acfa1f49810081356248965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trackPiece: {fileID: 1540954917101270265, guid: 75095f53a79da5e4e8b33cf157ebf8ef, type: 3}
+  trackPieceIndex: 10
   pieceManager: {fileID: 0}
 --- !u!1 &2787012464393309024
 GameObject:
@@ -3387,7 +3387,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c861dd3d7acfa1f49810081356248965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trackPiece: {fileID: 3749085050509145281, guid: 555e7b0ee0d15034caa7ab79b8be1081, type: 3}
+  trackPieceIndex: 4
   pieceManager: {fileID: 0}
 --- !u!1 &2787012464476079662
 GameObject:
@@ -3730,7 +3730,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c861dd3d7acfa1f49810081356248965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trackPiece: {fileID: 1540954917101270265, guid: 75095f53a79da5e4e8b33cf157ebf8ef, type: 3}
+  trackPieceIndex: 13
   pieceManager: {fileID: 0}
 --- !u!1 &3052994305408436951
 GameObject:
@@ -4532,7 +4532,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: banked turn
+  m_Text: 'B
+
+    anked turn'
 --- !u!1 &4381463882389197127
 GameObject:
   m_ObjectHideFlags: 0
@@ -4758,7 +4760,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c861dd3d7acfa1f49810081356248965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trackPiece: {fileID: 1540954917101270265, guid: 75095f53a79da5e4e8b33cf157ebf8ef, type: 3}
+  trackPieceIndex: 12
   pieceManager: {fileID: 0}
 --- !u!1 &4970706233389964360
 GameObject:
@@ -5997,5 +5999,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c861dd3d7acfa1f49810081356248965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trackPiece: {fileID: 1540954917101270265, guid: 75095f53a79da5e4e8b33cf157ebf8ef, type: 3}
+  trackPieceIndex: 11
   pieceManager: {fileID: 0}
