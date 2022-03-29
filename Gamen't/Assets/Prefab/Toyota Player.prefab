@@ -1392,7 +1392,13 @@ MonoBehaviour:
   lapText: {fileID: 5049241700256409099}
   timeText: {fileID: 8944830647655509342}
   checkpointTimeText: {fileID: 7543654587250166224}
+  checkpointTimeDifText: {fileID: 7543654587250166224}
   checkpointAnimation: {fileID: 4026354958594789814}
+  checkPointTime: []
+  newCheckPointTime: 0
+  oldCheckPointTime: 0
+  resetTimer: 0
+  counter: 0
 --- !u!1 &8311048194572972612
 GameObject:
   m_ObjectHideFlags: 0

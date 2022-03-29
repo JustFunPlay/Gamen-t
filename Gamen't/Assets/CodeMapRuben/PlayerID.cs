@@ -30,30 +30,36 @@ public class PlayerID : MonoBehaviour
     public Text timeText;
 
     public Text checkpointTimeText;
+    public Text checkpointTimeDifText;
     public Animator checkpointAnimation;
 
-    public List<int> checkpointTotal;
-    public float resettedTimer;
+    //public List<float> oldCheckPointTotal;
+    public List<float> checkPointTime;
     public float newCheckPointTime;
     public float oldCheckPointTime;
+    public float resetTimer;
+    public int counter;
 
 
 
-
+    public void Start()
+    {
+        counter--;
+        CheckPointCounter();
+    }
 
     public void CheckPointCounter()
     {
-        for (int i = 0; i < playerInfo.totalcheckpoints; i++)
-        {
-            int yes = 0;
-            
-            checkpointTotal.Add(yes);
-        }
-    }
-    IEnumerator ie()
-    {
-       yield return new WaitForSeconds(1);
-        CheckPointCounter();
+        checkPointTime.Add(newCheckPointTime);
+        //oldCheckPointTotal.Add(oldCheckPointTime);
+
+        //for (int i = 0; i < playerInfo.totalcheckpoints; i++)
+        //{
+        //    checkPointTime.Add(newCheckPointTime);
+        //    oldCheckPointTotal.Add(oldCheckPointTime);
+        //}
+        //playerInfo.totalcheckpoints = 0;
+        
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -109,15 +115,22 @@ public class PlayerID : MonoBehaviour
 
         }
     }
-    public void OnCheckpoint()
+    public void OnCheckpoint(int cp)
     {
-        resettedTimer = raceTime;
-        newCheckPointTime = resettedTimer;
-        resettedTimer = 0;
-
-
-
-        checkpointTimeText.text = timeText.text;
+        float timeDifference = resetTimer - checkPointTime[cp];
+        if (timeDifference >= 0)
+        {
+            checkpointTimeText.text = "+" + timeDifference.ToString("F2");
+            checkpointTimeText.color = Color.red;
+        }
+        if(timeDifference < 0)
+        {
+            checkpointTimeText.text = timeDifference.ToString("F2");
+            checkpointTimeText.color = Color.green;
+        }
+        checkPointTime[cp] = resetTimer;
+        //checkpointTimeText.text = resetTimer.ToString("F2");
+        resetTimer = 0;
         checkpointAnimation.SetTrigger("ShowAnimation");
 
     }
@@ -150,6 +163,7 @@ public class PlayerID : MonoBehaviour
         if(GetComponent<NewCarControll>() && GetComponent<NewCarControll>().go == true)
         {
             raceTime += Time.deltaTime;
+            resetTimer += Time.deltaTime;
 
 
             if (raceTime < 10)

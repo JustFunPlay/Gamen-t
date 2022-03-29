@@ -12,20 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 356099d9a8b6cec40b12cf5acc168ef1, type: 3}
   m_Name: PlayerCarInformation
   m_EditorClassIdentifier: 
-  voteNumber: 0000000001000000
-  totalcheckpoints: 6
+  voteNumber: 0000000000000000
+  totalcheckpoints: 0
   totalCheckpoints:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   playerSelections:
-  - name: {fileID: 0}
-    selectedCar: {fileID: 5054810255372854759, guid: aad2591a48d145d42aba8b7f36b565d3, type: 3}
-    materials:
-    - {fileID: 2100000, guid: 907af39f83a6bc440b29bea0c9d905ff, type: 2}
-    - {fileID: 2100000, guid: cca709541e54c2d47a9fa7a08397c3c4, type: 2}
-    - {fileID: 2100000, guid: 98dbb5fc6045d5249b467d4602f8a209, type: 2}
-    - {fileID: 2100000, guid: 4ff1e8648b13b904198c4b54989e2328, type: 2}
   - name: {fileID: 0}
     selectedCar: {fileID: 5054810255372854759, guid: aad2591a48d145d42aba8b7f36b565d3, type: 3}
     materials:
