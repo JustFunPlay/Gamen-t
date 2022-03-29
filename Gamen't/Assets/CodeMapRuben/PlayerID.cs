@@ -51,14 +51,6 @@ public class PlayerID : MonoBehaviour
     public void CheckPointCounter()
     {
         checkPointTime.Add(newCheckPointTime);
-        //oldCheckPointTotal.Add(oldCheckPointTime);
-
-        //for (int i = 0; i < playerInfo.totalcheckpoints; i++)
-        //{
-        //    checkPointTime.Add(newCheckPointTime);
-        //    oldCheckPointTotal.Add(oldCheckPointTime);
-        //}
-        //playerInfo.totalcheckpoints = 0;
         
     }
     private void OnTriggerEnter(Collider other)
