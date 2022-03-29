@@ -543,7 +543,7 @@ GameObject:
   - component: {fileID: 4822767383629585132}
   - component: {fileID: 9076716573188319802}
   - component: {fileID: 4621620628544690355}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RoadCheckpoint
   m_TagString: Road
   m_Icon: {fileID: 0}

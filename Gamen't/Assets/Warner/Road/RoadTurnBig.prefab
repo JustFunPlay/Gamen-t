@@ -884,7 +884,7 @@ GameObject:
   - component: {fileID: 6431048726433480309}
   - component: {fileID: 8845198924408465478}
   - component: {fileID: 5881385573610064562}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RoadSmallTurnBig
   m_TagString: Road
   m_Icon: {fileID: 0}
@@ -1234,6 +1234,7 @@ Transform:
   - {fileID: 8220820334550722247}
   - {fileID: 5433649576896207333}
   - {fileID: 95308220431601420}
+  - {fileID: 6712119039119611182}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1673,6 +1674,51 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   positions: []
+--- !u!1 &8022585626501177755
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6712119039119611182}
+  - component: {fileID: 768020234895616046}
+  m_Layer: 7
+  m_Name: TreeFuckery
+  m_TagString: Road
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6712119039119611182
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8022585626501177755}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalScale: {x: 1.25, y: 1.25, z: 1.25}
+  m_Children: []
+  m_Father: {fileID: 6106123096838237247}
+  m_RootOrder: 21
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &768020234895616046
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8022585626501177755}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 7954782693678694623, guid: 5bfcdac091d367e49a237889c65716b0, type: 3}
 --- !u!1 &8139300135707780246
 GameObject:
   m_ObjectHideFlags: 0
