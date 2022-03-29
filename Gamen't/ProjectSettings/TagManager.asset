@@ -10,6 +10,8 @@ TagManager:
   - CheckPoint begin
   - CheckPoint meanwhile
   - CheckPoint end
+  - Road
+  - Forset
   layers:
   - Default
   - TransparentFX
