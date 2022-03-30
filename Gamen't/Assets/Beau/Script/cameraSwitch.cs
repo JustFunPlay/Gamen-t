@@ -6,7 +6,9 @@ public class cameraSwitch : MonoBehaviour
 {
     public GameObject old;
     public GameObject neew;
+
     public float swit;
+    public Vector3 amountSwitch;
     public void OnSwitch()
     {
         swit += 1;
@@ -17,9 +19,9 @@ public class cameraSwitch : MonoBehaviour
     {
         if (swit == 1)
         {
-            old.SetActive(false);
-            neew.SetActive(true);
-
+            //old.SetActive(false);
+            //neew.SetActive(true);
+            old.GetComponent<Transform>().rotation
         }
 
         if (swit == 2)

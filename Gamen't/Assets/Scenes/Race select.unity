@@ -1148,7 +1148,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 0
+    m_Mode: 3
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -1182,6 +1182,18 @@ MonoBehaviour:
       - m_Target: {fileID: 663877073}
         m_TargetAssemblyTypeName: ShowInfo, Assembly-CSharp
         m_MethodName: OnSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1990234103}
+        m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
+        m_MethodName: Select
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1333,7 +1345,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 0
+    m_Mode: 3
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 1815951770}
@@ -2432,7 +2444,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 0
+    m_Mode: 3
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -2601,7 +2613,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 0
+    m_Mode: 3
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -2635,6 +2647,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1208326325}
         m_TargetAssemblyTypeName: ShowInfo, Assembly-CSharp
         m_MethodName: OnSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1990234103}
+        m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
+        m_MethodName: Select
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3687,7 +3711,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 0
+    m_Mode: 3
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -3721,6 +3745,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1815951773}
         m_TargetAssemblyTypeName: ShowInfo, Assembly-CSharp
         m_MethodName: OnSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1990234103}
+        m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
+        m_MethodName: Select
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4165,6 +4201,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1165748992, guid: 8d5e6a99c2c5b964497015fc148c5939, type: 3}
   m_PrefabInstance: {fileID: 8658488062879904458}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1990234103 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1165748994, guid: 8d5e6a99c2c5b964497015fc148c5939, type: 3}
+  m_PrefabInstance: {fileID: 8658488062879904458}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1990234102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2056271235
 GameObject:
   m_ObjectHideFlags: 0
@@ -4398,7 +4445,7 @@ PrefabInstance:
     - target: {fileID: 2127295639871011870, guid: afcc3038a5d91334fbca2b31f4c65310, type: 3}
       propertyPath: m_FirstSelected
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 663877068}
     - target: {fileID: 2127295639871011871, guid: afcc3038a5d91334fbca2b31f4c65310, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -4453,9 +4500,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 478477435}
     m_Modifications:
     - target: {fileID: 1165748994, guid: 8d5e6a99c2c5b964497015fc148c5939, type: 3}
+      propertyPath: m_Navigation.m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1165748994, guid: 8d5e6a99c2c5b964497015fc148c5939, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1124218403}
+    - target: {fileID: 1310226123, guid: 8d5e6a99c2c5b964497015fc148c5939, type: 3}
+      propertyPath: m_Navigation.m_Mode
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1310226123, guid: 8d5e6a99c2c5b964497015fc148c5939, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 

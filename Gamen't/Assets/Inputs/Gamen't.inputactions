@@ -235,6 +235,28 @@
                 },
                 {
                     "name": "",
+                    "id": "c44bd44b-531b-4450-990e-62329f356fc9",
+                    "path": "<Gamepad>/leftStickPress",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Switch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "28bafe9c-209f-41c3-90c7-14f2b21ce6a3",
+                    "path": "<Gamepad>/rightStickPress",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Switch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "d5264bc5-cfc4-433b-9cee-20d5a8a2cfa1",
                     "path": "<Keyboard>/space",
                     "interactions": "",
@@ -247,7 +269,7 @@
                 {
                     "name": "",
                     "id": "5d8970cb-60ad-4b13-852e-de1135f000f0",
-                    "path": "<Gamepad>/buttonSouth",
+                    "path": "<Gamepad>/buttonEast",
                     "interactions": "",
                     "processors": "",
                     "groups": "Gamepad",
