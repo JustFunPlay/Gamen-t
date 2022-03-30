@@ -21,19 +21,19 @@ MonoBehaviour:
       - {fileID: 2100000, guid: cca709541e54c2d47a9fa7a08397c3c4, type: 2}
       - {fileID: 2100000, guid: 98dbb5fc6045d5249b467d4602f8a209, type: 2}
       - {fileID: 2100000, guid: 4ff1e8648b13b904198c4b54989e2328, type: 2}
-      skinsNamePlates: Shark Car
+      skinsNamePlates: Shark Toyota
     - materials:
       - {fileID: 2100000, guid: e8e120bf87f40044198babee90301bc7, type: 2}
       - {fileID: 2100000, guid: 8d9bcc98461dcc3459c4413858dea4e7, type: 2}
       - {fileID: 2100000, guid: 6fbf6e1464d17f746a47ef656a8247bc, type: 2}
       - {fileID: 2100000, guid: 85822d122fd06ee41812dea05e341c6f, type: 2}
-      skinsNamePlates: Purple Car
+      skinsNamePlates: Purple Toyota
     - materials:
       - {fileID: 2100000, guid: 5bbf034ee8ac4e349a230266a1d3badf, type: 2}
       - {fileID: 2100000, guid: 0251e1c9ef83c1144bd1826096c32e71, type: 2}
       - {fileID: 2100000, guid: caef475274a1c2841bf68f1d6799631f, type: 2}
       - {fileID: 2100000, guid: d9a17827dd2fd6d4f832617d72707ee2, type: 2}
-      skinsNamePlates: Yellow Car
+      skinsNamePlates: Yellow Toyota
   - carSelectable: {fileID: 3347320449242237477, guid: 2df898bfdbc1d3c41b24c47b6b437a0c, type: 3}
     carNamePlates: Nissan GTR R34
     skins:
@@ -42,4 +42,28 @@ MonoBehaviour:
       - {fileID: 2100000, guid: de3aae04dbf426f488a9e4f01e445020, type: 2}
       - {fileID: 2100000, guid: 1bbb3835cedba3e40a968df3cf8912da, type: 2}
       - {fileID: 2100000, guid: f6535e1fd9b7d804c85cb551e4eb4f14, type: 2}
-      skinsNamePlates: Porple
+      skinsNamePlates: Midnight Nissan
+    - materials:
+      - {fileID: 2100000, guid: bdf6cf539019dd44781447479d061607, type: 2}
+      - {fileID: 2100000, guid: e993ba9493189ff4eb0f94405e9e1a06, type: 2}
+      - {fileID: 2100000, guid: a1d3e4edf153b884a98c7415bfa12360, type: 2}
+      - {fileID: 2100000, guid: 986640a09b21f3f47b4fb6eda288d706, type: 2}
+      skinsNamePlates: Broken Nissan
+    - materials:
+      - {fileID: 2100000, guid: 7d13d26077ef27f469a4013932dba936, type: 2}
+      - {fileID: 2100000, guid: 94d64ee31330fcc409c13abcdfb97053, type: 2}
+      - {fileID: 2100000, guid: f74767e40b922d343bc7c21618aec175, type: 2}
+      - {fileID: 2100000, guid: 44492e109dae85f4eb03fb239ed23021, type: 2}
+      skinsNamePlates: White Nissan
+    - materials:
+      - {fileID: 2100000, guid: 0fc8b1bf3d20e9a4eb82cf966f7521cc, type: 2}
+      - {fileID: 2100000, guid: 74d531b85b1c9cb458b469fd3791b952, type: 2}
+      - {fileID: 2100000, guid: b5ba50102010ef34389eddb57377381b, type: 2}
+      - {fileID: 2100000, guid: 928d7d00311d9f44aa14d5305950ab4f, type: 2}
+      skinsNamePlates: Yellow Nissan
+    - materials:
+      - {fileID: 2100000, guid: b0b01e1fdca9a144ca74de0a3435beb1, type: 2}
+      - {fileID: 2100000, guid: 78aa2cdc491af6040bb7588873c50a1e, type: 2}
+      - {fileID: 2100000, guid: 942f204701e808747a1dbae34f7ed4c5, type: 2}
+      - {fileID: 2100000, guid: 2a00b9884d08da74a8c6f388eadcac8a, type: 2}
+      skinsNamePlates: Red Nissan

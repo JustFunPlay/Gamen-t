@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7923819130181872452}
   - component: {fileID: 7923819130181872453}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: ALL SCRIPTABLEOBJECTS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -52,5 +52,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 760ec06a5df4f5b47b8cdbff067a672a, type: 2}
   - {fileID: 11400000, guid: f98010ec6c1813845b179aadb72fddcf, type: 2}
   - {fileID: 11400000, guid: 3690ac7b9b7130243aa7f152c7c1197f, type: 2}
-  - {fileID: 11400000, guid: 0af4f8760aab8224ca936332a500a76d, type: 2}
+  - {fileID: 11400000, guid: 2d9fbb5b3f62a454ea7e68f59d8e6f7c, type: 2}
   - {fileID: 11400000, guid: bbcf045201b011743985ed32d0237188, type: 2}
