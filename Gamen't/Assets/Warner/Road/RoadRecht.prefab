@@ -654,6 +654,51 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   positions: []
+--- !u!1 &4619679436998622268
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3915387732094172867}
+  - component: {fileID: 5689351826164358174}
+  m_Layer: 7
+  m_Name: TreeFuckery
+  m_TagString: Road
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3915387732094172867
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4619679436998622268}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalScale: {x: 1.25, y: 1.25, z: 1.25}
+  m_Children: []
+  m_Father: {fileID: 5006100569429348488}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &5689351826164358174
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4619679436998622268}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5394760871426574136, guid: 474ce11ac48aec542ab208ed2da11e3e, type: 3}
 --- !u!1 &5069298062650443108
 GameObject:
   m_ObjectHideFlags: 0
@@ -802,6 +847,7 @@ Transform:
   - {fileID: 469305451080533236}
   - {fileID: 3830632898967710659}
   - {fileID: 8440258997303027415}
+  - {fileID: 3915387732094172867}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -865,7 +911,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 05c7806240d2ed1408ae2b21152d3496, type: 2}
+  - {fileID: 2100000, guid: 2cd465c4033660545a48631b03a55804, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1288,7 +1334,10 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 907c9b89cd95b884593f1277785536c3, type: 2}
+  - {fileID: 2100000, guid: fccac0c04e7342345b0473cdc11e38c1, type: 2}
+  - {fileID: 2100000, guid: 7b75d06b74a18c7429ca3b30efa57333, type: 2}
+  - {fileID: 2100000, guid: 25e106161483f554fb68ab71eeee8917, type: 2}
+  - {fileID: 2100000, guid: a9ed48e8b5ec96c4bbcc138d140f5a2d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

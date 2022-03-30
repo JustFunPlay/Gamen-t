@@ -4,20 +4,40 @@ using UnityEngine;
 
 public class DestroyForest : MonoBehaviour
 {
-    private void Start()
+
+
+    private void Awake()
     {
-        StartCoroutine(Henk());
+        Placetree();
     }
-    IEnumerator Henk()
+
+    public void Placetree()
     {
-        yield return new WaitForSeconds(0.1f);
-        GetComponent<Collider>().enabled = false;
-    }
-    private void OnCollisionEnter(Collision collision)
-    {
-        if(collision.gameObject.tag == "Road")
+
+
+        int layerMask = 1 << 7;
+        //layerMask = ~layerMask;
+
+
+        RaycastHit hit;
+        float height = 12.5f * transform.localScale.y;
+        Vector3 origin = transform.position;
+        if (Physics.Raycast(origin, -Vector3.up, out hit, 10000f, layerMask))
         {
-            Destroy(gameObject);
+            Debug.DrawRay(origin, hit.point, Color.red);
+            
+            if (hit.transform.tag == "Road")
+            {
+                Debug.Log("Haaaj");
+                Destroy(gameObject);
+            }
+            
+        }
+        else
+        {
+            transform.position = new Vector3(transform.position.x, transform.position.y - 10000f, transform.position.z);
+            Destroy(this);
         }
     }
+
 }
