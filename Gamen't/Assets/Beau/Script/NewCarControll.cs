@@ -47,14 +47,13 @@ public class NewCarControll : MonoBehaviour
     public Transform checkPoint;
     public Material[] mat;
 
-    public GameObject escMenu;
     private void Start()
     {
         mat = playerInformation.playerSelections[GetComponent<PlayerID>().playerIdNumber].materials;
 
         rb = GetComponent<Rigidbody>();
         rb.centerOfMass = massCenter.localPosition;
-
+        mat[2].DisableKeyword("_EMISSION");
     }
     void OnDrive(InputValue value)
     {
@@ -69,11 +68,6 @@ public class NewCarControll : MonoBehaviour
     void OnReset(InputValue value)
     {
         restet = value.Get<float>();
-    }
-    void OnESCmenu(InputValue value)
-    {
-        escMenu.SetActive(true);
-        //Time.timeScale = 0.1f;
     }
     void OnHandbrake()
     {
@@ -204,7 +198,7 @@ public class NewCarControll : MonoBehaviour
                         henk1.extremumSlip = 0.6f ;
                         wheelData[1].leftWheel.sidewaysFriction = henk;
                         wheelData[1].rightWheel.sidewaysFriction = henk1;
-
+                        
                     }
                     else
                     {
@@ -214,7 +208,8 @@ public class NewCarControll : MonoBehaviour
                         oghenk1.extremumSlip = 0.2f;
                         wheelData[1].leftWheel.sidewaysFriction = oghenk;
                         wheelData[1].rightWheel.sidewaysFriction = oghenk1;
-                    }
+
+                }
 
                     
 
