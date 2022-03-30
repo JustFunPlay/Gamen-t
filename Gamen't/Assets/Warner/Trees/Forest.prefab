@@ -45,10 +45,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   forestSize: 1100
-  elementSpacing: 35
+  elementSpacing: 30
   elements:
   - name: Trees
-    density: 8
+    density: 10
     prefabs:
     - {fileID: 1439359513006456343, guid: df45ffd11478a224ab9909e5c51cc802, type: 3}
 --- !u!33 &900387439

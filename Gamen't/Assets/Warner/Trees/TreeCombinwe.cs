@@ -24,7 +24,7 @@ public class TreeCombinwe : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        CombineLowPoly();
+        //CombineLowPoly();
         Combine();
     }
 
@@ -64,12 +64,12 @@ public class TreeCombinwe : MonoBehaviour
 
 
         Renderer[] highPoly = new Renderer[1];
-        Renderer[] lowPoly = new Renderer[1];
+        //Renderer[] lowPoly = new Renderer[1];
         highPoly[0] = GetComponent<Renderer>();
-        lowPoly[0] = lowPolyGroup.GetComponent<Renderer>();
-        LOD[] lods = new LOD[2] { 
-            (new LOD(.5f, highPoly)),
-            (new LOD(.15f, lowPoly))
+        //lowPoly[0] = lowPolyGroup.GetComponent<Renderer>();
+        LOD[] lods = new LOD[1] { 
+            (new LOD(.15f, highPoly))
+            //(new LOD(.15f, lowPoly))
         };
 
         GetComponent<LODGroup>().SetLODs(lods);
@@ -104,7 +104,7 @@ public class TreeCombinwe : MonoBehaviour
 
             i++;
         }
-
+/*
         lowPolyGroup = new GameObject("lowPolyGroup");
         lowPolyGroup.AddComponent<MeshRenderer>();
         lowPolyGroup.AddComponent<MeshFilter>();
@@ -128,7 +128,7 @@ public class TreeCombinwe : MonoBehaviour
 
             j++;
         }
-
+*/
         //Combine();
     }
 
