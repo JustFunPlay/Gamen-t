@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   forestSize: 1100
-  elementSpacing: 30
+  elementSpacing: 60
   elements:
   - name: Trees
     density: 10
