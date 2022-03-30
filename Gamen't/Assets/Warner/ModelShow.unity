@@ -1775,7 +1775,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5442135005582494455, guid: 1e0c99da7afd9e743a110420a4806f81, type: 3}
       propertyPath: elementSpacing
-      value: 30
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 5442135005582494455, guid: 1e0c99da7afd9e743a110420a4806f81, type: 3}
       propertyPath: elements.Array.data[0].density
