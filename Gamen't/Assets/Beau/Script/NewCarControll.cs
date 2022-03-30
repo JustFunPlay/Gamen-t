@@ -47,6 +47,9 @@ public class NewCarControll : MonoBehaviour
     public Transform checkPoint;
     public Material[] mat;
 
+    public GameObject escMenu;
+    public static bool escBool;
+
     private void Start()
     {
         mat = playerInformation.playerSelections[GetComponent<PlayerID>().playerIdNumber].materials;
@@ -68,6 +71,19 @@ public class NewCarControll : MonoBehaviour
     void OnReset(InputValue value)
     {
         restet = value.Get<float>();
+    }
+    void OnESCmenu(InputValue value)
+    {
+        if(escBool == false)
+        {
+            escMenu.SetActive(true);
+            Time.timeScale = 0.000001f;
+        }
+        escBool = true;
+    }
+    public void AllowESCmenuToReturn()
+    {
+        escBool = false;
     }
     void OnHandbrake()
     {
