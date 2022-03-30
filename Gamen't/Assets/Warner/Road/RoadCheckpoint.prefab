@@ -1708,3 +1708,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d18580fba9ff6644591537940c15d344, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  checkpointsHolder: {fileID: 11400000, guid: 32ba84c6353187d4a94dfddb68e53bbc, type: 2}

@@ -8,7 +8,6 @@ public class PlayerInformation : ScriptableObject
 {
     public int[] voteNumber;
 
-    public List<CheckPointsSingles> totalCheckpoints;
     public List<PlayerSelection> playerSelections;
 }
 
