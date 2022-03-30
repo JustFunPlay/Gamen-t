@@ -531,6 +531,51 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   positions: []
+--- !u!1 &2064246791841184653
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7298850162335757}
+  - component: {fileID: 3858469097421440325}
+  m_Layer: 7
+  m_Name: RoadCheckpoint (1)
+  m_TagString: Road
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7298850162335757
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2064246791841184653}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.25, y: 1.25, z: 1.25}
+  m_Children: []
+  m_Father: {fileID: 7537477382118676240}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &3858469097421440325
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2064246791841184653}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 8749577800329912924, guid: 2f73094f814e74e409c1bdaf5dc3f677, type: 3}
 --- !u!1 &2942401715144068021
 GameObject:
   m_ObjectHideFlags: 0
@@ -591,7 +636,10 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a2a83c0906476234494c6ea386fb794e, type: 2}
+  - {fileID: 2100000, guid: 25e106161483f554fb68ab71eeee8917, type: 2}
+  - {fileID: 2100000, guid: fccac0c04e7342345b0473cdc11e38c1, type: 2}
+  - {fileID: 2100000, guid: 7b75d06b74a18c7429ca3b30efa57333, type: 2}
+  - {fileID: 2100000, guid: a9ed48e8b5ec96c4bbcc138d140f5a2d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1170,7 +1218,7 @@ GameObject:
   - component: {fileID: 8662071048297128452}
   - component: {fileID: 7036015323454663268}
   - component: {fileID: 5231669182083631898}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RailingCheckpoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1218,7 +1266,8 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 6d0be16f99c45834982a966188c834e4, type: 2}
+  - {fileID: 2100000, guid: 2cd465c4033660545a48631b03a55804, type: 2}
+  - {fileID: 2100000, guid: c54a3d0f05d5fce4b957fd293d8bd05e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1406,6 +1455,7 @@ Transform:
   - {fileID: 3353807033364228387}
   - {fileID: 7160794109145838374}
   - {fileID: 770514242042495147}
+  - {fileID: 7298850162335757}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1529,7 +1579,7 @@ GameObject:
   - component: {fileID: 7596581837157092724}
   - component: {fileID: 6403026273387842257}
   - component: {fileID: 2756232427071261347}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RailingFinnhislineBoard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1577,8 +1627,8 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f467049b4663fb14f824528e0879fc0a, type: 2}
-  - {fileID: 2100000, guid: d74ac8e82bc6edc4e8e003a8020a91fa, type: 2}
+  - {fileID: 2100000, guid: b79b2775c7f03814eb2045fe0460b9e0, type: 2}
+  - {fileID: 2100000, guid: 3ee4a8325765a2142b7ad411ba510766, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

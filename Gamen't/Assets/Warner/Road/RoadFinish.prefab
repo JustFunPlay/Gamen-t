@@ -169,7 +169,10 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 80c6684db55f9704c817c751868fe387, type: 2}
+  - {fileID: 2100000, guid: 7b75d06b74a18c7429ca3b30efa57333, type: 2}
+  - {fileID: 2100000, guid: fccac0c04e7342345b0473cdc11e38c1, type: 2}
+  - {fileID: 2100000, guid: 25e106161483f554fb68ab71eeee8917, type: 2}
+  - {fileID: 2100000, guid: a9ed48e8b5ec96c4bbcc138d140f5a2d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -217,7 +220,7 @@ GameObject:
   - component: {fileID: 4327391775695228763}
   - component: {fileID: 3886050130616043636}
   - component: {fileID: 1905393513281760825}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RailingFinnhisline
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -265,7 +268,8 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 06dfc5a42186fed4fad2e79b1a0e512c, type: 2}
+  - {fileID: 2100000, guid: 2cd465c4033660545a48631b03a55804, type: 2}
+  - {fileID: 2100000, guid: c54a3d0f05d5fce4b957fd293d8bd05e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -846,6 +850,51 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   positions: []
+--- !u!1 &2598841015810425349
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5685791203929312018}
+  - component: {fileID: 6988151956392470895}
+  m_Layer: 7
+  m_Name: RoadFinnhisline (1)
+  m_TagString: Road
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5685791203929312018
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2598841015810425349}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.25, y: 1.25, z: 1.25}
+  m_Children: []
+  m_Father: {fileID: 3846820338971886172}
+  m_RootOrder: 26
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &6988151956392470895
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2598841015810425349}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -3487352243304681239, guid: 19b2c6eba36b63140bccfd574831e2c5, type: 3}
 --- !u!1 &2761398968766306597
 GameObject:
   m_ObjectHideFlags: 0
@@ -1674,6 +1723,7 @@ Transform:
   - {fileID: 6760043039863009913}
   - {fileID: 64645608083250763}
   - {fileID: 1770747665268577635}
+  - {fileID: 5685791203929312018}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2776,7 +2826,7 @@ GameObject:
   - component: {fileID: 3764101628666879899}
   - component: {fileID: 5917735301439703790}
   - component: {fileID: 7006574657915252835}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RailingFinnhislineBoard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2824,9 +2874,9 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: adea5283aa8a5954fb20039ea63e2715, type: 2}
-  - {fileID: 2100000, guid: 09994a38f68d61c4fb3677beba8f9ab7, type: 2}
-  - {fileID: 2100000, guid: a14dd9f7870f25d49a6c3fe9c5911830, type: 2}
+  - {fileID: 2100000, guid: 22cc36102462dd84f91fa9d068778697, type: 2}
+  - {fileID: 2100000, guid: 3be9a0094eed3104caaf0db21c4dbacf, type: 2}
+  - {fileID: 2100000, guid: 9b9187f612877a84d8bbc91c69b7e0ec, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
