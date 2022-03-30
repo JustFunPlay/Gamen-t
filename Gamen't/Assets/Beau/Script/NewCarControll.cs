@@ -53,7 +53,7 @@ public class NewCarControll : MonoBehaviour
 
         rb = GetComponent<Rigidbody>();
         rb.centerOfMass = massCenter.localPosition;
-
+        mat[2].DisableKeyword("_EMISSION");
     }
     void OnDrive(InputValue value)
     {
