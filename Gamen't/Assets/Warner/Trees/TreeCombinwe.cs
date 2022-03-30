@@ -138,7 +138,7 @@ public class TreeCombinwe : MonoBehaviour
 
         float distance; 
         RaycastHit hit;
-        float height = 12.5f * transform.localScale.y;
+        float height = 20f * transform.localScale.y;
         Vector3 origin = new Vector3(tree.position.x, tree.position.y + height, tree.position.z);
 
         //if (Physics.Raycast(origin, -Vector3.up, out hit, 5000f, layerMask))

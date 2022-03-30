@@ -54,6 +54,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96055e146ade0ba4b90e036d8eaff52f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lowPolyTree: {fileID: 7042734241720200516, guid: 2ec059959c84604468e5be914cb2fe12, type: 3}
+  lowPolyTreeMaterial: {fileID: 2100000, guid: 1f74c7463c9f6994ea24a2bf73fa088e, type: 2}
 --- !u!33 &1439359513006456336
 MeshFilter:
   m_ObjectHideFlags: 0
