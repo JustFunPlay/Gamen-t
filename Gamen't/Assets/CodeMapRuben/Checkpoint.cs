@@ -14,13 +14,15 @@ public class Checkpoint : MonoBehaviour
         isCircuit = false;
         isLinear = false;
         //checkt of hij linear is of circuit is
-        if (GameObject.Find("RoadStartFinish(Clone)") == true)
+        if (GameObject.Find("RoadFinish(Clone)") == true)
         {
-            isCircuit = true;
+            cp++;
+            isLinear = true;
+
         }
         else
         {
-            isLinear = true;
+            isCircuit = true;
         }
     }
     private void OnTriggerEnter(Collider other)
@@ -29,6 +31,14 @@ public class Checkpoint : MonoBehaviour
         {
             other.GetComponentInParent<NewCarControll>().checkPoint = transform;
             SetCp(other.GetComponentInParent<PlayerID>());
+            if(isLinear == true)
+            {
+                other.GetComponentInParent<PlayerID>().isLinear = true;
+            }
+            else
+            {
+                other.GetComponentInParent<PlayerID>().isCircuit = true;
+            }
         }
     }
     void SetCp(PlayerID playerID)
@@ -53,7 +63,6 @@ public class Checkpoint : MonoBehaviour
         else
         {
             playerID.OnCheckpoint(cp);
-            
         }
     }
 }

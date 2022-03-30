@@ -33,18 +33,18 @@ public class PlayerID : MonoBehaviour
     public Text checkpointTimeDifText;
     public Animator checkpointAnimation;
 
-    //public List<float> oldCheckPointTotal;
     public List<float> checkPointTime;
     public float newCheckPointTime;
     public float oldCheckPointTime;
     public float resetTimer;
-    public int counter;
+
+    public bool isLinear;
+    public bool isCircuit;
 
 
 
     public void Start()
     {
-        counter--;
         CheckPointCounter();
     }
 
@@ -110,18 +110,26 @@ public class PlayerID : MonoBehaviour
     public void OnCheckpoint(int cp)
     {
         float timeDifference = resetTimer - checkPointTime[cp];
-        if (timeDifference >= 0)
+        if(isCircuit == true)
         {
-            checkpointTimeText.text = "+" + timeDifference.ToString("F2");
-            checkpointTimeText.color = Color.red;
-        }
-        if(timeDifference < 0)
-        {
-            checkpointTimeText.text = timeDifference.ToString("F2");
-            checkpointTimeText.color = Color.green;
+            if (timeDifference >= 0)
+            {
+                checkpointTimeText.text = "+" + timeDifference.ToString("F2");
+                checkpointTimeText.color = Color.red;
+            }
+            if (timeDifference < 0)
+            {
+                checkpointTimeText.text = timeDifference.ToString("F2");
+                checkpointTimeText.color = Color.green;
+            }
         }
         checkPointTime[cp] = resetTimer;
-        //checkpointTimeText.text = resetTimer.ToString("F2");
+        if (isLinear == true)
+        {
+            checkpointTimeText.text = resetTimer.ToString("F2");
+        }
+
+        
         resetTimer = 0;
         checkpointAnimation.SetTrigger("ShowAnimation");
 
