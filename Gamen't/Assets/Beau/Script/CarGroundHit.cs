@@ -11,7 +11,7 @@ public class CarGroundHit : MonoBehaviour
     {
         if(other.gameObject.tag == "Wall")
         {
-            a.playRate = 2;
+            a.playRate = 3;
             //print("fuck");
             a.SendEvent("OnDED");
 
