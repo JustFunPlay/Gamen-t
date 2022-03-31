@@ -39,10 +39,6 @@ public class VotingSystem : MonoBehaviour
         {
             ResetNumber();
             SceneManager.LoadScene(SceneNumber);
-            //if(voteBackButton.GetComponent<Button>().interactable == true)
-            //{
-                //votingCounter.voteNumber[0]++;
-            //}
         }
         
     }

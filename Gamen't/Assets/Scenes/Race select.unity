@@ -1148,7 +1148,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 0
+    m_Mode: 3
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -1244,8 +1244,6 @@ MonoBehaviour:
   infosTrack: {fileID: 228848050}
   trackEditSelection: {fileID: 0}
   baseTrack: 0
-  raceselectEventSystem: {fileID: 2127295639871011870, guid: afcc3038a5d91334fbca2b31f4c65310, type: 3}
-  buttonRace: {fileID: 1990234102}
 --- !u!1 &689487297
 GameObject:
   m_ObjectHideFlags: 0
@@ -1333,7 +1331,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 0
+    m_Mode: 3
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 1815951770}
@@ -2432,7 +2430,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 0
+    m_Mode: 3
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -2601,7 +2599,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 0
+    m_Mode: 3
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -2697,8 +2695,6 @@ MonoBehaviour:
   infosTrack: {fileID: 228848050}
   trackEditSelection: {fileID: 0}
   baseTrack: 1
-  raceselectEventSystem: {fileID: 2127295639871011870, guid: afcc3038a5d91334fbca2b31f4c65310, type: 3}
-  buttonRace: {fileID: 1990234102}
 --- !u!1 &1210952985
 GameObject:
   m_ObjectHideFlags: 0
@@ -3687,7 +3683,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 0
+    m_Mode: 3
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -3783,8 +3779,6 @@ MonoBehaviour:
   infosTrack: {fileID: 228848050}
   trackEditSelection: {fileID: 0}
   baseTrack: 2
-  raceselectEventSystem: {fileID: 2127295639871011870, guid: afcc3038a5d91334fbca2b31f4c65310, type: 3}
-  buttonRace: {fileID: 1990234102}
 --- !u!1 &1820860859
 GameObject:
   m_ObjectHideFlags: 0
@@ -4160,11 +4154,6 @@ RectTransform:
   m_AnchoredPosition: {x: 409.45996, y: -947.4541}
   m_SizeDelta: {x: 400, y: 249.96}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &1990234102 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1165748992, guid: 8d5e6a99c2c5b964497015fc148c5939, type: 3}
-  m_PrefabInstance: {fileID: 8658488062879904458}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2056271235
 GameObject:
   m_ObjectHideFlags: 0
@@ -4453,9 +4442,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 478477435}
     m_Modifications:
     - target: {fileID: 1165748994, guid: 8d5e6a99c2c5b964497015fc148c5939, type: 3}
+      propertyPath: m_Navigation.m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1165748994, guid: 8d5e6a99c2c5b964497015fc148c5939, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1124218403}
+    - target: {fileID: 1310226123, guid: 8d5e6a99c2c5b964497015fc148c5939, type: 3}
+      propertyPath: m_Navigation.m_Mode
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1310226123, guid: 8d5e6a99c2c5b964497015fc148c5939, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 

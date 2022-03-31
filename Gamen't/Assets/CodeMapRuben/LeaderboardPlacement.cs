@@ -50,14 +50,14 @@ public class LeaderboardPlacement : MonoBehaviour
         }
         playerLeaderBoardInformation.leaderboard.Clear();
     }
-    void Update()
-    {
-        
 
-    }
     public void OnResetLeaderboard(int scene)
     {
         playerLeaderBoardInformation.leaderboard.Clear();
         SceneManager.LoadScene(scene);
+    }
+    public void TimeSetToDefeault()
+    {
+        Time.timeScale = 1;
     }
 }
