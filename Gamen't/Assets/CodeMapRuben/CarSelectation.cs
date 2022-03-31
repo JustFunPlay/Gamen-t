@@ -94,7 +94,7 @@ public class CarSelectation : MonoBehaviour
     {
         replaceSkinText.GetComponent<Text>().text = carInventory.Cars[carNumber].skins[skinNumber].skinsNamePlates;
 
-        goingInCar = carTesting.transform.GetChild(0).transform.GetChild(2).gameObject;
+        goingInCar = carTesting.transform.GetChild(0).transform.GetChild(1).gameObject;
         goingInCar.GetComponent<MeshRenderer>().materials = carInventory.Cars[carNumber].skins[skinNumber].materials;
 
 
