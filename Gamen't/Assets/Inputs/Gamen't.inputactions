@@ -226,7 +226,7 @@
                     "name": "",
                     "id": "596cb4cf-4cd6-4f7d-b04b-218850f7c374",
                     "path": "<Keyboard>/c",
-                    "interactions": "",
+                    "interactions": "Press",
                     "processors": "",
                     "groups": "Keyboard&Mouse",
                     "action": "Switch",

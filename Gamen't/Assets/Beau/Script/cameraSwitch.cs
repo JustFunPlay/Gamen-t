@@ -4,31 +4,41 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 public class cameraSwitch : MonoBehaviour
 {
-    public GameObject old;
-    public GameObject neew;
+    public Transform cameraPos;
+    public Vector3 positionBackCamera;
+    public Vector3 positionForwardCamera;
 
-    public float swit;
-    public Vector3 amountSwitch;
-    public void OnSwitch()
+    public Vector3 positionReset;
+
+    float switchFloat;
+    void OnSwitch(InputValue value)
     {
-        swit += 1;
-        
+        switchFloat = value.Get<float>();
+        AfterSwitch();
+    }
+    public void AfterSwitch()
+    {
+        //cameraPos.position = positionReset;
+
+        if (switchFloat == 1)
+        {
+            cameraPos.localPosition += positionBackCamera;
+
+            cameraPos.Rotate(0, -180, 0);
+        }
+        else
+        {
+            if (switchFloat == 0)
+            {
+                cameraPos.localPosition += positionForwardCamera;
+
+                cameraPos.Rotate(0, 180, 0);
+            }
+        }
     }
 
     public void Update()
     {
-        if (swit == 1)
-        {
-            //old.SetActive(false);
-            //neew.SetActive(true);
-            old.GetComponent<Transform>().rotation
-        }
 
-        if (swit == 2)
-        {
-            old.SetActive(true);
-            neew.SetActive(false);
-            swit = 0;
-        }
     }
 }
