@@ -47,6 +47,10 @@ public class NewCarControll : MonoBehaviour
     public Material[] mat;
 
     public GameObject escMenu;
+
+    public TrailRenderer slipperyTrail0;
+    public TrailRenderer slipperyTrail1;
+
     private void Start()
     {
         mat = playerInformation.playerSelections[GetComponent<PlayerID>().playerIdNumber].materials;
@@ -70,9 +74,18 @@ public class NewCarControll : MonoBehaviour
         restet = value.Get<float>();
     }
     void OnESCmenu(InputValue value)
-    {
+    {  
         escMenu.SetActive(true);
-        //Time.timeScale = 0.1f;
+        if(escMenu == true)
+        {
+            Time.timeScale = 0f;
+        }
+        else
+        {
+            Time.timeScale = 1f;
+        }
+      
+        
     }
     void OnHandbrake()
     {
@@ -80,11 +93,30 @@ public class NewCarControll : MonoBehaviour
         {
             handBrakeOn = false;
             b = false;
+
+            slipperyTrail0.emitting = false;
+            slipperyTrail1.emitting = false;
         }
         else
         {
             handBrakeOn = true;
             b = true;
+
+            slipperyTrail0.emitting = true;
+            slipperyTrail1.emitting = true;
+        }
+    }
+    void OnBrake(InputValue value)
+    {
+        if(value.Get<float>() == 1)
+        {
+            slipperyTrail0.emitting = true;
+            slipperyTrail1.emitting = true;
+        }
+        else
+        {
+            slipperyTrail0.emitting = false;
+            slipperyTrail1.emitting = false;
         }
     }
    
@@ -133,8 +165,8 @@ public class NewCarControll : MonoBehaviour
             if (element.addWheelTorque == true)
             {
                 element.leftWheel.motorTorque = torque;
-                element.rightWheel.motorTorque = torque;
-
+                    element.rightWheel.motorTorque = torque;
+                    
 
                 if (inputGasBrake.y == -1)
                 {
@@ -143,9 +175,12 @@ public class NewCarControll : MonoBehaviour
                     GetComponentInChildren<MeshRenderer>().materials = mat;
                     element.leftWheel.brakeTorque = brakeForce;
                     element.rightWheel.brakeTorque = brakeForce;
+                   
                     if (speedRead < 1)
                     {
-                        itStoped = true;
+                       itStoped = true;
+                       slipperyTrail0.emitting = false;
+                       slipperyTrail1.emitting = false;
                     }
                     
 
@@ -156,7 +191,7 @@ public class NewCarControll : MonoBehaviour
                 }
 
 
-                }
+            }
 
             if (inputGasBrake.y == 1)
             {
