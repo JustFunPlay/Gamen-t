@@ -1130,7 +1130,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!81 &1518596299
 AudioListener:
   m_ObjectHideFlags: 0
@@ -1167,7 +1167,7 @@ Camera:
   field of view: 60
   orthographic: 0
   orthographic size: 5
-  m_Depth: -1
+  m_Depth: -100
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -1190,7 +1190,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1518596298}
   m_LocalRotation: {x: -0, y: 0.70710826, z: -0, w: -0.7071054}
-  m_LocalPosition: {x: 12.39, y: 2.53, z: 37.48}
+  m_LocalPosition: {x: 31.79, y: 0.61, z: -1.09}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1608,18 +1608,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Nissan Player
       objectReference: {fileID: 0}
-    - target: {fileID: 4833476312769736835, guid: 2df898bfdbc1d3c41b24c47b6b437a0c, type: 3}
-      propertyPath: go
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7283933298438947211, guid: 2df898bfdbc1d3c41b24c47b6b437a0c, type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: de3aae04dbf426f488a9e4f01e445020, type: 2}
+      objectReference: {fileID: 2100000, guid: e993ba9493189ff4eb0f94405e9e1a06, type: 2}
     - target: {fileID: 7283933298438947211, guid: 2df898bfdbc1d3c41b24c47b6b437a0c, type: 3}
       propertyPath: m_Materials.Array.data[3]
       value: 
-      objectReference: {fileID: 2100000, guid: f6535e1fd9b7d804c85cb551e4eb4f14, type: 2}
+      objectReference: {fileID: 2100000, guid: 986640a09b21f3f47b4fb6eda288d706, type: 2}
     - target: {fileID: 7573581738572814650, guid: 2df898bfdbc1d3c41b24c47b6b437a0c, type: 3}
       propertyPath: m_LocalRotation.y
       value: 0.000000029802322
@@ -1627,6 +1623,10 @@ PrefabInstance:
     - target: {fileID: 7573581738572814650, guid: 2df898bfdbc1d3c41b24c47b6b437a0c, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8886021453041082719, guid: 2df898bfdbc1d3c41b24c47b6b437a0c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 9214223235598741024, guid: 2df898bfdbc1d3c41b24c47b6b437a0c, type: 3}
       propertyPath: m_RootOrder
