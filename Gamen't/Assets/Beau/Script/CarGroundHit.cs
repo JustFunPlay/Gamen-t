@@ -11,18 +11,17 @@ public class CarGroundHit : MonoBehaviour
     {
         if(other.gameObject.tag == "Road")
         {
-
+            a.Reinit();
             a.playRate = 3;
-            //print("fuck");
             a.SendEvent("OnSpark");
-            Debug.Log(other); 
+            Debug.Log(other+"hitt"); 
 
         }
      
     }
-    //public void OnTriggerExit(Collider other)
-    //{
-    //    a.SendEvent("OnDedSpark");        
-    //}
+    public void OnTriggerExit(Collider other)
+    {
+        a.SendEvent("OnDedSpark");
+    }
 
 }
