@@ -696,6 +696,17 @@ PrefabInstance:
     - {fileID: 8519686037620746190, guid: 4445e425172462342a2dd377d080b42f, type: 3}
     - {fileID: 1116681545978659063, guid: 4445e425172462342a2dd377d080b42f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4445e425172462342a2dd377d080b42f, type: 3}
+--- !u!114 &539689955 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3467295257224304535, guid: 4445e425172462342a2dd377d080b42f, type: 3}
+  m_PrefabInstance: {fileID: 539689954}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1114b56125e39947ad34ac5a91ac55d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &551369052
 GameObject:
   m_ObjectHideFlags: 0
@@ -1764,6 +1775,7 @@ MonoBehaviour:
   selectedTrackPieceIndex: 0
   pieceHolder: {fileID: 11400000, guid: 62d866ad7041afa45aa5ad87dbab5bf0, type: 2}
   toLoad: {fileID: 11400000, guid: 18e9f5ab584b66a4b968b0f09d46887c, type: 2}
+  updateTrackInformation: {fileID: 539689955}
 --- !u!4 &1856778945
 Transform:
   m_ObjectHideFlags: 0

@@ -51,7 +51,8 @@ public class TrackEditSelectMen : MonoBehaviour
     public void NewTrack()
     {
         //trackToLoad.track = new TrackInfo(ScriptableObject.CreateInstance<TrackInfo>());
-        trackToLoad.track = (TrackInfo)Instantiate(trackInfo);
+        trackToLoad.track = TrackInfo.CreateInstance<TrackInfo>();
+        trackToLoad.track.trackName = "New Track";
         SceneManager.LoadScene(4);
     }
 

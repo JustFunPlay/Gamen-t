@@ -8,6 +8,7 @@ public class TrackPieceManager : EditorCamController
     public int selectedTrackPieceIndex;
     public TrackPieceHolder pieceHolder;
     public TrackToLoad toLoad;
+    public UpdateTrackInformation updateTrackInformation;
     void OnPlaceTrack()
     {
         if (currentNode.trackPiece)
@@ -22,6 +23,8 @@ public class TrackPieceManager : EditorCamController
         newTrackPiece.position = currentNode.trackPiece.transform.position;
         newTrackPiece.xScale = 1;
         toLoad.track.trackPieces.Add(newTrackPiece);
+        updateTrackInformation.UpdateInfo();
+        UpdateTrackInformation.isTested = false;
     }
     void OnRemoveTrack()
     {
@@ -36,6 +39,8 @@ public class TrackPieceManager : EditorCamController
         {
             Destroy(currentNode.trackPiece);
         }
+        updateTrackInformation.UpdateInfo();
+        UpdateTrackInformation.isTested = false;
     }
     void OnRotateTrackRight()
     {
@@ -50,6 +55,7 @@ public class TrackPieceManager : EditorCamController
                 }
             }
         }
+        UpdateTrackInformation.isTested = false;
     }
     void OnRotateTrackLeft()
     {
@@ -64,6 +70,7 @@ public class TrackPieceManager : EditorCamController
                 }
             }
         }
+        UpdateTrackInformation.isTested = false;
     }
     void OnFlipTrack()
     {
@@ -80,5 +87,6 @@ public class TrackPieceManager : EditorCamController
                 }
             }
         }
+        UpdateTrackInformation.isTested = false;
     }
 }

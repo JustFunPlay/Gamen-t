@@ -11,9 +11,12 @@ public class SaveTracks : MonoBehaviour
 
     public void SaveTrack()
     {
-        XmlSerializer serializer = new XmlSerializer(typeof(TrackInfo));
-        FileStream stream = new FileStream(Application.dataPath + "/StreamingFiles/XML/" + toLoad.track.trackName + ".xml", FileMode.Create);
-        serializer.Serialize(stream, toLoad.track);
-        stream.Close();
+        if (UpdateTrackInformation.isTested)
+        {
+            XmlSerializer serializer = new XmlSerializer(typeof(TrackInfo));
+            FileStream stream = new FileStream(Application.dataPath + "/StreamingFiles/XML/" + toLoad.track.trackName + ".xml", FileMode.Create);
+            serializer.Serialize(stream, toLoad.track);
+            stream.Close();
+        }
     }
 }
