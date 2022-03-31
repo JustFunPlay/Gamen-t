@@ -35,7 +35,6 @@ public class NewCarControll : MonoBehaviour
     public float speedLimiterRange;
     public float brakeOn;
     public Text speedMeterder;
-    public bool collided;
     public float handBrake;
     public bool handBrakeOn;
     public Slider speedbalk;
@@ -48,15 +47,13 @@ public class NewCarControll : MonoBehaviour
     public Material[] mat;
 
     public GameObject escMenu;
-    public static bool escBool;
-
     private void Start()
     {
         mat = playerInformation.playerSelections[GetComponent<PlayerID>().playerIdNumber].materials;
-
+        mat[2].DisableKeyword("_EMISSION");
         rb = GetComponent<Rigidbody>();
         rb.centerOfMass = massCenter.localPosition;
-        mat[2].DisableKeyword("_EMISSION");
+
     }
     void OnDrive(InputValue value)
     {
@@ -74,16 +71,8 @@ public class NewCarControll : MonoBehaviour
     }
     void OnESCmenu(InputValue value)
     {
-        if(escBool == false)
-        {
-            escMenu.SetActive(true);
-            Time.timeScale = 0.000001f;
-        }
-        escBool = true;
-    }
-    public void AllowESCmenuToReturn()
-    {
-        escBool = false;
+        escMenu.SetActive(true);
+        //Time.timeScale = 0.1f;
     }
     void OnHandbrake()
     {
@@ -157,8 +146,9 @@ public class NewCarControll : MonoBehaviour
                     if (speedRead < 1)
                     {
                         itStoped = true;
-
                     }
+                    
+
                 }
                 else
                 {
@@ -170,14 +160,11 @@ public class NewCarControll : MonoBehaviour
 
             if (inputGasBrake.y == 1)
             {
-                
-                if (itStoped == false)
-                {
-
+                    speedbalk.maxValue = orignalMaxSpeed;
+                    maxSpeed = orignalMaxSpeed;
+                    itStoped = false;
                     element.leftWheel.brakeTorque = 0;
                     element.rightWheel.brakeTorque = 0;
-                }
-
             }
 
                 if (itStoped == true)
@@ -191,17 +178,6 @@ public class NewCarControll : MonoBehaviour
                     {
                         element.leftWheel.brakeTorque = brakeForce;
                         element.rightWheel.brakeTorque = brakeForce;
-
-                        if (speedRead < 1)
-                        {
-                            if (collided == false)
-                            {
-                                itStoped = false;
-                                maxSpeed = orignalMaxSpeed;
-                            }
-                            maxSpeed = orignalMaxSpeed;
-                            speedbalk.maxValue = orignalMaxSpeed;
-                        }
                     }
                 }
                     if (handBrakeOn == true)
@@ -214,7 +190,7 @@ public class NewCarControll : MonoBehaviour
                         henk1.extremumSlip = 0.6f ;
                         wheelData[1].leftWheel.sidewaysFriction = henk;
                         wheelData[1].rightWheel.sidewaysFriction = henk1;
-                        
+
                     }
                     else
                     {
@@ -224,14 +200,13 @@ public class NewCarControll : MonoBehaviour
                         oghenk1.extremumSlip = 0.2f;
                         wheelData[1].leftWheel.sidewaysFriction = oghenk;
                         wheelData[1].rightWheel.sidewaysFriction = oghenk1;
-
-                }
+                    }
 
                     
 
 
 
-                    DoTyres(element.leftWheel);
+            DoTyres(element.leftWheel);
             DoTyres(element.rightWheel);
 
         }
@@ -262,19 +237,6 @@ public class NewCarControll : MonoBehaviour
 
 
          
-    }
-    void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.tag == "Wall")
-        {
-            collided = true;
-        }
-    }
-    private void OnCollisionExit(Collision collision)
-    {
-
-        collided = false;
-
     }
 
     public void CarBRR()

@@ -931,7 +931,7 @@ TrailRenderer:
     generateLightingData: 0
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
-  m_Emitting: 0
+  m_Emitting: 1
 --- !u!114 &1510856772 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4440665439496253412, guid: a096d1ed04d6c6e4a95d300afe9a0555, type: 3}
@@ -1275,7 +1275,7 @@ TrailRenderer:
     generateLightingData: 0
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
-  m_Emitting: 0
+  m_Emitting: 1
 --- !u!114 &2094599318 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1355260791853974283, guid: a096d1ed04d6c6e4a95d300afe9a0555, type: 3}
