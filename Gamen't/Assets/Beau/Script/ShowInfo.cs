@@ -11,8 +11,8 @@ public class ShowInfo : MonoBehaviour
     public GameObject infosTrack;
     public TrackEditSelectMen trackEditSelection;
     public int baseTrack;
-    public EventSystem raceselectEventSystem;
-    public GameObject buttonRace;
+
+
 
 
 
@@ -26,10 +26,7 @@ public class ShowInfo : MonoBehaviour
 
     }
 
-    public void PressedButton()
-    {
-        raceselectEventSystem.SetSelectedGameObject(buttonRace);
-    }
+
 
 
 }
