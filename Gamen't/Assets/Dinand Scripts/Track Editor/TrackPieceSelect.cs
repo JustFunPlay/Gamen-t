@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class TrackPieceSelect : MonoBehaviour
 {
-    public int trackPieceIndex;
+    public GameObject trackPiece;
     public TrackPieceManager pieceManager;
 
     public void SelectTrackPiece()
     {
-        pieceManager.selectedTrackPieceIndex = trackPieceIndex;
+        pieceManager.selectedTrackPiece = trackPiece;
     }
 }

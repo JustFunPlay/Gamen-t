@@ -18,7 +18,7 @@ public class TrackPiece
 {
     public Vector3 position;
     public Quaternion rotation;
-    public int trackPieceIndex;
+    public GameObject trackPiece;
     public float xScale;
     public int gridlocation;
 }
@@ -33,11 +33,6 @@ public class Leaderboard
         this.racerName = racerName_;
         this.timeInSec = timeInSec_;
         
-    }
-    public Leaderboard()
-    {
-        racerName = null;
-        timeInSec = 0;
     }
 }
 [System.Serializable]

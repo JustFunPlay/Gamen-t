@@ -4,9 +4,6 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
-using System.IO;
-using System.Xml;
-using System.Xml.Serialization;
 public class TrackEditSelectMen : MonoBehaviour
 {
     public TrackToLoad trackToLoad;
@@ -23,24 +20,6 @@ public class TrackEditSelectMen : MonoBehaviour
     public Transform[] transforms;
     public GameObject buttonPrefab;
 
-    private void Awake()
-    {
-        allTracks.trackInfos.Clear();
-        string[] filesStrings = Directory.GetFiles(Application.dataPath + "/StreamingFiles/XML/");
-        foreach (string fileString in filesStrings)
-        {
-            if (fileString.Contains(".xml") && !fileString.Contains("xml.meta"))
-            {
-                XmlSerializer serializer = new XmlSerializer(typeof(TrackInfo));
-                FileStream stream = new FileStream(fileString, FileMode.Open);
-                TrackInfo newTrack = TrackInfo.CreateInstance<TrackInfo>();
-                newTrack = serializer.Deserialize(stream) as TrackInfo;
-                allTracks.trackInfos.Add(newTrack);
-                stream.Close();
-                print(fileString);
-            }
-        }
-    }
 
     void Start()
     {
@@ -51,7 +30,8 @@ public class TrackEditSelectMen : MonoBehaviour
     public void NewTrack()
     {
         //trackToLoad.track = new TrackInfo(ScriptableObject.CreateInstance<TrackInfo>());
-        trackToLoad.track = (TrackInfo)Instantiate(trackInfo);
+        allTracks.trackInfos.Add((TrackInfo)Instantiate(trackInfo));
+        trackToLoad.track = allTracks.trackInfos[allTracks.trackInfos.Count - 1];
         SceneManager.LoadScene(4);
     }
 

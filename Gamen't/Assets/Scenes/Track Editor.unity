@@ -476,10 +476,6 @@ PrefabInstance:
       propertyPath: pieceManager
       value: 
       objectReference: {fileID: 1856778944}
-    - target: {fileID: 572221786674852622, guid: 4445e425172462342a2dd377d080b42f, type: 3}
-      propertyPath: pieceManager
-      value: 
-      objectReference: {fileID: 1856778944}
     - target: {fileID: 798069914231094683, guid: 4445e425172462342a2dd377d080b42f, type: 3}
       propertyPath: pieceManager
       value: 
@@ -508,10 +504,6 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.19607843
       objectReference: {fileID: 0}
-    - target: {fileID: 2493967002078470267, guid: 4445e425172462342a2dd377d080b42f, type: 3}
-      propertyPath: pieceManager
-      value: 
-      objectReference: {fileID: 1856778944}
     - target: {fileID: 2497526433932055411, guid: 4445e425172462342a2dd377d080b42f, type: 3}
       propertyPath: pieceManager
       value: 
@@ -657,10 +649,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1856778944}
     - target: {fileID: 7255493880417301503, guid: 4445e425172462342a2dd377d080b42f, type: 3}
-      propertyPath: pieceManager
-      value: 
-      objectReference: {fileID: 1856778944}
-    - target: {fileID: 7612612935348085439, guid: 4445e425172462342a2dd377d080b42f, type: 3}
       propertyPath: pieceManager
       value: 
       objectReference: {fileID: 1856778944}
@@ -1761,8 +1749,7 @@ MonoBehaviour:
   turnSpeed: 4
   grid: {fileID: 1088987399}
   currentNode: {fileID: 0}
-  selectedTrackPieceIndex: 0
-  pieceHolder: {fileID: 11400000, guid: 62d866ad7041afa45aa5ad87dbab5bf0, type: 2}
+  selectedTrackPiece: {fileID: 4479241163028207846, guid: fec5be3805c371a47821457d19c8b91e, type: 3}
   toLoad: {fileID: 11400000, guid: 18e9f5ab584b66a4b968b0f09d46887c, type: 2}
 --- !u!4 &1856778945
 Transform:
@@ -1792,7 +1779,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trackToLoad: {fileID: 11400000, guid: 18e9f5ab584b66a4b968b0f09d46887c, type: 2}
-  pieceHolder: {fileID: 11400000, guid: 62d866ad7041afa45aa5ad87dbab5bf0, type: 2}
   isEditorScene: 1
 --- !u!114 &1856778947
 MonoBehaviour:
