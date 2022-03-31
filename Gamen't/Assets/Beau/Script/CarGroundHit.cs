@@ -9,14 +9,20 @@ public class CarGroundHit : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "Wall")
+        if(other.gameObject.tag == "Road")
         {
+
             a.playRate = 3;
             //print("fuck");
-            a.SendEvent("OnDED");
+            a.SendEvent("OnSpark");
+            Debug.Log(other); 
 
         }
-        
+     
     }
-    
+    //public void OnTriggerExit(Collider other)
+    //{
+    //    a.SendEvent("OnDedSpark");        
+    //}
+
 }
