@@ -43,7 +43,11 @@ public class NewCarControll : MonoBehaviour
     public GameObject hudCanvas;
     public bool hasFinished;
     public PlayerInformation playerInformation;
+
     public Transform checkPoint;
+    Vector3 addPosition;
+    int randomSpawner;
+
     public Material[] mat;
 
     public GameObject escMenu;
@@ -51,12 +55,16 @@ public class NewCarControll : MonoBehaviour
     public TrailRenderer slipperyTrail0;
     public TrailRenderer slipperyTrail1;
 
+    
+
     private void Start()
     {
         mat = playerInformation.playerSelections[GetComponent<PlayerID>().playerIdNumber].materials;
         mat[2].DisableKeyword("_EMISSION");
         rb = GetComponent<Rigidbody>();
         rb.centerOfMass = massCenter.localPosition;
+
+        addPosition = new Vector3(0, -2, 0);
 
     }
     void OnDrive(InputValue value)
@@ -72,6 +80,24 @@ public class NewCarControll : MonoBehaviour
     void OnReset(InputValue value)
     {
         restet = value.Get<float>();
+
+        if (restet == 1)
+        {
+            if(go == true)
+            {
+                rb.constraints = RigidbodyConstraints.FreezeAll;
+                rb.constraints = RigidbodyConstraints.None;
+
+                addPosition.x = Random.Range(-4.25f, 4.25f);
+                transform.position = checkPoint.position;
+                transform.localPosition += addPosition;
+
+                transform.rotation = checkPoint.rotation;
+
+                restet = 0;
+            }
+
+        }
     }
     void OnESCmenu(InputValue value)
     {  
@@ -130,29 +156,20 @@ public class NewCarControll : MonoBehaviour
         speedbalk.value = speedRead;
         if (go == true)
         {
-           
-        //Reset de auto terug als die geflipt is
-        if (restet == 1)
-        {
-            transform.position = checkPoint.position;
-            transform.rotation = checkPoint.rotation;
-            
-            restet = 0;
-        }
 
-
+            //Reset de auto terug als die geflipt is
 
         float newTorgue = maxTorque;
-        if (speedRead > maxSpeed - speedLimiterRange)
-        {
+            if (speedRead > maxSpeed - speedLimiterRange)
+            {
             newTorgue = maxTorque * (1 - ((speedRead - (maxSpeed - speedLimiterRange)) / (speedLimiterRange * 1.25f)));
-        }
+            }
 
         torque = inputGasBrake.y * newTorgue;
         steer = inputGasBrake.x * maxSteerAngle;
 
-        foreach (WheelElements element in wheelData)
-        {
+         foreach (WheelElements element in wheelData)
+         {
 
             brakeOn = element.leftWheel.brakeTorque;
 
@@ -244,26 +261,26 @@ public class NewCarControll : MonoBehaviour
             DoTyres(element.leftWheel);
             DoTyres(element.rightWheel);
 
-        }
+         }
 
-        void DoTyres(WheelCollider collider)
-        {
-
-            if (collider.transform.childCount == 0)
+            void DoTyres(WheelCollider collider)
             {
-                return;
+
+                if (collider.transform.childCount == 0)
+                {
+                    return;
+                }
+
+                 Transform tyre = collider.transform.GetChild(0);
+
+                 Vector3 position;
+                 Quaternion rotation;
+
+                collider.GetWorldPose(out position, out rotation);
+
+                 tyre.transform.position = position;
+                tyre.transform.rotation = rotation;
             }
-
-            Transform tyre = collider.transform.GetChild(0);
-
-            Vector3 position;
-            Quaternion rotation;
-
-            collider.GetWorldPose(out position, out rotation);
-
-            tyre.transform.position = position;
-            tyre.transform.rotation = rotation;
-        }
     }
 
 
