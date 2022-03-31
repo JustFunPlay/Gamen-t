@@ -8,37 +8,25 @@ public class cameraSwitch : MonoBehaviour
     public Vector3 positionBackCamera;
     public Vector3 positionForwardCamera;
 
-    public Vector3 positionReset;
-
-    float switchFloat;
+    float switchFloatAUTO;
     void OnSwitch(InputValue value)
     {
-        switchFloat = value.Get<float>();
+        switchFloatAUTO = value.Get<float>();
+        print(switchFloatAUTO);
         AfterSwitch();
     }
     public void AfterSwitch()
     {
-        //cameraPos.position = positionReset;
 
-        if (switchFloat == 1)
+        if (switchFloatAUTO == 1)
         {
-            cameraPos.localPosition += positionBackCamera;
-
+            cameraPos.localPosition = positionBackCamera;
             cameraPos.Rotate(0, -180, 0);
         }
         else
         {
-            if (switchFloat == 0)
-            {
-                cameraPos.localPosition += positionForwardCamera;
-
-                cameraPos.Rotate(0, 180, 0);
-            }
+            cameraPos.localPosition = positionForwardCamera;
+            cameraPos.Rotate(0, 180, 0);
         }
-    }
-
-    public void Update()
-    {
-
     }
 }
