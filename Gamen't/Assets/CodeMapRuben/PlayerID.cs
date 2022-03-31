@@ -29,9 +29,30 @@ public class PlayerID : MonoBehaviour
     public Text lapText;
     public Text timeText;
 
-    
+    public Text checkpointTimeText;
+    public Text checkpointTimeDifText;
+    public Animator checkpointAnimation;
+
+    public List<float> checkPointTime;
+    public float newCheckPointTime;
+    public float oldCheckPointTime;
+    public float resetTimer;
+
+    public bool isLinear;
+    public bool isCircuit;
 
 
+
+    public void Start()
+    {
+        CheckPointCounter();
+    }
+
+    public void CheckPointCounter()
+    {
+        checkPointTime.Add(newCheckPointTime);
+        
+    }
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "CheckPoint begin")
@@ -71,6 +92,48 @@ public class PlayerID : MonoBehaviour
             }
         }
     }
+    [System.Serializable]
+    public class ThisCheckPoint
+    {
+        float timeNumber;
+
+        public ThisCheckPoint(float timeNumber_)
+        {
+            this.timeNumber = timeNumber_;
+        }
+        public ThisCheckPoint(ThisCheckPoint thisCheckPoint)
+        {
+            this.timeNumber = thisCheckPoint.timeNumber;
+
+        }
+    }
+    public void OnCheckpoint(int cp)
+    {
+        float timeDifference = resetTimer - checkPointTime[cp];
+        if(isCircuit == true)
+        {
+            if (timeDifference >= 0)
+            {
+                checkpointTimeText.text = "+" + timeDifference.ToString("F2");
+                checkpointTimeText.color = Color.red;
+            }
+            if (timeDifference < 0)
+            {
+                checkpointTimeText.text = timeDifference.ToString("F2");
+                checkpointTimeText.color = Color.green;
+            }
+        }
+        checkPointTime[cp] = resetTimer;
+        if (isLinear == true)
+        {
+            checkpointTimeText.text = resetTimer.ToString("F2");
+        }
+
+        
+        resetTimer = 0;
+        checkpointAnimation.SetTrigger("ShowAnimation");
+
+    }
     public void PlayerFinished()
     {
         GetComponent<NewCarControll>().go = false;
@@ -100,6 +163,8 @@ public class PlayerID : MonoBehaviour
         if(GetComponent<NewCarControll>() && GetComponent<NewCarControll>().go == true)
         {
             raceTime += Time.deltaTime;
+            resetTimer += Time.deltaTime;
+
 
             if (raceTime < 10)
             {
