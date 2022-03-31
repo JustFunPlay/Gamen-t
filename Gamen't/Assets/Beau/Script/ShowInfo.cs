@@ -18,12 +18,8 @@ public class ShowInfo : MonoBehaviour
 
     public void OnSelect()
     {
-        
+        infosTrack.SetActive(true);
         GetComponentInParent<TrackEditSelectMen>().LoadBaseTrack(baseTrack);
-
-        
-
-
     }
 
 
