@@ -461,7 +461,7 @@ Transform:
   m_LocalScale: {x: 1.4, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4833476311506844544}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &4833476311063722881
 MeshFilter:
@@ -632,8 +632,8 @@ Transform:
   m_LocalPosition: {x: -0.8310003, y: 0.13334316, z: -1.46}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4833476311063722887}
   - {fileID: 2270885678604277296}
+  - {fileID: 4833476311063722887}
   m_Father: {fileID: 4833476312769736861}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -778,7 +778,7 @@ Transform:
   m_LocalScale: {x: 1.4, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4833476312120302311}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &4833476312040957757
 MeshFilter:
@@ -919,8 +919,8 @@ Transform:
   m_LocalPosition: {x: 0.8289995, y: 0.13334316, z: -1.46}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4833476312040957731}
   - {fileID: 4265151707718341141}
+  - {fileID: 4833476312040957731}
   m_Father: {fileID: 4833476312769736861}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1105,7 +1105,6 @@ MonoBehaviour:
   cameraPos: {fileID: 7204537500296612644}
   positionBackCamera: {x: 0, y: -0.79, z: 1.292}
   positionForwardCamera: {x: 0, y: 0.1, z: -3.25}
-  positionReset: {x: 0, y: 0, z: 0}
 --- !u!114 &2077718975617314866
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1167,11 +1166,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5584286377104047170}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 17.836, z: 0}
+  m_LocalPosition: {x: 0, y: -0.303, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4833476312120302311}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!96 &6092790968699433765
 TrailRenderer:
@@ -1405,11 +1404,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6477210428467179202}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 17.836, z: 0}
+  m_LocalPosition: {x: 0, y: -0.303, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4833476311506844544}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!96 &8284779786513537073
 TrailRenderer:

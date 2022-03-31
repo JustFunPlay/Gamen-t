@@ -1191,18 +1191,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1990234103}
-        m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
-        m_MethodName: Select
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &663877071
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1256,8 +1244,6 @@ MonoBehaviour:
   infosTrack: {fileID: 228848050}
   trackEditSelection: {fileID: 0}
   baseTrack: 0
-  raceselectEventSystem: {fileID: 2127295639871011870, guid: afcc3038a5d91334fbca2b31f4c65310, type: 3}
-  buttonRace: {fileID: 1990234102}
 --- !u!1 &689487297
 GameObject:
   m_ObjectHideFlags: 0
@@ -2656,18 +2642,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1990234103}
-        m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
-        m_MethodName: Select
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &1208326323
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2721,8 +2695,6 @@ MonoBehaviour:
   infosTrack: {fileID: 228848050}
   trackEditSelection: {fileID: 0}
   baseTrack: 1
-  raceselectEventSystem: {fileID: 2127295639871011870, guid: afcc3038a5d91334fbca2b31f4c65310, type: 3}
-  buttonRace: {fileID: 1990234102}
 --- !u!1 &1210952985
 GameObject:
   m_ObjectHideFlags: 0
@@ -3754,18 +3726,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1990234103}
-        m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
-        m_MethodName: Select
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &1815951771
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3819,8 +3779,6 @@ MonoBehaviour:
   infosTrack: {fileID: 228848050}
   trackEditSelection: {fileID: 0}
   baseTrack: 2
-  raceselectEventSystem: {fileID: 2127295639871011870, guid: afcc3038a5d91334fbca2b31f4c65310, type: 3}
-  buttonRace: {fileID: 1990234102}
 --- !u!1 &1820860859
 GameObject:
   m_ObjectHideFlags: 0
@@ -4196,22 +4154,6 @@ RectTransform:
   m_AnchoredPosition: {x: 409.45996, y: -947.4541}
   m_SizeDelta: {x: 400, y: 249.96}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &1990234102 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1165748992, guid: 8d5e6a99c2c5b964497015fc148c5939, type: 3}
-  m_PrefabInstance: {fileID: 8658488062879904458}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1990234103 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1165748994, guid: 8d5e6a99c2c5b964497015fc148c5939, type: 3}
-  m_PrefabInstance: {fileID: 8658488062879904458}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1990234102}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2056271235
 GameObject:
   m_ObjectHideFlags: 0
@@ -4445,7 +4387,7 @@ PrefabInstance:
     - target: {fileID: 2127295639871011870, guid: afcc3038a5d91334fbca2b31f4c65310, type: 3}
       propertyPath: m_FirstSelected
       value: 
-      objectReference: {fileID: 663877068}
+      objectReference: {fileID: 0}
     - target: {fileID: 2127295639871011871, guid: afcc3038a5d91334fbca2b31f4c65310, type: 3}
       propertyPath: m_RootOrder
       value: 0
