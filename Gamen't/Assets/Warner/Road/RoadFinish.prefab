@@ -211,7 +211,7 @@ MeshRenderer:
   m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 2
+  m_ReflectionProbeUsage: 0
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
@@ -884,6 +884,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d18580fba9ff6644591537940c15d344, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cp: -1
+  isCircuit: 0
+  isLinear: 0
 --- !u!1 &4111422998622475374
 GameObject:
   m_ObjectHideFlags: 0
