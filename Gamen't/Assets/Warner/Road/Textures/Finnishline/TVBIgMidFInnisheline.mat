@@ -8,18 +8,29 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: TVBIgMidFInnisheline
-  m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 0a2c5dad7a645d6478897e614772f5b2, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 2000
-  stringTagMap:
-    RenderType: Opaque
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
   disabledShaderPasses: []
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - Texture2D_6291d3bb9f644f5298647deabb2adc70:
+        m_Texture: {fileID: 2800000, guid: 55a47d7eb225a96418604302a93c49e0, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_9d2f865aae064414b872a8074e78e0af:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_d20c8237afd74dae93908376b5ee0d93:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _BaseMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -60,7 +71,15 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _SampleFlipbook_16580e073f4e44708a7ca9113f97e244_Texture2DED6436C5_957149134:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _SpecGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2DAsset_85d3a4be8e0240b0a7ccc1fdbe6cf606_Out_0:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -77,6 +96,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - Vector1_3721a73414b84588a469d96a0bf312b4: 4
+    - Vector1_3b9fdc89f765404d88cced5e1c4b0836: 0
+    - Vector1_6c7060c64c204241b8fa50baf3552a03: 2
+    - Vector1_9758f40b3a7143698abf800f09885433: 0.5
+    - Vector1_c063028dc1e949c4a7e559cd7c84edf5: 2
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1
@@ -104,6 +128,8 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
+    - Color_0235d6f0dfc64958bca8c0924b9b07dc: {r: 0, g: 0, b: 0, a: 0}
+    - Color_de769f5c3bd746d892bff2462b3c7da0: {r: 0, g: 0, b: 0, a: 0}
     - _BaseColor: {r: 0.6509434, g: 0.6509434, b: 0.6509434, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}

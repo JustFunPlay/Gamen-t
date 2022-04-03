@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5442135005582494454}
   - component: {fileID: 5442135005582494455}
+  - component: {fileID: 900387439}
   m_Layer: 0
   m_Name: Forest
   m_TagString: Untagged
@@ -44,9 +45,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   forestSize: 1100
-  elementSpacing: 10
+  elementSpacing: 50
   elements:
   - name: Trees
-    density: 9
+    density: 10
     prefabs:
-    - {fileID: 6178172081004793324, guid: b1ad998a85bbe414491cabfa17b97c65, type: 3}
+    - {fileID: 1439359513006456343, guid: df45ffd11478a224ab9909e5c51cc802, type: 3}
+--- !u!33 &900387439
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5442135005582494452}
+  m_Mesh: {fileID: 0}

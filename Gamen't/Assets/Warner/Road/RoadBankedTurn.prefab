@@ -62,7 +62,7 @@ MeshRenderer:
   m_Materials:
   - {fileID: 2100000, guid: fccac0c04e7342345b0473cdc11e38c1, type: 2}
   - {fileID: 2100000, guid: a9ed48e8b5ec96c4bbcc138d140f5a2d, type: 2}
-  - {fileID: 0}
+  - {fileID: 2100000, guid: 7b75d06b74a18c7429ca3b30efa57333, type: 2}
   - {fileID: 2100000, guid: 25e106161483f554fb68ab71eeee8917, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -186,7 +186,7 @@ MeshRenderer:
   m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 2
+  m_ReflectionProbeUsage: 0
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
@@ -270,6 +270,6 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 9034218958574571860, guid: c7877283af30cfb4c90edec1d1be9580, type: 3}
