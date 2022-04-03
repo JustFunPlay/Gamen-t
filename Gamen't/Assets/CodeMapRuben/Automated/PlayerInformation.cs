@@ -8,11 +8,6 @@ public class PlayerInformation : ScriptableObject
 {
     public int[] voteNumber;
 
-    public bool raceCupBool;
-    public TrackInfo[] trackInfo;
-    public int nextNumberRace;
-    public int maximumRaces;
-
     public List<PlayerSelection> playerSelections;
 }
 

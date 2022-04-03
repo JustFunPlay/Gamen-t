@@ -21,21 +21,17 @@ public class PlayerSpawner : MonoBehaviour
     public Rect splitScreenArea { get; }
     public bool splitScreen { get; }
 
-
+    // Start is called before the first frame update
     void Start()
     {
-        //als je iets hebt ingevuld bij de CUP track list dan gaat de if statement af
-        if(playerInfos.raceCupBool == true)
-        {
-            if(playerInfos.nextNumberRace == playerInfos.maximumRaces)
-            {
-                playerInfos.nextNumberRace--;
-            }
-            trackLoader.track = playerInfos.trackInfo[playerInfos.nextNumberRace];
-        }
         PlayerSpawn();
     }
 
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
     public void PlayerSpawn()
     {
         for (int i = 0; i < playerInfos.playerSelections.Count; i++)
