@@ -43,16 +43,28 @@ public class NewCarControll : MonoBehaviour
     public GameObject hudCanvas;
     public bool hasFinished;
     public PlayerInformation playerInformation;
+
     public Transform checkPoint;
+    Vector3 addPosition;
+    int randomSpawner;
+
     public Material[] mat;
 
     public GameObject escMenu;
+
+    public TrailRenderer slipperyTrail0;
+    public TrailRenderer slipperyTrail1;
+
+    
+
     private void Start()
     {
         mat = playerInformation.playerSelections[GetComponent<PlayerID>().playerIdNumber].materials;
         mat[2].DisableKeyword("_EMISSION");
         rb = GetComponent<Rigidbody>();
         rb.centerOfMass = massCenter.localPosition;
+
+        addPosition = new Vector3(0, -2, 0);
 
     }
     void OnDrive(InputValue value)
@@ -68,11 +80,38 @@ public class NewCarControll : MonoBehaviour
     void OnReset(InputValue value)
     {
         restet = value.Get<float>();
+
+        if (restet == 1)
+        {
+            if(go == true)
+            {
+                rb.constraints = RigidbodyConstraints.FreezeAll;
+                rb.constraints = RigidbodyConstraints.None;
+
+                addPosition.x = Random.Range(-4.25f, 4.25f);
+                transform.position = checkPoint.position;
+                transform.localPosition += addPosition;
+
+                transform.rotation = checkPoint.rotation;
+
+                restet = 0;
+            }
+
+        }
     }
     void OnESCmenu(InputValue value)
-    {
+    {  
         escMenu.SetActive(true);
-        //Time.timeScale = 0.1f;
+        if(escMenu == true)
+        {
+            Time.timeScale = 0f;
+        }
+        else
+        {
+            Time.timeScale = 1f;
+        }
+      
+        
     }
     void OnHandbrake()
     {
@@ -80,11 +119,30 @@ public class NewCarControll : MonoBehaviour
         {
             handBrakeOn = false;
             b = false;
+
+            slipperyTrail0.emitting = false;
+            slipperyTrail1.emitting = false;
         }
         else
         {
             handBrakeOn = true;
             b = true;
+
+            slipperyTrail0.emitting = true;
+            slipperyTrail1.emitting = true;
+        }
+    }
+    void OnBrake(InputValue value)
+    {
+        if(value.Get<float>() == 1)
+        {
+            slipperyTrail0.emitting = true;
+            slipperyTrail1.emitting = true;
+        }
+        else
+        {
+            slipperyTrail0.emitting = false;
+            slipperyTrail1.emitting = false;
         }
     }
    
@@ -98,29 +156,20 @@ public class NewCarControll : MonoBehaviour
         speedbalk.value = speedRead;
         if (go == true)
         {
-           
-        //Reset de auto terug als die geflipt is
-        if (restet == 1)
-        {
-            transform.position = checkPoint.position;
-            transform.rotation = checkPoint.rotation;
-            
-            restet = 0;
-        }
 
-
+            //Reset de auto terug als die geflipt is
 
         float newTorgue = maxTorque;
-        if (speedRead > maxSpeed - speedLimiterRange)
-        {
+            if (speedRead > maxSpeed - speedLimiterRange)
+            {
             newTorgue = maxTorque * (1 - ((speedRead - (maxSpeed - speedLimiterRange)) / (speedLimiterRange * 1.25f)));
-        }
+            }
 
         torque = inputGasBrake.y * newTorgue;
         steer = inputGasBrake.x * maxSteerAngle;
 
-        foreach (WheelElements element in wheelData)
-        {
+         foreach (WheelElements element in wheelData)
+         {
 
             brakeOn = element.leftWheel.brakeTorque;
 
@@ -133,8 +182,8 @@ public class NewCarControll : MonoBehaviour
             if (element.addWheelTorque == true)
             {
                 element.leftWheel.motorTorque = torque;
-                element.rightWheel.motorTorque = torque;
-
+                    element.rightWheel.motorTorque = torque;
+                    
 
                 if (inputGasBrake.y == -1)
                 {
@@ -143,9 +192,12 @@ public class NewCarControll : MonoBehaviour
                     GetComponentInChildren<MeshRenderer>().materials = mat;
                     element.leftWheel.brakeTorque = brakeForce;
                     element.rightWheel.brakeTorque = brakeForce;
+                   
                     if (speedRead < 1)
                     {
-                        itStoped = true;
+                       itStoped = true;
+                       slipperyTrail0.emitting = false;
+                       slipperyTrail1.emitting = false;
                     }
                     
 
@@ -156,7 +208,7 @@ public class NewCarControll : MonoBehaviour
                 }
 
 
-                }
+            }
 
             if (inputGasBrake.y == 1)
             {
@@ -209,26 +261,26 @@ public class NewCarControll : MonoBehaviour
             DoTyres(element.leftWheel);
             DoTyres(element.rightWheel);
 
-        }
+         }
 
-        void DoTyres(WheelCollider collider)
-        {
-
-            if (collider.transform.childCount == 0)
+            void DoTyres(WheelCollider collider)
             {
-                return;
+
+                if (collider.transform.childCount == 0)
+                {
+                    return;
+                }
+
+                 Transform tyre = collider.transform.GetChild(0);
+
+                 Vector3 position;
+                 Quaternion rotation;
+
+                collider.GetWorldPose(out position, out rotation);
+
+                 tyre.transform.position = position;
+                tyre.transform.rotation = rotation;
             }
-
-            Transform tyre = collider.transform.GetChild(0);
-
-            Vector3 position;
-            Quaternion rotation;
-
-            collider.GetWorldPose(out position, out rotation);
-
-            tyre.transform.position = position;
-            tyre.transform.rotation = rotation;
-        }
     }
 
 

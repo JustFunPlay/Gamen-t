@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class LeaderboardPlacement : MonoBehaviour
 {
     public ScriptableLeaderboardInfo playerLeaderBoardInformation;
+    public PlayerInformation trackInformation;
 
     public Text[] lapTime;
     public Text[] playerName;
@@ -14,8 +15,21 @@ public class LeaderboardPlacement : MonoBehaviour
 
     public GameObject[] leaderboardCharacters;
 
+    public GameObject restartButton;
+    public Text restartNextText;
+
     void Start()
     {
+        //als er een Cup is dan gaat dit actief
+        if (trackInformation.raceCupBool == true)
+        {
+            restartNextText.text = "NextMap";
+        }
+        if (trackInformation.nextNumberRace == trackInformation.trackInfo.Length)
+        {
+            restartButton.SetActive(false);
+        }
+
         for (int i = 0; i < playerLeaderBoardInformation.leaderboard.Count; i++)
         {
             leaderboardCharacters[i].SetActive(true);
@@ -48,6 +62,7 @@ public class LeaderboardPlacement : MonoBehaviour
 
             }
         }
+
         playerLeaderBoardInformation.leaderboard.Clear();
     }
 
@@ -59,5 +74,9 @@ public class LeaderboardPlacement : MonoBehaviour
     public void TimeSetToDefeault()
     {
         Time.timeScale = 1;
+    }
+    public void OnNextRacePressed()
+    {
+        trackInformation.nextNumberRace++;
     }
 }
