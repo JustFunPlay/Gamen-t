@@ -2,15 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class soundtest : MonoBehaviour
+public class SoundTest : MonoBehaviour
 {
     public AudioSource brrSounds;
     public float maxPitch ;
     public float minPitch;
     public float pitch;
     public NewCarControll newCarControll;
-    // Update is called once per frame
-    void Update()
+
+
+
+
+    public void Update()
     {
         pitch = newCarControll.speedRead/140;
 
@@ -27,7 +30,7 @@ public class soundtest : MonoBehaviour
         {
             brrSounds.pitch = pitch;
         }
-        )
+        
 
         
     }

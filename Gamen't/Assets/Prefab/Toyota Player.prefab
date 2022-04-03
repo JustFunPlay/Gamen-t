@@ -940,7 +940,7 @@ TrailRenderer:
     generateLightingData: 0
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
-  m_Emitting: 1
+  m_Emitting: 0
 --- !u!1 &6048157149623913019
 GameObject:
   m_ObjectHideFlags: 0
@@ -1527,7 +1527,7 @@ GameObject:
   - component: {fileID: 5323533534403164629}
   - component: {fileID: 1875272400247510372}
   - component: {fileID: 3970595361477230614}
-  - component: {fileID: 5366191312910510192}
+  - component: {fileID: 5462140691227086549}
   m_Layer: 0
   m_Name: TestToyota_gt86
   m_TagString: Player
@@ -1620,6 +1620,8 @@ MonoBehaviour:
   checkPoint: {fileID: 0}
   mat: []
   escMenu: {fileID: 2609480631279894304}
+  slipperyTrail0: {fileID: 0}
+  slipperyTrail1: {fileID: 0}
 --- !u!114 &5323533534403164629
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1701,7 +1703,7 @@ MonoBehaviour:
   resetTimer: 0
   isLinear: 0
   isCircuit: 0
---- !u!114 &5366191312910510192
+--- !u!114 &5462140691227086549
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1713,10 +1715,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fac92d8b0548c19409bbcf4db531d96b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  brrSounds: {fileID: 0}
-  limitSounds: {fileID: 0}
+  brrSounds: {fileID: 7883666069222554807}
   maxPitch: 1
-  minPitch: 0.3
+  minPitch: 0.2
   pitch: 0
   newCarControll: {fileID: 6535392582398367182}
 --- !u!1 &9027395085020847933
@@ -1847,7 +1848,7 @@ TrailRenderer:
     generateLightingData: 0
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
-  m_Emitting: 1
+  m_Emitting: 0
 --- !u!1001 &1404497546081926281
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1903,11 +1904,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8405353176005522071, guid: 22466239af0405a42af11f412572825f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 22466239af0405a42af11f412572825f, type: 3}
 --- !u!4 &6218905302589476440 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4985549107968701137, guid: 22466239af0405a42af11f412572825f, type: 3}
+  m_PrefabInstance: {fileID: 1404497546081926281}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &7883666069222554807 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 9085360884583333950, guid: 22466239af0405a42af11f412572825f, type: 3}
   m_PrefabInstance: {fileID: 1404497546081926281}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2120244545669511343
