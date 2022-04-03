@@ -123,6 +123,33 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &171097522 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6837649340238551357, guid: e12c37537f28477499015da12aa49d6c, type: 3}
+  m_PrefabInstance: {fileID: 884678463}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &251433944 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9194961665715833728, guid: e12c37537f28477499015da12aa49d6c, type: 3}
+  m_PrefabInstance: {fileID: 884678463}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &319292323 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3273548863613139035, guid: e12c37537f28477499015da12aa49d6c, type: 3}
+  m_PrefabInstance: {fileID: 884678463}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46d928d528db8654da8315872ff1212f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &452959184
 GameObject:
   m_ObjectHideFlags: 0
@@ -340,6 +367,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 196204542561502981, guid: e12c37537f28477499015da12aa49d6c, type: 3}
+      propertyPath: m_Name
+      value: Button Trackselect
+      objectReference: {fileID: 0}
     - target: {fileID: 1595758286245556707, guid: e12c37537f28477499015da12aa49d6c, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -428,6 +459,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Leaderboard
       objectReference: {fileID: 0}
+    - target: {fileID: 1945390336126705970, guid: e12c37537f28477499015da12aa49d6c, type: 3}
+      propertyPath: m_Name
+      value: Button Mainmenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 3273548863613139035, guid: e12c37537f28477499015da12aa49d6c, type: 3}
+      propertyPath: restartButton
+      value: 
+      objectReference: {fileID: 251433944}
+    - target: {fileID: 3273548863613139035, guid: e12c37537f28477499015da12aa49d6c, type: 3}
+      propertyPath: restartNextText
+      value: 
+      objectReference: {fileID: 171097522}
+    - target: {fileID: 3273548863613139035, guid: e12c37537f28477499015da12aa49d6c, type: 3}
+      propertyPath: trackInformation
+      value: 
+      objectReference: {fileID: 11400000, guid: 32ba84c6353187d4a94dfddb68e53bbc, type: 2}
     - target: {fileID: 3798035796774754042, guid: e12c37537f28477499015da12aa49d6c, type: 3}
       propertyPath: m_Colors.m_SelectedColor.b
       value: 0
@@ -463,6 +510,42 @@ PrefabInstance:
     - target: {fileID: 6304386634002075259, guid: e12c37537f28477499015da12aa49d6c, type: 3}
       propertyPath: m_Colors.m_SelectedColor.r
       value: 0.072496176
+      objectReference: {fileID: 0}
+    - target: {fileID: 6304386634002075259, guid: e12c37537f28477499015da12aa49d6c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6304386634002075259, guid: e12c37537f28477499015da12aa49d6c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6304386634002075259, guid: e12c37537f28477499015da12aa49d6c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 319292323}
+    - target: {fileID: 6304386634002075259, guid: e12c37537f28477499015da12aa49d6c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6304386634002075259, guid: e12c37537f28477499015da12aa49d6c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: OnNextRacePressed
+      objectReference: {fileID: 0}
+    - target: {fileID: 6304386634002075259, guid: e12c37537f28477499015da12aa49d6c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: LeaderboardPlacement, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6304386634002075259, guid: e12c37537f28477499015da12aa49d6c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6304386634002075259, guid: e12c37537f28477499015da12aa49d6c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 9194961665715833728, guid: e12c37537f28477499015da12aa49d6c, type: 3}
+      propertyPath: m_Name
+      value: Button Restart/Next
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e12c37537f28477499015da12aa49d6c, type: 3}
