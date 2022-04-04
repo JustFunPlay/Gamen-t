@@ -3629,8 +3629,8 @@ MonoBehaviour:
   lapText: {fileID: 1407099059093583361}
   addLapBtn: {fileID: 3999721873242790867}
   rmvLapBtn: {fileID: 6153652494022635976}
-  trackNameText: {fileID: 4926810654352898097}
-  descriptionText: {fileID: 902996296806195410}
+  trackNameText: {fileID: 2298660432194629012}
+  descriptionText: {fileID: 2638414079242326062}
   trackTypeText: {fileID: 9126129411100041326}
 --- !u!1 &2909767290559930582
 GameObject:

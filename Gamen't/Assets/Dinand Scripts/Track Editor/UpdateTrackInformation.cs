@@ -9,8 +9,8 @@ public class UpdateTrackInformation : MonoBehaviour
     public Text lapText;
     public GameObject addLapBtn;
     public GameObject rmvLapBtn;
-    public Text trackNameText;
-    public Text descriptionText;
+    public InputField trackNameText;
+    public InputField descriptionText;
     public Text trackTypeText;
     public static bool isTested;
 
