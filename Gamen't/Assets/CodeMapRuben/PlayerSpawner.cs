@@ -63,7 +63,7 @@ public class PlayerSpawner : MonoBehaviour
 
                     newMats.Add(new Material(playerInfos.playerSelections[i].materials[a]));
                 }
-                newplayer.transform.GetChild(0).transform.GetChild(2).GetComponent<MeshRenderer>().materials = newMats.ToArray();
+                newplayer.transform.GetChild(0).transform.GetChild(1).GetComponent<MeshRenderer>().materials = newMats.ToArray();
                 GameObject newcamera = newplayer.GetComponentInChildren<Camera>().gameObject;
                 listOfCameras.Add(newcamera);
 

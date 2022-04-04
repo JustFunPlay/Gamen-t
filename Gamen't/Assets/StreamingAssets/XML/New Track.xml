@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<TrackInfo xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <name />
+  <hideFlags>None</hideFlags>
+  <trackName>New Track</trackName>
+  <leaderboards>
+    <Leaderboard xsi:nil="true" />
+    <Leaderboard xsi:nil="true" />
+    <Leaderboard xsi:nil="true" />
+    <Leaderboard xsi:nil="true" />
+    <Leaderboard xsi:nil="true" />
+  </leaderboards>
+  <numberOfLaps>1</numberOfLaps>
+  <trackType>Circuit</trackType>
+</TrackInfo>

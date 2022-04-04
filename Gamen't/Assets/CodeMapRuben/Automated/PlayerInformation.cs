@@ -9,6 +9,7 @@ public class PlayerInformation : ScriptableObject
     public int[] voteNumber;
 
     public bool raceCupBool;
+    public int counter;
     public TrackInfo[] trackInfo;
     public int nextNumberRace;
     public int maximumRaces;

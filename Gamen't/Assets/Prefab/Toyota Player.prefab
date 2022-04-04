@@ -566,7 +566,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3997938617907260961}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.072, z: 0}
   m_LocalScale: {x: 1.72365, y: 0.5, z: 3.77627}
   m_Children:
   - {fileID: 370944461145417161}
@@ -599,6 +599,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   a: {fileID: 2338371854719225624}
+  EnableAirTime: 0
+  delayTime: 0
+  car: {fileID: 8083948680846635971}
 --- !u!1 &4876556819902295284
 GameObject:
   m_ObjectHideFlags: 0
@@ -1527,7 +1530,7 @@ GameObject:
   - component: {fileID: 5323533534403164629}
   - component: {fileID: 1875272400247510372}
   - component: {fileID: 3970595361477230614}
-  - component: {fileID: 3071722089944234689}
+  - component: {fileID: 4107174952020237575}
   m_Layer: 0
   m_Name: TestToyota_gt86
   m_TagString: Player
@@ -1703,7 +1706,7 @@ MonoBehaviour:
   resetTimer: 0
   isLinear: 0
   isCircuit: 0
---- !u!114 &3071722089944234689
+--- !u!114 &4107174952020237575
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

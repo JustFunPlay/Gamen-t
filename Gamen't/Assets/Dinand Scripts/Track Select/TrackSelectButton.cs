@@ -6,12 +6,11 @@ using UnityEngine.EventSystems;
 
 public class TrackSelectButton : MonoBehaviour
 {
-    public int index;
 
+    public int index;
 
     public void OnSelect()
     {
-
         GetComponentInParent<TrackEditSelectMen>().LoadCustomTrack(index);
     }
 

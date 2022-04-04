@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class CupRace : MonoBehaviour
 {
@@ -10,8 +11,6 @@ public class CupRace : MonoBehaviour
 
     public Text chooseTracksText;
     public Button cupRaceButton;
-
-    public int counter;
 
     public void Start()
     {
@@ -38,16 +37,14 @@ public class CupRace : MonoBehaviour
     {
         if(trackHolder.raceCupBool == true)
         {
-            
-
-            if(counter < trackHolder.trackInfo.Length)
+            if(trackHolder.counter < trackHolder.trackInfo.Length)
             {
-                trackHolder.trackInfo[counter] = gettingTrack.track;
-                counter++;
+                trackHolder.trackInfo[trackHolder.counter] = gettingTrack.track;
+                trackHolder.counter++;
             }
-            if(counter == trackHolder.trackInfo.Length)
+            if (trackHolder.counter == trackHolder.trackInfo.Length)
             {
-                cupRaceButton.interactable = true;
+                SceneManager.LoadScene(2);
             }
         }
 
@@ -58,9 +55,23 @@ public class CupRace : MonoBehaviour
         {
             trackHolder.trackInfo[i] = null;
         }
-        counter = 0;
-        cupRaceButton.interactable = false;
+        trackHolder.counter = 0;
         trackHolder.nextNumberRace = 0;
         trackHolder.raceCupBool = false;
+    }
+    public void OnSelectedButton()
+    {
+        if (trackHolder.raceCupBool == true)
+        {
+            if (trackHolder.counter < trackHolder.trackInfo.Length)
+            {
+                trackHolder.trackInfo[trackHolder.counter] = gettingTrack.track;
+                trackHolder.counter++;
+            }
+        }
+    }
+    public void TracksSelectedCheck()
+    {
+
     }
 }
