@@ -29,7 +29,7 @@ public class PlayerSpawner : MonoBehaviour
         {
             if(playerInfos.nextNumberRace == playerInfos.maximumRaces)
             {
-                playerInfos.nextNumberRace--;
+                //playerInfos.nextNumberRace--;
             }
             trackLoader.track = playerInfos.trackInfo[playerInfos.nextNumberRace];
         }
@@ -46,7 +46,17 @@ public class PlayerSpawner : MonoBehaviour
                 listOfPlayers.Add(newplayer);
                 newplayer.transform.GetChild(0).GetComponent<PlayerID>().playerIdNumber = i;
                 newplayer.transform.GetChild(0).GetComponent<PlayerID>().playerName = playerInfos.playerSelections[i].name.text;
-                newplayer.transform.GetChild(0).GetComponent<PlayerID>().maxLaps = trackLoader.track.numberOfLaps;
+                
+                if(playerInfos.raceCupBool == true)
+                {
+                    newplayer.transform.GetChild(0).GetComponent<PlayerID>().maxLaps = playerInfos.trackInfo[playerInfos.nextNumberRace].numberOfLaps;
+                }
+                else
+                {
+                    newplayer.transform.GetChild(0).GetComponent<PlayerID>().maxLaps = trackLoader.track.numberOfLaps;
+                }
+                
+                
                 List<Material> newMats = new List<Material>();
                 for (int a = 0; a < playerInfos.playerSelections[i].materials.Length; a++)
                 {
