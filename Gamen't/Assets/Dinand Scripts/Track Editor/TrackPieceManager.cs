@@ -5,26 +5,25 @@ using UnityEngine.InputSystem;
 
 public class TrackPieceManager : EditorCamController
 {
-    public int selectedTrackPieceIndex;
-    public TrackPieceHolder pieceHolder;
+    public GameObject selectedTrackPiece;
     public TrackToLoad toLoad;
-    public UpdateTrackInformation updateTrackInformation;
     void OnPlaceTrack()
     {
-        if (currentNode.trackPiece)
+        if (selectedTrackPiece)
         {
-            OnRemoveTrack();
+            if (currentNode.trackPiece)
+            {
+                OnRemoveTrack();
+            }
+            currentNode.trackPiece = Instantiate(selectedTrackPiece, currentNode.transform.position, Quaternion.identity);
+            TrackPiece newTrackPiece = new TrackPiece();
+            newTrackPiece.gridlocation = currentNode.gridNodeValue;
+            newTrackPiece.trackPiece = selectedTrackPiece;
+            newTrackPiece.rotation = currentNode.trackPiece.transform.rotation;
+            newTrackPiece.position = currentNode.trackPiece.transform.position;
+            newTrackPiece.xScale = 1;
+            toLoad.track.trackPieces.Add(newTrackPiece);
         }
-        currentNode.trackPiece = Instantiate(pieceHolder.trackPieces[selectedTrackPieceIndex], currentNode.transform.position, Quaternion.identity);
-        TrackPiece newTrackPiece = new TrackPiece();
-        newTrackPiece.gridlocation = currentNode.gridNodeValue;
-        newTrackPiece.trackPieceIndex = selectedTrackPieceIndex;
-        newTrackPiece.rotation = currentNode.trackPiece.transform.rotation;
-        newTrackPiece.position = currentNode.trackPiece.transform.position;
-        newTrackPiece.xScale = 1;
-        toLoad.track.trackPieces.Add(newTrackPiece);
-        updateTrackInformation.UpdateInfo();
-        UpdateTrackInformation.isTested = false;
     }
     void OnRemoveTrack()
     {
@@ -39,8 +38,6 @@ public class TrackPieceManager : EditorCamController
         {
             Destroy(currentNode.trackPiece);
         }
-        updateTrackInformation.UpdateInfo();
-        UpdateTrackInformation.isTested = false;
     }
     void OnRotateTrackRight()
     {
@@ -55,7 +52,6 @@ public class TrackPieceManager : EditorCamController
                 }
             }
         }
-        UpdateTrackInformation.isTested = false;
     }
     void OnRotateTrackLeft()
     {
@@ -70,7 +66,6 @@ public class TrackPieceManager : EditorCamController
                 }
             }
         }
-        UpdateTrackInformation.isTested = false;
     }
     void OnFlipTrack()
     {
@@ -87,6 +82,5 @@ public class TrackPieceManager : EditorCamController
                 }
             }
         }
-        UpdateTrackInformation.isTested = false;
     }
 }
