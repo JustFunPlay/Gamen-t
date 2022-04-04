@@ -1351,7 +1351,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4543221668969201979}
-  m_LocalRotation: {x: -0, y: -0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: 0.000000119209275, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1409,6 +1409,7 @@ GameObject:
   - component: {fileID: 4837745004785823461}
   - component: {fileID: 8398303897430712640}
   - component: {fileID: 6010110533199598986}
+  - component: {fileID: 3777898607121578079}
   m_Layer: 0
   m_Name: Nissan 180sx
   m_TagString: Untagged
@@ -1484,6 +1485,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &3777898607121578079
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5217648728594035807}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 3380591020231344000, guid: 9cfe33f7c0cb2de4f93adce57d1fd2af, type: 3}
 --- !u!1 &5347598453442873941
 GameObject:
   m_ObjectHideFlags: 0
