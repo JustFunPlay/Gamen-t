@@ -67,3 +67,12 @@ MonoBehaviour:
       - {fileID: 2100000, guid: 942f204701e808747a1dbae34f7ed4c5, type: 2}
       - {fileID: 2100000, guid: 2a00b9884d08da74a8c6f388eadcac8a, type: 2}
       skinsNamePlates: Red Nissan
+  - carSelectable: {fileID: 8674515937845367320, guid: 0bbb25757e4e53740963b2e46fc3967e, type: 3}
+    carNamePlates: Nissan 180sx
+    skins:
+    - materials:
+      - {fileID: 2100000, guid: c695c399a5ae6774ebe9bfd1ab53181e, type: 2}
+      - {fileID: 2100000, guid: 93075adc94e79274eae6c2b69f055996, type: 2}
+      - {fileID: 2100000, guid: f4c9cb420d973cd4c8259c172056aceb, type: 2}
+      - {fileID: 2100000, guid: 9a2db3669fef9ad42b357505ef863a44, type: 2}
+      skinsNamePlates: Red Nissan
