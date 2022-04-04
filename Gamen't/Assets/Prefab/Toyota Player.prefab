@@ -1527,7 +1527,7 @@ GameObject:
   - component: {fileID: 5323533534403164629}
   - component: {fileID: 1875272400247510372}
   - component: {fileID: 3970595361477230614}
-  - component: {fileID: 3071722089944234689}
+  - component: {fileID: 551278518279224048}
   m_Layer: 0
   m_Name: TestToyota_gt86
   m_TagString: Player
@@ -1703,7 +1703,7 @@ MonoBehaviour:
   resetTimer: 0
   isLinear: 0
   isCircuit: 0
---- !u!114 &3071722089944234689
+--- !u!114 &551278518279224048
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
