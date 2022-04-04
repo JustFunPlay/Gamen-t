@@ -886,6 +886,7 @@ GameObject:
   - component: {fileID: 1514886674476656831}
   - component: {fileID: 1514886674476656828}
   - component: {fileID: 5387301423186896911}
+  - component: {fileID: 2918222920523194194}
   m_Layer: 0
   m_Name: Nissan gtr skyline rr34
   m_TagString: Player
@@ -1061,6 +1062,23 @@ MonoBehaviour:
   resetTimer: 0
   isLinear: 0
   isCircuit: 0
+--- !u!114 &2918222920523194194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1514886674476656829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fac92d8b0548c19409bbcf4db531d96b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  brrSounds: {fileID: 0}
+  maxPitch: 1
+  minPitch: 0.2
+  pitch: 0
+  newCarControll: {fileID: 1514886674476656830}
 --- !u!1 &1655333629580219700
 GameObject:
   m_ObjectHideFlags: 0
@@ -1489,7 +1507,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4543221668969201979}
-  m_LocalRotation: {x: -0, y: -0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: 0.000000119209275, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -2008,7 +2026,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8968301269854097458}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.04000002, z: 0}
+  m_LocalPosition: {x: 0, y: 0.075, z: 0}
   m_LocalScale: {x: 1.72365, y: 0.5, z: 3.77627}
   m_Children:
   - {fileID: 1250929636602031459}
@@ -2041,6 +2059,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   a: {fileID: 8449618619968628645}
+  EnableAirTime: 0
+  delayTime: 0
+  car: {fileID: 1514886674476656829}
 --- !u!1001 &3378721405815699454
 PrefabInstance:
   m_ObjectHideFlags: 0
