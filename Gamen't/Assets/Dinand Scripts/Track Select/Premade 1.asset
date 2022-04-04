@@ -12,233 +12,203 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23b140e9cd1330f4799a57bc49ad094b, type: 3}
   m_Name: Premade 1
   m_EditorClassIdentifier: 
-  trackName: blaha
+  trackName: The Underdome
   trackPieces:
   - position: {x: 0, y: 0, z: 0}
-    rotation: {x: 0, y: 0.7071068, z: 0, w: -0.7071068}
-    trackPiece: {fileID: 4479241163028207846, guid: 94153850104b4144d8fccbc9e7b1bfc6, type: 3}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    trackPieceIndex: 0
     xScale: 1
     gridlocation: 1276
-  - position: {x: 0, y: 0, z: 20}
-    rotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-    trackPiece: {fileID: 5634827069025667634, guid: 5fed5ce7021de5d4489814b12d2f682b, type: 3}
-    xScale: 1
-    gridlocation: 1277
-  - position: {x: 0, y: 0, z: 40}
-    rotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-    trackPiece: {fileID: 5634827069025667634, guid: 5fed5ce7021de5d4489814b12d2f682b, type: 3}
-    xScale: 1
-    gridlocation: 1278
-  - position: {x: 0, y: 0, z: 60}
-    rotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-    trackPiece: {fileID: 5634827069025667634, guid: 5fed5ce7021de5d4489814b12d2f682b, type: 3}
-    xScale: 1
-    gridlocation: 1279
-  - position: {x: 0, y: 0, z: 100}
+  - position: {x: 20, y: 0, z: 0}
     rotation: {x: 0, y: 0, z: 0, w: 1}
-    trackPiece: {fileID: 4604442246332445032, guid: 2bb7737759739e348a8f3d0e4e7cd0b7, type: 3}
+    trackPieceIndex: 3
     xScale: 1
-    gridlocation: 1281
-  - position: {x: -40, y: 0, z: 100}
-    rotation: {x: 0, y: 1, z: 0, w: 0}
-    trackPiece: {fileID: 4590597907870076279, guid: 8bde6bbc5e444d448a5c343b251d359f, type: 3}
-    xScale: 1
-    gridlocation: 1181
-  - position: {x: -60, y: 6, z: 100}
-    rotation: {x: 0, y: 1, z: 0, w: 0}
-    trackPiece: {fileID: 1540954917101270265, guid: 75095f53a79da5e4e8b33cf157ebf8ef, type: 3}
-    xScale: 1
-    gridlocation: 3631
-  - position: {x: -80, y: 12, z: 100}
+    gridlocation: 1326
+  - position: {x: 40, y: 0, z: 0}
     rotation: {x: 0, y: 0, z: 0, w: 1}
-    trackPiece: {fileID: 5299517355680503963, guid: e3a8a970801f56b4e9ab62bc8ef55194, type: 3}
+    trackPieceIndex: 3
     xScale: 1
-    gridlocation: 6081
-  - position: {x: -160, y: 12, z: 120}
+    gridlocation: 1376
+  - position: {x: 60, y: 0, z: 0}
     rotation: {x: 0, y: 0, z: 0, w: 1}
-    trackPiece: {fileID: 3749085050509145281, guid: 555e7b0ee0d15034caa7ab79b8be1081, type: 3}
+    trackPieceIndex: 3
     xScale: 1
-    gridlocation: 5882
-  - position: {x: -160, y: 12, z: 100}
-    rotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-    trackPiece: {fileID: 7192722575976943018, guid: fd90833089b399948af85395e57ddee3, type: 3}
-    xScale: 1
-    gridlocation: 5881
-  - position: {x: -160, y: 12, z: 80}
-    rotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-    trackPiece: {fileID: 5634827069025667634, guid: 5fed5ce7021de5d4489814b12d2f682b, type: 3}
-    xScale: 1
-    gridlocation: 5880
-  - position: {x: -160, y: 12, z: 60}
-    rotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-    trackPiece: {fileID: 5634827069025667634, guid: 5fed5ce7021de5d4489814b12d2f682b, type: 3}
-    xScale: 1
-    gridlocation: 5879
-  - position: {x: -160, y: 12, z: 40}
-    rotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-    trackPiece: {fileID: 4590597907870076279, guid: 8bde6bbc5e444d448a5c343b251d359f, type: 3}
-    xScale: 1
-    gridlocation: 5878
-  - position: {x: -160, y: 12, z: -40}
-    rotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-    trackPiece: {fileID: 4590597907870076279, guid: 8bde6bbc5e444d448a5c343b251d359f, type: 3}
-    xScale: 1
-    gridlocation: 5874
-  - position: {x: -160, y: 18, z: -20}
-    rotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-    trackPiece: {fileID: 5299517355680503963, guid: e3a8a970801f56b4e9ab62bc8ef55194, type: 3}
-    xScale: 1
-    gridlocation: 8375
-  - position: {x: -160, y: 18, z: 20}
-    rotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-    trackPiece: {fileID: 5299517355680503963, guid: e3a8a970801f56b4e9ab62bc8ef55194, type: 3}
-    xScale: 1
-    gridlocation: 8377
-  - position: {x: -160, y: 18, z: 0}
-    rotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-    trackPiece: {fileID: 5634827069025667634, guid: 5fed5ce7021de5d4489814b12d2f682b, type: 3}
-    xScale: 1
-    gridlocation: 8376
-  - position: {x: -160, y: 12, z: -80}
-    rotation: {x: 0, y: 1, z: 0, w: 0}
-    trackPiece: {fileID: 4604442246332445032, guid: 2bb7737759739e348a8f3d0e4e7cd0b7, type: 3}
-    xScale: 1
-    gridlocation: 5872
-  - position: {x: -80, y: 12, z: -40}
-    rotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-    trackPiece: {fileID: 6914888233837508229, guid: 071d7abbb6e030b43a94bcfd1aa45731, type: 3}
-    xScale: 1
-    gridlocation: 6074
-  - position: {x: -140, y: 12, z: 0}
+    gridlocation: 1426
+  - position: {x: 80, y: 0, z: 0}
     rotation: {x: 0, y: 0, z: 0, w: 1}
-    trackPiece: {fileID: 5634827069025667634, guid: 5fed5ce7021de5d4489814b12d2f682b, type: 3}
-    xScale: 1
-    gridlocation: 5926
-  - position: {x: -160, y: 12, z: 0}
-    rotation: {x: 0, y: 0, z: 0, w: 1}
-    trackPiece: {fileID: 5634827069025667634, guid: 5fed5ce7021de5d4489814b12d2f682b, type: 3}
-    xScale: 1
-    gridlocation: 5876
-  - position: {x: -180, y: 12, z: 0}
-    rotation: {x: 0, y: 0, z: 0, w: 1}
-    trackPiece: {fileID: 5634827069025667634, guid: 5fed5ce7021de5d4489814b12d2f682b, type: 3}
-    xScale: 1
-    gridlocation: 5826
-  - position: {x: -200, y: 12, z: 0}
-    rotation: {x: 0, y: 0, z: 0, w: 1}
-    trackPiece: {fileID: 3749085050509145281, guid: 555e7b0ee0d15034caa7ab79b8be1081, type: 3}
-    xScale: 1
-    gridlocation: 5776
-  - position: {x: -200, y: 12, z: -20}
-    rotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-    trackPiece: {fileID: 5299517355680503963, guid: e3a8a970801f56b4e9ab62bc8ef55194, type: 3}
-    xScale: 1
-    gridlocation: 5775
-  - position: {x: -200, y: 6, z: -40}
-    rotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-    trackPiece: {fileID: 4590597907870076279, guid: 8bde6bbc5e444d448a5c343b251d359f, type: 3}
-    xScale: 1
-    gridlocation: 3274
-  - position: {x: -200, y: 6, z: -60}
-    rotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-    trackPiece: {fileID: 6937163375105411035, guid: 3f516edd925b9a5498e34ce3a840df21, type: 3}
+    trackPieceIndex: 7
     xScale: -1
-    gridlocation: 3273
-  - position: {x: -180, y: 6, z: -160}
-    rotation: {x: 0, y: 1, z: 0, w: 0}
-    trackPiece: {fileID: 4604442246332445032, guid: 2bb7737759739e348a8f3d0e4e7cd0b7, type: 3}
-    xScale: 1
-    gridlocation: 3318
-  - position: {x: -180, y: 6, z: -120}
+    gridlocation: 1476
+  - position: {x: 140, y: 0, z: 20}
     rotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-    trackPiece: {fileID: 7192722575976943018, guid: fd90833089b399948af85395e57ddee3, type: 3}
+    trackPieceIndex: 4
     xScale: 1
-    gridlocation: 3320
-  - position: {x: -140, y: 6, z: -160}
-    rotation: {x: 0, y: 0, z: 0, w: 1}
-    trackPiece: {fileID: 5299517355680503963, guid: e3a8a970801f56b4e9ab62bc8ef55194, type: 3}
+    gridlocation: 1627
+  - position: {x: 140, y: 0, z: -20}
+    rotation: {x: 0, y: 1, z: 0, w: 0}
+    trackPieceIndex: 5
     xScale: 1
-    gridlocation: 3418
-  - position: {x: -120, y: 0, z: -160}
+    gridlocation: 1625
+  - position: {x: 180, y: 0, z: -20}
     rotation: {x: 0, y: -1, z: 0, w: 0}
-    trackPiece: {fileID: 4590597907870076279, guid: 8bde6bbc5e444d448a5c343b251d359f, type: 3}
-    xScale: 1
-    gridlocation: 968
-  - position: {x: -100, y: 0, z: -160}
+    trackPieceIndex: 11
+    xScale: -1
+    gridlocation: 1725
+  - position: {x: 200, y: 0, z: -20}
+    rotation: {x: 0, y: -1, z: 0, w: 0}
+    trackPieceIndex: 13
+    xScale: -1
+    gridlocation: 1775
+  - position: {x: 240, y: 0, z: 40}
     rotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-    trackPiece: {fileID: 3749085050509145281, guid: 555e7b0ee0d15034caa7ab79b8be1081, type: 3}
+    trackPieceIndex: 12
     xScale: 1
-    gridlocation: 1018
-  - position: {x: -100, y: 0, z: -180}
-    rotation: {x: 0, y: 1, z: 0, w: 0}
-    trackPiece: {fileID: 3749085050509145281, guid: 555e7b0ee0d15034caa7ab79b8be1081, type: 3}
-    xScale: 1
-    gridlocation: 1017
-  - position: {x: -120, y: 0, z: -180}
+    gridlocation: 1878
+  - position: {x: 240, y: 0, z: 60}
+    rotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+    trackPieceIndex: 13
+    xScale: -1
+    gridlocation: 1879
+  - position: {x: 180, y: 0, z: 100}
     rotation: {x: 0, y: 0, z: 0, w: 1}
-    trackPiece: {fileID: 5634827069025667634, guid: 5fed5ce7021de5d4489814b12d2f682b, type: 3}
+    trackPieceIndex: 11
     xScale: 1
-    gridlocation: 967
-  - position: {x: -160, y: 0, z: -180}
+    gridlocation: 1731
+  - position: {x: 160, y: 0, z: 100}
     rotation: {x: 0, y: 1, z: 0, w: 0}
-    trackPiece: {fileID: 4604442246332445032, guid: 2bb7737759739e348a8f3d0e4e7cd0b7, type: 3}
+    trackPieceIndex: 2
     xScale: 1
-    gridlocation: 867
-  - position: {x: -160, y: 0, z: -120}
+    gridlocation: 1681
+  - position: {x: 140, y: 0, z: 100}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    trackPieceIndex: 3
+    xScale: 1
+    gridlocation: 1631
+  - position: {x: 120, y: 0, z: 100}
+    rotation: {x: 0, y: 1, z: 0, w: 0}
+    trackPieceIndex: 8
+    xScale: 1
+    gridlocation: 1581
+  - position: {x: 100, y: 6, z: 100}
+    rotation: {x: 0, y: 1, z: 0, w: 0}
+    trackPieceIndex: 10
+    xScale: 1
+    gridlocation: 4031
+  - position: {x: 80, y: 12, z: 100}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    trackPieceIndex: 9
+    xScale: 1
+    gridlocation: 6481
+  - position: {x: 40, y: 12, z: 100}
     rotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-    trackPiece: {fileID: 4604442246332445032, guid: 2bb7737759739e348a8f3d0e4e7cd0b7, type: 3}
+    trackPieceIndex: 5
     xScale: 1
-    gridlocation: 870
-  - position: {x: -120, y: 0, z: -120}
-    rotation: {x: 0, y: 0, z: 0, w: 1}
-    trackPiece: {fileID: 5634827069025667634, guid: 5fed5ce7021de5d4489814b12d2f682b, type: 3}
+    gridlocation: 6381
+  - position: {x: 40, y: 12, z: 40}
+    rotation: {x: 0, y: 1, z: 0, w: 0}
+    trackPieceIndex: 5
     xScale: 1
-    gridlocation: 970
-  - position: {x: -100, y: 0, z: -120}
-    rotation: {x: 0, y: 0, z: 0, w: 1}
-    trackPiece: {fileID: 5634827069025667634, guid: 5fed5ce7021de5d4489814b12d2f682b, type: 3}
-    xScale: 1
-    gridlocation: 1020
-  - position: {x: -80, y: 0, z: -120}
-    rotation: {x: 0, y: 0, z: 0, w: 1}
-    trackPiece: {fileID: 5634827069025667634, guid: 5fed5ce7021de5d4489814b12d2f682b, type: 3}
-    xScale: 1
-    gridlocation: 1070
-  - position: {x: -60, y: 0, z: -120}
-    rotation: {x: 0, y: 0, z: 0, w: 1}
-    trackPiece: {fileID: 5634827069025667634, guid: 5fed5ce7021de5d4489814b12d2f682b, type: 3}
-    xScale: 1
-    gridlocation: 1120
-  - position: {x: 0, y: 0, z: -80}
+    gridlocation: 6378
+  - position: {x: 80, y: 12, z: 40}
+    rotation: {x: 0, y: 1, z: 0, w: 0}
+    trackPieceIndex: 6
+    xScale: -1
+    gridlocation: 6478
+  - position: {x: 120, y: 12, z: 100}
     rotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-    trackPiece: {fileID: 6914888233837508229, guid: 071d7abbb6e030b43a94bcfd1aa45731, type: 3}
+    trackPieceIndex: 6
+    xScale: -1
+    gridlocation: 6581
+  - position: {x: 60, y: 12, z: 140}
+    rotation: {x: 0, y: 1, z: 0, w: 0}
+    trackPieceIndex: 9
     xScale: 1
-    gridlocation: 1272
-  - position: {x: 0, y: 0, z: -60}
+    gridlocation: 6433
+  - position: {x: 40, y: 6, z: 140}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    trackPieceIndex: 8
+    xScale: 1
+    gridlocation: 3883
+  - position: {x: 0, y: 6, z: 140}
+    rotation: {x: 0, y: 1, z: 0, w: 0}
+    trackPieceIndex: 9
+    xScale: 1
+    gridlocation: 3783
+  - position: {x: -20, y: 0, z: 140}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    trackPieceIndex: 8
+    xScale: 1
+    gridlocation: 1233
+  - position: {x: -40, y: 0, z: 140}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    trackPieceIndex: 7
+    xScale: 1
+    gridlocation: 1183
+  - position: {x: -60, y: 0, z: 0}
+    rotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
+    trackPieceIndex: 5
+    xScale: 1
+    gridlocation: 1126
+  - position: {x: -120, y: 0, z: 60}
+    rotation: {x: 0, y: -1, z: 0, w: 0}
+    trackPieceIndex: 11
+    xScale: 1
+    gridlocation: 979
+  - position: {x: -180, y: 0, z: 100}
+    rotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
+    trackPieceIndex: 13
+    xScale: -1
+    gridlocation: 831
+  - position: {x: -140, y: 0, z: 160}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    trackPieceIndex: 13
+    xScale: -1
+    gridlocation: 934
+  - position: {x: -120, y: 0, z: 160}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    trackPieceIndex: 11
+    xScale: -1
+    gridlocation: 984
+  - position: {x: -80, y: 0, z: 60}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    trackPieceIndex: 5
+    xScale: 1
+    gridlocation: 1079
+  - position: {x: -80, y: 0, z: 0}
     rotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-    trackPiece: {fileID: 5634827069025667634, guid: 5fed5ce7021de5d4489814b12d2f682b, type: 3}
+    trackPieceIndex: 5
     xScale: 1
-    gridlocation: 1273
-  - position: {x: 0, y: 0, z: -40}
+    gridlocation: 1076
+  - position: {x: -140, y: 0, z: 0}
+    rotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
+    trackPieceIndex: 5
+    xScale: 1
+    gridlocation: 926
+  - position: {x: -140, y: 0, z: -60}
+    rotation: {x: 0, y: 1, z: 0, w: 0}
+    trackPieceIndex: 5
+    xScale: 1
+    gridlocation: 923
+  - position: {x: -60, y: 0, z: -60}
     rotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-    trackPiece: {fileID: 5634827069025667634, guid: 5fed5ce7021de5d4489814b12d2f682b, type: 3}
+    trackPieceIndex: 5
     xScale: 1
-    gridlocation: 1274
-  - position: {x: -120, y: 12, z: 0}
+    gridlocation: 1123
+  - position: {x: -100, y: 0, z: -60}
     rotation: {x: 0, y: 0, z: 0, w: 1}
-    trackPiece: {fileID: 5634827069025667634, guid: 5fed5ce7021de5d4489814b12d2f682b, type: 3}
+    trackPieceIndex: 3
     xScale: 1
-    gridlocation: 5976
-  - position: {x: -80, y: 12, z: 0}
+    gridlocation: 1023
+  - position: {x: -100, y: 0, z: 160}
+    rotation: {x: 0, y: -1, z: 0, w: 0}
+    trackPieceIndex: 2
+    xScale: 1
+    gridlocation: 1034
+  - position: {x: 20, y: 6, z: 140}
     rotation: {x: 0, y: 0, z: 0, w: 1}
-    trackPiece: {fileID: 4604442246332445032, guid: 2bb7737759739e348a8f3d0e4e7cd0b7, type: 3}
+    trackPieceIndex: 3
     xScale: 1
-    gridlocation: 6076
-  - position: {x: -100, y: 12, z: 100}
-    rotation: {x: 0, y: 0, z: 0, w: 1}
-    trackPiece: {fileID: 6937163375105411035, guid: 3f516edd925b9a5498e34ce3a840df21, type: 3}
-    xScale: 1
-    gridlocation: 6031
+    gridlocation: 3833
   leaderboards:
   - racerName: 
     timeInSec: 0
@@ -250,6 +220,6 @@ MonoBehaviour:
     timeInSec: 0
   - racerName: 
     timeInSec: 0
-  numberOfLaps: 2
-  description: this is a test track
+  numberOfLaps: 3
+  description: Welcome to The Underdome, are you ready to test your racing skills?
   trackType: 0
