@@ -324,7 +324,7 @@ GameObject:
   - component: {fileID: 8365427316754659633}
   - component: {fileID: 1835763446898119017}
   - component: {fileID: 5127137919089231391}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: RailingSmallTurnSmall
   m_TagString: Untagged
   m_Icon: {fileID: 0}

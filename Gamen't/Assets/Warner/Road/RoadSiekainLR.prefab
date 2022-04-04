@@ -186,7 +186,7 @@ GameObject:
   - component: {fileID: 4995117040169085116}
   - component: {fileID: 6260389495382550647}
   - component: {fileID: 6795255516385681037}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: RailingSiekainRL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
