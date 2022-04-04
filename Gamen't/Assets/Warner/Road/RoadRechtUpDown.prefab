@@ -328,7 +328,7 @@ GameObject:
   - component: {fileID: 1340941912006998902}
   - component: {fileID: 7617118197760093043}
   - component: {fileID: 8954665268341999481}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: RailingUpDown
   m_TagString: Untagged
   m_Icon: {fileID: 0}

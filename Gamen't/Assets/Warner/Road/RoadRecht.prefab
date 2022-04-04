@@ -506,7 +506,7 @@ GameObject:
   - component: {fileID: 3137758622335708736}
   - component: {fileID: 4014458062588128955}
   - component: {fileID: 5428382278605467824}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: RailingRecht
   m_TagString: Wall
   m_Icon: {fileID: 0}
