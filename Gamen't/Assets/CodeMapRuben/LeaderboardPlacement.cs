@@ -78,5 +78,7 @@ public class LeaderboardPlacement : MonoBehaviour
     public void OnNextRacePressed()
     {
         trackInformation.nextNumberRace++;
+        playerLeaderBoardInformation.leaderboard.Clear();
+        SceneManager.LoadScene(3);
     }
 }

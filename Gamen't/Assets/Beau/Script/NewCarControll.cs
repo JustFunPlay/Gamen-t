@@ -46,7 +46,7 @@ public class NewCarControll : MonoBehaviour
 
     public Transform checkPoint;
     Vector3 addPosition;
-    int randomSpawner;
+    int randomResetSpawner;
 
     public Material[] mat;
 

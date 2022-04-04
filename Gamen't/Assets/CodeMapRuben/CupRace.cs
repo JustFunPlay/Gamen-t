@@ -60,7 +60,7 @@ public class CupRace : MonoBehaviour
         }
         counter = 0;
         cupRaceButton.interactable = false;
-        trackHolder.nextNumberRace = 1;
+        trackHolder.nextNumberRace = 0;
         trackHolder.raceCupBool = false;
     }
 }
