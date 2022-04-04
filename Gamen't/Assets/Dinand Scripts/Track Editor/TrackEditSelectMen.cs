@@ -26,7 +26,7 @@ public class TrackEditSelectMen : MonoBehaviour
     private void Awake()
     {
         allTracks.trackInfos.Clear();
-        string[] filesStrings = Directory.GetFiles(Application.dataPath + "/StreamingFiles/XML/");
+        string[] filesStrings = Directory.GetFiles(Application.dataPath + "/StreamingAssets/XML/");
         foreach (string fileString in filesStrings)
         {
             if (fileString.Contains(".xml") && !fileString.Contains("xml.meta"))
