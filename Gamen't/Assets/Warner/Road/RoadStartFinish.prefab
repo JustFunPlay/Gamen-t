@@ -1548,7 +1548,7 @@ GameObject:
   - component: {fileID: 7627681021564838085}
   - component: {fileID: 6933584768636577770}
   - component: {fileID: 2389739921586702778}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: RailingFinnhisline
   m_TagString: Untagged
   m_Icon: {fileID: 0}
