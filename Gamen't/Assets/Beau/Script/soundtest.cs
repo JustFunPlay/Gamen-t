@@ -9,13 +9,13 @@ public class SoundTest : MonoBehaviour
     public float minPitch;
     public float pitch;
     public NewCarControll newCarControll;
-    
+
 
 
 
     public void Update()
     {
-        pitch = newCarControll.speedRead/150;
+        pitch = newCarControll.speedRead/140;
 
 
         if (pitch < minPitch)
@@ -31,10 +31,6 @@ public class SoundTest : MonoBehaviour
             brrSounds.pitch = pitch;
         }
         
-        if(newCarControll.inputGasBrake.y < 0)
-        {
-            pitch = newCarControll.speedRead;
-        }
 
         
     }
