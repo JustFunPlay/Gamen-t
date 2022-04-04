@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0.99999905, b: 0.99999905, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2591,7 +2591,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gettingTrack: {fileID: 11400000, guid: 18e9f5ab584b66a4b968b0f09d46887c, type: 2}
   trackHolder: {fileID: 11400000, guid: 32ba84c6353187d4a94dfddb68e53bbc, type: 2}
-  raceCupBool: 0
   chooseTracksText: {fileID: 244639746}
   cupRaceButton: {fileID: 824078232}
   counter: 0
@@ -5038,6 +5037,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 478477435}
     m_Modifications:
+    - target: {fileID: 1165748994, guid: 8d5e6a99c2c5b964497015fc148c5939, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1124218403}
+    - target: {fileID: 1165748994, guid: 8d5e6a99c2c5b964497015fc148c5939, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: EnterRace
+      objectReference: {fileID: 0}
     - target: {fileID: 8658488063257510944, guid: 8d5e6a99c2c5b964497015fc148c5939, type: 3}
       propertyPath: m_IsActive
       value: 1
