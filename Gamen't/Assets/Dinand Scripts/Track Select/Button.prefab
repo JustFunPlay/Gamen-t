@@ -202,6 +202,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 3958058110102400054}
+        m_TargetAssemblyTypeName: ShowInfo, Assembly-CSharp
+        m_MethodName: OnSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 5134020956608100773}
         m_TargetAssemblyTypeName: TrackSelectButton, Assembly-CSharp
         m_MethodName: OnSelect
@@ -229,8 +241,6 @@ MonoBehaviour:
   infosTrack: {fileID: 0}
   trackEditSelection: {fileID: 0}
   baseTrack: 0
-  raceselectEventSystem: {fileID: 2127295639871011870, guid: afcc3038a5d91334fbca2b31f4c65310, type: 3}
-  buttonRace: {fileID: 8641347556042587670, guid: 8e5b45771363a9b448a3df62f1a7a823, type: 3}
 --- !u!114 &5134020956608100773
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -244,4 +254,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 0
-  infosTrack: {fileID: 8658488063614929499, guid: 8d5e6a99c2c5b964497015fc148c5939, type: 3}
