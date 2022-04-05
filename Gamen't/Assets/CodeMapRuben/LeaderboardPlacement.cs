@@ -34,6 +34,8 @@ public class LeaderboardPlacement : MonoBehaviour
         {
             leaderboardCharacters[i].SetActive(true);
             playerName[i].text = playerLeaderBoardInformation.leaderboard[i].racerName;
+            playerImages[i].sprite = trackInformation.playerSelections[i].carImage;
+            
             if (playerLeaderBoardInformation.leaderboard[i].timeInSec < 10)
             {
                 lapTime[i].text = "0:0" + playerLeaderBoardInformation.leaderboard[i].timeInSec.ToString("F2");

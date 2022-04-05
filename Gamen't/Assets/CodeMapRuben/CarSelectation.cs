@@ -93,7 +93,6 @@ public class CarSelectation : MonoBehaviour
     void OnSkinSpawn()
     {
         replaceSkinText.GetComponent<Text>().text = carInventory.Cars[carNumber].skins[skinNumber].skinsNamePlates;
-
         goingInCar = carTesting.transform.GetChild(0).transform.GetChild(1).gameObject;
         goingInCar.GetComponent<MeshRenderer>().materials = carInventory.Cars[carNumber].skins[skinNumber].materials;
 
@@ -113,7 +112,8 @@ public class CarSelectation : MonoBehaviour
         //int id = GetComponentInParent<PlayerID>().playerIdNumber;
         playerInformation.playerSelections[id].selectedCar = carInventory.Cars[carNumber].carSelectable;
         playerInformation.playerSelections[id].materials = carInventory.Cars[carNumber].skins[skinNumber].materials;
-        
+        playerInformation.playerSelections[id].carImage = carInventory.Cars[carNumber].carImage;
+
         print("How many fucks to give: " + id.ToString());
     }
 }
