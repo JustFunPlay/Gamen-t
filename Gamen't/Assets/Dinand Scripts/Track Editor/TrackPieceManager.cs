@@ -28,23 +28,26 @@ public class TrackPieceManager : EditorCamController
     }
     void OnRemoveTrack()
     {
-        for (int i = 0; i < toLoad.track.trackPieces.Count; i++)
+        if (worky)
         {
-            if (toLoad.track.trackPieces[i].gridlocation == currentNode.gridNodeValue)
+            for (int i = 0; i < toLoad.track.trackPieces.Count; i++)
             {
-                toLoad.track.trackPieces.RemoveAt(i);
+                if (toLoad.track.trackPieces[i].gridlocation == currentNode.gridNodeValue)
+                {
+                    toLoad.track.trackPieces.RemoveAt(i);
+                }
             }
-        }
-        if (currentNode.trackPiece)
-        {
-            Destroy(currentNode.trackPiece);
+            if (currentNode.trackPiece)
+            {
+                Destroy(currentNode.trackPiece);
+            }
         }
         updateTrackInformation.UpdateInfo();
         UpdateTrackInformation.isTested = false;
     }
     void OnRotateTrackRight()
     {
-        if (currentNode.trackPiece)
+        if (currentNode.trackPiece && worky)
         {
             currentNode.trackPiece.transform.Rotate(0, 90, 0);
             for (int i = 0; i < toLoad.track.trackPieces.Count; i++)
@@ -59,7 +62,7 @@ public class TrackPieceManager : EditorCamController
     }
     void OnRotateTrackLeft()
     {
-        if (currentNode.trackPiece)
+        if (currentNode.trackPiece && worky)
         {
             currentNode.trackPiece.transform.Rotate(0, -90, 0);
             for (int i = 0; i < toLoad.track.trackPieces.Count; i++)
@@ -75,7 +78,7 @@ public class TrackPieceManager : EditorCamController
     void OnFlipTrack()
     {
         print("ye");
-        if (currentNode.trackPiece)
+        if (currentNode.trackPiece && worky)
         {
             print("flip that shit");
             currentNode.trackPiece.transform.localScale = new Vector3(currentNode.trackPiece.transform.localScale.x * -1, currentNode.trackPiece.transform.localScale.y, currentNode.trackPiece.transform.localScale.z);

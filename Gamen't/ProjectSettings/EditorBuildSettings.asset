@@ -18,13 +18,16 @@ EditorBuildSettings:
     path: Assets/Scenes/Carselection.unity
     guid: bb60e4b77723be041b8511a1e16bba23
   - enabled: 1
-    path: Assets/Scenes/tracktestscene.unity
-    guid: 05931283f7a98664980c1f48301cd1da
+    path: Assets/Scenes/TrackRaceScene.unity
+    guid: e6fafed5dfff677479e83accd593507c
   - enabled: 1
     path: Assets/Scenes/Track Editor.unity
     guid: d0614e7b440a1734fbd3918f9de3c0cf
   - enabled: 1
     path: Assets/Scenes/LeaderBoardScene.unity
     guid: 05771ba953c39734e95fade936527c53
+  - enabled: 1
+    path: Assets/Scenes/tracktestscene.unity
+    guid: 05931283f7a98664980c1f48301cd1da
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 91855690ab204d249bc619f38e3fd9e3, type: 2}

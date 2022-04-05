@@ -7,7 +7,7 @@ public class TrackLoader : MonoBehaviour
     public TrackToLoad trackToLoad;
     public TrackPieceHolder pieceHolder;
     public bool isEditorScene;
-    void Start()
+    void Awake()
     {
         if (isEditorScene)
         {

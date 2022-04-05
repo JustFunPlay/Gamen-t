@@ -34,6 +34,7 @@ MonoBehaviour:
       - {fileID: 2100000, guid: caef475274a1c2841bf68f1d6799631f, type: 2}
       - {fileID: 2100000, guid: d9a17827dd2fd6d4f832617d72707ee2, type: 2}
       skinsNamePlates: Yellow Toyota
+    carImage: {fileID: 21300000, guid: 2f11a084182b64049ad3e9fb5e4cd66e, type: 3}
   - carSelectable: {fileID: 3347320449242237477, guid: 2df898bfdbc1d3c41b24c47b6b437a0c, type: 3}
     carNamePlates: Nissan GTR R34
     skins:
@@ -67,6 +68,7 @@ MonoBehaviour:
       - {fileID: 2100000, guid: 942f204701e808747a1dbae34f7ed4c5, type: 2}
       - {fileID: 2100000, guid: 2a00b9884d08da74a8c6f388eadcac8a, type: 2}
       skinsNamePlates: Red Nissan
+    carImage: {fileID: 21300000, guid: e792ad03043b2ef42a2f1849d100c7c7, type: 3}
   - carSelectable: {fileID: 8674515937845367320, guid: 0bbb25757e4e53740963b2e46fc3967e, type: 3}
     carNamePlates: Nissan 180sx
     skins:
@@ -75,4 +77,5 @@ MonoBehaviour:
       - {fileID: 2100000, guid: f4c9cb420d973cd4c8259c172056aceb, type: 2}
       - {fileID: 2100000, guid: 9a2db3669fef9ad42b357505ef863a44, type: 2}
       - {fileID: 2100000, guid: 93075adc94e79274eae6c2b69f055996, type: 2}
-      skinsNamePlates: Red Nissan
+      skinsNamePlates: Red Nissansx
+    carImage: {fileID: 21300000, guid: 01fbb26915deba841a8c402bc6009399, type: 3}

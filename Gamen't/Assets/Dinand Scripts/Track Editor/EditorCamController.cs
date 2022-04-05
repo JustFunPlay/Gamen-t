@@ -13,6 +13,7 @@ public class EditorCamController : MonoBehaviour
     public CreateGrid grid;
     public NodeInfo currentNode;
 
+    public bool worky = true;
     void OnMoveCam(InputValue moveValue)
     {
         moveVector = moveValue.Get<Vector2>();
@@ -39,21 +40,38 @@ public class EditorCamController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        transform.Rotate(0, -turnVector.x * turnSpeed, 0);
+        if (worky)
+        {
+            transform.Rotate(0, -turnVector.x * turnSpeed, 0);
+        }
         //transform.Translate(moveVector.x * moveSpeed, turnVector.y * heightSpeed, moveVector.y * moveSpeed);
     }
 
     void MoveInGrid()
     {
-        NodeInfo[] nodeInfos = FindObjectsOfType<NodeInfo>();
-        foreach (NodeInfo node in nodeInfos)
+        if (worky)
         {
-            if (node.gridLocation.x == currentNode.gridLocation.x + moveVector.x && node.gridLocation.y == currentNode.gridLocation.y + turnVector.y && node.gridLocation.z == currentNode.gridLocation.z + moveVector.y)
+            NodeInfo[] nodeInfos = FindObjectsOfType<NodeInfo>();
+            foreach (NodeInfo node in nodeInfos)
             {
-                currentNode = node;
-                break;
+                if (node.gridLocation.x == currentNode.gridLocation.x + moveVector.x && node.gridLocation.y == currentNode.gridLocation.y + turnVector.y && node.gridLocation.z == currentNode.gridLocation.z + moveVector.y)
+                {
+                    currentNode = node;
+                    break;
+                }
             }
+            transform.position = currentNode.transform.position;
         }
-        transform.position = currentNode.transform.position;
+    }
+    public void ToggleEditorControlls()
+    {
+        if (worky)
+        {
+            worky = false;
+        }
+        else
+        {
+            worky = true;
+        }
     }
 }

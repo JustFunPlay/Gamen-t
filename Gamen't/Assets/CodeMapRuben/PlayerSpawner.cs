@@ -33,7 +33,6 @@ public class PlayerSpawner : MonoBehaviour
             }
             trackLoader.track = playerInfos.trackInfo[playerInfos.nextNumberRace];
         }
-        PlayerSpawn();
     }
 
     public void PlayerSpawn()
@@ -45,7 +44,7 @@ public class PlayerSpawner : MonoBehaviour
                 GameObject newplayer = Instantiate(playerInfos.playerSelections[i].selectedCar, playerSpawning[i].position, playerSpawning[i].rotation);
                 listOfPlayers.Add(newplayer);
                 newplayer.transform.GetChild(0).GetComponent<PlayerID>().playerIdNumber = i;
-                newplayer.transform.GetChild(0).GetComponent<PlayerID>().playerName = playerInfos.playerSelections[i].name.text;
+                newplayer.transform.GetChild(0).GetComponent<PlayerID>().playerName = playerInfos.playerSelections[i].name;
                 
                 if(playerInfos.raceCupBool == true)
                 {
