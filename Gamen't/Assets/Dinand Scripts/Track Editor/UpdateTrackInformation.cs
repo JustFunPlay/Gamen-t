@@ -19,7 +19,6 @@ public class UpdateTrackInformation : MonoBehaviour
         CheckForCircuit();
         trackNameText.text = track.track.trackName;
         descriptionText.text = track.track.description;
-        isTested = true;
     }
 
     public void UpdateInfo()

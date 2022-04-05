@@ -11,6 +11,7 @@ public class TestRace : MonoBehaviour
     bool raceHasStarted;
     private void Start()
     {
+        FindObjectOfType<PlayerSpawner>().PlayerSpawn();
         StartCoroutine(Go());
     }
     IEnumerator Go()

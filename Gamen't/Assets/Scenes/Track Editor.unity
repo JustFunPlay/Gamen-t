@@ -141,7 +141,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &61525918
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -236,7 +236,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &164299301
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -388,7 +388,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &378408872
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -473,6 +473,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 333204798164956382, guid: 4445e425172462342a2dd377d080b42f, type: 3}
+      propertyPath: pieceManager
+      value: 
+      objectReference: {fileID: 1856778944}
+    - target: {fileID: 572221786674852622, guid: 4445e425172462342a2dd377d080b42f, type: 3}
       propertyPath: pieceManager
       value: 
       objectReference: {fileID: 1856778944}
@@ -564,6 +568,10 @@ PrefabInstance:
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 2493967002078470267, guid: 4445e425172462342a2dd377d080b42f, type: 3}
+      propertyPath: pieceManager
+      value: 
+      objectReference: {fileID: 1856778944}
     - target: {fileID: 2497526433932055411, guid: 4445e425172462342a2dd377d080b42f, type: 3}
       propertyPath: pieceManager
       value: 
@@ -828,6 +836,10 @@ PrefabInstance:
       propertyPath: pieceManager
       value: 
       objectReference: {fileID: 1856778944}
+    - target: {fileID: 7612612935348085439, guid: 4445e425172462342a2dd377d080b42f, type: 3}
+      propertyPath: pieceManager
+      value: 
+      objectReference: {fileID: 1856778944}
     - target: {fileID: 7669380455828161282, guid: 4445e425172462342a2dd377d080b42f, type: 3}
       propertyPath: pieceManager
       value: 
@@ -1003,7 +1015,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &604394571
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1098,7 +1110,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!64 &630723384
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1310,7 +1322,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &1057391032
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1653,7 +1665,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &1731809784
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1810,7 +1822,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &1828747011
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1954,6 +1966,7 @@ MonoBehaviour:
   turnSpeed: 4
   grid: {fileID: 1088987399}
   currentNode: {fileID: 0}
+  worky: 1
   selectedTrackPieceIndex: 0
   pieceHolder: {fileID: 11400000, guid: 62d866ad7041afa45aa5ad87dbab5bf0, type: 2}
   toLoad: {fileID: 11400000, guid: 18e9f5ab584b66a4b968b0f09d46887c, type: 2}
@@ -2019,7 +2032,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &1961147613
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2114,7 +2127,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &2013155779
 BoxCollider:
   m_ObjectHideFlags: 0

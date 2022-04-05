@@ -1391,14 +1391,16 @@ MonoBehaviour:
     - {fileID: 0}
     - {fileID: 0}
     - {fileID: 0}
+    carImage: {fileID: 0}
   carSelection:
     name: {fileID: 0}
-    selectedCar: {fileID: 8785248514869269620, guid: d807a48cb8293c34784c9e42570e03df, type: 3}
+    selectedCar: {fileID: 5054810255372854759, guid: aad2591a48d145d42aba8b7f36b565d3, type: 3}
     materials:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
+    - {fileID: 2100000, guid: 907af39f83a6bc440b29bea0c9d905ff, type: 2}
+    - {fileID: 2100000, guid: cca709541e54c2d47a9fa7a08397c3c4, type: 2}
+    - {fileID: 2100000, guid: 98dbb5fc6045d5249b467d4602f8a209, type: 2}
+    - {fileID: 2100000, guid: 4ff1e8648b13b904198c4b54989e2328, type: 2}
+    carImage: {fileID: 0}
 --- !u!1 &1087922625
 GameObject:
   m_ObjectHideFlags: 0

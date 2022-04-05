@@ -20,12 +20,12 @@ public class PlayerInformation : ScriptableObject
 [System.Serializable]
 public class PlayerSelection
 {
-    public Text name;
+    public string name;
     public GameObject selectedCar;
     public Material[] materials = new Material[4];
     public Sprite carImage;
 
-    public PlayerSelection(Text name_, GameObject selectedCar_, Material[] materials_)
+    public PlayerSelection(string name_, GameObject selectedCar_, Material[] materials_)
     {
         this.name = name_;
         this.selectedCar = selectedCar_;
