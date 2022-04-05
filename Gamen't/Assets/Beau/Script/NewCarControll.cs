@@ -57,6 +57,8 @@ public class NewCarControll : MonoBehaviour
 
     public int NumberBack;
 
+    public static bool escMenuBool;
+
     private void Start()
     {
         mat = playerInformation.playerSelections[GetComponent<PlayerID>().playerIdNumber].materials;
@@ -99,19 +101,28 @@ public class NewCarControll : MonoBehaviour
 
         }
     }
+    // 1. je krijgt access als je op ESC drukt en een conditie op true of false staat. 2. 
     void OnESCmenu(InputValue value)
-    {  
-        escMenu.SetActive(true);
-        if(escMenu == true)
+    {
+        if (escMenuBool == false)
         {
-            Time.timeScale = 0f;
+            
+            escMenuBool = true;
+            escMenu.SetActive(true);
+            Time.timeScale = 0.0000001f;
+            
+            
         }
         else
         {
-            Time.timeScale = 1f;
+            if(escMenuBool == true)
+            {
+                escMenuBool = false;
+                escMenu.SetActive(false);
+                Time.timeScale = 1f;
+            }
+
         }
-      
-        
     }
     void OnHandbrake()
     {
