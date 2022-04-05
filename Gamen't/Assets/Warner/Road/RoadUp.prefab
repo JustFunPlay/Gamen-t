@@ -605,7 +605,7 @@ GameObject:
   - component: {fileID: 203065182241763864}
   - component: {fileID: 7495017089444920996}
   - component: {fileID: 3907864922426527376}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: RailingUp
   m_TagString: Untagged
   m_Icon: {fileID: 0}

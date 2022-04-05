@@ -46,7 +46,7 @@ public class NewCarControll : MonoBehaviour
 
     public Transform checkPoint;
     Vector3 addPosition;
-    int randomSpawner;
+    int randomResetSpawner;
 
     public Material[] mat;
 
@@ -55,12 +55,12 @@ public class NewCarControll : MonoBehaviour
     public TrailRenderer slipperyTrail0;
     public TrailRenderer slipperyTrail1;
 
-    
+    public int NumberBack;
 
     private void Start()
     {
         mat = playerInformation.playerSelections[GetComponent<PlayerID>().playerIdNumber].materials;
-        mat[2].DisableKeyword("_EMISSION");
+        mat[NumberBack].DisableKeyword("_EMISSION");
         rb = GetComponent<Rigidbody>();
         rb.centerOfMass = massCenter.localPosition;
 
@@ -188,7 +188,7 @@ public class NewCarControll : MonoBehaviour
                 if (inputGasBrake.y == -1)
                 {
                     
-                    mat[2].EnableKeyword("_EMISSION");
+                    mat[NumberBack].EnableKeyword("_EMISSION");
                     GetComponentInChildren<MeshRenderer>().materials = mat;
                     element.leftWheel.brakeTorque = brakeForce;
                     element.rightWheel.brakeTorque = brakeForce;
@@ -204,7 +204,7 @@ public class NewCarControll : MonoBehaviour
                 }
                 else
                 {
-                    mat[2].DisableKeyword("_EMISSION");
+                    mat[NumberBack].DisableKeyword("_EMISSION");
                 }
 
 

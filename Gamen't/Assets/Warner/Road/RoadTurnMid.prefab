@@ -506,7 +506,7 @@ GameObject:
   - component: {fileID: 6835909015525864917}
   - component: {fileID: 476108889635520983}
   - component: {fileID: 200278435068008163}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: RailingSmallTurnMid
   m_TagString: Untagged
   m_Icon: {fileID: 0}

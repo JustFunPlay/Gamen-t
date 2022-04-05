@@ -847,6 +847,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerLeaderBoardInformation: {fileID: 11400000, guid: 9bf2dce938d329f458b58eb8c3c8d197, type: 2}
+  trackInformation: {fileID: 11400000, guid: 32ba84c6353187d4a94dfddb68e53bbc, type: 2}
   lapTime:
   - {fileID: 1631844226259827502}
   - {fileID: 2065834674333183043}
@@ -867,6 +868,8 @@ MonoBehaviour:
   - {fileID: 6205621866503880282}
   - {fileID: 393492967850189895}
   - {fileID: 5171706233887774368}
+  restartButton: {fileID: 9194961665715833728}
+  restartNextText: {fileID: 6837649340238551357}
 --- !u!1 &1692758924092016536
 GameObject:
   m_ObjectHideFlags: 0
@@ -3624,7 +3627,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_SelectedColor: {r: 0.072496176, g: 1, b: 0, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -3646,12 +3649,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3273548863613139035}
         m_TargetAssemblyTypeName: LeaderboardPlacement, Assembly-CSharp
-        m_MethodName: OnResetLeaderboard
-        m_Mode: 3
+        m_MethodName: OnNextRacePressed
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 3
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0

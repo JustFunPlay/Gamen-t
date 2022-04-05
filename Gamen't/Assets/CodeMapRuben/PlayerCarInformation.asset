@@ -13,12 +13,13 @@ MonoBehaviour:
   m_Name: PlayerCarInformation
   m_EditorClassIdentifier: 
   voteNumber: 0000000000000000
+  raceCupBool: 1
   trackInfo:
   - {fileID: 11400000, guid: 760ec06a5df4f5b47b8cdbff067a672a, type: 2}
   - {fileID: 11400000, guid: fc877de9e2202d742b84b0a2c3d33c69, type: 2}
   - {fileID: 11400000, guid: 760ec06a5df4f5b47b8cdbff067a672a, type: 2}
-  nextNumberRace: 0
-  maximumRaces: 3
+  nextNumberRace: 1
+  maximumRaces: 2
   playerSelections:
   - name: {fileID: 0}
     selectedCar: {fileID: 5054810255372854759, guid: aad2591a48d145d42aba8b7f36b565d3, type: 3}
