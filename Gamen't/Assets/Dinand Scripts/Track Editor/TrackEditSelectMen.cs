@@ -41,6 +41,11 @@ public class TrackEditSelectMen : MonoBehaviour
             }
         }
     }
+    
+    public void DeleteTrack()
+    {
+        
+    }
 
     void Start()
     {
