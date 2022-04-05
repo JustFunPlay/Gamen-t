@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SoundTest : MonoBehaviour
+public class Sound : MonoBehaviour
 {
     public AudioSource brrSounds;
     public float maxPitch;
