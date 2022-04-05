@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 [CreateAssetMenu(fileName = "ScriptableCarInformation", menuName = "ScriptableCarInfo")]
 
@@ -18,6 +19,9 @@ public class CarSelection
 
     //carSkins
     public SkinSelection[] skins;
+
+    //carPhoto
+    public Image carImage;
 }
 [System.Serializable]
 public class SkinSelection

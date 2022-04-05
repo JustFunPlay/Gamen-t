@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 [CreateAssetMenu(fileName = "New Track Info", menuName = "ScriptableObjects/New Track Info")]
 public class TrackInfo : ScriptableObject
@@ -27,6 +28,8 @@ public class Leaderboard
 {
     public string racerName;
     public float timeInSec;
+    public Image carImage;
+
     
     public Leaderboard(string racerName_, float timeInSec_)
     {
@@ -38,6 +41,7 @@ public class Leaderboard
     {
         racerName = null;
         timeInSec = 0;
+        carImage = null;
     }
 }
 [System.Serializable]

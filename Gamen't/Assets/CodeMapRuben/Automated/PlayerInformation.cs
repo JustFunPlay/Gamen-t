@@ -23,6 +23,7 @@ public class PlayerSelection
     public Text name;
     public GameObject selectedCar;
     public Material[] materials = new Material[4];
+    public Image carImage;
 
     public PlayerSelection(Text name_, GameObject selectedCar_, Material[] materials_)
     {

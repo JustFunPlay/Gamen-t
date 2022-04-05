@@ -97,20 +97,13 @@ public class CarSelectation : MonoBehaviour
         goingInCar = carTesting.transform.GetChild(0).transform.GetChild(1).gameObject;
         goingInCar.GetComponent<MeshRenderer>().materials = carInventory.Cars[carNumber].skins[skinNumber].materials;
 
-
-        //goingInCar.GetComponent<MeshRenderer>().materials[0] = carInventory.Cars[carNumber].skins[skinNumber].skinMaterial0;
-        //goingInCar.GetComponent<MeshRenderer>().materials[1] = carInventory.Cars[carNumber].skins[skinNumber].skinMaterial1;
-        //goingInCar.GetComponent<MeshRenderer>().materials[2] = carInventory.Cars[carNumber].skins[skinNumber].skinMaterial2;
-        //goingInCar.GetComponent<MeshRenderer>().materials[3] = carInventory.Cars[carNumber].skins[skinNumber].skinMaterial3;
-
-
         Selection();
     }
 
     void Selection()
     {
         playerInformation.playerSelections[id].name = playerName;
-        //int id = GetComponentInParent<PlayerID>().playerIdNumber;
+        playerInformation.playerSelections[id].carImage = carInventory.Cars[carNumber].carImage;
         playerInformation.playerSelections[id].selectedCar = carInventory.Cars[carNumber].carSelectable;
         playerInformation.playerSelections[id].materials = carInventory.Cars[carNumber].skins[skinNumber].materials;
         
