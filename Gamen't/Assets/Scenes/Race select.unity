@@ -5044,6 +5044,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: EnterRace
       objectReference: {fileID: 0}
+    - target: {fileID: 1310226123, guid: 8d5e6a99c2c5b964497015fc148c5939, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1124218403}
+    - target: {fileID: 1310226123, guid: 8d5e6a99c2c5b964497015fc148c5939, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: EnterEditor
+      objectReference: {fileID: 0}
     - target: {fileID: 8658488063257510944, guid: 8d5e6a99c2c5b964497015fc148c5939, type: 3}
       propertyPath: m_IsActive
       value: 1
