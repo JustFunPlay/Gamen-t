@@ -327,7 +327,7 @@
                     "path": "<Gamepad>/select",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Gamepad",
+                    "groups": "",
                     "action": "ESCmenu",
                     "isComposite": false,
                     "isPartOfComposite": false
