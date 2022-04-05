@@ -22,7 +22,7 @@ public class CarGroundHit : MonoBehaviour
                 a.SendEvent("OnSpark");
                 Debug.Log(other + "hitt");
             }
-            
+            //update
         }
         EnableAirTime = false;
     }
