@@ -5,17 +5,17 @@ using UnityEngine;
 public class SoundTest : MonoBehaviour
 {
     public AudioSource brrSounds;
-    public float maxPitch ;
+    public float maxPitch;
     public float minPitch;
     public float pitch;
     public NewCarControll newCarControll;
-    
+
 
 
 
     public void Update()
     {
-        pitch = newCarControll.speedRead/150;
+        pitch = newCarControll.speedRead / 150;
 
 
         if (pitch < minPitch)
@@ -30,12 +30,12 @@ public class SoundTest : MonoBehaviour
         {
             brrSounds.pitch = pitch;
         }
-        
-        if(newCarControll.inputGasBrake.y < 0)
+
+        if (newCarControll.inputGasBrake.y < 0)
         {
             pitch = newCarControll.speedRead;
         }
 
-        
+
     }
 }
