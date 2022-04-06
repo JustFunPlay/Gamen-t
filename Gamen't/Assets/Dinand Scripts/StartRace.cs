@@ -12,6 +12,7 @@ public class StartRace : MonoBehaviour
 
     void Start()
     {
+        FindObjectOfType<PlayerSpawner>().PlayerSpawn();
         StartCoroutine(CountdownToStart());
     }
 

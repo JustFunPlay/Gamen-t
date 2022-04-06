@@ -33,7 +33,7 @@ public class TrackEditSelectMen : MonoBehaviour
             {
                 XmlSerializer serializer = new XmlSerializer(typeof(TrackInfo));
                 FileStream stream = new FileStream(fileString, FileMode.Open);
-                TrackInfo newTrack = TrackInfo.CreateInstance<TrackInfo>();
+                TrackInfo newTrack = ScriptableObject.CreateInstance<TrackInfo>();
                 newTrack = serializer.Deserialize(stream) as TrackInfo;
                 allTracks.trackInfos.Add(newTrack);
                 stream.Close();
@@ -41,17 +41,26 @@ public class TrackEditSelectMen : MonoBehaviour
             }
         }
     }
+    
+    public void DeleteTrack()
+    {
+        
+    }
 
     void Start()
     {
-
+        UpdateTrackInformation.isTested = true;
+        trackInfo.description = null;
+        trackInfo.numberOfLaps = 3;
+        trackInfo.trackName = "New Track";
+        trackInfo.trackPieces.Clear();
         UpdateTrackList();
     }
 
     public void NewTrack()
     {
         //trackToLoad.track = new TrackInfo(ScriptableObject.CreateInstance<TrackInfo>());
-        trackToLoad.track = TrackInfo.CreateInstance<TrackInfo>();
+        trackToLoad.track = trackInfo;
         trackToLoad.track.trackName = "New Track";
         SceneManager.LoadScene(4);
     }

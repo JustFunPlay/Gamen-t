@@ -368,7 +368,7 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1124218404}
         m_TargetAssemblyTypeName: CupRace, Assembly-CSharp
         m_MethodName: OnBoolActivate
         m_Mode: 1
@@ -1368,7 +1368,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1124218404}
         m_TargetAssemblyTypeName: CupRace, Assembly-CSharp
         m_MethodName: OnSelected
         m_Mode: 1
@@ -2411,6 +2411,7 @@ GameObject:
   - component: {fileID: 1124218400}
   - component: {fileID: 1124218399}
   - component: {fileID: 1124218403}
+  - component: {fileID: 1124218404}
   m_Layer: 5
   m_Name: RaceSelect
   m_TagString: Untagged
@@ -2576,6 +2577,22 @@ MonoBehaviour:
   - {fileID: 2144584118}
   - {fileID: 1815703298}
   buttonPrefab: {fileID: 3387256380337226049, guid: 9c1117a5cdf436a4d9979643a97af774, type: 3}
+--- !u!114 &1124218404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1124218398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc2d20619d63cdf48adb02513cf48f86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gettingTrack: {fileID: 11400000, guid: 18e9f5ab584b66a4b968b0f09d46887c, type: 2}
+  trackHolder: {fileID: 11400000, guid: 32ba84c6353187d4a94dfddb68e53bbc, type: 2}
+  chooseTracksText: {fileID: 244639746}
+  cupRaceButton: {fileID: 824078232}
 --- !u!1 &1133525518
 GameObject:
   m_ObjectHideFlags: 0
@@ -3041,7 +3058,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1124218404}
         m_TargetAssemblyTypeName: CupRace, Assembly-CSharp
         m_MethodName: OnSelected
         m_Mode: 1
@@ -4137,7 +4154,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1124218404}
         m_TargetAssemblyTypeName: CupRace, Assembly-CSharp
         m_MethodName: OnSelected
         m_Mode: 1
@@ -5031,6 +5048,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1124218403}
+    - target: {fileID: 1310226123, guid: 8d5e6a99c2c5b964497015fc148c5939, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: EnterEditor
+      objectReference: {fileID: 0}
     - target: {fileID: 8658488063257510944, guid: 8d5e6a99c2c5b964497015fc148c5939, type: 3}
       propertyPath: m_IsActive
       value: 1
