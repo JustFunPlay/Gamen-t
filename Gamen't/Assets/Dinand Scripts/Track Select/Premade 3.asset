@@ -13,7 +13,482 @@ MonoBehaviour:
   m_Name: Premade 3
   m_EditorClassIdentifier: 
   trackName: premade 3 wip
-  trackPieces: []
+  trackPieces:
+  - position: {x: 0, y: 0, z: -420}
+    rotation: {x: 0, y: 0.7071068, z: 0, w: -0.7071068}
+    trackPieceIndex: 0
+    isAlternate: 0
+    gridlocation: 1255
+  - position: {x: 0, y: 0, z: -400}
+    rotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+    trackPieceIndex: 2
+    isAlternate: 0
+    gridlocation: 1256
+  - position: {x: 0, y: 0, z: -380}
+    rotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+    trackPieceIndex: 2
+    isAlternate: 0
+    gridlocation: 1257
+  - position: {x: 0, y: 0, z: -360}
+    rotation: {x: 0, y: 0.7071068, z: 0, w: -0.7071068}
+    trackPieceIndex: 6
+    isAlternate: 1
+    gridlocation: 1258
+  - position: {x: -60, y: 0, z: -320}
+    rotation: {x: 0, y: 1, z: 0, w: 0}
+    trackPieceIndex: 6
+    isAlternate: 0
+    gridlocation: 1110
+  - position: {x: -100, y: 0, z: -260}
+    rotation: {x: 0, y: 0.7071068, z: 0, w: -0.7071068}
+    trackPieceIndex: 8
+    isAlternate: 0
+    gridlocation: 1013
+  - position: {x: -100, y: 6, z: -240}
+    rotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+    trackPieceIndex: 8
+    isAlternate: 1
+    gridlocation: 3514
+  - position: {x: -100, y: 6, z: -220}
+    rotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+    trackPieceIndex: 2
+    isAlternate: 0
+    gridlocation: 3515
+  - position: {x: -100, y: 6, z: -200}
+    rotation: {x: 0, y: 0.7071068, z: 0, w: -0.7071068}
+    trackPieceIndex: 8
+    isAlternate: 1
+    gridlocation: 3516
+  - position: {x: -100, y: 0, z: -180}
+    rotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+    trackPieceIndex: 8
+    isAlternate: 0
+    gridlocation: 1017
+  - position: {x: -100, y: 0, z: -160}
+    rotation: {x: 0, y: 0.7071068, z: 0, w: -0.7071068}
+    trackPieceIndex: 3
+    isAlternate: 0
+    gridlocation: 1018
+  - position: {x: -100, y: 0, z: -140}
+    rotation: {x: 0, y: 0.7071068, z: 0, w: -0.7071068}
+    trackPieceIndex: 6
+    isAlternate: 0
+    gridlocation: 1019
+  - position: {x: -40, y: 0, z: -100}
+    rotation: {x: 0, y: 1, z: 0, w: 0}
+    trackPieceIndex: 7
+    isAlternate: 0
+    gridlocation: 1171
+  - position: {x: 20, y: 0, z: -120}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    trackPieceIndex: 10
+    isAlternate: 0
+    gridlocation: 1320
+  - position: {x: 40, y: 0, z: -120}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    trackPieceIndex: 12
+    isAlternate: 0
+    gridlocation: 1370
+  - position: {x: 80, y: 0, z: -180}
+    rotation: {x: 0, y: -0.7071068, z: 0, w: -0.7071068}
+    trackPieceIndex: 11
+    isAlternate: 0
+    gridlocation: 1467
+  - position: {x: 80, y: 0, z: -200}
+    rotation: {x: 0, y: 0.7071068, z: 0, w: -0.7071068}
+    trackPieceIndex: 10
+    isAlternate: 1
+    gridlocation: 1466
+  - position: {x: 80, y: 0, z: -280}
+    rotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+    trackPieceIndex: 3
+    isAlternate: 0
+    gridlocation: 1462
+  - position: {x: 80, y: 0, z: -320}
+    rotation: {x: 0, y: 1, z: 0, w: 0}
+    trackPieceIndex: 5
+    isAlternate: 0
+    gridlocation: 1460
+  - position: {x: 120, y: 0, z: -320}
+    rotation: {x: 0, y: 0, z: 0, w: -1}
+    trackPieceIndex: 2
+    isAlternate: 0
+    gridlocation: 1560
+  - position: {x: 140, y: 0, z: -320}
+    rotation: {x: 0, y: 0, z: 0, w: -1}
+    trackPieceIndex: 2
+    isAlternate: 0
+    gridlocation: 1610
+  - position: {x: 160, y: 0, z: -320}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    trackPieceIndex: 2
+    isAlternate: 0
+    gridlocation: 1660
+  - position: {x: 200, y: 0, z: -320}
+    rotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+    trackPieceIndex: 5
+    isAlternate: 0
+    gridlocation: 1760
+  - position: {x: 200, y: 0, z: -280}
+    rotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+    trackPieceIndex: 7
+    isAlternate: 1
+    gridlocation: 1762
+  - position: {x: 180, y: 0, z: -220}
+    rotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+    trackPieceIndex: 2
+    isAlternate: 0
+    gridlocation: 1715
+  - position: {x: 180, y: 0, z: -200}
+    rotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+    trackPieceIndex: 7
+    isAlternate: 0
+    gridlocation: 1716
+  - position: {x: 200, y: 0, z: -140}
+    rotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+    trackPieceIndex: 2
+    isAlternate: 0
+    gridlocation: 1769
+  - position: {x: 200, y: 0, z: -120}
+    rotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+    trackPieceIndex: 7
+    isAlternate: 1
+    gridlocation: 1770
+  - position: {x: 180, y: 0, z: -40}
+    rotation: {x: 0, y: 0, z: 0, w: -1}
+    trackPieceIndex: 5
+    isAlternate: 0
+    gridlocation: 1724
+  - position: {x: 140, y: 0, z: -40}
+    rotation: {x: 0, y: 1, z: 0, w: 0}
+    trackPieceIndex: 3
+    isAlternate: 0
+    gridlocation: 1624
+  - position: {x: 120, y: 0, z: -40}
+    rotation: {x: 0, y: 0.7071068, z: 0, w: -0.7071068}
+    trackPieceIndex: 4
+    isAlternate: 0
+    gridlocation: 1574
+  - position: {x: 120, y: 0, z: -20}
+    rotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+    trackPieceIndex: 2
+    isAlternate: 0
+    gridlocation: 1575
+  - position: {x: 120, y: 0, z: 60}
+    rotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+    trackPieceIndex: 8
+    isAlternate: 0
+    gridlocation: 1579
+  - position: {x: 120, y: 0, z: 80}
+    rotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+    trackPieceIndex: 2
+    isAlternate: 0
+    gridlocation: 1580
+  - position: {x: 120, y: 0, z: 120}
+    rotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+    trackPieceIndex: 2
+    isAlternate: 0
+    gridlocation: 1582
+  - position: {x: 120, y: 0, z: 100}
+    rotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
+    trackPieceIndex: 3
+    isAlternate: 0
+    gridlocation: 1581
+  - position: {x: 120, y: 0, z: 140}
+    rotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+    trackPieceIndex: 2
+    isAlternate: 0
+    gridlocation: 1583
+  - position: {x: 120, y: 0, z: 160}
+    rotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+    trackPieceIndex: 2
+    isAlternate: 0
+    gridlocation: 1584
+  - position: {x: 120, y: 0, z: 180}
+    rotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+    trackPieceIndex: 2
+    isAlternate: 0
+    gridlocation: 1585
+  - position: {x: 120, y: 0, z: 200}
+    rotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+    trackPieceIndex: 2
+    isAlternate: 0
+    gridlocation: 1586
+  - position: {x: 120, y: 0, z: 220}
+    rotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+    trackPieceIndex: 2
+    isAlternate: 0
+    gridlocation: 1587
+  - position: {x: 120, y: 0, z: 240}
+    rotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+    trackPieceIndex: 2
+    isAlternate: 0
+    gridlocation: 1588
+  - position: {x: 120, y: 0, z: 260}
+    rotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+    trackPieceIndex: 2
+    isAlternate: 0
+    gridlocation: 1589
+  - position: {x: 120, y: 0, z: 280}
+    rotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+    trackPieceIndex: 2
+    isAlternate: 0
+    gridlocation: 1590
+  - position: {x: 120, y: 0, z: 300}
+    rotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+    trackPieceIndex: 2
+    isAlternate: 0
+    gridlocation: 1591
+  - position: {x: 120, y: 0, z: 320}
+    rotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+    trackPieceIndex: 2
+    isAlternate: 0
+    gridlocation: 1592
+  - position: {x: 120, y: 0, z: 340}
+    rotation: {x: 0, y: 0.7071068, z: 0, w: -0.7071068}
+    trackPieceIndex: 3
+    isAlternate: 0
+    gridlocation: 1593
+  - position: {x: 120, y: 0, z: 360}
+    rotation: {x: 0, y: 0.7071068, z: 0, w: -0.7071068}
+    trackPieceIndex: 10
+    isAlternate: 1
+    gridlocation: 1594
+  - position: {x: 120, y: 0, z: 380}
+    rotation: {x: 0, y: 0.7071068, z: 0, w: -0.7071068}
+    trackPieceIndex: 12
+    isAlternate: 1
+    gridlocation: 1595
+  - position: {x: 60, y: 0, z: 420}
+    rotation: {x: 0, y: -1, z: 0, w: 0}
+    trackPieceIndex: 12
+    isAlternate: 1
+    gridlocation: 1447
+  - position: {x: 20, y: 0, z: 360}
+    rotation: {x: 0, y: 0.7071068, z: 0, w: -0.7071068}
+    trackPieceIndex: 11
+    isAlternate: 0
+    gridlocation: 1344
+  - position: {x: 20, y: 0, z: 340}
+    rotation: {x: 0, y: 0.7071068, z: 0, w: -0.7071068}
+    trackPieceIndex: 10
+    isAlternate: 0
+    gridlocation: 1343
+  - position: {x: 20, y: 0, z: 320}
+    rotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+    trackPieceIndex: 2
+    isAlternate: 0
+    gridlocation: 1342
+  - position: {x: 20, y: 0, z: 300}
+    rotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+    trackPieceIndex: 10
+    isAlternate: 0
+    gridlocation: 1341
+  - position: {x: 20, y: 0, z: 280}
+    rotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+    trackPieceIndex: 11
+    isAlternate: 0
+    gridlocation: 1340
+  - position: {x: 20, y: 0, z: 260}
+    rotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+    trackPieceIndex: 12
+    isAlternate: 0
+    gridlocation: 1339
+  - position: {x: -40, y: 0, z: 220}
+    rotation: {x: 0, y: 0, z: 0, w: -1}
+    trackPieceIndex: 10
+    isAlternate: 1
+    gridlocation: 1187
+  - position: {x: -60, y: 0, z: 220}
+    rotation: {x: 0, y: 1, z: 0, w: 0}
+    trackPieceIndex: 3
+    isAlternate: 0
+    gridlocation: 1137
+  - position: {x: -80, y: 0, z: 220}
+    rotation: {x: 0, y: 1, z: 0, w: 0}
+    trackPieceIndex: 2
+    isAlternate: 0
+    gridlocation: 1087
+  - position: {x: -100, y: 0, z: 220}
+    rotation: {x: 0, y: 1, z: 0, w: 0}
+    trackPieceIndex: 8
+    isAlternate: 0
+    gridlocation: 1037
+  - position: {x: -120, y: 6, z: 220}
+    rotation: {x: 0, y: 1, z: 0, w: 0}
+    trackPieceIndex: 9
+    isAlternate: 0
+    gridlocation: 3487
+  - position: {x: -180, y: 6, z: 220}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    trackPieceIndex: 9
+    isAlternate: 0
+    gridlocation: 3337
+  - position: {x: -200, y: 0, z: 220}
+    rotation: {x: 0, y: 0, z: 0, w: -1}
+    trackPieceIndex: 8
+    isAlternate: 0
+    gridlocation: 787
+  - position: {x: -220, y: 0, z: 220}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    trackPieceIndex: 2
+    isAlternate: 0
+    gridlocation: 737
+  - position: {x: -240, y: 0, z: 220}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    trackPieceIndex: 2
+    isAlternate: 0
+    gridlocation: 687
+  - position: {x: -260, y: 0, z: 220}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    trackPieceIndex: 2
+    isAlternate: 0
+    gridlocation: 637
+  - position: {x: -280, y: 0, z: 220}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    trackPieceIndex: 2
+    isAlternate: 0
+    gridlocation: 587
+  - position: {x: -300, y: 0, z: 220}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    trackPieceIndex: 2
+    isAlternate: 0
+    gridlocation: 537
+  - position: {x: -320, y: 0, z: 220}
+    rotation: {x: 0, y: 1, z: 0, w: 0}
+    trackPieceIndex: 6
+    isAlternate: 1
+    gridlocation: 487
+  - position: {x: -360, y: 0, z: 160}
+    rotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+    trackPieceIndex: 2
+    isAlternate: 0
+    gridlocation: 384
+  - position: {x: -360, y: 0, z: 140}
+    rotation: {x: 0, y: 0.7071068, z: 0, w: -0.7071068}
+    trackPieceIndex: 7
+    isAlternate: 0
+    gridlocation: 383
+  - position: {x: -380, y: 0, z: 60}
+    rotation: {x: 0, y: 1, z: 0, w: 0}
+    trackPieceIndex: 5
+    isAlternate: 0
+    gridlocation: 329
+  - position: {x: -340, y: 0, z: 60}
+    rotation: {x: 0, y: 1, z: 0, w: 0}
+    trackPieceIndex: 7
+    isAlternate: 1
+    gridlocation: 429
+  - position: {x: -280, y: 0, z: 80}
+    rotation: {x: 0, y: 0, z: 0, w: -1}
+    trackPieceIndex: 3
+    isAlternate: 0
+    gridlocation: 580
+  - position: {x: -260, y: 0, z: 80}
+    rotation: {x: 0, y: 1, z: 0, w: 0}
+    trackPieceIndex: 2
+    isAlternate: 0
+    gridlocation: 630
+  - position: {x: -240, y: 0, z: 80}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    trackPieceIndex: 10
+    isAlternate: 0
+    gridlocation: 680
+  - position: {x: -220, y: 0, z: 80}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    trackPieceIndex: 12
+    isAlternate: 0
+    gridlocation: 730
+  - position: {x: -180, y: 0, z: 20}
+    rotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+    trackPieceIndex: 12
+    isAlternate: 0
+    gridlocation: 827
+  - position: {x: -240, y: 0, z: -20}
+    rotation: {x: 0, y: 1, z: 0, w: 0}
+    trackPieceIndex: 11
+    isAlternate: 0
+    gridlocation: 675
+  - position: {x: -260, y: 0, z: -20}
+    rotation: {x: 0, y: 0, z: 0, w: -1}
+    trackPieceIndex: 10
+    isAlternate: 1
+    gridlocation: 625
+  - position: {x: -280, y: 0, z: -20}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    trackPieceIndex: 2
+    isAlternate: 0
+    gridlocation: 575
+  - position: {x: -300, y: 0, z: -20}
+    rotation: {x: 0, y: 1, z: 0, w: 0}
+    trackPieceIndex: 6
+    isAlternate: 1
+    gridlocation: 525
+  - position: {x: -340, y: 0, z: -80}
+    rotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+    trackPieceIndex: 2
+    isAlternate: 0
+    gridlocation: 422
+  - position: {x: -340, y: 0, z: -100}
+    rotation: {x: 0, y: 0.7071068, z: 0, w: -0.7071068}
+    trackPieceIndex: 7
+    isAlternate: 0
+    gridlocation: 421
+  - position: {x: -360, y: 0, z: -160}
+    rotation: {x: 0, y: 0.7071068, z: 0, w: -0.7071068}
+    trackPieceIndex: 7
+    isAlternate: 1
+    gridlocation: 368
+  - position: {x: -340, y: 0, z: -220}
+    rotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+    trackPieceIndex: 2
+    isAlternate: 0
+    gridlocation: 415
+  - position: {x: -340, y: 0, z: -240}
+    rotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+    trackPieceIndex: 1
+    isAlternate: 0
+    gridlocation: 414
+  - position: {x: 80, y: 0, z: -260}
+    rotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+    trackPieceIndex: 2
+    isAlternate: 0
+    gridlocation: 1463
+  - position: {x: 80, y: 0, z: -240}
+    rotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+    trackPieceIndex: 2
+    isAlternate: 0
+    gridlocation: 1464
+  - position: {x: 80, y: 0, z: -220}
+    rotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+    trackPieceIndex: 2
+    isAlternate: 0
+    gridlocation: 1465
+  - position: {x: 120, y: 0, z: 0}
+    rotation: {x: 0, y: 0.7071068, z: 0, w: -0.7071068}
+    trackPieceIndex: 8
+    isAlternate: 0
+    gridlocation: 1576
+  - position: {x: 120, y: 6, z: 20}
+    rotation: {x: 0, y: -0.7071068, z: 0, w: -0.7071068}
+    trackPieceIndex: 8
+    isAlternate: 1
+    gridlocation: 4077
+  - position: {x: 120, y: 6, z: 40}
+    rotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
+    trackPieceIndex: 8
+    isAlternate: 1
+    gridlocation: 4078
+  - position: {x: -140, y: 12, z: 220}
+    rotation: {x: 0, y: 0, z: 0, w: -1}
+    trackPieceIndex: 8
+    isAlternate: 1
+    gridlocation: 5937
+  - position: {x: -160, y: 12, z: 220}
+    rotation: {x: 0, y: 1, z: 0, w: 0}
+    trackPieceIndex: 8
+    isAlternate: 1
+    gridlocation: 5887
   leaderboards:
   - racerName: 
     timeInSec: 0
@@ -25,6 +500,6 @@ MonoBehaviour:
     timeInSec: 0
   - racerName: 
     timeInSec: 0
-  numberOfLaps: 3
+  numberOfLaps: 1
   description: 
   trackType: 1
