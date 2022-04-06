@@ -77,5 +77,29 @@ MonoBehaviour:
       - {fileID: 2100000, guid: f4c9cb420d973cd4c8259c172056aceb, type: 2}
       - {fileID: 2100000, guid: 9a2db3669fef9ad42b357505ef863a44, type: 2}
       - {fileID: 2100000, guid: 93075adc94e79274eae6c2b69f055996, type: 2}
-      skinsNamePlates: Red Nissansx
+      skinsNamePlates: Agent SX
+    - materials:
+      - {fileID: 2100000, guid: 87d62a48664e9394e8b200f2f7a386b6, type: 2}
+      - {fileID: 2100000, guid: f2e94f984f8c1be4292071d8d03ddd09, type: 2}
+      - {fileID: 2100000, guid: 961654e8eeb13dd43b486f162fe21218, type: 2}
+      - {fileID: 2100000, guid: 27624a91eb6cc4a469c47c493b4a9987, type: 2}
+      skinsNamePlates: Red SX
+    - materials:
+      - {fileID: 2100000, guid: 57f4fcbf05072a7498eda7c27566c481, type: 2}
+      - {fileID: 2100000, guid: d628b91972962374a92c38bb46fc1240, type: 2}
+      - {fileID: 2100000, guid: 5e08a87bef2d3e047b3d6755414612ba, type: 2}
+      - {fileID: 2100000, guid: 21c151523ddf654448efaefd7e4800da, type: 2}
+      skinsNamePlates: Yellow SX
+    - materials:
+      - {fileID: 2100000, guid: c6e0f54c73b62174b90e98d1b23dcfab, type: 2}
+      - {fileID: 2100000, guid: ad03055c8421ca0409a2a46ee70b2fa7, type: 2}
+      - {fileID: 2100000, guid: 897de66427761b542af34abbd8aa2bc2, type: 2}
+      - {fileID: 2100000, guid: 1cbcf709f9519f94aa6357d9c5243bcd, type: 2}
+      skinsNamePlates: Militair SX
+    - materials:
+      - {fileID: 2100000, guid: d58b582547b2602468f6e4b8af4f46ee, type: 2}
+      - {fileID: 2100000, guid: c7592421273ea4441ac60400200bf7a6, type: 2}
+      - {fileID: 2100000, guid: 4af3bad19f34f294db2fcc0060fc3958, type: 2}
+      - {fileID: 2100000, guid: 372bab85c5b5eee49af8668275b44e46, type: 2}
+      skinsNamePlates: R/place SX
     carImage: {fileID: 21300000, guid: 01fbb26915deba841a8c402bc6009399, type: 3}

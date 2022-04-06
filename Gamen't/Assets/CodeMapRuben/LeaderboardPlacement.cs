@@ -21,18 +21,20 @@ public class LeaderboardPlacement : MonoBehaviour
     void Start()
     {
         //als er een Cup is dan gaat dit actief
-        if (trackInformation.raceCupBool == true)
-        {
-            restartNextText.text = "NextMap";
-        }
-        if (trackInformation.nextNumberRace == trackInformation.trackInfo.Length)
-        {
-            restartButton.SetActive(false);
-        }
+        //if (trackInformation.raceCupBool == true)
+        //{
+           // restartNextText.text = "NextMap";
+       // }
+       // if (trackInformation.nextNumberRace == trackInformation.trackInfo.Length)
+        //{
+          //  restartButton.SetActive(false);
+    //    }
 
         for (int i = 0; i < playerLeaderBoardInformation.leaderboard.Count; i++)
         {
+            
             leaderboardCharacters[i].SetActive(true);
+            
             playerName[i].text = playerLeaderBoardInformation.leaderboard[i].racerName;
             playerImages[i].sprite = trackInformation.playerSelections[i].carImage;
             
@@ -79,7 +81,7 @@ public class LeaderboardPlacement : MonoBehaviour
     }
     public void OnNextRacePressed()
     {
-        trackInformation.nextNumberRace++;
+        //trackInformation.nextNumberRace++;
         playerLeaderBoardInformation.leaderboard.Clear();
         SceneManager.LoadScene(3);
     }

@@ -186,6 +186,14 @@ PrefabInstance:
       propertyPath: m_LocalRotation.y
       value: 0.000000029802322
       objectReference: {fileID: 0}
+    - target: {fileID: 4543221668969201927, guid: 0bbb25757e4e53740963b2e46fc3967e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6010110533199598986, guid: 0bbb25757e4e53740963b2e46fc3967e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c695c399a5ae6774ebe9bfd1ab53181e, type: 2}
     - target: {fileID: 8674515937845367320, guid: 0bbb25757e4e53740963b2e46fc3967e, type: 3}
       propertyPath: m_Name
       value: Nissansx Player

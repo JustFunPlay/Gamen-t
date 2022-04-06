@@ -1122,6 +1122,7 @@ MonoBehaviour:
   listOfPlayers: []
   listOfCameras: []
   trackLoader: {fileID: 11400000, guid: 18e9f5ab584b66a4b968b0f09d46887c, type: 2}
+  escMenuPrefab: {fileID: 4132655056235530127, guid: 8565d690bcc67b845befa97161339492, type: 3}
 --- !u!114 &8835413031030623458
 MonoBehaviour:
   m_ObjectHideFlags: 0
