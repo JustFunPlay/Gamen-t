@@ -20,7 +20,7 @@ public class TrackPiece
     public Vector3 position;
     public Quaternion rotation;
     public int trackPieceIndex;
-    public float xScale;
+    public bool isAlternate;
     public int gridlocation;
 }
 [System.Serializable]
@@ -28,7 +28,6 @@ public class Leaderboard
 {
     public string racerName;
     public float timeInSec;
-    //public Image carImage;
     
     public Leaderboard(string racerName_, float timeInSec_)
     {

@@ -13,17 +13,29 @@ MonoBehaviour:
   m_Name: New TrackPieceHolder
   m_EditorClassIdentifier: 
   trackPieces:
-  - {fileID: 4479241163028207846, guid: 94153850104b4144d8fccbc9e7b1bfc6, type: 3}
-  - {fileID: 4479241163028207846, guid: 6ef93bc2ae3898244a4a9a205be92bed, type: 3}
-  - {fileID: 7192722575976943018, guid: fd90833089b399948af85395e57ddee3, type: 3}
-  - {fileID: 5634827069025667634, guid: 5fed5ce7021de5d4489814b12d2f682b, type: 3}
-  - {fileID: 3749085050509145281, guid: 555e7b0ee0d15034caa7ab79b8be1081, type: 3}
-  - {fileID: 4604442246332445032, guid: 2bb7737759739e348a8f3d0e4e7cd0b7, type: 3}
-  - {fileID: 6914888233837508229, guid: 071d7abbb6e030b43a94bcfd1aa45731, type: 3}
-  - {fileID: 6937163375105411035, guid: 3f516edd925b9a5498e34ce3a840df21, type: 3}
-  - {fileID: 4590597907870076279, guid: 8bde6bbc5e444d448a5c343b251d359f, type: 3}
-  - {fileID: 5299517355680503963, guid: e3a8a970801f56b4e9ab62bc8ef55194, type: 3}
-  - {fileID: 1540954917101270265, guid: 75095f53a79da5e4e8b33cf157ebf8ef, type: 3}
-  - {fileID: 8379993662222300261, guid: 1dffb433e7c3e5449aa037c4679f083f, type: 3}
-  - {fileID: 2845708322710141485, guid: d9d9a6494505b0b44b20a743fd7b20ea, type: 3}
-  - {fileID: 4153593773480807699, guid: 518cd459537b9e748b415b5b0d1832af, type: 3}
+  - mainTrackPiece: {fileID: 4479241163028207846, guid: 94153850104b4144d8fccbc9e7b1bfc6, type: 3}
+    altTrackPiece: {fileID: 7979091101546210773, guid: 512b9c1fb4268ab4fbe7350162201303, type: 3}
+  - mainTrackPiece: {fileID: 5977413844074134789, guid: 97a300041c5f11640984d048f8df77e5, type: 3}
+    altTrackPiece: {fileID: 0}
+  - mainTrackPiece: {fileID: 5634827069025667634, guid: 5fed5ce7021de5d4489814b12d2f682b, type: 3}
+    altTrackPiece: {fileID: 0}
+  - mainTrackPiece: {fileID: 7192722575976943018, guid: fd90833089b399948af85395e57ddee3, type: 3}
+    altTrackPiece: {fileID: 0}
+  - mainTrackPiece: {fileID: 3749085050509145281, guid: 555e7b0ee0d15034caa7ab79b8be1081, type: 3}
+    altTrackPiece: {fileID: 0}
+  - mainTrackPiece: {fileID: 4604442246332445032, guid: 2bb7737759739e348a8f3d0e4e7cd0b7, type: 3}
+    altTrackPiece: {fileID: 0}
+  - mainTrackPiece: {fileID: 6914888233837508229, guid: 071d7abbb6e030b43a94bcfd1aa45731, type: 3}
+    altTrackPiece: {fileID: 6914888233837508229, guid: 732977bd375b4224dac24ca6ef4d391f, type: 3}
+  - mainTrackPiece: {fileID: 6937163375105411035, guid: 3f516edd925b9a5498e34ce3a840df21, type: 3}
+    altTrackPiece: {fileID: 6937163375105411035, guid: 99113f25583ee894999d1d2b53263483, type: 3}
+  - mainTrackPiece: {fileID: 4590597907870076279, guid: 8bde6bbc5e444d448a5c343b251d359f, type: 3}
+    altTrackPiece: {fileID: 5299517355680503963, guid: e3a8a970801f56b4e9ab62bc8ef55194, type: 3}
+  - mainTrackPiece: {fileID: 1540954917101270265, guid: 75095f53a79da5e4e8b33cf157ebf8ef, type: 3}
+    altTrackPiece: {fileID: 0}
+  - mainTrackPiece: {fileID: 8379993662222300261, guid: 1dffb433e7c3e5449aa037c4679f083f, type: 3}
+    altTrackPiece: {fileID: 8379993662222300261, guid: 0d618aef85e79fe4b8447c049db8b3aa, type: 3}
+  - mainTrackPiece: {fileID: 2845708322710141485, guid: d9d9a6494505b0b44b20a743fd7b20ea, type: 3}
+    altTrackPiece: {fileID: 0}
+  - mainTrackPiece: {fileID: 4153593773480807699, guid: 518cd459537b9e748b415b5b0d1832af, type: 3}
+    altTrackPiece: {fileID: 4153593773480807699, guid: e6671f10230985349a25bf25dcdb1267, type: 3}
