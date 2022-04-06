@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3791665509213476821}
   - component: {fileID: 3791665509213476820}
   - component: {fileID: 3791665509213476823}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58,7 +58,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -100
   m_TargetDisplay: 0
 --- !u!114 &3791665509213476820
 MonoBehaviour:
@@ -126,7 +126,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3791665510627874359}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0.16504757, y: 0, z: 0, w: 0.9862857}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -160,8 +160,8 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
-  orthographic: 0
-  orthographic size: 5
+  orthographic: 1
+  orthographic size: 60
   m_Depth: 100
   m_CullingMask:
     serializedVersion: 2
@@ -230,7 +230,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1131374817914623425, guid: f17325e0f886ea847a3738e23b799351, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1188346564410672745, guid: f17325e0f886ea847a3738e23b799351, type: 3}
       propertyPath: m_Texture
@@ -242,7 +242,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 02cc49a43a5004d47b603ea6271dfa6b, type: 2}
     - target: {fileID: 1980037385216871472, guid: f17325e0f886ea847a3738e23b799351, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8228345283294634357, guid: f17325e0f886ea847a3738e23b799351, type: 3}
       propertyPath: m_Pivot.x
