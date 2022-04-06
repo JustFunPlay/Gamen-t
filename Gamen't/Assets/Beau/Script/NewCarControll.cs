@@ -66,13 +66,6 @@ public class NewCarControll : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         rb.centerOfMass = massCenter.localPosition;
 
-
-        if (escMenuAUTO == null)
-        {
-            //escMenuAUTO = GameObject.Find("BETTER ESC(Clone)");
-            //mainMenuAUTO = GameObject.Find("ESC");
-            //escMenuAUTO.SetActive(false);
-        }
         addPosition = new Vector3(0, -2, 0);
 
     }

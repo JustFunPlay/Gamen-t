@@ -41,6 +41,9 @@ public class PlayerID : MonoBehaviour
     public bool isLinear;
     public bool isCircuit;
 
+    public GameObject insideCar;
+    public GameObject[] wheels;
+
 
 
     public void Start()
@@ -136,6 +139,16 @@ public class PlayerID : MonoBehaviour
     }
     public void PlayerFinished()
     {
+        insideCar.GetComponent<MeshRenderer>().enabled = false;
+        insideCar.GetComponent<MeshCollider>().enabled = false;
+
+        for (int i = 0; i < wheels.Length; i++)
+        {
+            wheels[i].GetComponent<WheelCollider>().enabled = false;
+            wheels[i].GetComponentInChildren<MeshRenderer>().enabled = false;
+        }
+
+
         GetComponent<NewCarControll>().go = false;
         GetComponent<NewCarControll>().hasFinished = true;
         finishScreen.SetActive(true);

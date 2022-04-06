@@ -948,6 +948,7 @@ MonoBehaviour:
   playerInformation: {fileID: 11400000, guid: 32ba84c6353187d4a94dfddb68e53bbc, type: 2}
   checkPoint: {fileID: 0}
   escMenuAUTO: {fileID: 0}
+  mainMenuAUTO: {fileID: 0}
   mat: []
   slipperyTrail0: {fileID: 188009227234143000}
   slipperyTrail1: {fileID: 2661472545109770252}
@@ -1033,6 +1034,12 @@ MonoBehaviour:
   resetTimer: 0
   isLinear: 0
   isCircuit: 0
+  insideCar: {fileID: 5217648728594035807}
+  wheels:
+  - {fileID: 1514886673785340632}
+  - {fileID: 1514886673322845115}
+  - {fileID: 1514886672897013966}
+  - {fileID: 1514886673832090635}
 --- !u!114 &7096612629647097548
 MonoBehaviour:
   m_ObjectHideFlags: 0
