@@ -48,16 +48,16 @@ public class NewCarControll : MonoBehaviour
     Vector3 addPosition;
     int randomResetSpawner;
 
-    public Material[] mat;
+    public GameObject escMenuAUTO;
+    public GameObject mainMenuAUTO;
+    public static bool escMenuBool;
 
-    public GameObject escMenu;
+    public Material[] mat;
 
     public TrailRenderer slipperyTrail0;
     public TrailRenderer slipperyTrail1;
 
     public int NumberBack;
-
-    public static bool escMenuBool;
 
     private void Start()
     {
@@ -66,6 +66,13 @@ public class NewCarControll : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         rb.centerOfMass = massCenter.localPosition;
 
+
+        if (escMenuAUTO == null)
+        {
+            //escMenuAUTO = GameObject.Find("BETTER ESC(Clone)");
+            //mainMenuAUTO = GameObject.Find("ESC");
+            //escMenuAUTO.SetActive(false);
+        }
         addPosition = new Vector3(0, -2, 0);
 
     }
@@ -107,8 +114,9 @@ public class NewCarControll : MonoBehaviour
         if (escMenuBool == false)
         {
             
-            escMenuBool = true;
-            escMenu.SetActive(true);
+           escMenuBool = true;
+            escMenuAUTO.SetActive(true);
+            
             Time.timeScale = 0.0000001f;
             
             
@@ -117,8 +125,8 @@ public class NewCarControll : MonoBehaviour
         {
             if(escMenuBool == true)
             {
-                escMenuBool = false;
-                escMenu.SetActive(false);
+               escMenuBool = false;
+                escMenuAUTO.SetActive(false);
                 Time.timeScale = 1f;
             }
 

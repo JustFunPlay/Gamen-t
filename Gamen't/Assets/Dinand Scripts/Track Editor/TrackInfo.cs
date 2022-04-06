@@ -28,7 +28,6 @@ public class Leaderboard
 {
     public string racerName;
     public float timeInSec;
-    //public Image carImage;
     
     public Leaderboard(string racerName_, float timeInSec_)
     {

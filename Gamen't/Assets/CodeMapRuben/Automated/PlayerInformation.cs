@@ -11,8 +11,9 @@ public class PlayerInformation : ScriptableObject
     public bool raceCupBool;
     public int counter;
     public TrackInfo[] trackInfo;
-    public int nextNumberRace;
-    public int maximumRaces;
+    //public int nextNumberRace;
+    //public int maximumRaces;
+
 
     public List<PlayerSelection> playerSelections;
 }

@@ -56,7 +56,7 @@ public class CupRace : MonoBehaviour
             trackHolder.trackInfo[i] = null;
         }
         trackHolder.counter = 0;
-        trackHolder.nextNumberRace = 0;
+        //trackHolder.nextNumberRace = 0;
         trackHolder.raceCupBool = false;
     }
     public void OnSelectedButton()
