@@ -1596,13 +1596,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerInfos: {fileID: 11400000, guid: 32ba84c6353187d4a94dfddb68e53bbc, type: 2}
   playerSpawning:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 7603026672424972649}
+  - {fileID: 1443748029042764927}
+  - {fileID: 9122120321800152034}
+  - {fileID: 7040096505650415519}
   listOfPlayers: []
   listOfCameras: []
   trackLoader: {fileID: 11400000, guid: 18e9f5ab584b66a4b968b0f09d46887c, type: 2}
+  escMenuPrefab: {fileID: 4132655056235530127, guid: 8565d690bcc67b845befa97161339492, type: 3}
+  newPlayerAdded: {fileID: 0}
 --- !u!114 &4177842344703368634
 MonoBehaviour:
   m_ObjectHideFlags: 0
