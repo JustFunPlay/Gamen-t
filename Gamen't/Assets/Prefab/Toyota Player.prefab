@@ -1713,6 +1713,7 @@ MonoBehaviour:
   - {fileID: 871001974021713056}
   - {fileID: 7207246781647544306}
   - {fileID: 2998267037924349748}
+  freezePos: 126
 --- !u!114 &551278518279224048
 MonoBehaviour:
   m_ObjectHideFlags: 0

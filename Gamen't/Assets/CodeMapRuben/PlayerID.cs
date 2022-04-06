@@ -43,6 +43,7 @@ public class PlayerID : MonoBehaviour
 
     public GameObject insideCar;
     public GameObject[] wheels;
+    public RigidbodyConstraints freezePos;
 
 
 
@@ -139,6 +140,8 @@ public class PlayerID : MonoBehaviour
     }
     public void PlayerFinished()
     {
+        GetComponent<Rigidbody>().constraints = freezePos;
+
         insideCar.GetComponent<MeshRenderer>().enabled = false;
         insideCar.GetComponent<MeshCollider>().enabled = false;
 

@@ -1155,6 +1155,7 @@ MonoBehaviour:
   - {fileID: 4833476311506844550}
   - {fileID: 4833476311131300083}
   - {fileID: 4833476312074863670}
+  freezePos: 126
 --- !u!114 &8595626251710662798
 MonoBehaviour:
   m_ObjectHideFlags: 0
