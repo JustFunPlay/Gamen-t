@@ -999,7 +999,6 @@ Transform:
   - {fileID: 4833476312074863664}
   - {fileID: 2483033275466087552}
   - {fileID: 4682866463099466599}
-  - {fileID: 4733145394094270543}
   m_Father: {fileID: 9214223235598741024}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1063,8 +1062,9 @@ MonoBehaviour:
   hasFinished: 0
   playerInformation: {fileID: 11400000, guid: 32ba84c6353187d4a94dfddb68e53bbc, type: 2}
   checkPoint: {fileID: 0}
+  escMenuAUTO: {fileID: 0}
+  mainMenuAUTO: {fileID: 0}
   mat: []
-  escMenu: {fileID: 4733145394094270540}
   slipperyTrail0: {fileID: 6092790968699433765}
   slipperyTrail1: {fileID: 8284779786513537073}
   NumberBack: 2
@@ -1149,6 +1149,13 @@ MonoBehaviour:
   resetTimer: 0
   isLinear: 0
   isCircuit: 0
+  insideCar: {fileID: 9085245673929465950}
+  wheels:
+  - {fileID: 4833476312120302309}
+  - {fileID: 4833476311506844550}
+  - {fileID: 4833476311131300083}
+  - {fileID: 4833476312074863670}
+  freezePos: 126
 --- !u!114 &8595626251710662798
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1158,7 +1165,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4833476312769736832}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fac92d8b0548c19409bbcf4db531d96b, type: 3}
+  m_Script: {fileID: 11500000, guid: e2cac000346d57b4fb6f58b03de94dbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   brrSounds: {fileID: 1489718001870461275}
@@ -2125,159 +2132,4 @@ Transform:
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 9085360884583333950, guid: 22466239af0405a42af11f412572825f, type: 3}
   m_PrefabInstance: {fileID: 7690218759703746917}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &8716049985049194435
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 4833476312769736861}
-    m_Modifications:
-    - target: {fileID: 295575935531896879, guid: 8565d690bcc67b845befa97161339492, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 295575935531896879, guid: 8565d690bcc67b845befa97161339492, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 295575935531896879, guid: 8565d690bcc67b845befa97161339492, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
-      value: 
-      objectReference: {fileID: 4833476312769736835}
-    - target: {fileID: 295575935531896879, guid: 8565d690bcc67b845befa97161339492, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 295575935531896879, guid: 8565d690bcc67b845befa97161339492, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
-      value: AllowESCmenuToReturn
-      objectReference: {fileID: 0}
-    - target: {fileID: 295575935531896879, guid: 8565d690bcc67b845befa97161339492, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
-      value: NewCarControll, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 295575935531896879, guid: 8565d690bcc67b845befa97161339492, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 295575935587329310, guid: 8565d690bcc67b845befa97161339492, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 295575935587329310, guid: 8565d690bcc67b845befa97161339492, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 295575935587329310, guid: 8565d690bcc67b845befa97161339492, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
-      value: 
-      objectReference: {fileID: 4833476312769736835}
-    - target: {fileID: 295575935587329310, guid: 8565d690bcc67b845befa97161339492, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 295575935587329310, guid: 8565d690bcc67b845befa97161339492, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
-      value: AllowESCmenuToReturn
-      objectReference: {fileID: 0}
-    - target: {fileID: 295575935587329310, guid: 8565d690bcc67b845befa97161339492, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
-      value: NewCarControll, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 295575935587329310, guid: 8565d690bcc67b845befa97161339492, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 295575936289807457, guid: 8565d690bcc67b845befa97161339492, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 295575936289807457, guid: 8565d690bcc67b845befa97161339492, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 295575936289807457, guid: 8565d690bcc67b845befa97161339492, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
-      value: 
-      objectReference: {fileID: 4833476312769736835}
-    - target: {fileID: 295575936289807457, guid: 8565d690bcc67b845befa97161339492, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 295575936289807457, guid: 8565d690bcc67b845befa97161339492, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
-      value: AllowESCmenuToReturn
-      objectReference: {fileID: 0}
-    - target: {fileID: 295575936289807457, guid: 8565d690bcc67b845befa97161339492, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
-      value: NewCarControll, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 295575936289807457, guid: 8565d690bcc67b845befa97161339492, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 4132655056235530124, guid: 8565d690bcc67b845befa97161339492, type: 3}
-      propertyPath: m_RootOrder
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4132655056235530124, guid: 8565d690bcc67b845befa97161339492, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 960
-      objectReference: {fileID: 0}
-    - target: {fileID: 4132655056235530124, guid: 8565d690bcc67b845befa97161339492, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 540
-      objectReference: {fileID: 0}
-    - target: {fileID: 4132655056235530124, guid: 8565d690bcc67b845befa97161339492, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4132655056235530124, guid: 8565d690bcc67b845befa97161339492, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4132655056235530124, guid: 8565d690bcc67b845befa97161339492, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4132655056235530124, guid: 8565d690bcc67b845befa97161339492, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4132655056235530124, guid: 8565d690bcc67b845befa97161339492, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4132655056235530124, guid: 8565d690bcc67b845befa97161339492, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4132655056235530124, guid: 8565d690bcc67b845befa97161339492, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4132655056235530124, guid: 8565d690bcc67b845befa97161339492, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4132655056235530127, guid: 8565d690bcc67b845befa97161339492, type: 3}
-      propertyPath: m_Name
-      value: BETTER ESC
-      objectReference: {fileID: 0}
-    - target: {fileID: 4132655056235530127, guid: 8565d690bcc67b845befa97161339492, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 8565d690bcc67b845befa97161339492, type: 3}
---- !u!1 &4733145394094270540 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4132655056235530127, guid: 8565d690bcc67b845befa97161339492, type: 3}
-  m_PrefabInstance: {fileID: 8716049985049194435}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &4733145394094270543 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4132655056235530124, guid: 8565d690bcc67b845befa97161339492, type: 3}
-  m_PrefabInstance: {fileID: 8716049985049194435}
   m_PrefabAsset: {fileID: 0}

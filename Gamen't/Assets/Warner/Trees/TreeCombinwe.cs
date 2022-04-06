@@ -136,7 +136,7 @@ public class TreeCombinwe : MonoBehaviour
         int layerMask = 1 << 7;
         //layerMask = ~layerMask;
 
-        float distance; 
+        //float distance; 
         RaycastHit hit;
         float height = 20f * transform.localScale.y;
         Vector3 origin = new Vector3(tree.position.x, tree.position.y + height, tree.position.z);

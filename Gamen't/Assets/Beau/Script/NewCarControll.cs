@@ -48,9 +48,11 @@ public class NewCarControll : MonoBehaviour
     Vector3 addPosition;
     int randomResetSpawner;
 
-    public Material[] mat;
+    public GameObject escMenuAUTO;
+    public GameObject mainMenuAUTO;
+    public static bool escMenuBool;
 
-    public GameObject escMenu;
+    public Material[] mat;
 
     public TrailRenderer slipperyTrail0;
     public TrailRenderer slipperyTrail1;
@@ -99,19 +101,29 @@ public class NewCarControll : MonoBehaviour
 
         }
     }
+    // 1. je krijgt access als je op ESC drukt en een conditie op true of false staat. 2. 
     void OnESCmenu(InputValue value)
-    {  
-        escMenu.SetActive(true);
-        if(escMenu == true)
+    {
+        if (escMenuBool == false)
         {
-            Time.timeScale = 0f;
+            
+           escMenuBool = true;
+            escMenuAUTO.SetActive(true);
+            
+            Time.timeScale = 0.0000001f;
+            
+            
         }
         else
         {
-            Time.timeScale = 1f;
+            if(escMenuBool == true)
+            {
+               escMenuBool = false;
+                escMenuAUTO.SetActive(false);
+                Time.timeScale = 1f;
+            }
+
         }
-      
-        
     }
     void OnHandbrake()
     {

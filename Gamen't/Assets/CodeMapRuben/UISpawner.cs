@@ -51,7 +51,7 @@ public class UISpawner : MonoBehaviour
                 listOfCameras.Add(newcamera);
             }
         }
-        UpdateCameras();
+        //UpdateCameras();
 
     }
 

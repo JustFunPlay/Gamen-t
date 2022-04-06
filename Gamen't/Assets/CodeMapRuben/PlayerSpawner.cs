@@ -15,6 +15,9 @@ public class PlayerSpawner : MonoBehaviour
 
     public TrackToLoad trackLoader;
 
+    public GameObject escMenuPrefab;
+    public GameObject newPlayerAdded;
+
 
     public InputActionProperty joinAction { get; set; }
     public bool joiningEnabled { get; }
@@ -24,16 +27,19 @@ public class PlayerSpawner : MonoBehaviour
 
     void Start()
     {
+
         //als je iets hebt ingevuld bij de CUP track list dan gaat de if statement af
-        if(playerInfos.raceCupBool == true)
-        {
-            if(playerInfos.nextNumberRace == playerInfos.maximumRaces)
-            {
-                //playerInfos.nextNumberRace--;
-            }
-            trackLoader.track = playerInfos.trackInfo[playerInfos.nextNumberRace];
-        }
+        // if (playerInfos.raceCupBool == true)
+        //{
+        //    if(playerInfos.nextNumberRace == playerInfos.maximumRaces)
+        //   {
+
+        //  }
+        //  trackLoader.track = playerInfos.trackInfo[playerInfos.nextNumberRace];
+        //}
+        Instantiate(escMenuPrefab);
     }
+   
 
     public void PlayerSpawn()
     {
@@ -43,12 +49,16 @@ public class PlayerSpawner : MonoBehaviour
             {
                 GameObject newplayer = Instantiate(playerInfos.playerSelections[i].selectedCar, playerSpawning[i].position, playerSpawning[i].rotation);
                 listOfPlayers.Add(newplayer);
+                newPlayerAdded = newplayer;
                 newplayer.transform.GetChild(0).GetComponent<PlayerID>().playerIdNumber = i;
                 newplayer.transform.GetChild(0).GetComponent<PlayerID>().playerName = playerInfos.playerSelections[i].name;
-                
-                if(playerInfos.raceCupBool == true)
+
+                newplayer.transform.GetChild(0).GetComponent<NewCarControll>().escMenuAUTO = GameObject.Find("BETTER ESC(Clone)");
+                newplayer.transform.GetChild(0).GetComponent<NewCarControll>().mainMenuAUTO = GameObject.Find("ESC");
+
+                if (playerInfos.raceCupBool == true)
                 {
-                    newplayer.transform.GetChild(0).GetComponent<PlayerID>().maxLaps = playerInfos.trackInfo[playerInfos.nextNumberRace].numberOfLaps;
+                    //newplayer.transform.GetChild(0).GetComponent<PlayerID>().maxLaps = playerInfos.trackInfo[playerInfos.nextNumberRace].numberOfLaps;
                 }
                 else
                 {
@@ -69,6 +79,7 @@ public class PlayerSpawner : MonoBehaviour
                 
             }
         }
+        newPlayerAdded.transform.GetChild(0).GetComponent<NewCarControll>().escMenuAUTO.SetActive(false);
         UpdateCameras();
 
     }

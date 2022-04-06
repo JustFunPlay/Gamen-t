@@ -32,7 +32,7 @@ public class UpdateTrackInformation : MonoBehaviour
         GameObject[] finishlines = GameObject.FindGameObjectsWithTag("CheckPoint end");
         if (finishlines.Length > 1)
         {
-            track.track.numberOfLaps = finishlines.Length - 1;
+            track.track.numberOfLaps = 1;
             track.track.trackType = TrackType.Linear;
             addLapBtn.SetActive(false);
             rmvLapBtn.SetActive(false);
