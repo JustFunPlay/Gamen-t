@@ -44,7 +44,6 @@ public class EditorCamController : MonoBehaviour
         {
             transform.Rotate(0, -turnVector.x * turnSpeed, 0);
         }
-        //transform.Translate(moveVector.x * moveSpeed, turnVector.y * heightSpeed, moveVector.y * moveSpeed);
     }
 
     void MoveInGrid()
@@ -58,6 +57,24 @@ public class EditorCamController : MonoBehaviour
                 {
                     currentNode = node;
                     break;
+                }
+            }
+            for (int l = 0; l < grid.levels.Count; l++)
+            {
+                if (l != currentNode.gridLocation.y)
+                {
+                    for (int n = 0; n < grid.levels[l].level.Count; n++)
+                    {
+                        grid.levels[l].level[n].GetComponent<MeshRenderer>().enabled = false;
+                    }
+                }
+                else
+                {
+                    for (int n = 0; n < grid.levels[l].level.Count; n++)
+                    {
+                        grid.levels[l].level[n].GetComponent<MeshRenderer>().enabled = true;
+                    }
+
                 }
             }
             transform.position = currentNode.transform.position;

@@ -168,7 +168,7 @@ MonoBehaviour:
   m_ScrollWheelAction: {fileID: 1263712919506362784, guid: a6c551f85e4672c4ba735942e8bde649, type: 3}
   m_TrackedDevicePositionAction: {fileID: -5324558376536451811, guid: a6c551f85e4672c4ba735942e8bde649, type: 3}
   m_TrackedDeviceOrientationAction: {fileID: 2354779427362520307, guid: a6c551f85e4672c4ba735942e8bde649, type: 3}
-  m_DeselectOnBackgroundClick: 1
+  m_DeselectOnBackgroundClick: 0
   m_PointerBehavior: 0
 --- !u!114 &28491891
 MonoBehaviour:
@@ -2133,9 +2133,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3791665509213476821, guid: 6f1b3f968dc8edd4193c733e7edd9cbd, type: 3}
-      propertyPath: m_PlaneDistance
-      value: 150
+    - target: {fileID: 3791665509213475881, guid: 6f1b3f968dc8edd4193c733e7edd9cbd, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3791665510627874355, guid: 6f1b3f968dc8edd4193c733e7edd9cbd, type: 3}
       propertyPath: m_RootOrder
@@ -2154,6 +2154,22 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3791665510627874355, guid: 6f1b3f968dc8edd4193c733e7edd9cbd, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9862857
+      objectReference: {fileID: 0}
+    - target: {fileID: 3791665510627874355, guid: 6f1b3f968dc8edd4193c733e7edd9cbd, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.16504757
+      objectReference: {fileID: 0}
+    - target: {fileID: 3791665510627874355, guid: 6f1b3f968dc8edd4193c733e7edd9cbd, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3791665510627874355, guid: 6f1b3f968dc8edd4193c733e7edd9cbd, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3791665510627874355, guid: 6f1b3f968dc8edd4193c733e7edd9cbd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 19
       objectReference: {fileID: 0}
@@ -2169,10 +2185,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Camera
       objectReference: {fileID: 0}
-    - target: {fileID: 7094707493077599930, guid: 6f1b3f968dc8edd4193c733e7edd9cbd, type: 3}
-      propertyPath: m_VideoClip
-      value: 
-      objectReference: {fileID: 32900000, guid: cf4ccb27b9e590c4592959c6413e429f, type: 3}
+    - target: {fileID: 4264276447661259407, guid: 6f1b3f968dc8edd4193c733e7edd9cbd, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f1b3f968dc8edd4193c733e7edd9cbd, type: 3}
 --- !u!1001 &8232616496033374284

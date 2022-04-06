@@ -18,7 +18,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3791665509213476822
 RectTransform:
   m_ObjectHideFlags: 0
@@ -50,7 +50,7 @@ Canvas:
   serializedVersion: 3
   m_RenderMode: 1
   m_Camera: {fileID: 3791665510627874354}
-  m_PlaneDistance: 100
+  m_PlaneDistance: 150
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -133,7 +133,7 @@ Transform:
   - {fileID: 3791665509213476822}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 19, y: 0, z: 0}
 --- !u!20 &3791665510627874354
 Camera:
   m_ObjectHideFlags: 0
@@ -232,6 +232,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 1131374817914623425, guid: f17325e0f886ea847a3738e23b799351, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1188346564410672745, guid: f17325e0f886ea847a3738e23b799351, type: 3}
       propertyPath: m_Texture
       value: 
@@ -244,6 +248,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 6263316659298576884, guid: f17325e0f886ea847a3738e23b799351, type: 3}
+      propertyPath: m_VideoClip
+      value: 
+      objectReference: {fileID: 32900000, guid: cf4ccb27b9e590c4592959c6413e429f, type: 3}
     - target: {fileID: 8228345283294634357, guid: f17325e0f886ea847a3738e23b799351, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
