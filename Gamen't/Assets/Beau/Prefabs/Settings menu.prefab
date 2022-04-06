@@ -665,16 +665,12 @@ MonoBehaviour:
     m_Options:
     - m_Text: LOW
       m_Image: {fileID: 0}
-    - m_Text: MEDIUM
-      m_Image: {fileID: 0}
-    - m_Text: HIGH
-      m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 4303229787141460561}
         m_TargetAssemblyTypeName: Settings, Assembly-CSharp
-        m_MethodName: SetQuality
+        m_MethodName: SetResolution
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -822,7 +818,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 4303229787141460561}
         m_TargetAssemblyTypeName: Settings, Assembly-CSharp
         m_MethodName: SetQuality
         m_Mode: 0
@@ -1105,7 +1101,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 4303229787141460561}
         m_TargetAssemblyTypeName: Settings, Assembly-CSharp
         m_MethodName: SetVolume
         m_Mode: 0
@@ -1871,7 +1867,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 4303229787141460561}
         m_TargetAssemblyTypeName: Settings, Assembly-CSharp
         m_MethodName: BackSettingButon
         m_Mode: 1
@@ -2444,7 +2440,7 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 4303229787141460561}
         m_TargetAssemblyTypeName: Settings, Assembly-CSharp
         m_MethodName: SetFullscreen
         m_Mode: 0
