@@ -15,13 +15,12 @@ public class TrackPieceManager : EditorCamController
         {
             OnRemoveTrack();
         }
-        currentNode.trackPiece = Instantiate(pieceHolder.trackPieces[selectedTrackPieceIndex], currentNode.transform.position, Quaternion.identity);
+        currentNode.trackPiece = Instantiate(pieceHolder.trackPieces[selectedTrackPieceIndex].mainTrackPiece, currentNode.transform.position, Quaternion.identity);
         TrackPiece newTrackPiece = new TrackPiece();
         newTrackPiece.gridlocation = currentNode.gridNodeValue;
         newTrackPiece.trackPieceIndex = selectedTrackPieceIndex;
         newTrackPiece.rotation = currentNode.trackPiece.transform.rotation;
         newTrackPiece.position = currentNode.trackPiece.transform.position;
-        newTrackPiece.xScale = 1;
         toLoad.track.trackPieces.Add(newTrackPiece);
         updateTrackInformation.UpdateInfo();
         UpdateTrackInformation.isTested = false;
@@ -81,12 +80,22 @@ public class TrackPieceManager : EditorCamController
         if (currentNode.trackPiece && worky)
         {
             print("flip that shit");
-            currentNode.trackPiece.transform.localScale = new Vector3(currentNode.trackPiece.transform.localScale.x * -1, currentNode.trackPiece.transform.localScale.y, currentNode.trackPiece.transform.localScale.z);
             for (int i = 0; i < toLoad.track.trackPieces.Count; i++)
             {
-                if (toLoad.track.trackPieces[i].gridlocation == currentNode.gridNodeValue)
+                if (toLoad.track.trackPieces[i].gridlocation == currentNode.gridNodeValue && (toLoad.track.trackPieces[i].trackPieceIndex == 5 || toLoad.track.trackPieces[i].trackPieceIndex == 6 || toLoad.track.trackPieces[i].trackPieceIndex == 7|| toLoad.track.trackPieces[i].trackPieceIndex == 8 || toLoad.track.trackPieces[i].trackPieceIndex == 10 || toLoad.track.trackPieces[i].trackPieceIndex == 12))
                 {
-                    toLoad.track.trackPieces[i].xScale = currentNode.trackPiece.transform.localScale.x;
+                    Destroy(currentNode.trackPiece);
+                    if (toLoad.track.trackPieces[i].isAlternate)
+                    {
+                        toLoad.track.trackPieces[i].isAlternate = false;
+                        currentNode.trackPiece = Instantiate(pieceHolder.trackPieces[selectedTrackPieceIndex].mainTrackPiece, currentNode.transform.position, toLoad.track.trackPieces[i].rotation);
+                    }
+                    else
+                    {
+                        toLoad.track.trackPieces[i].isAlternate = true;
+                        currentNode.trackPiece = Instantiate(pieceHolder.trackPieces[selectedTrackPieceIndex].altTrackPiece, currentNode.transform.position, toLoad.track.trackPieces[i].rotation);
+                    }
+
                 }
             }
         }
