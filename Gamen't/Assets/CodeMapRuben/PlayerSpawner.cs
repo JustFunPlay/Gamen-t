@@ -37,7 +37,6 @@ public class PlayerSpawner : MonoBehaviour
         //  }
         //  trackLoader.track = playerInfos.trackInfo[playerInfos.nextNumberRace];
         //}
-        Instantiate(escMenuPrefab);
     }
    
 
