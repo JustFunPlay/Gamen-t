@@ -1349,17 +1349,6 @@ VideoPlayer:
   m_WaitForFirstFrame: 1
   m_FrameReadyEventEnabled: 0
   m_VideoShaders: []
---- !u!114 &981454930 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 523372543348513409, guid: dd05a6eef01cdff419970e605dcc61dc, type: 3}
-  m_PrefabInstance: {fileID: 8034273451561038065}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f32553a43ac22940bbf0348662267e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1048226629
 GameObject:
   m_ObjectHideFlags: 0
@@ -1482,7 +1471,7 @@ MonoBehaviour:
   carSelectCanvas: {fileID: 11400000, guid: 08ca02135f6e76a4c8b77ce410933641, type: 2}
   playerCars: {fileID: 11400000, guid: 32ba84c6353187d4a94dfddb68e53bbc, type: 2}
   canvasSelection:
-    name: {fileID: 0}
+    name: 
     selectedCar: {fileID: 3458319226721410268, guid: be3970fbafa5d2e468ab4f87eea70c8a, type: 3}
     materials:
     - {fileID: 0}
@@ -1491,7 +1480,7 @@ MonoBehaviour:
     - {fileID: 0}
     carImage: {fileID: 0}
   carSelection:
-    name: {fileID: 0}
+    name: 
     selectedCar: {fileID: 5054810255372854759, guid: aad2591a48d145d42aba8b7f36b565d3, type: 3}
     materials:
     - {fileID: 2100000, guid: 907af39f83a6bc440b29bea0c9d905ff, type: 2}
@@ -2232,7 +2221,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 981454930}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Settings, Assembly-CSharp
         m_MethodName: SettingsButton
         m_Mode: 1
@@ -3240,11 +3229,7 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 83763131316380499, guid: dd05a6eef01cdff419970e605dcc61dc, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 523372543348513409, guid: dd05a6eef01cdff419970e605dcc61dc, type: 3}
+    - target: {fileID: 4303229787141460561, guid: dd05a6eef01cdff419970e605dcc61dc, type: 3}
       propertyPath: mainmenu
       value: 
       objectReference: {fileID: 1048226629}
@@ -3295,26 +3280,6 @@ PrefabInstance:
     - target: {fileID: 4807877182242601296, guid: dd05a6eef01cdff419970e605dcc61dc, type: 3}
       propertyPath: m_Name
       value: Settings menu
-      objectReference: {fileID: 0}
-    - target: {fileID: 4807877182242601296, guid: dd05a6eef01cdff419970e605dcc61dc, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6424599211629117119, guid: dd05a6eef01cdff419970e605dcc61dc, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6424599211629117119, guid: dd05a6eef01cdff419970e605dcc61dc, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8001965338203638967, guid: dd05a6eef01cdff419970e605dcc61dc, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8001965338203638967, guid: dd05a6eef01cdff419970e605dcc61dc, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd05a6eef01cdff419970e605dcc61dc, type: 3}

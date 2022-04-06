@@ -20,7 +20,7 @@ public class TrackPiece
     public Vector3 position;
     public Quaternion rotation;
     public int trackPieceIndex;
-    public float xScale;
+    public bool isAlternate;
     public int gridlocation;
 }
 [System.Serializable]
