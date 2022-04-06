@@ -24,6 +24,10 @@ public class CreateGrid : MonoBehaviour
                     newNode.GetComponent<NodeInfo>().gridNodeValue = i;
                     newNode.GetComponent<NodeInfo>().gridLocation = new Vector3(x, y, z);
                     newNode.name = i.ToString();
+                    if (y > 0)
+                    {
+                        newNode.GetComponent<MeshRenderer>().enabled = false;
+                    }
                 }
             }
         }
