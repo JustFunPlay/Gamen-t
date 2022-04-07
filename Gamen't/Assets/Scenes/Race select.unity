@@ -274,7 +274,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Premade Track 1
+  m_Text: The Underdome
 --- !u!222 &47115992
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2150,7 +2150,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Premade Track 3
+  m_Text: Forrest Tour
 --- !u!222 &866818830
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4962,7 +4962,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: ' Premade Track 2 '
+  m_Text: SkyScrapers
 --- !u!222 &2105767942
 CanvasRenderer:
   m_ObjectHideFlags: 0
