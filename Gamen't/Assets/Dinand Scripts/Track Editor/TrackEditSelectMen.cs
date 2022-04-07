@@ -23,6 +23,8 @@ public class TrackEditSelectMen : MonoBehaviour
     public Transform[] transforms;
     public GameObject buttonPrefab;
 
+    public Sprite stockImage;
+
     private void Awake()
     {
         allTracks.trackInfos.Clear();
@@ -95,6 +97,7 @@ public class TrackEditSelectMen : MonoBehaviour
         {
             trackType.text = "Linear";
         }
+        infoTrack.GetComponentInChildren<Image>().sprite = stockImage;
     }
     public void EnterRace()
     {

@@ -15,19 +15,10 @@ public class ImageChangeForINfo : MonoBehaviour
 
 
             trackInfoScreen.GetComponentInChildren<Image>().sprite = premadeImages[i];
-            returnStock = true;
-            A();
+
 
     }
-    public void A()
-    {
 
-        if (returnStock == true)
-        {
-            trackInfoScreen.GetComponentInChildren<Image>().sprite = stockImage;
-        }
-    }
-    
 
 
 }

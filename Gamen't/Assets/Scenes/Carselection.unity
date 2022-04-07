@@ -2133,6 +2133,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 61526408551277648, guid: 6f1b3f968dc8edd4193c733e7edd9cbd, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 1080
+      objectReference: {fileID: 0}
+    - target: {fileID: 61526408551277648, guid: 6f1b3f968dc8edd4193c733e7edd9cbd, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 61526408551277648, guid: 6f1b3f968dc8edd4193c733e7edd9cbd, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 61526408551277648, guid: 6f1b3f968dc8edd4193c733e7edd9cbd, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3791665509213475881, guid: 6f1b3f968dc8edd4193c733e7edd9cbd, type: 3}
       propertyPath: m_IsActive
       value: 1

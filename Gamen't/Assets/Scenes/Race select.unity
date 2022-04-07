@@ -2609,6 +2609,7 @@ MonoBehaviour:
   - {fileID: 2144584118}
   - {fileID: 1815703298}
   buttonPrefab: {fileID: 3387256380337226049, guid: 9c1117a5cdf436a4d9979643a97af774, type: 3}
+  stockImage: {fileID: 21300000, guid: ac277b5d4b2a35e479b30ce08d4bbd3f, type: 3}
 --- !u!114 &1124218404
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5108,6 +5109,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 478477435}
     m_Modifications:
+    - target: {fileID: 1165748994, guid: 8d5e6a99c2c5b964497015fc148c5939, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1124218403}
+    - target: {fileID: 1165748994, guid: 8d5e6a99c2c5b964497015fc148c5939, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: EnterRace
+      objectReference: {fileID: 0}
+    - target: {fileID: 1310226123, guid: 8d5e6a99c2c5b964497015fc148c5939, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1124218403}
+    - target: {fileID: 1310226123, guid: 8d5e6a99c2c5b964497015fc148c5939, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: EnterEditor
+      objectReference: {fileID: 0}
     - target: {fileID: 8658488063614929496, guid: 8d5e6a99c2c5b964497015fc148c5939, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
