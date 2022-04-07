@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class asdas : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
+public class asdas : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, ISelectHandler, IDeselectHandler
 
 {
     public Text a;
@@ -23,5 +23,15 @@ public class asdas : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     {
         a.color = c;
     }
+
+    public void OnSelect(BaseEventData eventData)
+    {
+        a.color = b;
+    }
+    public void OnDeselect(BaseEventData eventData)
+    {
+        a.color = c;
+    }
+
 
 }

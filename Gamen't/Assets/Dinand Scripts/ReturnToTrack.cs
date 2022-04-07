@@ -8,7 +8,7 @@ public class ReturnToTrack : MonoBehaviour
     {
         if (collision.collider.GetComponentInParent<NewCarControll>())
         {
-            //collision.collider.GetComponentInParent<NewCarControll>().
+            collision.collider.GetComponentInParent<NewCarControll>().ResetToCheckpoint();
         }
     }
 }

@@ -89,20 +89,23 @@ public class NewCarControll : MonoBehaviour
 
         if (restet == 1)
         {
-            if(go == true)
-            {
-                rb.constraints = RigidbodyConstraints.FreezeAll;
-                rb.constraints = RigidbodyConstraints.None;
+            ResetToCheckpoint();
+        }
+    }
+    public void ResetToCheckpoint()
+    {
+        if (go == true)
+        {
+            rb.constraints = RigidbodyConstraints.FreezeAll;
+            rb.constraints = RigidbodyConstraints.None;
 
-                addPosition.x = Random.Range(-4.25f, 4.25f);
-                transform.position = checkPoint.position;
-                transform.localPosition += addPosition;
+            addPosition.x = Random.Range(-4.25f, 4.25f);
+            transform.position = checkPoint.position;
+            transform.localPosition += addPosition;
 
-                transform.rotation = checkPoint.rotation;
+            transform.rotation = checkPoint.rotation;
 
-                restet = 0;
-            }
-
+            restet = 0;
         }
     }
     // 1. je krijgt access als je op ESC drukt en een conditie op true of false staat. 2. 
@@ -256,7 +259,8 @@ public class NewCarControll : MonoBehaviour
 
                 if (itStoped == true)
                 {
-
+                    smokeParticleL.SendEvent("OnSmokeDed");
+                    smokeParticleR.SendEvent("OnSmokeDed");
                     element.leftWheel.brakeTorque = 0;
                     element.rightWheel.brakeTorque = 0;
                     maxSpeed = maxSpeedBack;

@@ -30,4 +30,8 @@ public class OnESCmenuPressed: MonoBehaviour
         }
         print("Pressed ESC");
     }
+    public void ResetESCmenuBool()
+    {
+        escMenuBool = false;
+    }
 }
