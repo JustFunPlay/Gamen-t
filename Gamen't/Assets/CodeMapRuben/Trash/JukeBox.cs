@@ -6,20 +6,59 @@ using UnityEngine.Video;
 
 public class JukeBox : MonoBehaviour
 {
+    public PlayerInformation playerInfo;
+
+    public bool allowPlay;
+
     public VideoPlayer soundProducer;
-    public string putLinkHere;
     public InputField urlInfo;
 
-    void Start() 
+    public GameObject mainSong;
+
+    //https://unity-youtube-dl-server.herokuapp.com/watch?v=dQw4w9WgXcQ
+
+    void Start()
+    {        
+        //als je iets hebt ingevuld bij de JukeBox bool dan gaat de if statement af
+        if (playerInfo.activateJukeBox == true)
+        {
+            mainSong.SetActive(false);
+            RefreshMusic();
+        }
+        
+    }
+    public void CalculateString()
     {
-        RefreshMusic();
+        playerInfo.musicToLoad = urlInfo.text.ToString().Replace("www.youtube.com", "unity-youtube-dl-server.herokuapp.com");
+        
     }
     public void RefreshMusic()
     {
-        putLinkHere = urlInfo.text;
-        soundProducer.url = putLinkHere;
-        soundProducer.audioOutputMode = VideoAudioOutputMode.AudioSource;
-        soundProducer.Prepare();
+        if(allowPlay == true)
+        {
+
+
+            soundProducer.url = playerInfo.musicToLoad;
+            
+            
+                
+            soundProducer.audioOutputMode = VideoAudioOutputMode.AudioSource;
+            soundProducer.EnableAudioTrack(0, true);
+            soundProducer.Prepare();
+            
+        }
+    }
+    public void ToggleJukeBox()
+    {
+        if(playerInfo.activateJukeBox == false)
+        {
+            playerInfo.activateJukeBox = true;
+        }
+        else
+        {
+            playerInfo.activateJukeBox = false;
+        }
+  
     }
 
 }

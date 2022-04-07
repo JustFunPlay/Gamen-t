@@ -19,8 +19,10 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  activateJukeBox: 1
+  musicToLoad: https://unity-youtube-dl-server.herokuapp.com/watch?v=DtKCNJmARF0
   playerSelections:
-  - name: {fileID: 0}
+  - name: 
     selectedCar: {fileID: 8785248514869269620, guid: d807a48cb8293c34784c9e42570e03df, type: 3}
     materials:
     - {fileID: 0}
@@ -28,7 +30,7 @@ MonoBehaviour:
     - {fileID: 0}
     - {fileID: 0}
     carImage: {fileID: 0}
-  - name: {fileID: 0}
+  - name: 
     selectedCar: {fileID: 8785248514869269620, guid: d807a48cb8293c34784c9e42570e03df, type: 3}
     materials:
     - {fileID: 0}
