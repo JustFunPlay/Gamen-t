@@ -14,7 +14,8 @@ public class SaveTracks : MonoBehaviour
         if (UpdateTrackInformation.isTested)
         {
             XmlSerializer serializer = new XmlSerializer(typeof(TrackInfo));
-            FileStream stream = new FileStream(Application.dataPath + "/StreamingAssets/XML/" + toLoad.track.trackName + ".xml", FileMode.Create);
+            var encoding = System.Text.Encoding.GetEncoding("UTF-8"); 
+            StreamWriter stream = new StreamWriter(Application.dataPath + "/StreamingAssets/XML/" + toLoad.track.trackName + ".xml", false, encoding);
             serializer.Serialize(stream, toLoad.track);
             stream.Close();
         }

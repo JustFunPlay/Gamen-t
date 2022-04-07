@@ -56,7 +56,7 @@ MonoBehaviour:
     gridlocation: 8826
   - position: {x: 0, y: 18, z: 0}
     rotation: {x: 0, y: 1, z: 0, w: 0}
-    trackPieceIndex: 3
+    trackPieceIndex: 2
     isAlternate: 0
     gridlocation: 8776
   - position: {x: -20, y: 18, z: 0}
@@ -121,17 +121,17 @@ MonoBehaviour:
     gridlocation: 978
   - position: {x: -60, y: 0, z: 0}
     rotation: {x: 0, y: 0, z: 0, w: 1}
-    trackPieceIndex: 2
+    trackPieceIndex: 3
     isAlternate: 0
     gridlocation: 1126
   - position: {x: -40, y: 0, z: 0}
     rotation: {x: 0, y: 0, z: 0, w: 1}
-    trackPieceIndex: 2
+    trackPieceIndex: 3
     isAlternate: 0
     gridlocation: 1176
   - position: {x: -20, y: 0, z: 0}
     rotation: {x: 0, y: 0, z: 0, w: 1}
-    trackPieceIndex: 2
+    trackPieceIndex: 3
     isAlternate: 0
     gridlocation: 1226
   - position: {x: 0, y: 0, z: 0}
@@ -171,7 +171,7 @@ MonoBehaviour:
     gridlocation: 11282
   - position: {x: 0, y: 24, z: 140}
     rotation: {x: 0, y: 0.7071068, z: 0, w: -0.7071068}
-    trackPieceIndex: 3
+    trackPieceIndex: 2
     isAlternate: 0
     gridlocation: 11283
   - position: {x: 0, y: 24, z: 160}
@@ -236,17 +236,17 @@ MonoBehaviour:
     gridlocation: 731
   - position: {x: -220, y: 0, z: 80}
     rotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-    trackPieceIndex: 3
+    trackPieceIndex: 2
     isAlternate: 0
     gridlocation: 730
   - position: {x: -220, y: 0, z: 60}
     rotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-    trackPieceIndex: 2
+    trackPieceIndex: 3
     isAlternate: 0
     gridlocation: 729
   - position: {x: -220, y: 0, z: 40}
     rotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-    trackPieceIndex: 2
+    trackPieceIndex: 3
     isAlternate: 0
     gridlocation: 728
   - position: {x: -220, y: 0, z: 20}
@@ -266,7 +266,7 @@ MonoBehaviour:
     gridlocation: 1024
   - position: {x: -40, y: 0, z: -20}
     rotation: {x: 0, y: 0, z: 0, w: -1}
-    trackPieceIndex: 2
+    trackPieceIndex: 3
     isAlternate: 0
     gridlocation: 1175
   - position: {x: 60, y: 0, z: 180}
@@ -276,22 +276,22 @@ MonoBehaviour:
     gridlocation: 1435
   - position: {x: 60, y: 0, z: 140}
     rotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-    trackPieceIndex: 2
+    trackPieceIndex: 3
     isAlternate: 0
     gridlocation: 1433
   - position: {x: 60, y: 0, z: 120}
     rotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-    trackPieceIndex: 2
+    trackPieceIndex: 3
     isAlternate: 0
     gridlocation: 1432
   - position: {x: 60, y: 0, z: 100}
     rotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-    trackPieceIndex: 2
+    trackPieceIndex: 3
     isAlternate: 0
     gridlocation: 1431
   - position: {x: 60, y: 0, z: 80}
     rotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-    trackPieceIndex: 2
+    trackPieceIndex: 3
     isAlternate: 0
     gridlocation: 1430
   - position: {x: 20, y: 0, z: -20}

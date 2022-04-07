@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TrackInfo xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <name>New Track Info</name>
+  <hideFlags>None</hideFlags>
+  <trackName>reee</trackName>
+  <trackPieces>
+    <TrackPiece>
+      <position>
+        <x>0</x>
+        <y>0</y>
+        <z>0</z>
+      </position>
+      <rotation>
+        <x>0</x>
+        <y>0</y>
+        <z>0</z>
+        <w>1</w>
+        <eulerAngles>
+          <x>-0</x>
+          <y>0</y>
+          <z>0</z>
+        </eulerAngles>
+      </rotation>
+      <trackPieceIndex>0</trackPieceIndex>
+      <isAlternate>false</isAlternate>
+      <gridlocation>1276</gridlocation>
+    </TrackPiece>
+    <TrackPiece>
+      <position>
+        <x>20</x>
+        <y>0</y>
+        <z>0</z>
+      </position>
+      <rotation>
+        <x>0</x>
+        <y>0</y>
+        <z>0</z>
+        <w>1</w>
+        <eulerAngles>
+          <x>-0</x>
+          <y>0</y>
+          <z>0</z>
+        </eulerAngles>
+      </rotation>
+      <trackPieceIndex>3</trackPieceIndex>
+      <isAlternate>false</isAlternate>
+      <gridlocation>1326</gridlocation>
+    </TrackPiece>
+    <TrackPiece>
+      <position>
+        <x>40</x>
+        <y>0</y>
+        <z>0</z>
+      </position>
+      <rotation>
+        <x>0</x>
+        <y>0</y>
+        <z>0</z>
+        <w>1</w>
+        <eulerAngles>
+          <x>-0</x>
+          <y>0</y>
+          <z>0</z>
+        </eulerAngles>
+      </rotation>
+      <trackPieceIndex>1</trackPieceIndex>
+      <isAlternate>false</isAlternate>
+      <gridlocation>1376</gridlocation>
+    </TrackPiece>
+  </trackPieces>
+  <leaderboards>
+    <Leaderboard>
+      <racerName />
+      <timeInSec>0</timeInSec>
+    </Leaderboard>
+    <Leaderboard>
+      <racerName />
+      <timeInSec>0</timeInSec>
+    </Leaderboard>
+    <Leaderboard>
+      <racerName />
+      <timeInSec>0</timeInSec>
+    </Leaderboard>
+    <Leaderboard>
+      <racerName />
+      <timeInSec>0</timeInSec>
+    </Leaderboard>
+    <Leaderboard>
+      <racerName />
+      <timeInSec>0</timeInSec>
+    </Leaderboard>
+  </leaderboards>
+  <numberOfLaps>1</numberOfLaps>
+  <description />
+  <trackType>Linear</trackType>
+</TrackInfo>
