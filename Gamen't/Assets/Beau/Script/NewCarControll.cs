@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
+using UnityEngine.VFX;
 
 
 [System.Serializable]
@@ -58,6 +59,9 @@ public class NewCarControll : MonoBehaviour
     public TrailRenderer slipperyTrail1;
 
     public int NumberBack;
+
+    public VisualEffect smokeParticleL;
+    public VisualEffect smokeParticleR;
 
     private void Start()
     {
@@ -134,6 +138,9 @@ public class NewCarControll : MonoBehaviour
 
             slipperyTrail0.emitting = false;
             slipperyTrail1.emitting = false;
+
+            smokeParticleL.SendEvent("OnSmokeDed");
+            smokeParticleR.SendEvent("OnSmokeDed");
         }
         else
         {
@@ -142,6 +149,12 @@ public class NewCarControll : MonoBehaviour
 
             slipperyTrail0.emitting = true;
             slipperyTrail1.emitting = true;
+
+            smokeParticleL.Reinit();
+            smokeParticleR.Reinit();
+
+            smokeParticleL.SendEvent("OnSmoke");
+            smokeParticleR.SendEvent("OnSmoke");
         }
     }
     void OnBrake(InputValue value)
@@ -150,12 +163,22 @@ public class NewCarControll : MonoBehaviour
         {
             slipperyTrail0.emitting = true;
             slipperyTrail1.emitting = true;
+
+            smokeParticleL.Reinit();
+            smokeParticleR.Reinit();
+
+            smokeParticleL.SendEvent("OnSmoke");
+            smokeParticleR.SendEvent("OnSmoke");
         }
         else
         {
             slipperyTrail0.emitting = false;
             slipperyTrail1.emitting = false;
+
+            smokeParticleL.SendEvent("OnSmokeDed");
+            smokeParticleR.SendEvent("OnSmokeDed");
         }
+
     }
    
 
