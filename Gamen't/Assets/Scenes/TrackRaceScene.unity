@@ -142,6 +142,10 @@ PrefabInstance:
       propertyPath: soundProducer
       value: 
       objectReference: {fileID: 2026853580}
+    - target: {fileID: 207736580462013959, guid: 8565d690bcc67b845befa97161339492, type: 3}
+      propertyPath: mainmenu
+      value: 
+      objectReference: {fileID: 58329350}
     - target: {fileID: 295575934510806188, guid: 8565d690bcc67b845befa97161339492, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -220,6 +224,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8565d690bcc67b845befa97161339492, type: 3}
+--- !u!1 &58329350 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 295575934510806188, guid: 8565d690bcc67b845befa97161339492, type: 3}
+  m_PrefabInstance: {fileID: 58329349}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &495778000
 PrefabInstance:
   m_ObjectHideFlags: 0

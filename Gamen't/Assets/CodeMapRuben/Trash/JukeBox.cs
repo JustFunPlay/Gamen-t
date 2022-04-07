@@ -22,14 +22,14 @@ public class JukeBox : MonoBehaviour
         //als je iets hebt ingevuld bij de JukeBox bool dan gaat de if statement af
         if (playerInfo.activateJukeBox == true)
         {
-            //mainSong.Stop();
+            mainSong.Stop();
             //RefreshMusic();
         }
         
     }
     public void CalculateString()
     {
-        mainSong.Stop();
+
         playerInfo.musicToLoad = urlInfo.text.ToString().Replace("www.youtube.com", "unity-youtube-dl-server.herokuapp.com");
         RefreshMusic();
     }
