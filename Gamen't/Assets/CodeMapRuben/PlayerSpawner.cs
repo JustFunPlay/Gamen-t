@@ -52,7 +52,7 @@ public class PlayerSpawner : MonoBehaviour
                 newplayer.transform.GetChild(0).GetComponent<PlayerID>().playerIdNumber = i;
                 newplayer.transform.GetChild(0).GetComponent<PlayerID>().playerName = playerInfos.playerSelections[i].name;
 
-                newplayer.transform.GetChild(0).GetComponent<NewCarControll>().escMenuAUTO = GameObject.Find("BETTER ESC(Clone)");
+                newplayer.transform.GetChild(0).GetComponent<NewCarControll>().escMenuAUTO = GameObject.Find("BETTER ESC");
                 newplayer.transform.GetChild(0).GetComponent<NewCarControll>().mainMenuAUTO = GameObject.Find("ESC");
 
                 if (playerInfos.raceCupBool == true)

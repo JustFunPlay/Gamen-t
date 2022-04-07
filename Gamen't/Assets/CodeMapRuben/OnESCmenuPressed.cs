@@ -8,7 +8,7 @@ public class OnESCmenuPressed: MonoBehaviour
     public GameObject escMenu;
     public GameObject mainMenu;
     public bool escMenuBool;
-    void OnESCMenu(InputValue value)
+    void OnESCmenu(InputValue value)
     {
         if (escMenuBool == false)
         {
@@ -20,14 +20,12 @@ public class OnESCmenuPressed: MonoBehaviour
 
 
         }
-        else
+        else if(escMenuBool == true)
         {
-            if (escMenuBool == true)
-            {
-                escMenuBool = false;
-                escMenu.SetActive(false);
-                Time.timeScale = 1f;
-            }
+
+            escMenuBool = false;
+            escMenu.SetActive(false);
+            Time.timeScale = 1f;
 
         }
         print("Pressed ESC");

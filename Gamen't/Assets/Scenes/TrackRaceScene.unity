@@ -178,10 +178,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: BETTER ESC
       objectReference: {fileID: 0}
-    - target: {fileID: 4132655056235530127, guid: 8565d690bcc67b845befa97161339492, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8565d690bcc67b845befa97161339492, type: 3}
 --- !u!1001 &495778000

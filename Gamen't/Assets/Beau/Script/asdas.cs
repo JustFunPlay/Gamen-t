@@ -10,6 +10,7 @@ public class asdas : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     public Text a;
     public Color b;
     public Color c;
+
     public void OnPointerEnter(PointerEventData eventData)
     {
         a.color = b;
@@ -18,4 +19,9 @@ public class asdas : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     {
         a.color = c;
     }
+    public void OnClickButton()
+    {
+        a.color = c;
+    }
+
 }
