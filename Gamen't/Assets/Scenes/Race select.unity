@@ -1905,6 +1905,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 647f21937c2e4f84da7622cc9b41f07f, type: 3}
   - {fileID: 21300000, guid: 84cbbd963c8fa8e49aa125842e4fde9c, type: 3}
   trackInfoScreen: {fileID: 228848050}
+  stockImage: {fileID: 21300000, guid: ac277b5d4b2a35e479b30ce08d4bbd3f, type: 3}
+  returnStock: 0
 --- !u!1 &824078230
 GameObject:
   m_ObjectHideFlags: 0
@@ -5106,38 +5108,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 478477435}
     m_Modifications:
-    - target: {fileID: 1165748994, guid: 8d5e6a99c2c5b964497015fc148c5939, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1124218403}
-    - target: {fileID: 1165748994, guid: 8d5e6a99c2c5b964497015fc148c5939, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: EnterRace
-      objectReference: {fileID: 0}
-    - target: {fileID: 1310226123, guid: 8d5e6a99c2c5b964497015fc148c5939, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1124218403}
-    - target: {fileID: 1310226123, guid: 8d5e6a99c2c5b964497015fc148c5939, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: EnterEditor
-      objectReference: {fileID: 0}
-    - target: {fileID: 8658488063257510944, guid: 8d5e6a99c2c5b964497015fc148c5939, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8658488063257510945, guid: 8d5e6a99c2c5b964497015fc148c5939, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 500
-      objectReference: {fileID: 0}
-    - target: {fileID: 8658488063257510945, guid: 8d5e6a99c2c5b964497015fc148c5939, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 300
-      objectReference: {fileID: 0}
-    - target: {fileID: 8658488063257510945, guid: 8d5e6a99c2c5b964497015fc148c5939, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -210
-      objectReference: {fileID: 0}
     - target: {fileID: 8658488063614929496, guid: 8d5e6a99c2c5b964497015fc148c5939, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

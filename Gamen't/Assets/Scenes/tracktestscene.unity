@@ -134,6 +134,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 4067794996799708933, guid: 8565d690bcc67b845befa97161339492, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4132655056235530124, guid: 8565d690bcc67b845befa97161339492, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -181,6 +185,14 @@ PrefabInstance:
     - target: {fileID: 4132655056235530127, guid: 8565d690bcc67b845befa97161339492, type: 3}
       propertyPath: m_Name
       value: BETTER ESC
+      objectReference: {fileID: 0}
+    - target: {fileID: 6221321514825117921, guid: 8565d690bcc67b845befa97161339492, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6221321514825117921, guid: 8565d690bcc67b845befa97161339492, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8565d690bcc67b845befa97161339492, type: 3}
