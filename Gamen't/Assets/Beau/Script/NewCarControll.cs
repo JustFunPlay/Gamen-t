@@ -259,7 +259,8 @@ public class NewCarControll : MonoBehaviour
 
                 if (itStoped == true)
                 {
-
+                    smokeParticleL.SendEvent("OnSmokeDed");
+                    smokeParticleR.SendEvent("OnSmokeDed");
                     element.leftWheel.brakeTorque = 0;
                     element.rightWheel.brakeTorque = 0;
                     maxSpeed = maxSpeedBack;

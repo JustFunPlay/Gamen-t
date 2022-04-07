@@ -2189,6 +2189,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7094707493077599930, guid: 6f1b3f968dc8edd4193c733e7edd9cbd, type: 3}
+      propertyPath: m_VideoClip
+      value: 
+      objectReference: {fileID: 32900000, guid: a787a98eecef1e64591fffa568ae7bd4, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f1b3f968dc8edd4193c733e7edd9cbd, type: 3}
 --- !u!1001 &8232616496033374284
