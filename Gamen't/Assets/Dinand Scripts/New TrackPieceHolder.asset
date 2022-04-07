@@ -24,7 +24,7 @@ MonoBehaviour:
   - mainTrackPiece: {fileID: 3749085050509145281, guid: 555e7b0ee0d15034caa7ab79b8be1081, type: 3}
     altTrackPiece: {fileID: 0}
   - mainTrackPiece: {fileID: 4604442246332445032, guid: 2bb7737759739e348a8f3d0e4e7cd0b7, type: 3}
-    altTrackPiece: {fileID: 0}
+    altTrackPiece: {fileID: 4604442246332445032, guid: 324b967a1f621d24db4552ae8d0f672d, type: 3}
   - mainTrackPiece: {fileID: 6914888233837508229, guid: 071d7abbb6e030b43a94bcfd1aa45731, type: 3}
     altTrackPiece: {fileID: 6914888233837508229, guid: 732977bd375b4224dac24ca6ef4d391f, type: 3}
   - mainTrackPiece: {fileID: 6937163375105411035, guid: 3f516edd925b9a5498e34ce3a840df21, type: 3}

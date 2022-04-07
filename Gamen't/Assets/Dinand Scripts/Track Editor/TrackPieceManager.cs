@@ -11,19 +11,22 @@ public class TrackPieceManager : EditorCamController
     public UpdateTrackInformation updateTrackInformation;
     void OnPlaceTrack()
     {
-        if (currentNode.trackPiece)
+        if (worky)
         {
-            OnRemoveTrack();
+            if (currentNode.trackPiece)
+            {
+                OnRemoveTrack();
+            }
+            currentNode.trackPiece = Instantiate(pieceHolder.trackPieces[selectedTrackPieceIndex].mainTrackPiece, currentNode.transform.position, Quaternion.identity);
+            TrackPiece newTrackPiece = new TrackPiece();
+            newTrackPiece.gridlocation = currentNode.gridNodeValue;
+            newTrackPiece.trackPieceIndex = selectedTrackPieceIndex;
+            newTrackPiece.rotation = currentNode.trackPiece.transform.rotation;
+            newTrackPiece.position = currentNode.trackPiece.transform.position;
+            toLoad.track.trackPieces.Add(newTrackPiece);
+            updateTrackInformation.UpdateInfo();
+            UpdateTrackInformation.isTested = false;
         }
-        currentNode.trackPiece = Instantiate(pieceHolder.trackPieces[selectedTrackPieceIndex].mainTrackPiece, currentNode.transform.position, Quaternion.identity);
-        TrackPiece newTrackPiece = new TrackPiece();
-        newTrackPiece.gridlocation = currentNode.gridNodeValue;
-        newTrackPiece.trackPieceIndex = selectedTrackPieceIndex;
-        newTrackPiece.rotation = currentNode.trackPiece.transform.rotation;
-        newTrackPiece.position = currentNode.trackPiece.transform.position;
-        toLoad.track.trackPieces.Add(newTrackPiece);
-        updateTrackInformation.UpdateInfo();
-        UpdateTrackInformation.isTested = false;
     }
     void OnRemoveTrack()
     {

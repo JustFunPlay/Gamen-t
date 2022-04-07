@@ -26,6 +26,7 @@ public class UpdateTrackInformation : MonoBehaviour
         CheckForCircuit();
         track.track.trackName = trackNameText.text;
         track.track.description = descriptionText.text;
+        print(track.track.description);
     }
     void CheckForCircuit()
     {
