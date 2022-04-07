@@ -1981,7 +1981,6 @@ GameObject:
   - component: {fileID: 1856778944}
   - component: {fileID: 1856778943}
   - component: {fileID: 1856778946}
-  - component: {fileID: 1856778947}
   - component: {fileID: 1856778948}
   m_Layer: 0
   m_Name: GameObject
@@ -2073,19 +2072,6 @@ MonoBehaviour:
   trackToLoad: {fileID: 11400000, guid: 18e9f5ab584b66a4b968b0f09d46887c, type: 2}
   pieceHolder: {fileID: 11400000, guid: 62d866ad7041afa45aa5ad87dbab5bf0, type: 2}
   isEditorScene: 1
---- !u!114 &1856778947
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1856778942}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31523e11ad97b6343a46282901ca3cb0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneToLoad: 0
 --- !u!114 &1856778948
 MonoBehaviour:
   m_ObjectHideFlags: 0

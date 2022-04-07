@@ -17,9 +17,9 @@ MonoBehaviour:
     altTrackPiece: {fileID: 7979091101546210773, guid: 512b9c1fb4268ab4fbe7350162201303, type: 3}
   - mainTrackPiece: {fileID: 5977413844074134789, guid: 97a300041c5f11640984d048f8df77e5, type: 3}
     altTrackPiece: {fileID: 0}
-  - mainTrackPiece: {fileID: 5634827069025667634, guid: 5fed5ce7021de5d4489814b12d2f682b, type: 3}
-    altTrackPiece: {fileID: 0}
   - mainTrackPiece: {fileID: 7192722575976943018, guid: fd90833089b399948af85395e57ddee3, type: 3}
+    altTrackPiece: {fileID: 0}
+  - mainTrackPiece: {fileID: 5634827069025667634, guid: 5fed5ce7021de5d4489814b12d2f682b, type: 3}
     altTrackPiece: {fileID: 0}
   - mainTrackPiece: {fileID: 3749085050509145281, guid: 555e7b0ee0d15034caa7ab79b8be1081, type: 3}
     altTrackPiece: {fileID: 0}
