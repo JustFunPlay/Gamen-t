@@ -32,7 +32,7 @@ public class TrackEditSelectMen : MonoBehaviour
             if (fileString.Contains(".xml") && !fileString.Contains("xml.meta"))
             {
                 XmlSerializer serializer = new XmlSerializer(typeof(TrackInfo));
-                FileStream stream = new FileStream(fileString, FileMode.Open);
+                StreamReader stream = new StreamReader(fileString);
                 TrackInfo newTrack = ScriptableObject.CreateInstance<TrackInfo>();
                 newTrack = serializer.Deserialize(stream) as TrackInfo;
                 allTracks.trackInfos.Add(newTrack);

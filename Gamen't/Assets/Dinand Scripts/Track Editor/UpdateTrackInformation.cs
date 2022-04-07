@@ -13,19 +13,25 @@ public class UpdateTrackInformation : MonoBehaviour
     public InputField descriptionText;
     public Text trackTypeText;
     public static bool isTested;
+    bool canupdate;
 
-    void Start()
+    void Awake()
     {
         CheckForCircuit();
         trackNameText.text = track.track.trackName;
         descriptionText.text = track.track.description;
+        canupdate = true;
     }
 
     public void UpdateInfo()
     {
-        CheckForCircuit();
-        track.track.trackName = trackNameText.text;
-        track.track.description = descriptionText.text;
+        if (canupdate)
+        {
+            CheckForCircuit();
+            track.track.trackName = trackNameText.text;
+            track.track.description = descriptionText.text;
+            print(track.track.description);
+        }
     }
     void CheckForCircuit()
     {
