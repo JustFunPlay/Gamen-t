@@ -11,9 +11,9 @@ public class PlayerInformation : ScriptableObject
     public bool raceCupBool;
     public int counter;
     public TrackInfo[] trackInfo;
-    //public int nextNumberRace;
-    //public int maximumRaces;
 
+    public bool activateJukeBox;
+    public string musicToLoad;
 
     public List<PlayerSelection> playerSelections;
 }

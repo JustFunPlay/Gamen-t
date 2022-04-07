@@ -28,15 +28,6 @@ public class PlayerSpawner : MonoBehaviour
     void Start()
     {
 
-        //als je iets hebt ingevuld bij de CUP track list dan gaat de if statement af
-        // if (playerInfos.raceCupBool == true)
-        //{
-        //    if(playerInfos.nextNumberRace == playerInfos.maximumRaces)
-        //   {
-
-        //  }
-        //  trackLoader.track = playerInfos.trackInfo[playerInfos.nextNumberRace];
-        //}
     }
    
 
