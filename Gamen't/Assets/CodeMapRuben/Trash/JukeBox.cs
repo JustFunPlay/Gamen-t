@@ -36,12 +36,8 @@ public class JukeBox : MonoBehaviour
     {
         if(allowPlay == true)
         {
-
-
             soundProducer.url = playerInfo.musicToLoad;
-            
-            
-                
+             
             soundProducer.audioOutputMode = VideoAudioOutputMode.AudioSource;
             soundProducer.EnableAudioTrack(0, true);
             soundProducer.Prepare();
