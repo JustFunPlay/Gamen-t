@@ -106,7 +106,7 @@ public class CarSelectation : MonoBehaviour
         Selection();
     }
 
-    void Selection()
+    public void Selection()
     {
         playerInformation.playerSelections[id].name = playerName.text;
         //int id = GetComponentInParent<PlayerID>().playerIdNumber;
