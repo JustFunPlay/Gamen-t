@@ -13,19 +13,17 @@ MonoBehaviour:
   m_Name: ScriptablePlayerInformation
   m_EditorClassIdentifier: 
   voteNumber: 
-  totalCheckpoints: []
+  raceCupBool: 0
+  counter: 0
+  trackInfo: []
+  activateJukeBox: 1
+  musicToLoad: 
   playerSelections:
-  - name: {fileID: 0}
+  - name: 
     selectedCar: {fileID: 3458319226721410268, guid: be3970fbafa5d2e468ab4f87eea70c8a, type: 3}
     materials:
     - {fileID: 0}
     - {fileID: 0}
     - {fileID: 0}
     - {fileID: 0}
-  - name: {fileID: 0}
-    selectedCar: {fileID: 3458319226721410268, guid: be3970fbafa5d2e468ab4f87eea70c8a, type: 3}
-    materials:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
+    carImage: {fileID: 0}

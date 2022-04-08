@@ -251,5 +251,5 @@ MonoBehaviour:
   - racerName: 
     timeInSec: 0
   numberOfLaps: 3
-  description: 
+  description: Try not to jump the shark
   trackType: 0

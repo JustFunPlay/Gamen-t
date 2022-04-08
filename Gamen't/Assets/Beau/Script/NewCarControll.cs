@@ -134,30 +134,33 @@ public class NewCarControll : MonoBehaviour
     }
     void OnHandbrake()
     {
-        if (b)
+        if (go == true)
         {
-            handBrakeOn = false;
-            b = false;
+            if (b)
+            {
+                handBrakeOn = false;
+                b = false;
 
-            slipperyTrail0.emitting = false;
-            slipperyTrail1.emitting = false;
+                slipperyTrail0.emitting = false;
+                slipperyTrail1.emitting = false;
 
-            smokeParticleL.SendEvent("OnSmokeDed");
-            smokeParticleR.SendEvent("OnSmokeDed");
-        }
-        else
-        {
-            handBrakeOn = true;
-            b = true;
+                smokeParticleL.SendEvent("OnSmokeDed");
+                smokeParticleR.SendEvent("OnSmokeDed");
+            }
+            else
+            {
+                handBrakeOn = true;
+                b = true;
 
-            slipperyTrail0.emitting = true;
-            slipperyTrail1.emitting = true;
+                slipperyTrail0.emitting = true;
+                slipperyTrail1.emitting = true;
 
-            smokeParticleL.Reinit();
-            smokeParticleR.Reinit();
+                smokeParticleL.Reinit();
+                smokeParticleR.Reinit();
 
-            smokeParticleL.SendEvent("OnSmoke");
-            smokeParticleR.SendEvent("OnSmoke");
+                smokeParticleL.SendEvent("OnSmoke");
+                smokeParticleR.SendEvent("OnSmoke");
+            }
         }
     }
     void OnBrake(InputValue value)

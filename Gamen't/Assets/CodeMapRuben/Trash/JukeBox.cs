@@ -13,7 +13,7 @@ public class JukeBox : MonoBehaviour
     public VideoPlayer soundProducer;
     public InputField urlInfo;
 
-    public GameObject mainSong;
+    public AudioSource mainSong;
 
     //https://unity-youtube-dl-server.herokuapp.com/watch?v=dQw4w9WgXcQ
 
@@ -22,15 +22,16 @@ public class JukeBox : MonoBehaviour
         //als je iets hebt ingevuld bij de JukeBox bool dan gaat de if statement af
         if (playerInfo.activateJukeBox == true)
         {
-            mainSong.SetActive(false);
-            RefreshMusic();
+            //mainSong.Stop();
+            //RefreshMusic();
         }
         
     }
     public void CalculateString()
     {
+        mainSong.Stop();
         playerInfo.musicToLoad = urlInfo.text.ToString().Replace("www.youtube.com", "unity-youtube-dl-server.herokuapp.com");
-        
+        RefreshMusic();
     }
     public void RefreshMusic()
     {

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23b140e9cd1330f4799a57bc49ad094b, type: 3}
   m_Name: Premade 2
   m_EditorClassIdentifier: 
-  trackName: premade 2 wip
+  trackName: SkyScrapers
   trackPieces:
   - position: {x: 0, y: 0, z: -20}
     rotation: {x: 0, y: 0, z: 0, w: 1}
@@ -321,5 +321,5 @@ MonoBehaviour:
   - racerName: 
     timeInSec: 0
   numberOfLaps: 3
-  description: 
+  description: See how high you can go, but be carefull to not screw over your lead-up
   trackType: 0
