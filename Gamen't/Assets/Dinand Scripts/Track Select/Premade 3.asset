@@ -501,5 +501,5 @@ MonoBehaviour:
   - racerName: 
     timeInSec: 0
   numberOfLaps: 1
-  description: We're going on a trip in our favorite forrest track
+  description: We're going on a trip through our favorite forest track
   trackType: 1
