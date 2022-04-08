@@ -5,10 +5,9 @@ using UnityEngine;
 public class NoSouns : MonoBehaviour
 {
 
-    private void Start()
+    private void Update()
     {
         GetComponentInChildren<Sound>().brrSounds.Stop();
-
     }
 
 
