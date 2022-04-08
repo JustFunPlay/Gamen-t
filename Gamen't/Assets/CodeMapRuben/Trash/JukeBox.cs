@@ -30,7 +30,15 @@ public class JukeBox : MonoBehaviour
     public void CalculateString()
     {
         mainSong.Stop();
-        playerInfo.musicToLoad = urlInfo.text.ToString().Replace("www.youtube.com", "unity-youtube-dl-server.herokuapp.com");
+
+        if (urlInfo.text.Contains("www.youtube.com"))
+        {
+            playerInfo.musicToLoad = urlInfo.text.ToString().Replace("www.youtube.com", "unity-youtube-dl-server.herokuapp.com");
+        }
+        if (urlInfo.text.Contains("youtu.be"))
+        {
+            playerInfo.musicToLoad = urlInfo.text.ToString().Replace("youtu.be/", "unity-youtube-dl-server.herokuapp.com/watch?v=");
+        }
         RefreshMusic();
     }
     public void RefreshMusic()
